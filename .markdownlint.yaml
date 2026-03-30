@@ -1,0 +1,46 @@
+---
+MD003:
+  style: atx
+MD004:
+  style: dash
+MD009: false
+MD012: false
+MD013: false
+MD024:
+  siblings_only: true
+MD027: false
+MD029: false
+MD031: false
+MD032: false
+MD033:
+  allowed_elements:
+    - a
+    - abbr
+    - br
+    - caption
+    - code
+    - dd
+    - del
+    - dl
+    - dt
+    - figcaption
+    - figure
+    - img
+    - kbd
+    - li
+    - mark
+    - strong
+    - table
+    - tbody
+    - td
+    - tfoot
+    - th
+    - thead
+    - tr
+    - ul
+MD034: false
+MD041: false
+MD051: false
+MD060: false
+# Autoformatter friendly markdownlint config with a narrow inline-HTML allowlist
+default: true

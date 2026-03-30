@@ -1,0 +1,28 @@
+{
+	"author": {
+		"email": "philsherry@mac.com",
+		"name": "Phil Sherry",
+		"url": "https://philsherry.com"
+	},
+	"bugs": {
+		"url": "https://github.com/philsherry/govuk-design-system-skills/issues"
+	},
+	"description": "SKILLS.md reference files and agent personas for the GOV.UK Design System",
+	"devDependencies": {
+		"write-good": "^1.0.8"
+	},
+	"homepage": "https://github.com/philsherry/govuk-design-system-skills#readme",
+	"license": "MIT",
+	"name": "govuk-design-system-skills",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/philsherry/govuk-design-system-skills.git"
+	},
+	"scripts": {
+		"lint": "find agents govuk-design-system -name '*.md' -not -name 'README.md' | xargs write-good",
+		"lint:passive": "node scripts/lint-passive.js",
+		"test": "npm run lint:passive"
+	},
+	"version": "1.0.0"
+}
