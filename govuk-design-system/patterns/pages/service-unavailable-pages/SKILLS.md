@@ -2,8 +2,15 @@
 category: patterns
 description: Tell users when a service is intentionally unavailable — for example during maintenance or before a service has launched — and help them find an alternative way to complete their task.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "503"
+  - "downtime"
+  - "maintenance"
+  - "service unavailable pages"
+  - "unavailable"
+last-reviewed: "2026-04-03"
 name: Service unavailable pages
+source: "https://design-system.service.gov.uk/patterns/service-unavailable-pages/"
 subcategory: pages
 ---
 
@@ -11,8 +18,6 @@ subcategory: pages
 
 > Tell users when a service is intentionally unavailable — for example during maintenance or before a service has launched — and help them find an alternative way to complete their task.
 > Source: https://design-system.service.gov.uk/patterns/service-unavailable-pages/
-
----
 
 ## Overview
 
@@ -134,7 +139,7 @@ Unscheduled — end time unknown:
 - Contact information should be in a list rather than buried in flowing prose
 - Do not embed countdown timers or auto-refresh mechanisms — these cause problems for screen reader users and users who need extra time
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Give a specific date and time when the service will be back if known
@@ -143,7 +148,7 @@ Unscheduled — end time unknown:
 - Use the full service template with header and footer
 - Use plain English — avoid jargon like "down for maintenance"
 
-**Don't:**
+**Do not:**
 - Say "temporarily unavailable" without giving a timescale
 - Use the word "error" on this page
 - Say "down for maintenance" or other technical jargon

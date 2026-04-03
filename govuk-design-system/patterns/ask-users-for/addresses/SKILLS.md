@@ -2,8 +2,14 @@
 category: patterns
 description: Use this pattern to collect a postal address from users — choose between a free-text field or a structured address lookup depending on your service's needs.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "address entry"
+  - "address lookup"
+  - "addresses"
+  - "postcode"
+last-reviewed: "2026-04-03"
 name: Addresses
+source: "https://design-system.service.gov.uk/patterns/addresses/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +17,6 @@ subcategory: ask-users-for
 
 > Use this pattern to collect a postal address from users — choose between a free-text field or a structured address lookup depending on your service's needs.
 > Source: https://design-system.service.gov.uk/patterns/addresses/
-
----
 
 ## Overview
 
@@ -247,7 +251,7 @@ If the address lookup finds no results:
 - Error messages must link to their input via `aria-describedby`.
 - If using a postcode lookup, ensure keyboard navigation works as expected through the results list, and that screen readers announce the results to users.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the `autocomplete` attribute with the correct address tokens on all address fields.
@@ -257,13 +261,13 @@ If the address lookup finds no results:
 - Check postcodes using a format check, not a length check alone.
 - Consider whether you actually need county — most UK addresses do not require it.
 
-**Don't:**
-- Don't split "house number" and "street name" into separate fields — combine them in "Address line 1".
-- Don't use asterisks to mark required fields; mark optional fields instead.
-- Don't make the address lookup the only way to enter an address.
-- Don't use placeholder text to convey important information, such as the expected format.
-- Don't use a rigid UK address structure for international users.
-- Don't check against a specific list of valid towns or counties.
+**Do not:**
+- Do not split "house number" and "street name" into separate fields — combine them in "Address line 1".
+- Do not use asterisks to mark required fields; mark optional fields instead.
+- Do not make the address lookup the only way to enter an address.
+- Do not use placeholder text to convey important information, such as the expected format.
+- Do not use a rigid UK address structure for international users.
+- Do not check against a specific list of valid towns or counties.
 
 ## Related Components / Patterns
 

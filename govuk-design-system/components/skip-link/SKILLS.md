@@ -2,16 +2,22 @@
 category: components
 description: Use the skip link component to help keyboard users skip past repeated navigation and header content and jump directly to the main content of a page.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "bypass"
+  - "link"
+  - "skip"
+  - "skip link"
+  - "skip navigation"
+  - "skip to content"
+last-reviewed: "2026-04-03"
 name: Skip Link
+source: "https://design-system.service.gov.uk/components/skip-link/"
 ---
 
 # Skip Link
 
 > Use the skip link component to help keyboard users skip past repeated navigation and header content and jump directly to the main content of a page.
 > Source: https://design-system.service.gov.uk/components/skip-link/
-
----
 
 ## Overview
 
@@ -120,7 +126,7 @@ The skip link does not have error states. This is a navigation component.
 - The standard text "Skip to main content" is well understood by screen reader users and changing it requires strong user research justification.
 - The GOV.UK Frontend JavaScript module improves cross-browser compatibility for the focus and scroll behaviour when the user activates the skip link.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Place the skip link as the first element inside `<body>`, before everything else.
@@ -128,11 +134,11 @@ The skip link does not have error states. This is a navigation component.
 - Use the standard "Skip to main content" link text.
 - Include the skip link on every page of the service.
 
-**Don't:**
-- Don't omit the skip link — providing one is a mandatory accessibility requirement.
-- Don't position the skip link anywhere other than before the header.
-- Don't point the skip link to an element that does not exist on the page or that does not have `tabindex="-1"`.
-- Don't make the skip link permanently visible — it should only appear when it receives keyboard focus.
+**Do not:**
+- Do not omit the skip link — providing one is a mandatory accessibility requirement.
+- Do not position the skip link anywhere other than before the header.
+- Do not point the skip link to an element that does not exist on the page or that does not have `tabindex="-1"`.
+- Do not make the skip link permanently visible — it should only appear when it receives keyboard focus.
 
 ## Related Components / Patterns
 

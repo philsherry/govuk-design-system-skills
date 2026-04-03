@@ -2,8 +2,15 @@
 category: patterns
 description: Tell users when a page does not exist (HTTP 404) and help them find what they are looking for.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "404"
+  - "found"
+  - "missing page"
+  - "not found"
+  - "page not found pages"
+last-reviewed: "2026-04-03"
 name: Page not found pages
+source: "https://design-system.service.gov.uk/patterns/page-not-found-pages/"
 subcategory: pages
 ---
 
@@ -11,8 +18,6 @@ subcategory: pages
 
 > Tell users when a page does not exist (HTTP 404) and help them find what they are looking for.
 > Source: https://design-system.service.gov.uk/patterns/page-not-found-pages/
-
----
 
 ## Overview
 
@@ -109,7 +114,7 @@ If the service has a start page on GOV.UK, link to it. If contact details are av
 - Contact information should be in a readable list format, not embedded only in a sentence where phone numbers and email addresses may be hard to identify
 - Do not include error codes (404) in the heading or body text
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the exact heading "Page not found"
@@ -119,7 +124,7 @@ If the service has a start page on GOV.UK, link to it. If contact details are av
 - Return an HTTP 404 status code for this page
 - Keep the standard service header and footer on the page
 
-**Don't:**
+**Do not:**
 - Use "404 error" or "Error 404" as the heading
 - Show a blank page or a generic browser 404 page
 - Include error codes (404) in the page content

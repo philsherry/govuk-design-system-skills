@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern to verify that a phone number belongs to the user by sending them a one-time passcode via text message.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "SMS code"
+  - "confirm a phone number"
+  - "number"
+  - "phone"
+  - "phone verification"
+  - "verify phone"
+last-reviewed: "2026-04-03"
 name: Confirm a phone number
+source: "https://design-system.service.gov.uk/patterns/confirm-a-phone-number/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +19,6 @@ subcategory: help-users-to
 
 > Use this pattern to verify that a phone number belongs to the user by sending them a one-time passcode via text message.
 > Source: https://design-system.service.gov.uk/patterns/confirm-a-phone-number/
-
----
 
 ## Overview
 
@@ -294,7 +300,7 @@ Add rate limiting on resend requests to prevent abuse.
 - Associate error messages with the input via `aria-describedby`.
 - Do not auto-submit the form when the user enters the last digit — this can cause accessibility problems and trap keyboard users.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Tell users where you sent the code.
@@ -304,12 +310,12 @@ Add rate limiting on resend requests to prevent abuse.
 - Use `inputmode="numeric"` and `autocomplete="one-time-code"`.
 - Add rate limiting on code requests and verification attempts.
 
-**Don't:**
-- Don't show the full phone number on screen — mask it (e.g. show only the last 3 digits) to protect user privacy.
-- Don't auto-advance or auto-submit when the code is complete.
-- Don't make users re-enter their phone number to request a new code.
-- Don't make the code expire too fast — 15 minutes is a reasonable lower limit.
-- Don't require users to include spaces or dashes in the code.
+**Do not:**
+- Do not show the full phone number on screen — mask it (e.g. show only the last 3 digits) to protect user privacy.
+- Do not auto-advance or auto-submit when the code is complete.
+- Do not make users re-enter their phone number to request a new code.
+- Do not make the code expire too fast — 15 minutes is a reasonable lower limit.
+- Do not require users to include spaces or dashes in the code.
 
 ## Related Components / Patterns
 

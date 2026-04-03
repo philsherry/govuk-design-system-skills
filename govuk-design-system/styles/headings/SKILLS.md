@@ -2,8 +2,14 @@
 category: styles
 description: GOV.UK Frontend provides four heading sizes as CSS classes you can apply to any heading element. Caption classes allow a secondary label to appear above the heading. There must be one H1 per page.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "h1 h2 h3"
+  - "heading hierarchy"
+  - "heading levels"
+  - "headings"
+last-reviewed: "2026-04-03"
 name: Headings
+source: "https://design-system.service.gov.uk/styles/typography/"
 ---
 
 # Headings
@@ -11,27 +17,19 @@ name: Headings
 > GOV.UK Frontend provides four heading sizes as CSS classes you can apply to any heading element. Caption classes allow a secondary label to appear above the heading. There must be one H1 per page.
 > Source: https://design-system.service.gov.uk/styles/typography/
 
----
-
 ## Overview
 
 Headings create a clear hierarchy on the page and help users and assistive technologies understand the structure of content. GOV.UK Frontend separates visual heading size from semantic heading level: you choose the HTML element (`<h1>` through `<h4>`) based on page structure, and apply a size class to control the visual appearance.
 
 All heading classes are bold weight, use the GOV.UK heading colour (`#0b0c0c`), and are responsive — larger on desktop, slightly smaller on mobile.
 
----
-
 ## When to use this style
 
 Use heading classes on every page to establish a logical content hierarchy. Apply heading classes to semantic heading elements only — do not apply them to non-heading elements to make text look bold or large.
 
----
-
 ## When not to use this style
 
 Do not use heading classes purely for visual styling on non-heading elements such as `<p>` or `<div>`. If you need large bold text that is not a heading, use the type scale or font override classes instead.
-
----
 
 ## How it works
 
@@ -75,8 +73,6 @@ When the page contains a single question, the heading should be the `<legend>` o
   </legend>
 </fieldset>
 ```
-
----
 
 ## Code Examples
 
@@ -126,8 +122,6 @@ A subsection that is semantically an `<h2>` but should visually appear at the sm
 </fieldset>
 ```
 
----
-
 ## Accessibility
 
 - Every page must have one `<h1>`. Screen reader users rely on the H1 to understand the page topic and navigate between pages.
@@ -136,9 +130,7 @@ A subsection that is semantically an `<h2>` but should visually appear at the sm
 - Captions placed outside the heading element are not programmatically associated with the heading. Place captions inside the heading using a `<span>` when the association is important for screen reader users.
 - When using a heading as a fieldset legend, nest the `<h1>` inside the `<legend>` element — not the other way around.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use one `<h1>` per page.
@@ -146,13 +138,11 @@ A subsection that is semantically an `<h2>` but should visually appear at the sm
 - Use captions when context about the page's position within a journey aids understanding.
 - Use `govuk-fieldset__legend--xl` for single-question pages to make the question the page heading.
 
-**Don't:**
+**Do not:**
 - Skip heading levels (e.g. `<h1>` followed directly by `<h3>`).
 - Apply heading classes to non-heading elements to make text look large or bold.
 - Use more than one `<h1>` element on the same page.
 - Place content between the caption and the heading it refers to.
-
----
 
 ## Related Components / Patterns
 

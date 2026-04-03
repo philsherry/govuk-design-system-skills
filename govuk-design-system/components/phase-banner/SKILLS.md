@@ -2,16 +2,22 @@
 category: components
 description: Use the phase banner to show that a service is in active development and invite users to give feedback.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "alpha"
+  - "banner"
+  - "beta"
+  - "phase"
+  - "phase banner"
+  - "service phase"
+last-reviewed: "2026-04-03"
 name: Phase Banner
+source: "https://design-system.service.gov.uk/components/phase-banner/"
 ---
 
 # Phase Banner
 
 > Use the phase banner to show that a service is in active development and invite users to give feedback.
 > Source: https://design-system.service.gov.uk/components/phase-banner/
-
----
 
 ## Overview
 
@@ -126,7 +132,7 @@ Place the phase banner inside the width container, straight after the header.
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | `tag` | object | Yes | Options for the Tag component used as the phase label. Must include `text` (e.g. `"Alpha"` or `"Beta"`). |
-| `text` | string | Yes (or `html`) | Text content of the phase banner message. If `html` is provided, `text` is ignored. |
+| `text` | string | Yes (or `html`) | Text content of the phase banner message. If there is an `html` value, ignore `text`. |
 | `html` | string | Yes (or `text`) | HTML content of the phase banner message. Takes precedence over `text`. |
 | `classes` | string | No | Classes to add to the outer `<div>`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the outer `<div>`. |
@@ -151,7 +157,7 @@ The phase banner does not have error states. This is a presentational component.
 - The feedback link must be descriptive enough in context. "Your feedback" works when preceded by "This is a new service –".
 - Make sure the feedback destination page is accessible.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Display the phase banner on every page of the service during alpha and beta.
@@ -159,11 +165,11 @@ The phase banner does not have error states. This is a presentational component.
 - Use the standard wording: "This is a new service – your feedback will help us to improve it."
 - Remove the phase banner when the service passes a live assessment.
 
-**Don't:**
-- Don't use custom phase labels other than "Alpha" and "Beta".
-- Don't omit the feedback link if a feedback mechanism exists.
-- Don't leave the phase banner on a live service indefinitely.
-- Don't use the phase banner for service announcements or other messages.
+**Do not:**
+- Do not use custom phase labels other than "Alpha" and "Beta".
+- Do not omit the feedback link if a feedback mechanism exists.
+- Do not leave the phase banner on a live service indefinitely.
+- Do not use the phase banner for service announcements or other messages.
 
 ## Related Components / Patterns
 

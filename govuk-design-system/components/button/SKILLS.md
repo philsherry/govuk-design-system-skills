@@ -2,15 +2,21 @@
 category: components
 description: A clickable element that triggers an action or submits a form.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "CTA"
+  - "action"
+  - "button"
+  - "start button"
+  - "submit"
+last-reviewed: "2026-04-03"
 name: Button
+source: "https://design-system.service.gov.uk/components/button/"
 ---
 
 # Button
 
 > A clickable element that triggers an action or submits a form.
 > Source: https://design-system.service.gov.uk/components/button/
----
 
 ## Overview
 
@@ -239,7 +245,7 @@ The inverse button (`govuk-button--inverse`) is only for use on dark or coloured
 
 Start buttons should only appear once per journey — on the introductory page before the transaction begins.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use a single primary button per page to show the main action.
@@ -248,12 +254,12 @@ Start buttons should only appear once per journey — on the introductory page b
 - Use the start button only on the first page of a transaction.
 - Write button labels as verbs: "Save and continue", "Confirm payment", "Delete account".
 
-**Don't:**
-- Don't use more than one primary button on the same page.
-- Don't use a warning button unless the action is genuinely destructive and irreversible.
-- Don't disable buttons to prevent form submission — show inline validation errors instead.
-- Don't use an inverse button on a white or light background.
-- Don't use a button when a standard text link is more appropriate.
+**Do not:**
+- Do not use more than one primary button on the same page.
+- Do not use a warning button unless the action is genuinely destructive and irreversible.
+- Do not disable buttons to prevent form submission — show inline validation errors instead.
+- Do not use an inverse button on a white or light background.
+- Do not use a button when a standard text link is more appropriate.
 
 ## Related Components / Patterns
 

@@ -2,16 +2,19 @@
 category: components
 description: The footer provides copyright, licensing and other information about your service and its owner.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "footer"
+  - "legal links"
+  - "page footer"
+last-reviewed: "2026-04-03"
 name: Footer
+source: "https://design-system.service.gov.uk/components/footer/"
 ---
 
 # Footer
 
 > The footer provides copyright, licensing and other information about your service and its owner.
 > Source: https://design-system.service.gov.uk/components/footer/
-
----
 
 ## Overview
 
@@ -351,7 +354,7 @@ The footer has two main sections:
 - The Crown copyright link points to the National Archives, which provides context for the copyright.
 - Footer links use the `govuk-footer__link` class which meets colour contrast requirements on the footer's dark grey background.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Include an accessibility statement link in the meta section on every service.
@@ -360,11 +363,11 @@ The footer has two main sections:
 - Keep footer navigation links concise and limit them to high-priority items.
 - Use the default copyright and licence text unless you have a specific reason to change it.
 
-**Don't:**
-- Don't use the footer as the primary navigation for your service.
-- Don't omit the footer from any page.
-- Don't add excessive numbers of links to the footer — use the header or service navigation for primary navigation.
-- Don't change the Open Government Licence text without authorisation.
+**Do not:**
+- Do not use the footer as the primary navigation for your service.
+- Do not omit the footer from any page.
+- Do not add excessive numbers of links to the footer — use the header or service navigation for primary navigation.
+- Do not change the Open Government Licence text without authorisation.
 
 ## Related Components / Patterns
 

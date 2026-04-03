@@ -2,16 +2,20 @@
 category: components
 description: Use the radios component when users can only select one option from a list.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "radio buttons"
+  - "radio group"
+  - "radios"
+  - "single select"
+last-reviewed: "2026-04-03"
 name: Radios
+source: "https://design-system.service.gov.uk/components/radios/"
 ---
 
 # Radios
 
 > Use the radios component when users can only select one option from a list.
 > Source: https://design-system.service.gov.uk/components/radios/
-
----
 
 ## Overview
 
@@ -356,7 +360,7 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 - Conditional content uses `aria-expanded` on the radio input and CSS to show/hide — not `display:none` — ensuring smooth and accessible transitions.
 - Avoid using disabled radios for options users might expect to be available — if an option is unavailable, explain why in hint text or exclude it.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always use a fieldset and legend for radio groups.
@@ -364,11 +368,11 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 - Order options logically — by likelihood, alphabetically, or by natural sequence.
 - Use "or" dividers and "None of the above" options when users genuinely may not fit the main options.
 
-**Don't:**
-- Don't use radios when users can select more than one option — use checkboxes.
-- Don't pre-select a radio option without a strong user research justification, as it biases responses.
-- Don't use radios for long option lists — consider a select or autocomplete.
-- Don't use more than one inline radio group per page.
+**Do not:**
+- Do not use radios when users can select more than one option — use checkboxes.
+- Do not pre-select a radio option without a strong user research justification, as it biases responses.
+- Do not use radios for long option lists — consider a select or autocomplete.
+- Do not use more than one inline radio group per page.
 
 ## Related Components / Patterns
 

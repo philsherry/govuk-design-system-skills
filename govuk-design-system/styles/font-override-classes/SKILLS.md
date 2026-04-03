@@ -2,8 +2,17 @@
 category: styles
 description: Utility classes for overriding font size and font weight on individual elements. These classes use `!important` for exceptional one-off adjustments, not as a general typography system.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "classes"
+  - "font"
+  - "font override classes"
+  - "font size override"
+  - "font weight"
+  - "override"
+  - "typography utility"
+last-reviewed: "2026-04-03"
 name: Font Override Classes
+source: "https://design-system.service.gov.uk/styles/font-override-classes/"
 ---
 
 # Font Override Classes
@@ -11,13 +20,9 @@ name: Font Override Classes
 > Utility classes for overriding font size and font weight on individual elements. These classes use `!important` for exceptional one-off adjustments, not as a general typography system.
 > Source: https://design-system.service.gov.uk/styles/font-override-classes/
 
----
-
 ## Overview
 
 Font override classes let you apply a specific font size or font weight from the GOV.UK type scale to any element without writing custom CSS. They use `!important` so they override component default styles. Use them for cases where a standard paragraph or heading class is not appropriate — for example, inside a custom component that needs a specific size from the scale.
-
----
 
 ## When to use this style
 
@@ -27,13 +32,9 @@ Use font override classes when you need to adjust the font size or weight of an 
 - Making a label or hint bold without changing its size.
 - Reducing the size of a number or data value inside a custom component.
 
----
-
 ## When not to use this style
 
 Do not use font override classes as a general typography system. Prefer the standard `govuk-heading-*`, `govuk-body-*`, and `govuk-caption-*` classes for headings and paragraphs. Do not use size override classes to fix a heading hierarchy problem — fix the structure instead.
-
----
 
 ## How it works
 
@@ -68,8 +69,6 @@ Both classes use `!important`.
 ### Important note on `!important`
 
 These classes use `!important` to guarantee they override any component-level styles. This means if you try to override them further in custom CSS without `!important`, your styles will not take effect. Use these classes with care and sparingly.
-
----
 
 ## Code Examples
 
@@ -114,8 +113,6 @@ These classes use `!important` to guarantee they override any component-level st
 </p>
 ```
 
----
-
 ## Accessibility
 
 - Font size override classes are responsive — the mobile value is always smaller. Ensure the mobile size remains legible, especially for `govuk-!-font-size-14` which renders at 14px.
@@ -123,9 +120,7 @@ These classes use `!important` to guarantee they override any component-level st
 - Ensure that reduced font sizes still meet the WCAG 4.5:1 contrast ratio against their background.
 - Do not use font override classes to create heading-like text that is not marked up as a heading — this deprives screen reader users of navigation landmarks.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use font override classes for targeted adjustments in custom components.
@@ -133,13 +128,11 @@ These classes use `!important` to guarantee they override any component-level st
 - Combine size and weight overrides when you need both.
 - Use the responsive sizes intentionally — check both mobile and desktop renders.
 
-**Don't:**
+**Do not:**
 - Use font override classes as a replacement for the standard heading and paragraph classes.
 - Apply more than one override class to the same element.
 - Use `govuk-!-font-weight-bold` alone to convey meaning.
 - Use large sizes (`govuk-!-font-size-80`) for body text — reserve them for numerical displays and hero content.
-
----
 
 ## Related Components / Patterns
 

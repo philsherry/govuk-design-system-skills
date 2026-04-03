@@ -2,8 +2,16 @@
 category: patterns
 description: Guide users through a complex journey made up of more than one task or stage, showing them where they are and what to do next.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "guided journey"
+  - "linear process"
+  - "navigation"
+  - "step"
+  - "step by step"
+  - "step by step navigation"
+last-reviewed: "2026-04-03"
 name: Step by step navigation
+source: "https://design-system.service.gov.uk/patterns/step-by-step-navigation/"
 subcategory: pages
 ---
 
@@ -11,8 +19,6 @@ subcategory: pages
 
 > Guide users through a complex journey made up of more than one task or stage, showing them where they are and what to do next.
 > Source: https://design-system.service.gov.uk/patterns/step-by-step-navigation/
-
----
 
 ## Overview
 
@@ -176,7 +182,7 @@ For transactional services, use the Task list component instead:
 - The `<ol>` element conveys the ordered sequence to assistive technology — do not rely on the numbered circles alone
 - Links within each step must have descriptive text — avoid "click here" or bare URLs
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use step by step navigation for complex multi-stage guidance journeys on GOV.UK
@@ -185,7 +191,7 @@ For transactional services, use the Task list component instead:
 - Highlight the current step so users know where they are
 - Use the Task list component inside transactional services instead
 
-**Don't:**
+**Do not:**
 - Use step by step navigation inside a transactional service — use Task list instead
 - Attempt to recreate this pattern from scratch with govuk-frontend HTML and CSS
 - Use it for simple linear journeys with 2 or 3 steps

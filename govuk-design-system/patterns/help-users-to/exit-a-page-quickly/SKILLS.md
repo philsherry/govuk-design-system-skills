@@ -2,8 +2,15 @@
 category: patterns
 description: Provide a prominent, keyboard-accessible button that takes users away from a sensitive page at once and replaces browser history to protect their safety.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "emergency exit"
+  - "escape page"
+  - "exit"
+  - "quickly"
+  - "safety"
+last-reviewed: "2026-04-03"
 name: Help users to exit a page quickly
+source: "https://design-system.service.gov.uk/patterns/exit-a-page-quickly/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +18,6 @@ subcategory: help-users-to
 
 > Provide a prominent, keyboard-accessible button that takes users away from a sensitive page at once and replaces browser history to protect their safety.
 > Source: https://design-system.service.gov.uk/patterns/exit-a-page-quickly/
-
----
 
 ## Overview
 
@@ -167,7 +172,7 @@ Include the component in the page template — the `beforeContent` block in the 
 - The component uses the GOV.UK warning button style, which meets colour contrast requirements.
 - Do not remove or change the visually hidden keyboard shortcut instruction text.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use this pattern whenever your service deals with topics that could put users at risk if discovered.
@@ -176,12 +181,12 @@ Include the component in the page template — the `beforeContent` block in the 
 - Test the exit functionality across a range of devices and browsers.
 - Include safeguarding guidance elsewhere in your service explaining the button's limitations (for example, that it may not clear all browser history).
 
-**Don't:**
-- Don't use this pattern on non-sensitive services where there is no safeguarding rationale.
-- Don't redirect to your own service's homepage — this may reveal the nature of the service.
-- Don't rely on the exit button as the sole safeguarding measure in your service.
-- Don't remove the keyboard shortcut — this is a critical accessibility and safety feature.
-- Don't change the button to a colour other than the GOV.UK warning button red without strong justification and accessibility testing.
+**Do not:**
+- Do not use this pattern on non-sensitive services where there is no safeguarding rationale.
+- Do not redirect to your own service's homepage — this may reveal the nature of the service.
+- Do not rely on the exit button as the sole safeguarding measure in your service.
+- Do not remove the keyboard shortcut — this is a critical accessibility and safety feature.
+- Do not change the button to a colour other than the GOV.UK warning button red without strong justification and accessibility testing.
 
 ## Related Components / Patterns
 

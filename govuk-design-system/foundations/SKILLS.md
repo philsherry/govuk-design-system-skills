@@ -2,16 +2,17 @@
 category: foundations
 description: Core principles, technology stack, and guidance for building GOV.UK services.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "gov.uk design system — foundations"
+last-reviewed: "2026-04-03"
 name: GOV.UK Design System — Foundations
+source: "https://design-system.service.gov.uk/get-started/"
 ---
 
 # GOV.UK Design System — Foundations
 
 > Core principles, technology stack, and guidance for building GOV.UK services.
 > Source: https://design-system.service.gov.uk/get-started/
-
----
 
 ## Overview
 
@@ -25,8 +26,6 @@ The Design System covers three areas:
 - **Components** — Reusable interface elements: buttons, form inputs, navigation, notifications.
 - **Patterns** — Higher-level guidance for recurring design problems, combining components with content and interaction guidance.
 
----
-
 ## When to use the Design System
 
 Use the GOV.UK Design System when:
@@ -37,8 +36,6 @@ Use the GOV.UK Design System when:
 - You need accessible, tested components without building them from scratch.
 - Your service faces assessment against the GOV.UK Service Standard — assessors expect you to use the Design System.
 
----
-
 ## When not to use the Design System
 
 Do not use the GOV.UK Design System when:
@@ -47,8 +44,6 @@ Do not use the GOV.UK Design System when:
 - Applying the GOV.UK crown logotype, GDS Transport typeface, or the `.govuk-` class namespace to non-government contexts — this violates HM Government identity guidelines.
 
 If your service is not on GOV.UK but must use accessible patterns like those in the Design System, you can use the underlying HTML structure and adapt the visual layer to your own brand.
-
----
 
 ## How it works
 
@@ -60,8 +55,6 @@ GOV.UK Frontend is the npm package that implements the Design System. It contain
 - GDS Transport font files and the GOV.UK crown image.
 
 The package does not depend on any JavaScript framework. It works alongside any server-side language or framework that can serve HTML. Node.js projects can use the Nunjucks macros; other environments use the plain HTML output.
-
----
 
 ## The 10 GOV.UK Design Principles
 
@@ -87,8 +80,6 @@ The GOV.UK Design Principles underpin all design and content decisions across go
 
 10. **Work in the open: it produces better outcomes** — Share code, designs, data, and learning. The more government works in the open, the better the outcomes for everyone.
 
----
-
 ## Technology Stack
 
 GOV.UK Frontend uses standard web technologies with minimal dependencies.
@@ -113,8 +104,6 @@ GOV.UK Frontend uses standard web technologies with minimal dependencies.
 | `govuk-frontend/govuk/all.mjs` | ES module entry point for all component JavaScript |
 | `govuk-frontend/dist/govuk/` | Pre-built CSS and JavaScript bundles |
 | `govuk-frontend/dist/govuk/assets/` | GDS Transport fonts and GOV.UK crown images |
-
----
 
 ## Installing GOV.UK Frontend
 
@@ -150,8 +139,6 @@ $govuk-assets-path: "/my-custom-assets-path/";
 <script type="module" src="/assets/govuk-frontend.bundle.min.js"></script>
 ```
 
----
-
 ## HTML vs Nunjucks
 
 You can use GOV.UK Frontend components as plain HTML or via Nunjucks macros.
@@ -181,8 +168,6 @@ You can use GOV.UK Frontend components as plain HTML or via Nunjucks macros.
 ```
 
 Macro names follow the pattern `govuk` + PascalCase component name. In the GOV.UK Prototype Kit, all macros are available globally without explicit imports.
-
----
 
 ## Initialising JavaScript
 
@@ -259,8 +244,6 @@ initAll({ scope: $container })
 
 All other components are CSS-only and require no JavaScript.
 
----
-
 ## Accessibility
 
 GOV.UK Frontend targets WCAG 2.2 Level-AA, the minimum the Public Sector Bodies Accessibility Regulations 2018 require.
@@ -276,9 +259,7 @@ All components:
 
 Teams are responsible for ensuring their use of components remains accessible. Custom CSS that changes colour, spacing, or visibility can break accessibility. Test with real assistive technologies before release.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do** use the Design System before building anything custom — the team has tested components for accessibility, and users of GOV.UK find them familiar to users of GOV.UK.
 
@@ -294,17 +275,15 @@ Teams are responsible for ensuring their use of components remains accessible. C
 
 **Do** copy font and image assets from `dist/govuk/assets/` to your public directory — do not serve them from `node_modules` at runtime.
 
-**Don't** change files inside `node_modules/govuk-frontend` — override via Sass variables and your own stylesheet instead.
+**Do not** change files inside `node_modules/govuk-frontend` — override via Sass variables and your own stylesheet instead.
 
-**Don't** call `initAll()` more than once on the same element — components will be double-initialised.
+**Do not** call `initAll()` more than once on the same element — components will be double-initialised.
 
-**Don't** remove the skip link — keyboard-only users and screen reader users need it.
+**Do not** remove the skip link — keyboard-only users and screen reader users need it.
 
-**Don't** use `.govuk-` class names, the GOV.UK crown, or the GDS Transport typeface on non-government services.
+**Do not** use `.govuk-` class names, the GOV.UK crown, or the GDS Transport typeface on non-government services.
 
-**Don't** use the GOV.UK Prototype Kit for real services or collect real user data in prototypes.
-
----
+**Do not** use the GOV.UK Prototype Kit for real services or collect real user data in prototypes.
 
 ## Related Components / Patterns
 

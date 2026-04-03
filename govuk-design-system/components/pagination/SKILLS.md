@@ -2,16 +2,20 @@
 category: components
 description: Use the pagination component to let users navigate between pages of results or a sequence of content pages.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "next page"
+  - "pagination"
+  - "paging"
+  - "previous page"
+last-reviewed: "2026-04-03"
 name: Pagination
+source: "https://design-system.service.gov.uk/components/pagination/"
 ---
 
 # Pagination
 
 > Use the pagination component to let users navigate between pages of results or a sequence of content pages.
 > Source: https://design-system.service.gov.uk/components/pagination/
-
----
 
 ## Overview
 
@@ -282,7 +286,7 @@ The pagination component does not have error states.
 - Ellipsis items have `aria-hidden="true"` so screen readers do not read them as interactive elements.
 - SVG icons in previous/next links use `aria-hidden="true"` and `focusable="false"`.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Show the total count of results or pages alongside pagination where possible (for example, "Showing 1–20 of 143 results").
@@ -290,10 +294,10 @@ The pagination component does not have error states.
 - Use ellipsis for long page sequences to keep the component manageable.
 - Provide meaningful `labelText` in block layout to help users understand the sequence.
 
-**Don't:**
-- Don't use pagination when all results fit comfortably on one page.
-- Don't use pagination for multi-step forms — use back links and step indicators.
-- Don't mix the results layout and the block layout on the same page.
+**Do not:**
+- Do not use pagination when all results fit comfortably on one page.
+- Do not use pagination for multi-step forms — use back links and step indicators.
+- Do not mix the results layout and the block layout on the same page.
 
 ## Related Components / Patterns
 

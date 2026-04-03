@@ -2,16 +2,22 @@
 category: components
 description: Use inset text to differentiate a block of text from the surrounding content, for example to draw attention to important information that is not a warning.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "aside"
+  - "callout"
+  - "highlighted text"
+  - "inset"
+  - "inset text"
+  - "text"
+last-reviewed: "2026-04-03"
 name: Inset Text
+source: "https://design-system.service.gov.uk/components/inset-text/"
 ---
 
 # Inset Text
 
 > Use inset text to differentiate a block of text from the surrounding content, for example to draw attention to important information that is not a warning.
 > Source: https://design-system.service.gov.uk/components/inset-text/
-
----
 
 ## Overview
 
@@ -123,7 +129,7 @@ Use `html` when the content requires markup such as links or more than one parag
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
-| `text` | string | Yes (or `html`) | Text content of the inset text block. If `html` is provided, `text` is ignored. |
+| `text` | string | Yes (or `html`) | Text content of the inset text block. If there is an `html` value, ignore `text`. |
 | `html` | string | Yes (or `text`) | HTML content of the inset text block. If provided, takes precedence over `text`. |
 | `id` | string | No | Optional `id` attribute added to the outer `<div>`. |
 | `classes` | string | No | Classes to add to the outer `<div>`. |
@@ -140,18 +146,18 @@ The inset text component is presentational and has no error states.
 - The component does not rely on colour alone as a differentiator; the border also provides a structural visual cue.
 - When providing an `id`, make sure the value is unique on the page. You can use it as a target for `aria-describedby` or same-page links.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use inset text for important supplementary context that is distinct from body text.
 - Keep content concise — inset text is most effective when used sparingly.
 - Use the `html` option when you need links, lists, or more than one paragraph inside the inset.
 
-**Don't:**
-- Don't use inset text for critical warnings or legal consequences — use warning text.
-- Don't nest inset text components inside one another.
-- Don't use more than one inset text block in close succession on the same page.
-- Don't use it purely for decoration or visual variety.
+**Do not:**
+- Do not use inset text for critical warnings or legal consequences — use warning text.
+- Do not nest inset text components inside one another.
+- Do not use more than one inset text block in close succession on the same page.
+- Do not use it purely for decoration or visual variety.
 
 ## Related Components / Patterns
 

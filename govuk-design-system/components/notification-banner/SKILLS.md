@@ -2,16 +2,22 @@
 category: components
 description: Use a notification banner to tell the user about something they need to know about, but that is not urgent enough to justify an error or warning message.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "alert"
+  - "banner"
+  - "banner message"
+  - "notice"
+  - "notification"
+  - "notification banner"
+last-reviewed: "2026-04-03"
 name: Notification Banner
+source: "https://design-system.service.gov.uk/components/notification-banner/"
 ---
 
 # Notification Banner
 
 > Use a notification banner to tell the user about something they need to know about, but that is not urgent enough to justify an error or warning message.
 > Source: https://design-system.service.gov.uk/components/notification-banner/
-
----
 
 ## Overview
 
@@ -159,10 +165,10 @@ By default, `type: "success"` moves focus to the banner on page load. Use `disab
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
-| `text` | string | Yes (or `html`) | Text content of the banner body. If `html` is provided, `text` is ignored. |
+| `text` | string | Yes (or `html`) | Text content of the banner body. If there is an `html` value, ignore `text`. |
 | `html` | string | Yes (or `text`) | HTML content of the banner body. Takes precedence over `text`. |
 | `titleText` | string | No | Title shown in the coloured header area. Defaults to `"Important"` or `"Success"` depending on type. |
-| `titleHtml` | string | No | HTML for the title. If provided, `titleText` is ignored. |
+| `titleHtml` | string | No | HTML for the title. If provided, ignore `titleText`. |
 | `titleHeadingLevel` | number | No | Heading level for the title element. Defaults to `2`. |
 | `type` | string | No | Set to `"success"` for the green success variant. Defaults to the blue important variant. |
 | `role` | string | No | Overrides the ARIA `role`. Defaults to `"region"` for default type, `"alert"` for success type. |
@@ -184,7 +190,7 @@ The notification banner does not have form error states. For validation errors u
 - Do not manually set `role="alert"` on the default/important variant — only the success variant should use `role="alert"`.
 - Keep banner content concise. Long banners or more than one banner on a page can disorient screen reader users.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the success variant to confirm a completed action after a page redirect.
@@ -192,11 +198,11 @@ The notification banner does not have form error states. For validation errors u
 - Include an actionable link when there is something the user can do in response.
 - Keep content concise and scannable.
 
-**Don't:**
-- Don't use the notification banner for form validation errors.
-- Don't display more than one notification banner on a page at the same time.
-- Don't use the success variant for neutral or informational messages.
-- Don't place large amounts of content or complex layouts inside the banner.
+**Do not:**
+- Do not use the notification banner for form validation errors.
+- Do not display more than one notification banner on a page at the same time.
+- Do not use the success variant for neutral or informational messages.
+- Do not place large amounts of content or complex layouts inside the banner.
 
 ## Related Components / Patterns
 

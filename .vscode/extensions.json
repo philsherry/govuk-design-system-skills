@@ -1,10 +1,12 @@
 {
-  "recommendations": [
-    "anthropic.claude-code",
-    "chrisalexander.genderdecoder",
-    "github.copilot-chat",
-    "simonwhatley.govuk-design-system-snippets",
-    "sst-dev.opencode",
-    "travisthetechie.write-good-linter"
-  ]
+	"recommendations": [
+		"anthropic.claude-code",
+		"chrisalexander.genderdecoder",
+		"DavidAnson.vscode-markdownlint",
+		"github.copilot-chat",
+		"simonwhatley.govuk-design-system-snippets",
+		"simonwhatley.nhsuk-design-system-snippets",
+		"sst-dev.opencode",
+		"travisthetechie.write-good-linter"
+	]
 }

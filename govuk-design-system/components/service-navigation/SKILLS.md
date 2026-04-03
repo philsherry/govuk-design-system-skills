@@ -2,16 +2,20 @@
 category: components
 description: Use the service navigation component to help users understand which service they are using and navigate between its sections.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "navigation"
+  - "service nav"
+  - "service navigation"
+  - "top navigation"
+last-reviewed: "2026-04-03"
 name: Service Navigation
+source: "https://design-system.service.gov.uk/components/service-navigation/"
 ---
 
 # Service Navigation
 
 > Use the service navigation component to help users understand which service they are using and navigate between its sections.
 > Source: https://design-system.service.gov.uk/components/service-navigation/
-
----
 
 ## Overview
 
@@ -224,7 +228,7 @@ The service navigation component does not have error states.
 - The mobile menu toggle button uses `aria-controls` pointing to the navigation `id` and `aria-expanded` managed by JavaScript.
 - When JavaScript is unavailable, the toggle button is not shown (using the `hidden` attribute) and navigation items are always visible.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Mark the active section with `active: true`.
@@ -232,11 +236,11 @@ The service navigation component does not have error states.
 - Keep the navigation list short — 5 or fewer items is ideal.
 - Place the service navigation between the GOV.UK header and main content on every page.
 
-**Don't:**
-- Don't use service navigation links to represent individual form steps.
-- Don't mark more than one navigation item as active at the same time.
-- Don't use service navigation as a replacement for the GOV.UK header.
-- Don't include navigation links irrelevant to the current service's sections.
+**Do not:**
+- Do not use service navigation links to represent individual form steps.
+- Do not mark more than one navigation item as active at the same time.
+- Do not use service navigation as a replacement for the GOV.UK header.
+- Do not include navigation links irrelevant to the current service's sections.
 
 ## Related Components / Patterns
 

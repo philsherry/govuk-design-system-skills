@@ -2,16 +2,21 @@
 category: components
 description: A form control that lets users select and upload one or more files.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "document upload"
+  - "file"
+  - "file input"
+  - "file upload"
+  - "upload"
+last-reviewed: "2026-04-03"
 name: File Upload
+source: "https://design-system.service.gov.uk/components/file-upload/"
 ---
 
 # File Upload
 
 > A form control that lets users select and upload one or more files.
 > Source: https://design-system.service.gov.uk/components/file-upload/
-
----
 
 ## Overview
 
@@ -280,7 +285,7 @@ Example: "The selected file must be smaller than 2MB"
 - The `accept` attribute hints to sighted users but browsers do not enforce it — always validate file types and sizes server-side.
 - After a failed upload attempt, show validation errors using the standard error summary and error message pattern.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use hint text to tell users what file types and size limits the service supports before they choose a file.
@@ -289,12 +294,12 @@ Example: "The selected file must be smaller than 2MB"
 - Use `label.isPageHeading: true` when the file upload is the only (or primary) element on the page.
 - Consider the user's connectivity — provide clear feedback if an upload is in progress.
 
-**Don't:**
-- Don't hide the native file input and replace it with a custom styled element unless you can guarantee full accessibility.
-- Don't rely on the `accept` attribute alone for validation — users can bypass it.
-- Don't use vague error messages like "Upload failed" — tell users precisely what went wrong.
-- Don't require users to upload files when they could enter the same information through a form instead.
-- Don't allow files larger than your infrastructure can handle without communicating the limit to users.
+**Do not:**
+- Do not hide the native file input and replace it with a custom styled element unless you can guarantee full accessibility.
+- Do not rely on the `accept` attribute alone for validation — users can bypass it.
+- Do not use vague error messages like "Upload failed" — tell users precisely what went wrong.
+- Do not require users to upload files when they could enter the same information through a form instead.
+- Do not allow files larger than your infrastructure can handle without communicating the limit to users.
 
 ## Related Components / Patterns
 

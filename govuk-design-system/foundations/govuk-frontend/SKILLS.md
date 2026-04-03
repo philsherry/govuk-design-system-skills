@@ -2,16 +2,26 @@
 category: foundations
 description: The npm package that provides the CSS, JavaScript, fonts, and Nunjucks macros for GOV.UK Design System components. Every GOV.UK service and prototype depends on it.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "CSS"
+  - "JavaScript"
+  - "Nunjucks"
+  - "Sass"
+  - "frontend"
+  - "gov.uk frontend"
+  - "govuk"
+  - "installation"
+  - "npm package"
+  - "setup"
+last-reviewed: "2026-04-03"
 name: GOV.UK Frontend
+source: "https://frontend.design-system.service.gov.uk/"
 ---
 
 # GOV.UK Frontend
 
 > The npm package that provides the CSS, JavaScript, fonts, and Nunjucks macros for GOV.UK Design System components. Every GOV.UK service and prototype depends on it.
 > Source: https://frontend.design-system.service.gov.uk/
-
----
 
 ## Overview
 
@@ -20,8 +30,6 @@ GOV.UK Frontend is the npm package that powers the GOV.UK Design System. It prov
 When you install GOV.UK Frontend, you get everything you need to build GOV.UK-compliant pages: a page template, a responsive grid, typography styles, spacing utilities, colour variables, and every component from accordions to warning text. The Prototype Kit includes it as a dependency, so prototypes get it automatically. Production services install it directly via npm.
 
 GOV.UK Frontend and the GOV.UK Design System are separate but related. The Design System is the documentation — the guidance, patterns, and examples. GOV.UK Frontend is the implementation — the code you install and use. The Design System tells you what to build; GOV.UK Frontend gives you the building blocks.
-
----
 
 ## When to use
 
@@ -34,8 +42,6 @@ GOV.UK Frontend and the GOV.UK Design System are separate but related. The Desig
 
 - Internal tools that are not part of a GOV.UK service and do not need to meet the GOV.UK Service Standard. Even then, consider using it for consistency.
 - Projects where the GOV.UK brand and Crown copyright do not apply (e.g. non-government projects). GDS Transport font licensing covers gov.uk domains only.
-
----
 
 ## Installation
 
@@ -58,8 +64,6 @@ If you do not use npm, download the precompiled CSS and JavaScript from the GOV.
 ### Prototype Kit
 
 The Prototype Kit installs GOV.UK Frontend automatically. You do not need to install it separately. The kit also handles Nunjucks macro imports, asset paths, and JavaScript initialisation for you.
-
----
 
 ## Importing CSS
 
@@ -114,8 +118,6 @@ Link the minified CSS in your HTML `<head>`:
 ### Dart Sass
 
 GOV.UK Frontend requires Dart Sass (not the deprecated Node Sass). To suppress deprecation warnings from GOV.UK Frontend's dependencies, pass the `--quiet-deps` flag on the command line or set `quietDeps: true` in the JavaScript API options.
-
----
 
 ## Importing JavaScript
 
@@ -255,8 +257,6 @@ If your Content Security Policy blocks inline scripts, allow the body class scri
 - **Hash (recommended):** Add `sha256-GUQ5ad8JK5KmEWmROf3LZd9ge94daqNvd8xy9YS1iDw=` to your `script-src` directive
 - **Nonce:** Set the `cspNonce` variable in your Nunjucks context, and the page template adds nonce attributes automatically
 
----
-
 ## Importing fonts and images
 
 ### Serve from node_modules (recommended)
@@ -295,15 +295,13 @@ $govuk-fonts-path: "/static/fonts/";
 @import "govuk-frontend/dist/govuk";
 ```
 
----
-
 ## Sass API reference
 
 GOV.UK Frontend exposes a comprehensive Sass API. Use these functions and mixins in your custom stylesheets instead of hard-coding values — they ensure your custom styles stay consistent with the design system and respond as expected at breakpoints.
 
 ### Spacing
 
-The most commonly used function. Returns a pixel value from the GOV.UK spacing scale (0-9):
+The most commonly used function. Returns a pixel value from the GOV.UK spacing scale (0 to 9):
 
 ```scss
 .my-element {
@@ -521,8 +519,6 @@ $govuk-global-styles: true;
 @import "govuk-frontend/dist/govuk";
 ```
 
----
-
 ## Configuration
 
 ### Via Nunjucks macros
@@ -558,8 +554,6 @@ initAll({
 
 The precedence order (highest to lowest): HTML data attributes, JavaScript config, Nunjucks defaults.
 
----
-
 ## Versioning and updates
 
 GOV.UK Frontend follows semantic versioning:
@@ -588,8 +582,6 @@ npm install govuk-frontend@5.8.0
 
 After updating, check the changelog for any changes that affect your service. For major version updates, follow the migration guide on the GOV.UK Frontend documentation site.
 
----
-
 ## How GOV.UK Frontend fits into the wider ecosystem
 
 ### GOV.UK Design System
@@ -604,8 +596,6 @@ The Prototype Kit installs GOV.UK Frontend as a dependency and configures everyt
 
 Point 13 of the GOV.UK Service Standard requires services to "use and contribute to open standards, common components and patterns". GOV.UK Frontend is the common component library that satisfies this requirement. Service assessors expect to see GOV.UK Frontend class names and markup patterns in your code.
 
----
-
 ## Accessibility
 
 - GOV.UK Frontend components meet WCAG 2.2 Level-AA. If you use the components as documented, your implementation inherits this accessibility work.
@@ -614,9 +604,7 @@ Point 13 of the GOV.UK Service Standard requires services to "use and contribute
 - JavaScript components degrade gracefully. When JavaScript is unavailable, the HTML remains functional — accordions show all content expanded, character counts hide the counter, and buttons work as standard `<button>` elements.
 - The `govuk-frontend-supported` body class ensures components only enhance when the browser supports ES modules. Older browsers get the non-JavaScript experience.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 
@@ -627,16 +615,14 @@ Point 13 of the GOV.UK Service Standard requires services to "use and contribute
 - Test your service without JavaScript to verify progressive enhancement works.
 - Check the changelog before updating, and always before major versions.
 
-**Don't:**
+**Do not:**
 
-- Don't override GOV.UK Frontend CSS with `!important` unless there is no other option. If you need to change a component's appearance, check whether there is a supported modifier class or Sass variable first.
-- Don't copy-paste component CSS from browser DevTools. Use the Sass imports instead — they include responsive behaviour and print styles that DevTools does not show.
-- Don't hard-code spacing values. Use `govuk-spacing()` so your custom styles match the design system scale.
-- Don't hard-code colours. Use `govuk-colour()` or `govuk-functional-colour()` so your styles stay consistent if the palette changes.
-- Don't forget the `data-module` attribute on interactive components. Without it, JavaScript initialisation does nothing.
-- Don't use Node Sass. The Node Sass maintainers deprecated it, and it does not support modern Sass features that GOV.UK Frontend requires. Use Dart Sass.
-
----
+- Do not override GOV.UK Frontend CSS with `!important` unless there is no other option. If you need to change a component's appearance, check whether there is a supported modifier class or Sass variable first.
+- Do not copy-paste component CSS from browser DevTools. Use the Sass imports instead — they include responsive behaviour and print styles that DevTools does not show.
+- Do not hard-code spacing values. Use `govuk-spacing()` so your custom styles match the design system scale.
+- Do not hard-code colours. Use `govuk-colour()` or `govuk-functional-colour()` so your styles stay consistent if the palette changes.
+- Do not forget the `data-module` attribute on interactive components. Without it, JavaScript initialisation does nothing.
+- Do not use Node Sass. The Node Sass maintainers deprecated it, and it does not support modern Sass features that GOV.UK Frontend requires. Use Dart Sass.
 
 ## Related
 

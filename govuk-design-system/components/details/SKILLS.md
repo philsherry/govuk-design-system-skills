@@ -2,15 +2,20 @@
 category: components
 description: A disclosure widget that lets users reveal extra content on demand.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "details"
+  - "disclosure"
+  - "expandable"
+  - "show hide"
+last-reviewed: "2026-04-03"
 name: Details
+source: "https://design-system.service.gov.uk/components/details/"
 ---
 
 # Details
 
 > A disclosure widget that lets users reveal extra content on demand.
 > Source: https://design-system.service.gov.uk/components/details/
----
 
 ## Overview
 
@@ -171,7 +176,7 @@ Do not place interactive elements (links, buttons, form inputs) inside the summa
 
 Ensure the details component does not contain essential form instructions or error information that users might miss if they do not expand it.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use clear, specific summary text that tells users what they will find inside.
@@ -179,11 +184,11 @@ Ensure the details component does not contain essential form instructions or err
 - Use `html` content when the body includes lists, links, or more than one paragraph.
 - Test with keyboard navigation — the summary is natively keyboard accessible via Enter and Space.
 
-**Don't:**
-- Don't hide critical information inside a details component.
-- Don't use more than one details component when an accordion is more appropriate.
-- Don't use it as an alternative to inset text or warning text for important notices.
-- Don't use nested details elements — the design becomes difficult to use and understand.
+**Do not:**
+- Do not hide critical information inside a details component.
+- Do not use more than one details component when an accordion is more appropriate.
+- Do not use it as an alternative to inset text or warning text for important notices.
+- Do not use nested details elements — the design becomes difficult to use and understand.
 
 ## Related Components / Patterns
 

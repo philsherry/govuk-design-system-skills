@@ -2,8 +2,14 @@
 category: styles
 description: GOV.UK Frontend provides three paragraph size classes. The default `govuk-body` class (19px desktop) works for most body text. `govuk-body-l` is for lead paragraphs and `govuk-body-s` for supporting or secondary text.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "body copy"
+  - "body text"
+  - "paragraph text"
+  - "paragraphs"
+last-reviewed: "2026-04-03"
 name: Paragraphs
+source: "https://design-system.service.gov.uk/styles/typography/"
 ---
 
 # Paragraphs
@@ -11,27 +17,19 @@ name: Paragraphs
 > GOV.UK Frontend provides three paragraph size classes. The default `govuk-body` class (19px desktop) works for most body text. `govuk-body-l` is for lead paragraphs and `govuk-body-s` for supporting or secondary text.
 > Source: https://design-system.service.gov.uk/styles/typography/
 
----
-
 ## Overview
 
 Paragraph styles in GOV.UK Frontend control font size, line height, and bottom margin for blocks of body text. Three classes cover three size points on the GOV.UK type scale. All paragraph classes are responsive — they use smaller values on mobile and larger on tablet and above.
 
 Use the default paragraph class `govuk-body` for most body text in a service.
 
----
-
 ## When to use this style
 
 Use `govuk-body` for all standard body text. Use `govuk-body-l` as a lead or introductory paragraph at the top of a page to draw the user into the content. Use `govuk-body-s` for secondary or supporting information such as hints, metadata, or captions where reduced visual prominence is appropriate.
 
----
-
 ## When not to use this style
 
 Do not use `govuk-body-s` for large blocks of running text — 16px can be harder to read at length. Do not use paragraph classes on elements that are not `<p>` tags, unless the semantics are genuinely appropriate.
-
----
 
 ## How it works
 
@@ -58,8 +56,6 @@ Use the spacing override class `govuk-!-margin-bottom-0` to remove the bottom ma
 ### Inset text
 
 When you need to draw attention to a paragraph of content without it being an error, warning, or callout box, use the inset text component rather than a styled paragraph.
-
----
 
 ## Code Examples
 
@@ -115,8 +111,6 @@ To make a standard-size paragraph bold without changing its size, use the font w
 </p>
 ```
 
----
-
 ## Accessibility
 
 - Use `<p>` elements for paragraph text. Do not use `<div>` or `<span>` elements styled to look like paragraphs.
@@ -124,9 +118,7 @@ To make a standard-size paragraph bold without changing its size, use the font w
 - Do not use colour alone to convey meaning within a paragraph — always pair colour with text or another visual indicator.
 - Avoid justified text alignment, which creates uneven word spacing that is harder to read for users with dyslexia.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `govuk-body` as the default for all standard body text.
@@ -134,13 +126,11 @@ To make a standard-size paragraph bold without changing its size, use the font w
 - Use `govuk-body-s` for hints, captions, and supporting information where smaller size is intentional.
 - Remove bottom margin from the last paragraph in a component using `govuk-!-margin-bottom-0`.
 
-**Don't:**
+**Do not:**
 - Use `govuk-body-s` for long blocks of running text.
 - Apply more than one paragraph size class to the same element.
 - Use paragraph classes on non-`<p>` elements without a semantic reason.
 - Override the default line height or letter spacing.
-
----
 
 ## Related Components / Patterns
 

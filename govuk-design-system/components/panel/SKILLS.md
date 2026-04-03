@@ -2,16 +2,20 @@
 category: components
 description: Use the panel component to display a prominent confirmation message at the end of a transaction, for example to confirm the service received an application.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "confirmation panel"
+  - "green panel"
+  - "panel"
+  - "success panel"
+last-reviewed: "2026-04-03"
 name: Panel
+source: "https://design-system.service.gov.uk/components/panel/"
 ---
 
 # Panel
 
 > Use the panel component to display a prominent confirmation message at the end of a transaction, for example to confirm the service received an application.
 > Source: https://design-system.service.gov.uk/components/panel/
-
----
 
 ## Overview
 
@@ -142,10 +146,10 @@ Use `titleHtml` when the title requires markup, for example a line break.
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
-| `titleText` | string | Yes (or `titleHtml`) | The heading text of the panel. If `titleHtml` is provided, `titleText` is ignored. |
+| `titleText` | string | Yes (or `titleHtml`) | The heading text of the panel. If `titleHtml` has a value, ignore `titleText`. |
 | `titleHtml` | string | Yes (or `titleText`) | HTML for the panel heading. Takes precedence over `titleText`. |
 | `headingLevel` | integer | No | Heading level for the title element. Defaults to `1`. |
-| `text` | string | No | Text content for the panel body. If `html` is provided, `text` is ignored. |
+| `text` | string | No | Text content for the panel body. If there is an `html` value, ignore `text`. |
 | `html` | string | No | HTML content for the panel body. Takes precedence over `text`. |
 | `classes` | string | No | Classes to add to the outer `<div>`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the outer `<div>`. |
@@ -162,7 +166,7 @@ The panel component does not have error states. This is a confirmation component
 - The green background with white text meets WCAG 2.1 AA colour contrast requirements.
 - Do not rely on the green colour alone to communicate success — the heading text must also confirm the outcome.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the panel only on confirmation pages at the end of a transaction.
@@ -170,11 +174,11 @@ The panel component does not have error states. This is a confirmation component
 - Include a reference number in the body if the service generates one.
 - Keep the heading specific about what the user completed.
 
-**Don't:**
-- Don't use the panel for partial success states or mid-journey confirmations.
-- Don't use it for errors or warnings.
-- Don't put large amounts of text in the panel body — keep it to a reference number or brief detail.
-- Don't use more than one panel per page.
+**Do not:**
+- Do not use the panel for partial success states or mid-journey confirmations.
+- Do not use it for errors or warnings.
+- Do not put large amounts of text in the panel body — keep it to a reference number or brief detail.
+- Do not use more than one panel per page.
 
 ## Related Components / Patterns
 

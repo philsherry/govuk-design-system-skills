@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern to collect UK bank account details, such as sort code and account number, when your service needs to make payments to users.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "account number"
+  - "bank"
+  - "bank account"
+  - "bank details"
+  - "details"
+  - "sort code"
+last-reviewed: "2026-04-03"
 name: Bank Details
+source: "https://design-system.service.gov.uk/patterns/bank-details/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +19,6 @@ subcategory: ask-users-for
 
 > Use this pattern to collect UK bank account details, such as sort code and account number, when your service needs to make payments to users.
 > Source: https://design-system.service.gov.uk/patterns/bank-details/
-
----
 
 ## Overview
 
@@ -235,7 +241,7 @@ You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checki
 - Hints and error messages must link to their input via `aria-describedby`.
 - Avoid using placeholder text to convey format information — use a hint instead.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Explain why you need bank details and what you will use them for.
@@ -246,12 +252,12 @@ You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checki
 - Mark the roll number field as optional — "(if you have one)".
 - Tell users where they can find their sort code and account number (for example, on their bank card or statement).
 
-**Don't:**
-- Don't use `type="number"` for sort code or account number fields.
-- Don't use the three-box pattern (three separate inputs for each pair of sort code digits) — a single input is more accessible and flexible.
-- Don't collect bank details unless you have a clear need and appropriate legal basis.
-- Don't validate the sort code/account number combination without informing users what went wrong.
-- Don't store raw bank details in session logs or analytics.
+**Do not:**
+- Do not use `type="number"` for sort code or account number fields.
+- Do not use the three-box pattern (three separate inputs for each pair of sort code digits) — a single input is more accessible and flexible.
+- Do not collect bank details unless you have a clear need and appropriate legal basis.
+- Do not validate the sort code/account number combination without informing users what went wrong.
+- Do not store raw bank details in session logs or analytics.
 
 ## Related Components / Patterns
 

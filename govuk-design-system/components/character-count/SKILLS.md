@@ -2,15 +2,22 @@
 category: components
 description: A textarea with a live character or word count that helps users know how much they can type.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "character"
+  - "character count"
+  - "character limit"
+  - "count"
+  - "maxlength"
+  - "word count"
+last-reviewed: "2026-04-03"
 name: Character Count
+source: "https://design-system.service.gov.uk/components/character-count/"
 ---
 
 # Character Count
 
 > A textarea with a live character or word count that helps users know how much they can type.
 > Source: https://design-system.service.gov.uk/components/character-count/
----
 
 ## Overview
 
@@ -194,7 +201,7 @@ When using `threshold`, the count message is visually hidden until the threshold
 
 Do not add the `maxlength` HTML attribute directly to the `<textarea>` element — this prevents users from pasting over-length content and seeing the error state, breaking the expected character count experience.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `maxlength` unless you specifically need a word count.
@@ -202,11 +209,11 @@ Do not add the `maxlength` HTML attribute directly to the `<textarea>` element �
 - Write the label as a clear question or instruction.
 - Check the length server-side and return an error message if the user submits over the limit.
 
-**Don't:**
-- Don't add the HTML `maxlength` attribute directly to the textarea — this conflicts with the component's intended behaviour.
-- Don't use both `maxlength` and `maxwords` together.
-- Don't use this component for `<input type="text">` — it works with `<textarea>` only.
-- Don't impose a character limit unless there is a genuine technical or policy reason.
+**Do not:**
+- Do not add the HTML `maxlength` attribute directly to the textarea — this conflicts with the component's intended behaviour.
+- Do not use both `maxlength` and `maxwords` together.
+- Do not use this component for `<input type="text">` — it works with `<textarea>` only.
+- Do not impose a character limit unless there is a genuine technical or policy reason.
 
 ## Related Components / Patterns
 

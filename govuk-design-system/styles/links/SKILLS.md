@@ -2,8 +2,14 @@
 category: styles
 description: GOV.UK Frontend styles links with an underline, the GOV.UK link blue, and a distinct visited state in purple. Modifier classes control underline visibility, visited state, colour inversion, and muted appearance for secondary links.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "hyperlinks"
+  - "link styles"
+  - "links"
+  - "visited links"
+last-reviewed: "2026-04-03"
 name: Links
+source: "https://design-system.service.gov.uk/styles/typography/"
 ---
 
 # Links
@@ -11,27 +17,19 @@ name: Links
 > GOV.UK Frontend styles links with an underline, the GOV.UK link blue, and a distinct visited state in purple. Modifier classes control underline visibility, visited state, colour inversion, and muted appearance for secondary links.
 > Source: https://design-system.service.gov.uk/styles/typography/
 
----
-
 ## Overview
 
 Links in GOV.UK Frontend use the `govuk-link` class. By default links are blue (`#1d70b8`), underlined, and turn purple (`#4c2c92`) after a user visits them. On hover the colour darkens to `#003078`. On focus, links receive a yellow focus indicator with a black outline to meet WCAG contrast requirements.
 
 GOV.UK Frontend provides modifier classes for common link variants: muted (secondary), no underline, no visited state, and inverse (white on dark backgrounds).
 
----
-
 ## When to use this style
 
 Apply `govuk-link` to all `<a>` elements in body content, navigation, and components where links appear inline with text. Use modifier classes only when there is a clear user need — for example, using `govuk-link--no-visited-state` when tracking visited state would confuse users (such as in a navigation menu).
 
----
-
 ## When not to use this style
 
 Do not style buttons as links or links as buttons. If an action submits data or triggers a process, use a button. If an action navigates to a new page or resource, use a link. Do not remove the underline from inline body text links — users who cannot distinguish colour need underlines.
-
----
 
 ## How it works
 
@@ -105,8 +103,6 @@ Avoid opening links in a new tab or window without warning the user. If you must
 
 Do not use `target="_blank"` without informing the user.
 
----
-
 ## Code Examples
 
 ### Inline link in body text
@@ -167,8 +163,6 @@ Do not use `target="_blank"` without informing the user.
 </p>
 ```
 
----
-
 ## Accessibility
 
 - Users who cannot distinguish colour need underlined links in body text. Only remove underlines in contexts where the link nature is unambiguous (e.g. navigation lists, breadcrumbs).
@@ -177,9 +171,7 @@ Do not use `target="_blank"` without informing the user.
 - If a link opens in a new tab, inform the user in the link text so they are not disoriented.
 - Visited link colour (`#4c2c92`) helps users understand which pages they have already seen. Disable the visited state only when it would genuinely mislead.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Apply `govuk-link` to all `<a>` elements in body content.
@@ -187,14 +179,12 @@ Do not use `target="_blank"` without informing the user.
 - Include "(opens in new tab)" in the link text and `rel="noreferrer noopener"` for external links that open in a new tab.
 - Write descriptive link text that makes sense out of context.
 
-**Don't:**
+**Do not:**
 - Remove link underlines from inline body text links.
 - Style a `<button>` to look like a link or a `<a>` to look like a button.
 - Use `govuk-link--no-underline` in contexts where the link nature is unambiguous without underlines (for example, navigation lists or breadcrumbs).
 - Use `target="_blank"` without informing the user.
 - Override the focus styles.
-
----
 
 ## Related Components / Patterns
 

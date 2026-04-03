@@ -2,8 +2,17 @@
 category: patterns
 description: Use this pattern to ask users for their National Insurance number, using a single text input with the correct format hint and validation.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "NI number"
+  - "NINO"
+  - "insurance"
+  - "national"
+  - "national insurance"
+  - "national insurance numbers"
+  - "numbers"
+last-reviewed: "2026-04-03"
 name: National Insurance Numbers
+source: "https://design-system.service.gov.uk/patterns/national-insurance-numbers/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +20,6 @@ subcategory: ask-users-for
 
 > Use this pattern to ask users for their National Insurance number, using a single text input with the correct format hint and validation.
 > Source: https://design-system.service.gov.uk/patterns/national-insurance-numbers/
-
----
 
 ## Overview
 
@@ -234,7 +241,7 @@ Include an example in the error message if it helps users understand the format:
 - Associate hint text and error messages with the input using `aria-describedby`.
 - Use the `govuk-input--width-10` class to set an appropriate width that signals the expected input length to users.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use a single text input for the National Insurance number.
@@ -245,12 +252,12 @@ Include an example in the error message if it helps users understand the format:
 - Set `spellcheck="false"`.
 - Use `govuk-input--width-10` to size the input appropriately.
 
-**Don't:**
-- Don't use separate inputs for each part of the NINO.
-- Don't allow browser autofill — use `autocomplete="off"`.
-- Don't reject NINOs that use different spacing or capitalisation.
-- Don't display the full NINO on screen after submission — mask it.
-- Don't collect a NINO without a clear legal or operational justification.
+**Do not:**
+- Do not use separate inputs for each part of the NINO.
+- Do not allow browser autofill — use `autocomplete="off"`.
+- Do not reject NINOs that use different spacing or capitalisation.
+- Do not display the full NINO on screen after submission — mask it.
+- Do not collect a NINO without a clear legal or operational justification.
 
 ## Related Components / Patterns
 

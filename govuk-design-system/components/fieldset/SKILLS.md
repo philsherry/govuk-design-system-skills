@@ -2,15 +2,20 @@
 category: components
 description: A wrapper that groups related form inputs together with a shared legend.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "fieldset"
+  - "form group"
+  - "grouped inputs"
+  - "legend"
+last-reviewed: "2026-04-03"
 name: Fieldset
+source: "https://design-system.service.gov.uk/components/fieldset/"
 ---
 
 # Fieldset
 
 > A wrapper that groups related form inputs together with a shared legend.
 > Source: https://design-system.service.gov.uk/components/fieldset/
----
 
 ## Overview
 
@@ -231,7 +236,7 @@ Do not use `aria-labelledby` to associate a heading with a fieldset — this has
 
 For date inputs, add `role="group"` to the fieldset via the `role` parameter to clarify the semantic relationship.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use a fieldset with a legend for any group of two or more related inputs (checkboxes, radios, date inputs).
@@ -239,11 +244,11 @@ For date inputs, add `role="group"` to the fieldset via the `role` parameter to 
 - Use the correct legend size class to match the surrounding typographic hierarchy.
 - Use `describedBy` to link any hint or error message `id`s to the fieldset.
 
-**Don't:**
-- Don't use a fieldset for a single text input with its own `<label>`.
-- Don't omit the legend — an empty or missing legend removes important context from assistive technology users.
-- Don't use a fieldset purely for visual styling — it has semantic meaning.
-- Don't place a fieldset inside another fieldset unless the inner group genuinely has its own legend.
+**Do not:**
+- Do not use a fieldset for a single text input with its own `<label>`.
+- Do not omit the legend — an empty or missing legend removes important context from assistive technology users.
+- Do not use a fieldset purely for visual styling — it has semantic meaning.
+- Do not place a fieldset inside another fieldset unless the inner group genuinely has its own legend.
 
 ## Related Components / Patterns
 

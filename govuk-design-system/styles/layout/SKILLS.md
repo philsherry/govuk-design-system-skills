@@ -2,8 +2,15 @@
 category: styles
 description: GOV.UK Frontend provides a responsive grid system and width container that centres page content to a maximum of 960px. Utility classes define columns, which stack to full width on mobile.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "columns"
+  - "container"
+  - "grid"
+  - "layout"
+  - "responsive layout"
+last-reviewed: "2026-04-03"
 name: Layout
+source: "https://design-system.service.gov.uk/styles/layout/"
 ---
 
 # Layout
@@ -11,25 +18,17 @@ name: Layout
 > GOV.UK Frontend provides a responsive grid system and width container that centres page content to a maximum of 960px. Utility classes define columns, which stack to full width on mobile.
 > Source: https://design-system.service.gov.uk/styles/layout/
 
----
-
 ## Overview
 
 The GOV.UK layout system uses a 12-column grid. It gives you a fixed-width container, a responsive grid row, and a set of column classes that cover the most common fractional widths. The grid collapses to full-width single-column layout at mobile viewport sizes, meaning content is always readable without horizontal scrolling.
-
----
 
 ## When to use this style
 
 Use the width container and grid on every page of your service to keep content aligned to GOV.UK conventions. Use grid columns whenever you need to display content side by side, such as a form column with a sidebar.
 
----
-
 ## When not to use this style
 
 Do not use the grid system inside components that already manage their own internal layout. Do not create custom grid columns unless none of the provided classes fit your needs — first check whether a layout change or different content structure would work better.
-
----
 
 ## How it works
 
@@ -95,8 +94,6 @@ Offset classes push a column to the right without filling the space to its left:
 ```
 
 Available offsets follow the same fractional naming: `--offset-one-quarter`, `--offset-one-third`, `--offset-one-half`, `--offset-two-thirds`, `--offset-three-quarters`.
-
----
 
 ## Code Examples
 
@@ -181,17 +178,13 @@ You can nest grid rows inside columns. Each nested row starts a new 12-column gr
 </div>
 ```
 
----
-
 ## Accessibility
 
 - Column layout is purely presentational. Reading order in the HTML source must match the logical reading order, because screen readers and keyboard users navigate in DOM order regardless of visual positioning.
 - Do not use grid columns to reorder content visually when that would create a mismatch with the DOM order — this causes confusion for screen reader users.
 - Ensure colour contrast meets WCAG AA requirements regardless of the column layout chosen.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `govuk-width-container` on every page to maintain consistent maximum width and horizontal margins.
@@ -199,13 +192,11 @@ You can nest grid rows inside columns. Each nested row starts a new 12-column gr
 - Ensure the HTML source order reflects the logical reading order.
 - Use a two-thirds/one-third split for standard form pages with a related content sidebar.
 
-**Don't:**
+**Do not:**
 - Create custom column widths using ad-hoc inline styles or one-off utility classes.
 - Use the grid to reorder content in a way that differs from the DOM order.
 - Nest grid rows deeply — keep layouts as flat as possible.
 - Apply `govuk-grid-column-*` classes outside a `govuk-grid-row` container.
-
----
 
 ## Related Components / Patterns
 

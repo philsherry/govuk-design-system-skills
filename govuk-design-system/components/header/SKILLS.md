@@ -2,16 +2,20 @@
 category: components
 description: The GOV.UK header shows users they are on GOV.UK and helps them navigate.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "banner"
+  - "header"
+  - "navigation"
+  - "service header"
+last-reviewed: "2026-04-03"
 name: Header
+source: "https://design-system.service.gov.uk/components/header/"
 ---
 
 # Header
 
 > The GOV.UK header shows users they are on GOV.UK and helps them navigate.
 > Source: https://design-system.service.gov.uk/components/header/
-
----
 
 ## Overview
 
@@ -309,7 +313,7 @@ The header always appears at the top of every page above the main content, the p
 - When JavaScript is not available, the full navigation shows and the menu button stays hidden (the button has the `hidden` attribute, which JavaScript removes on init).
 - The header uses `data-module="govuk-header"` to activate GOV.UK Frontend JavaScript for the mobile menu toggle.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Include the header on every page of the service.
@@ -318,12 +322,12 @@ The header always appears at the top of every page above the main content, the p
 - Set a meaningful `navigationLabel` and `menuButtonLabel` if the defaults are not clear enough for your service.
 - Use `serviceName` for the name of the specific service, not the organisation.
 
-**Don't:**
-- Don't add more than 6–8 navigation items in the header — consider the [Service navigation](../service-navigation/SKILLS.md) component for complex navigation.
-- Don't change the GOV.UK crown logo or remove the "GOV.UK" logotype text.
-- Don't use the header for non-government services.
-- Don't put content other than the service name and navigation in the header.
-- Don't omit `homepageUrl` on the main GOV.UK header — always link the crown to the homepage.
+**Do not:**
+- Do not add more than 6–8 navigation items in the header — consider the [Service navigation](../service-navigation/SKILLS.md) component for complex navigation.
+- Do not change the GOV.UK crown logo or remove the "GOV.UK" logotype text.
+- Do not use the header for non-government services.
+- Do not put content other than the service name and navigation in the header.
+- Do not omit `homepageUrl` on the main GOV.UK header — always link the crown to the homepage.
 
 ## Related Components / Patterns
 

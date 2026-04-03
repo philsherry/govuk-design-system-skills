@@ -2,15 +2,22 @@
 category: components
 description: A component for collecting a date in day, month, and year fields.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "date"
+  - "date field"
+  - "date input"
+  - "date picker"
+  - "day month year"
+  - "input"
+last-reviewed: "2026-04-03"
 name: Date Input
+source: "https://design-system.service.gov.uk/components/date-input/"
 ---
 
 # Date Input
 
 > A component for collecting a date in day, month, and year fields.
 > Source: https://design-system.service.gov.uk/components/date-input/
----
 
 ## Overview
 
@@ -332,7 +339,7 @@ The `autocomplete` attributes enable browser autofill for known date types, redu
 
 Avoid using `type="number"` for date fields — it introduces spin controls, disallows leading zeros, and behaves inconsistently across browsers and assistive technologies.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `namePrefix` to automatically generate consistent `name` and `id` attributes.
@@ -340,11 +347,11 @@ Avoid using `type="number"` for date fields — it introduces spin controls, dis
 - Only highlight the specific fields that are invalid, not the entire group.
 - Use appropriate `autocomplete` values to support browser autofill.
 
-**Don't:**
-- Don't use `type="number"` for day, month, or year inputs.
-- Don't validate dates in the browser using JavaScript alone — always validate server-side.
-- Don't use a date picker (calendar widget) for memorable dates.
-- Don't omit the fieldset and legend when displaying all three inputs together.
+**Do not:**
+- Do not use `type="number"` for day, month, or year inputs.
+- Do not validate dates in the browser using JavaScript alone — always validate server-side.
+- Do not use a date picker (calendar widget) for memorable dates.
+- Do not omit the fieldset and legend when displaying all three inputs together.
 
 ## Related Components / Patterns
 

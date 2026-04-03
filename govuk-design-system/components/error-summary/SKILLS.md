@@ -2,15 +2,22 @@
 category: components
 description: A component that summarises all validation errors on a page and links users to each affected field.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "error"
+  - "error list"
+  - "error summary"
+  - "form errors"
+  - "summary"
+  - "validation summary"
+last-reviewed: "2026-04-03"
 name: Error Summary
+source: "https://design-system.service.gov.uk/components/error-summary/"
 ---
 
 # Error Summary
 
 > A component that summarises all validation errors on a page and links users to each affected field.
 > Source: https://design-system.service.gov.uk/components/error-summary/
----
 
 ## Overview
 
@@ -157,9 +164,9 @@ Without JavaScript, the error summary still appears but does not receive automat
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | titleText | string | Yes (or titleHtml) | Title text for the error summary. Typically `"There is a problem"`. |
-| titleHtml | string | Yes (or titleText) | HTML for the title. If provided, `titleText` is ignored. |
+| titleHtml | string | Yes (or titleText) | HTML for the title. If provided, ignore `titleText`. |
 | descriptionText | string | No | Optional description text shown below the title. |
-| descriptionHtml | string | No | Optional description HTML shown below the title. If provided, `descriptionText` is ignored. |
+| descriptionHtml | string | No | Optional description HTML shown below the title. If provided, ignore `descriptionText`. |
 | errorList | array | Yes | Array of error objects. |
 | errorList[].text | string | Yes (or html) | Error message text. Should match the inline error message text. |
 | errorList[].html | string | Yes (or text) | Error message HTML. |
@@ -188,7 +195,7 @@ The links in the error list allow users to jump directly to the problematic fiel
 
 Ensure the `href` in each error list item matches the `id` of the corresponding input. For composite inputs (like date-input), link to the first errored field, not the fieldset.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Place the error summary at the top of `<main>`, before the page heading.
@@ -197,12 +204,12 @@ Ensure the `href` in each error list item matches the `id` of the corresponding 
 - Link each error list item to the correct input `id`.
 - Use alongside inline error messages — both must be present.
 
-**Don't:**
-- Don't use the error summary without also displaying inline error messages.
-- Don't change the title "There is a problem" unless there is a strong content or research reason.
-- Don't use it for non-validation notifications.
-- Don't disable auto-focus unless another mechanism explicitly manages focus on load.
-- Don't link to a fieldset `id` — link to the first relevant input within the fieldset.
+**Do not:**
+- Do not use the error summary without also displaying inline error messages.
+- Do not change the title "There is a problem" unless there is a strong content or research reason.
+- Do not use it for non-validation notifications.
+- Do not disable auto-focus unless another mechanism explicitly manages focus on load.
+- Do not link to a fieldset `id` — link to the first relevant input within the fieldset.
 
 ## Related Components / Patterns
 

@@ -2,8 +2,16 @@
 category: styles
 description: GOV.UK Frontend provides a responsive typographic scale with fixed size classes for body text and headings. Sizes increase at the tablet breakpoint. The scale is also available as a Sass mixin for use in custom components.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "font sizes"
+  - "responsive type"
+  - "scale"
+  - "type"
+  - "type hierarchy"
+  - "type scale"
+last-reviewed: "2026-04-03"
 name: Type Scale
+source: "https://design-system.service.gov.uk/styles/type-scale/"
 ---
 
 # Type Scale
@@ -11,27 +19,19 @@ name: Type Scale
 > GOV.UK Frontend provides a responsive typographic scale with fixed size classes for body text and headings. Sizes increase at the tablet breakpoint. The scale is also available as a Sass mixin for use in custom components.
 > Source: https://design-system.service.gov.uk/styles/type-scale/
 
----
-
 ## Overview
 
 The GOV.UK type scale defines the full range of text sizes used across the design system. Each size has a CSS class you can apply directly to elements. All sizes in the scale are responsive: mobile uses smaller values, and the tablet breakpoint (641px and above) uses larger values.
 
 The scale covers body sizes and heading sizes. Body sizes work for paragraph text, labels, hints, and similar content. Heading sizes work for page and section headings.
 
----
-
 ## When to use this style
 
 Use the type scale classes when you need text at a specific size that does not correspond to a standard paragraph or heading element — for example, captions, metadata, or custom components. Use the Sass mixin when writing custom component styles.
 
----
-
 ## When not to use this style
 
 Do not use type scale classes to make a heading look smaller or larger to compensate for poor heading hierarchy. Fix the heading structure instead. Do not use arbitrary font sizes outside the scale.
-
----
 
 ## How it works
 
@@ -86,8 +86,6 @@ Use `govuk-font-size` when you need only the size and line height without the fo
 
 The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`, `36`, `48`, `80`.
 
----
-
 ## Code Examples
 
 ### Body text at different sizes
@@ -130,8 +128,6 @@ The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`,
 }
 ```
 
----
-
 ## Accessibility
 
 - Do not set font sizes in absolute units (px) in custom CSS — use the Sass mixin so sizes remain responsive.
@@ -139,9 +135,7 @@ The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`,
 - Avoid using `govuk-body-xs` (14px) for large blocks of running text — small text is harder to read, especially for users with low vision.
 - The type scale sets line height to aid readability. Do not reduce it.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `govuk-body` for most body text.
@@ -149,13 +143,11 @@ The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`,
 - Use `govuk-body-s` for supporting or secondary information such as hints.
 - Use the `govuk-font` Sass mixin when writing custom components that must align to the scale.
 
-**Don't:**
+**Do not:**
 - Use type scale classes to visually style a heading at a different size to work around a heading hierarchy problem.
 - Mix arbitrary font sizes with scale classes in the same component.
 - Override `font-size` with inline styles.
 - Use `govuk-body-xs` for body content — reserve it for metadata, captions, or labels where space is tight.
-
----
 
 ## Related Components / Patterns
 

@@ -2,8 +2,15 @@
 category: patterns
 description: Ask users a question on its own page so they can focus on answering it without distraction.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "ask a question"
+  - "form page"
+  - "one thing per page"
+  - "question"
+  - "question pages"
+last-reviewed: "2026-04-03"
 name: Question pages
+source: "https://design-system.service.gov.uk/patterns/question-pages/"
 subcategory: pages
 ---
 
@@ -11,8 +18,6 @@ subcategory: pages
 
 > Ask users a question on its own page so they can focus on answering it without distraction.
 > Source: https://design-system.service.gov.uk/patterns/question-pages/
-
----
 
 ## Overview
 
@@ -225,7 +230,7 @@ With hint text:
 - Do not use placeholder text — it disappears on input and has poor contrast
 - Do not disable the submit button during form submission — use `data-prevent-double-click` on the button instead
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Ask one thing per page as the default
@@ -238,7 +243,7 @@ With hint text:
 - Prefix the page `<title>` with "Error: " when the page has errors
 - Include a back link when the user has come from a previous step
 
-**Don't:**
+**Do not:**
 - Put more than one unrelated question on one page
 - Use placeholder text in inputs
 - Use "Submit" or "Next" as the button label unless the context demands it

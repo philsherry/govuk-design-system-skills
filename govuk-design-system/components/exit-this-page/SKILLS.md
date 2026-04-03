@@ -2,15 +2,22 @@
 category: components
 description: A component that lets users leave a page containing sensitive information fast.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "emergency exit"
+  - "escape"
+  - "exit"
+  - "exit this page"
+  - "safety"
+  - "this"
+last-reviewed: "2026-04-03"
 name: Exit This Page
+source: "https://design-system.service.gov.uk/components/exit-this-page/"
 ---
 
 # Exit This Page
 
 > A component that lets users leave a page containing sensitive information fast.
 > Source: https://design-system.service.gov.uk/components/exit-this-page/
----
 
 ## Overview
 
@@ -152,7 +159,7 @@ The button uses `role="button"` and `draggable="false"` because it renders as an
 
 Place the component in a consistent location on every page of the service so users can find it fast. Use a sticky/fixed position at the top of the viewport so it remains visible regardless of scroll position.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the exit this page component on all pages of services that handle sensitive personal information.
@@ -161,12 +168,12 @@ Place the component in a consistent location on every page of the service so use
 - Inform users in the service's content that they can press Shift three times to leave fast.
 - Test keyboard activation (Shift × 3) as well as click/tap activation.
 
-**Don't:**
-- Don't use the exit this page component as a general navigation or logout mechanism.
-- Don't use a URL that reveals anything about the service the user was visiting.
-- Don't use it on services that do not handle sensitive personal information.
-- Don't hide it in the footer or a position that users would struggle to find.
-- Don't open the redirect URL in a new tab — doing so leaves the sensitive page visible.
+**Do not:**
+- Do not use the exit this page component as a general navigation or logout mechanism.
+- Do not use a URL that reveals anything about the service the user was visiting.
+- Do not use it on services that do not handle sensitive personal information.
+- Do not hide it in the footer or a position that users would struggle to find.
+- Do not open the redirect URL in a new tab — doing so leaves the sensitive page visible.
 
 ## Related Components / Patterns
 

@@ -7,8 +7,9 @@
 	"bugs": {
 		"url": "https://github.com/philsherry/govuk-design-system-skills/issues"
 	},
-	"description": "SKILLS.md reference files and agent personas for the GOV.UK Design System",
+	"description": "SKILLS.md reference files and agent personas for the GOV.UK and NHS UK Design Systems",
 	"devDependencies": {
+		"markdownlint-cli": "^0.48.0",
 		"write-good": "^1.0.8"
 	},
 	"homepage": "https://github.com/philsherry/govuk-design-system-skills#readme",
@@ -20,9 +21,11 @@
 		"url": "https://github.com/philsherry/govuk-design-system-skills.git"
 	},
 	"scripts": {
-		"lint": "find agents govuk-design-system -name '*.md' -not -name 'README.md' | xargs write-good",
-		"lint:passive": "node scripts/lint-passive.js",
+		"lint": "node scripts/lint-write-good.js --all",
+		"lint:md": "markdownlint '**/*.md' --ignore node_modules",
+		"lint:passive": "node scripts/lint-write-good.js",
+		"postinstall": "command -v vale >/dev/null 2>&1 && vale sync || echo 'Vale not found — install it from https://vale.sh to enable style linting'",
 		"test": "npm run lint:passive"
 	},
-	"version": "1.0.0"
+	"version": "1.1.0"
 }

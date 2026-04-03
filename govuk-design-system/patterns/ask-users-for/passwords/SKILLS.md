@@ -2,8 +2,14 @@
 category: patterns
 description: Use this pattern when your service requires users to create or enter a password, following best practices for security, usability, and accessibility.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "create password"
+  - "password pattern"
+  - "password rules"
+  - "passwords"
+last-reviewed: "2026-04-03"
 name: Passwords
+source: "https://design-system.service.gov.uk/patterns/passwords/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +17,6 @@ subcategory: ask-users-for
 
 > Use this pattern when your service requires users to create or enter a password, following best practices for security, usability, and accessibility.
 > Source: https://design-system.service.gov.uk/patterns/passwords/
-
----
 
 ## Overview
 
@@ -265,7 +269,7 @@ Do not use "strength meters" unless your research shows they help your users. St
 - The "show" toggle button must have an `aria-label` that describes its action (for example, "Show password" / "Hide password") and its `aria-controls` must reference the input's `id`.
 - Link error messages to the input via `aria-describedby`.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the `govukPasswordInput` component with the show/hide toggle.
@@ -278,13 +282,13 @@ Do not use "strength meters" unless your research shows they help your users. St
 - Check new passwords against common or compromised password lists (for example, HIBP).
 - Allow users to paste into password fields.
 
-**Don't:**
-- Don't require a mix of uppercase, lowercase, numbers, and symbols — this does not improve security in any meaningful way and frustrates users.
-- Don't force regular password changes unless there is evidence of compromise.
-- Don't disable copy and paste.
-- Don't show the password in plain text by default — use the show/hide toggle.
-- Don't use a "remember me" checkbox unless appropriate for your service's security model.
-- Don't display generic error messages that reveal whether someone has registered an email address (to avoid user enumeration attacks).
+**Do not:**
+- Do not require a mix of uppercase, lowercase, numbers, and symbols — this does not improve security in any meaningful way and frustrates users.
+- Do not force regular password changes unless there is evidence of compromise.
+- Do not disable copy and paste.
+- Do not show the password in plain text by default — use the show/hide toggle.
+- Do not use a "remember me" checkbox unless appropriate for your service's security model.
+- Do not display generic error messages that reveal whether someone has registered an email address (to avoid user enumeration attacks).
 
 ## Related Components / Patterns
 

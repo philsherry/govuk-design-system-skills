@@ -2,8 +2,14 @@
 category: patterns
 description: Use this pattern to help users understand whether a service is right for them before they start, preventing wasted effort and frustration.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "eligibility"
+  - "screening"
+  - "suitability check"
+  - "suitable"
+last-reviewed: "2026-04-03"
 name: Check a service is suitable
+source: "https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +17,6 @@ subcategory: help-users-to
 
 > Use this pattern to help users understand whether a service is right for them before they start, preventing wasted effort and frustration.
 > Source: https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/
-
----
 
 ## Overview
 
@@ -301,7 +305,7 @@ Always place the error summary at the top of the page and link to the specific f
 - Result pages should use clear, unambiguous heading text that explains the outcome.
 - Alternative service links on "not suitable" pages must be genuine, working links — do not leave users at a dead end.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Keep the number of questions to a minimum — ask only what you need to determine suitability.
@@ -310,12 +314,12 @@ Always place the error summary at the top of the page and link to the specific f
 - Use plain English. Avoid legal or technical language.
 - Follow the "one thing per page" principle for each question.
 
-**Don't:**
-- Don't use the check as a bureaucratic barrier designed to reduce service uptake.
-- Don't ask for information at this stage that you will ask for again later in the main service.
-- Don't leave ineligible users at a dead end with no guidance on what to do next.
-- Don't make the check longer than necessary — users will abandon if it feels like the whole service.
-- Don't use hard gates unless there is a strong policy or legal reason to do so.
+**Do not:**
+- Do not use the check as a bureaucratic barrier designed to reduce service uptake.
+- Do not ask for information at this stage that you will ask for again later in the main service.
+- Do not leave ineligible users at a dead end with no guidance on what to do next.
+- Do not make the check longer than necessary — users will abandon if it feels like the whole service.
+- Do not use hard gates unless there is a strong policy or legal reason to do so.
 
 ## Related Components / Patterns
 

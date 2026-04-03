@@ -4,8 +4,13 @@ name: Lint
 on:
   pull_request:
     paths:
-      - "agents/**/*.md"
       - "govuk-design-system/**/*.md"
+      - "nhsuk-design-system/**/*.md"
+      - "docs/**/*.md"
+      - ".github/workflows/lint.yml"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/lint-write-good.js"
 
 jobs:
   write-good:
@@ -22,3 +27,7 @@ jobs:
 
       - name: Check passive voice
         run: npm test
+
+      - name: Run advisory prose lint
+        run: npm run lint
+        continue-on-error: true

@@ -2,8 +2,13 @@
 category: patterns
 description: Help users create a memorable, unique username with clear rules about what is and is not allowed.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "sign up"
+  - "user ID"
+  - "username"
+last-reviewed: "2026-04-03"
 name: Help users to create a username
+source: "https://design-system.service.gov.uk/patterns/create-a-username/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +16,6 @@ subcategory: help-users-to
 
 > Help users create a memorable, unique username with clear rules about what is and is not allowed.
 > Source: https://design-system.service.gov.uk/patterns/create-a-username/
-
----
 
 ## Overview
 
@@ -210,7 +213,7 @@ Where a username is already taken, suggest alternatives if the system supports i
 - Link error messages to the input via `aria-describedby`.
 - Do not check availability inline as users type — this creates a confusing experience for screen reader users and can cause performance issues on slower connections.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Prefer using email address as the sign-in identifier — users remember it, email addresses are unique, and they reduce support requests.
@@ -221,12 +224,12 @@ Where a username is already taken, suggest alternatives if the system supports i
 - Repopulate the field with the user's attempted value when showing an error.
 - Let users change their username later if possible.
 
-**Don't:**
-- Don't modify the username the user entered without telling them (for example, by lowercasing it).
-- Don't enforce unnecessarily strict character rules (for example, requiring special characters).
-- Don't check username availability in real time while the user is typing.
-- Don't use the username as a display name if the user's real name is also needed elsewhere.
-- Don't prevent copy-paste into the username field.
+**Do not:**
+- Do not modify the username the user entered without telling them (for example, by lowercasing it).
+- Do not enforce unnecessarily strict character rules (for example, requiring special characters).
+- Do not check username availability in real time while the user is typing.
+- Do not use the username as a display name if the user's real name is also needed elsewhere.
+- Do not prevent copy-paste into the username field.
 
 ## Related Components / Patterns
 

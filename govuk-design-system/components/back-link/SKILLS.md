@@ -2,15 +2,22 @@
 category: components
 description: A link that takes users back to the previous page in a multi-page transaction.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "back"
+  - "back button"
+  - "back link"
+  - "link"
+  - "navigation"
+  - "previous page"
+last-reviewed: "2026-04-03"
 name: Back Link
+source: "https://design-system.service.gov.uk/components/back-link/"
 ---
 
 # Back Link
 
 > A link that takes users back to the previous page in a multi-page transaction.
 > Source: https://design-system.service.gov.uk/components/back-link/
----
 
 ## Overview
 
@@ -126,7 +133,7 @@ The link must be reachable via keyboard Tab navigation. Position it near the top
 
 If using `history.back()` via JavaScript, ensure the link still functions (or the page still makes sense) when JavaScript is unavailable.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Place the back link above the `<main>` element, before the page heading and form content.
@@ -134,11 +141,11 @@ If using `history.back()` via JavaScript, ensure the link still functions (or th
 - Use the default text "Back" unless research shows users need more descriptive text.
 - Test the back link in the context of the full journey to confirm it goes to the right page.
 
-**Don't:**
-- Don't use the back link on the same page as breadcrumbs.
-- Don't use it as a "Cancel" link — cancel belongs near the submit button.
-- Don't place it inside the `<main>` element.
-- Don't omit it from pages mid-journey where users may want to review or change earlier answers.
+**Do not:**
+- Do not use the back link on the same page as breadcrumbs.
+- Do not use it as a "Cancel" link — cancel belongs near the submit button.
+- Do not place it inside the `<main>` element.
+- Do not omit it from pages mid-journey where users may want to review or change earlier answers.
 
 ## Related Components / Patterns
 

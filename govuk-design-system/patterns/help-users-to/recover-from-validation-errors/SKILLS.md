@@ -2,8 +2,15 @@
 category: patterns
 description: Show an error summary at the top of the page and inline error messages next to each affected field — always validate server-side, never clear user-entered values.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "error handling"
+  - "error recovery"
+  - "errors"
+  - "form validation"
+  - "validation"
+last-reviewed: "2026-04-03"
 name: Help users to recover from validation errors
+source: "https://design-system.service.gov.uk/patterns/validation/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +18,6 @@ subcategory: help-users-to
 
 > Show an error summary at the top of the page and inline error messages next to each affected field — always validate server-side, never clear user-entered values.
 > Source: https://design-system.service.gov.uk/patterns/validation/
-
----
 
 ## Overview
 
@@ -325,7 +330,7 @@ Only highlight the specific date sub-fields that have errors. If the day is miss
 - Do not use colour alone to show an error — always use both the red border styling and the error message text.
 - For date inputs, apply the error class only to the specific sub-fields that have errors, not all three fields.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always show both the error summary and inline error messages together.
@@ -337,15 +342,15 @@ Only highlight the specific date sub-fields that have errors. If the day is miss
 - Link each error summary item to the specific field with `href="#field-id"`.
 - Always validate on the server — client-side validation is supplementary only.
 
-**Don't:**
-- Don't show errors for fields the user has not yet attempted to fill in.
-- Don't validate inline as the user types — wait until form submission.
-- Don't use vague messages like "There was an error" or "Invalid input".
-- Don't use technical language, error codes, or jargon such as "invalid" or "mandatory".
-- Don't blame the user — "Enter your full name" not "You forgot to enter your name".
-- Don't clear user-entered values when re-displaying the form with errors.
-- Don't redirect to a separate error page — always show errors on the same page.
-- Don't use red colouring as the sole indicator of an error.
+**Do not:**
+- Do not show errors for fields the user has not yet attempted to fill in.
+- Do not validate inline as the user types — wait until form submission.
+- Do not use vague messages like "There was an error" or "Invalid input".
+- Do not use technical language, error codes, or jargon such as "invalid" or "mandatory".
+- Do not blame the user — "Enter your full name" not "You forgot to enter your name".
+- Do not clear user-entered values when re-displaying the form with errors.
+- Do not redirect to a separate error page — always show errors on the same page.
+- Do not use red colouring as the sole indicator of an error.
 
 ## Related Components / Patterns
 
