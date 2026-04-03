@@ -1,10 +1,10 @@
 # Design System Skills
 
-Comprehensive `SKILLS.md` reference files for every style, component, and pattern in the GOV.UK and NHS UK Design Systems.
+Comprehensive `SKILLS.md` reference files for every style, component, and pattern in the GOV.UK and NHS UK Design Systems, and the HMRC Design Patterns.
 
 These files provide LLM context for use when prototyping and building government services. Each `SKILLS.md` file provides a focused, machine-readable reference for a single design system element — covering usage guidance, code examples, macro options, accessibility requirements, and do and do not rules. Load them into your AI assistant or IDE extension, or concatenate them to build a complete design system context for your project.
 
-Based on the [GOV.UK Design System](https://design-system.service.gov.uk/), [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend), the [NHS UK Design System](https://service-manual.nhs.uk/design-system), and [NHS UK Frontend](https://github.com/nhsuk/nhsuk-frontend).
+Based on the [GOV.UK Design System](https://design-system.service.gov.uk/), [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend), the [NHS UK Design System](https://service-manual.nhs.uk/design-system), [NHS UK Frontend](https://github.com/nhsuk/nhsuk-frontend), the [HMRC Design Patterns](https://design.tax.service.gov.uk/hmrc-design-patterns/), and [HMRC Frontend](https://github.com/hmrc/hmrc-frontend).
 
 ## Getting started
 
@@ -18,6 +18,7 @@ Each design system also has its own pages with specific prompts, file recommenda
 |---------------|---------------|-------------|
 | GOV.UK | [docs/govuk/INSTALL.md](docs/govuk/INSTALL.md) | [docs/govuk/GUIDE.md](docs/govuk/GUIDE.md) |
 | NHS UK | [docs/nhsuk/INSTALL.md](docs/nhsuk/INSTALL.md) | [docs/nhsuk/GUIDE.md](docs/nhsuk/GUIDE.md) |
+| HMRC | [docs/hmrc/INSTALL.md](docs/hmrc/INSTALL.md) | [docs/hmrc/GUIDE.md](docs/hmrc/GUIDE.md) |
 
 <details>
   <summary>Directory tree</summary>
@@ -76,7 +77,31 @@ Each design system also has its own pages with specific prompts, file recommenda
   │       ├── ask-users-for/ [10 SKILLS.md files]
   │       ├── help-users-to/ [12 SKILLS.md files]
   │       └── pages/ [7 SKILLS.md files]
-  └── nhsuk-design-system/
+  ├── nhsuk-design-system/
+  │   ├── agents/
+  │   │   ├── README.md
+  │   │   ├── accessibility-auditor.md
+  │   │   ├── content-designer.md
+  │   │   ├── frontend-developer.md
+  │   │   ├── interaction-designer.md
+  │   │   ├── qa-tester.md
+  │   │   ├── service-designer.md
+  │   │   └── user-researcher.md
+  │   ├── accessibility/
+  │   │   └── SKILLS.md
+  │   ├── foundations/
+  │   │   ├── SKILLS.md
+  │   │   ├── nhsuk-frontend/SKILLS.md
+  │   │   └── prototype-kit/SKILLS.md
+  │   ├── styles/
+  │   │   └── [8 SKILLS.md files]
+  │   ├── components/
+  │   │   └── [38 SKILLS.md files]
+  │   └── patterns/
+  │       ├── ask-users-for/ [1 SKILLS.md file]
+  │       ├── help-users-to/ [5 SKILLS.md files]
+  │       └── pages/ [6 SKILLS.md files]
+  └── hmrc-design-patterns/
       ├── agents/
       │   ├── README.md
       │   ├── accessibility-auditor.md
@@ -86,20 +111,14 @@ Each design system also has its own pages with specific prompts, file recommenda
       │   ├── qa-tester.md
       │   ├── service-designer.md
       │   └── user-researcher.md
-      ├── accessibility/
-      │   └── SKILLS.md
       ├── foundations/
       │   ├── SKILLS.md
-      │   ├── nhsuk-frontend/SKILLS.md
-      │   └── prototype-kit/SKILLS.md
-      ├── styles/
-      │   └── [8 SKILLS.md files]
-      ├── components/
-      │   └── [38 SKILLS.md files]
-      └── patterns/
-          ├── ask-users-for/ [1 SKILLS.md file]
-          ├── help-users-to/ [5 SKILLS.md files]
-          └── pages/ [6 SKILLS.md files]
+      │   └── hmrc-frontend/SKILLS.md
+      ├── identifiers/ [5 SKILLS.md files]
+      ├── service/ [12 SKILLS.md files]
+      ├── identity/ [3 SKILLS.md files]
+      ├── headers/ [6 SKILLS.md files]
+      └── pages/ [3 SKILLS.md files]
   ```
 
 </details>
@@ -183,10 +202,11 @@ Not every section applies to every file. Omit sections that have no relevant con
 
 ## Agents
 
-Each `*-design-system/` directory contains its own Claude Code agent definitions for 7 multidisciplinary team roles: frontend developer, content designer, interaction designer, accessibility auditor, user researcher, service designer, and QA tester. Each agent reviews your work from its discipline's perspective, referencing the `SKILLS.md` files as its knowledge base.
+Each design system directory contains its own Claude Code agent definitions for 7 multidisciplinary team roles: frontend developer, content designer, interaction designer, accessibility auditor, user researcher, service designer, and QA tester. Each agent reviews your work from its discipline's perspective, referencing the `SKILLS.md` files as its knowledge base.
 
 - **GOV.UK agents**: See [govuk-design-system/agents/README.md](govuk-design-system/agents/README.md) — grounded in the [GOV.UK Service Standard](https://www.gov.uk/service-manual/service-standard)
 - **NHS UK agents**: See [nhsuk-design-system/agents/README.md](nhsuk-design-system/agents/README.md) — grounded in the [NHS Digital Service Manual](https://service-manual.nhs.uk/)
+- **HMRC agents**: See [hmrc-design-patterns/agents/README.md](hmrc-design-patterns/agents/README.md) — grounded in both the GOV.UK Service Standard and [HMRC Design Patterns](https://design.tax.service.gov.uk/)
 
 ## Accessibility audit snippets
 
@@ -254,5 +274,5 @@ npm run release:notes -- 1.2.0
 
 This project uses two licences:
 
-- **Design system content** (guidance, examples, and wording in `govuk-design-system/` and `nhsuk-design-system/` SKILLS.md files) is Crown Copyright, published under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+- **Design system content** (guidance, examples, and wording in `govuk-design-system/`, `nhsuk-design-system/`, and `hmrc-design-patterns/` SKILLS.md files) is Crown Copyright, published under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 - **Everything else** (file structure, frontmatter schema, agent personas, documentation) uses the [MIT License](LICENSE).

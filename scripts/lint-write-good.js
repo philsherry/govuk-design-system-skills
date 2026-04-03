@@ -16,6 +16,7 @@
  * - Lines indented with 2+ spaces (code examples, HTML samples)
  * - Lines inside YAML frontmatter (--- delimiters)
  * - Inline quoted example text (e.g. "not 'A letter will be sent'")
+ * - Contrast examples that teach preferred wording (e.g. "Write 'X', not 'Y'")
  * - Prescribed error message wording (bold headings + quoted strings)
  * - Standard technical phrases (e.g. "JavaScript is enabled", "is expanded")
  * - Terms whitelisted in `.vscode/settings.json` for editor parity
@@ -70,7 +71,7 @@ const allowedFlaggedText = new Set([
 ]);
 
 const files = execSync(
-  "find . -maxdepth 1 -type d -name '*-design-system' -exec find {} -name '*.md' -not -name 'README.md' \\;",
+  "find . -maxdepth 1 -type d \\( -name '*-design-system' -o -name '*-design-patterns' \\) -exec find {} -name '*.md' -not -name 'README.md' \\;",
   { encoding: "utf8" }
 )
   .trim()
@@ -234,6 +235,10 @@ for (const hit of hits) {
   // e.g. (for example, "You must do this by [date] or you'll be charged")
   if (/not ['"\u201c]/.test(trimmed)) continue;
   if (/for example,\s*['"\u201c]/.test(trimmed)) continue;
+
+  // Skip teaching examples that contrast preferred and non-preferred wording.
+  // e.g. Write "We will send you a letter", not "A letter will be sent to you".
+  if (/^[-*]\s+.*\bWrite\s+['"\u201c].+['"\u201d],\s+not\s+['"\u201c].+['"\u201d]/.test(trimmed)) continue;
 
   // Skip words explicitly whitelisted for the editor extension so the CLI and
   // editor agree on what counts as a known false positive.
