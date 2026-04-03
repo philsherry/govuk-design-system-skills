@@ -4,13 +4,16 @@ name: Lint
 on:
   pull_request:
     paths:
+      - ".github/workflows/tag-release.yml"
       - ".github/workflows/lint.yml"
+      - "CHANGELOG.md"
       - "docs/**/*.md"
       - "govuk-design-system/**/*.md"
       - "hmrc-design-patterns/**/*.md"
       - "nhsuk-design-system/**/*.md"
       - "package-lock.json"
       - "package.json"
+      - "scripts/check-release-version.js"
       - "scripts/lint-write-good.js"
 
 jobs:
@@ -25,6 +28,9 @@ jobs:
           node-version: 20
 
       - run: npm ci
+
+      - name: Check release metadata
+        run: npm run release:check
 
       - name: Check passive voice
         run: npm test

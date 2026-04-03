@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "CHANGELOG.md"
+      - "package-lock.json"
       - "package.json"
 
 permissions:
@@ -45,7 +46,7 @@ jobs:
       - name: Check changelog has matching version entry
         if: steps.tag_check.outputs.exists == 'false'
         run: |
-          grep -F "## [${{ steps.version.outputs.version }}]" CHANGELOG.md >/dev/null
+          node scripts/check-release-version.js
 
       - name: Create and push tag
         if: steps.tag_check.outputs.exists == 'false'

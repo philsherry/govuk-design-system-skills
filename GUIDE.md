@@ -82,7 +82,7 @@ This helps the agent calibrate — a QA tester in alpha focuses on flow coverage
 GitHub can publish releases from the changelog for this repo.
 
 1. Add the new version to `CHANGELOG.md`.
-2. Bump the version in `package.json`.
+2. Bump the version in `package.json` and `package-lock.json`.
 3. Merge the release PR to `main`.
 4. Wait for the auto-tag workflow to create and push `v1.2.0` from `main`.
 
@@ -92,6 +92,12 @@ same version exists in `CHANGELOG.md`, and pushes the semantic version tag.
 The release workflow listens for tags that match `v*.*.*`, extracts the
 `1.2.0` section from `CHANGELOG.md`, and publishes the GitHub Release with
 those notes.
+
+To check the version metadata before you merge, run:
+
+```bash
+npm run release:check
+```
 
 To check the generated notes before you push a tag, run:
 
