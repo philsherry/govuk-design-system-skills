@@ -25,7 +25,8 @@
 		"lint:md": "markdownlint '**/*.md' --ignore node_modules",
 		"lint:passive": "node scripts/lint-write-good.js",
 		"postinstall": "command -v vale >/dev/null 2>&1 && vale sync || echo 'Vale not found — install it from https://vale.sh to enable style linting'",
+		"release:notes": "node scripts/release-notes-from-changelog.js",
 		"test": "npm run lint:passive"
 	},
-	"version": "1.1.0"
+	"version": "1.1.1"
 }

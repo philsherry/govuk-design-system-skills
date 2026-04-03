@@ -35,7 +35,8 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   │   ├── incorrect-guidance.md
   │   │   └── new-content.md
   │   └── workflows/
-  │       └── lint.yml
+  │       ├── lint.yml
+  │       └── release.yml
   ├── CHANGELOG.md
   ├── CLAUDE.md
   ├── GUIDE.md
@@ -225,6 +226,29 @@ The `.vscode/audit.code-snippets` file provides VS Code snippets for writing con
 The issue template enforces the "problem + solution" pattern — every issue includes a Description, Impact, and Recommendation field, so nobody can log a problem without also thinking about the fix.
 
 See [docs/AUDIT_EXAMPLE.md](docs/AUDIT_EXAMPLE.md) for a worked example showing what a completed audit report looks like using these snippets.
+
+## Releases
+
+This repo can publish GitHub Releases from `CHANGELOG.md` when you push a semantic version tag such as `v1.2.0`.
+
+1. Update `CHANGELOG.md` and `package.json` in your release PR.
+2. Merge to `main`.
+3. Tag the release commit and push the tag:
+
+```bash
+git checkout main
+git pull --ff-only origin main
+git tag -a v1.2.0 -m "Release v1.2.0"
+git push origin v1.2.0
+```
+
+The `release.yml` workflow reads the matching `CHANGELOG.md` section for `1.2.0` and publishes the GitHub Release with that body.
+
+If you want to preview the generated release notes locally, run:
+
+```bash
+npm run release:notes -- 1.2.0
+```
 
 ## Licence
 

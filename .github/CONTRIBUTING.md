@@ -101,6 +101,30 @@ Before opening a PR, confirm:
 - [ ] Link to your content style guide if you have one.
 - [ ] Link to your service standard or service manual if you have one.
 
+## Creating a release
+
+This repo publishes GitHub Releases from `CHANGELOG.md` when you push a semantic version tag.
+
+1. Add the new version entry to `CHANGELOG.md`.
+2. Bump the version in `package.json`.
+3. Merge the release PR to `main`.
+4. Tag the release commit and push the tag:
+
+```bash
+git checkout main
+git pull --ff-only origin main
+git tag -a v1.2.0 -m "Release v1.2.0"
+git push origin v1.2.0
+```
+
+The release workflow reads the matching `CHANGELOG.md` section for `1.2.0` and publishes the GitHub Release with that body.
+
+To preview the generated release notes before you push a tag, run:
+
+```bash
+npm run release:notes -- 1.2.0
+```
+
 ## Reporting issues
 
 Use the issue templates to report:

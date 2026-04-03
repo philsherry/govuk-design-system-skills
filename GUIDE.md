@@ -77,6 +77,30 @@ This helps the agent calibrate — a QA tester in alpha focuses on flow coverage
 - **Check the output.** AI tools sometimes get details wrong. Compare the generated code against the SKILLS.md file for that component to verify it matches the design system.
 - **Iterate.** You do not need to get everything right in one prompt. Build a rough version, then ask the AI to review and improve it.
 
+## Release workflow
+
+GitHub can publish releases from the changelog for this repo.
+
+1. Add the new version to `CHANGELOG.md`.
+2. Bump the version in `package.json`.
+3. Merge the release PR to `main`.
+4. Tag the release commit and push the tag:
+
+```bash
+git checkout main
+git pull --ff-only origin main
+git tag -a v1.2.0 -m "Release v1.2.0"
+git push origin v1.2.0
+```
+
+The release workflow listens for tags that match `v*.*.*`, extracts the `1.2.0` section from `CHANGELOG.md`, and publishes the GitHub Release with those notes.
+
+To check the generated notes before you push a tag, run:
+
+```bash
+npm run release:notes -- 1.2.0
+```
+
 ## Licence
 
 Design system content is Crown Copyright under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). All other materials fall under the [MIT License](LICENSE).

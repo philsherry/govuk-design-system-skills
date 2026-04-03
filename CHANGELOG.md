@@ -4,6 +4,18 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.1] — 2026-04-03
+
+### Added
+
+- `.github/workflows/release.yml` to publish GitHub Releases when we push a `v*.*.*` tag
+- `scripts/release-notes-from-changelog.js` to extract release notes from `CHANGELOG.md`
+- Release workflow guidance in `README.md`, `GUIDE.md`, and `.github/CONTRIBUTING.md`
+
+### Changed
+
+- Bumped the package version to `1.1.1`
+
 ## [1.1.0] — 2026-04-03
 
 ### Added
