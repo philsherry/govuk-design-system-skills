@@ -2,8 +2,13 @@
 category: patterns
 description: Use this pattern to help users find and use the right contact channel for your service or department.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "contact"
+  - "contact details"
+  - "support"
+last-reviewed: "2026-04-03"
 name: Contact a department or service team
+source: "https://design-system.service.gov.uk/patterns/contact-a-department-or-service-team/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +16,6 @@ subcategory: help-users-to
 
 > Use this pattern to help users find and use the right contact channel for your service or department.
 > Source: https://design-system.service.gov.uk/patterns/contact-a-department-or-service-team/
-
----
 
 ## Overview
 
@@ -340,7 +343,7 @@ For online contact forms, standard validation applies:
 - If using a web chat service, ensure the service is keyboard accessible and works with screen readers.
 - Contact forms must follow standard form accessibility guidance: labels, hints, error messages, and focus management.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Direct users to self-service options before showing contact details.
@@ -350,12 +353,12 @@ For online contact forms, standard validation applies:
 - Offer at least one contact method that does not require a phone.
 - Provide text relay information for users who are deaf or hard of hearing.
 
-**Don't:**
-- Don't hide contact details from users who genuinely need them.
-- Don't publish email addresses as the primary contact method — use a contact form to avoid spam.
-- Don't use images or non-selectable text for phone numbers or postal addresses.
-- Don't list contact channels that are not actively monitored.
-- Don't make users explain their problem more than once across different channels.
+**Do not:**
+- Do not hide contact details from users who genuinely need them.
+- Do not publish email addresses as the primary contact method — use a contact form to avoid spam.
+- Do not use images or non-selectable text for phone numbers or postal addresses.
+- Do not list contact channels that are not actively monitored.
+- Do not make users explain their problem more than once across different channels.
 
 ## Related Components / Patterns
 

@@ -2,8 +2,15 @@
 category: styles
 description: The GOV.UK colour palette and guidance on applying colours consistently and accessibly in GOV.UK services.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "brand colours"
+  - "color"
+  - "colour"
+  - "hex values"
+  - "palette"
+last-reviewed: "2026-04-03"
 name: Colour
+source: "https://design-system.service.gov.uk/styles/colour/"
 ---
 
 # Colour
@@ -11,27 +18,19 @@ name: Colour
 > The GOV.UK colour palette and guidance on applying colours consistently and accessibly in GOV.UK services.
 > Source: <https://design-system.service.gov.uk/styles/colour/>
 
----
-
 ## Overview
 
 GOV.UK Frontend provides a defined set of colours for text, links, backgrounds, borders, focus states, and status indicators. Using these colours ensures visual consistency across services and guarantees that contrast ratios meet WCAG 2.1 AA requirements when used as directed.
 
 Colours are available as Sass variables (e.g. `$govuk-text-colour`), as CSS custom properties (e.g. `var(--govuk-colour-black)`), and as a Sass function (`govuk-colour()`).
 
----
-
 ## When to use this style
 
 Always use the GOV.UK colour palette when building services on the `gov.uk` domain. Do not introduce new brand colours or substitute similar colours from other design systems. When you need to communicate status, error, success, or warning, use the designated colours for those purposes.
 
----
-
 ## When not to use this style
 
 Do not use colour alone to convey information — always pair colour with text, icons, or another non-colour indicator. Do not apply brand blue (`#1d70b8`) to decorative elements that are not interactive — this can cause users to expect interactive behaviour.
-
----
 
 ## How it works
 
@@ -124,8 +123,6 @@ GOV.UK Frontend v5 exposes colours as CSS custom properties on the `:root` eleme
 }
 ```
 
----
-
 ## Code Examples
 
 ### Applying error colour to a custom element
@@ -164,8 +161,6 @@ The focus mixin handles the full focus state consistently:
 }
 ```
 
----
-
 ## Accessibility
 
 - The design system checks all GOV.UK colour combinations against WCAG 2.1 AA (4.5:1 contrast for normal text, 3:1 for large text and UI components).
@@ -174,9 +169,7 @@ The focus mixin handles the full focus state consistently:
 - Always pair error red (`#d4351c`) with an error message in text. Do not rely on red borders alone to show errors.
 - Check custom colour combinations introduced in service-specific styles for contrast using a contrast checker.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 
@@ -186,15 +179,13 @@ The focus mixin handles the full focus state consistently:
 - Supplement colour indicators with text explanations.
 - Test any new colour combination for WCAG AA contrast compliance.
 
-**Don't:**
+**Do not:**
 
 - Introduce new colours not in the GOV.UK palette without a strong, tested justification.
 - Use brand blue (`#1d70b8`) on non-interactive decorative elements.
 - Override the yellow focus state.
 - Use `$govuk-error-colour` for decorative highlights or warnings that are not errors.
 - Rely on colour alone to distinguish interactive from non-interactive elements.
-
----
 
 ## Related Components / Patterns
 

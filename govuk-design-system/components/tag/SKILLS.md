@@ -2,16 +2,20 @@
 category: components
 description: Use the tag component to show users the status of something.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "badge"
+  - "label"
+  - "status tag"
+  - "tag"
+last-reviewed: "2026-04-03"
 name: Tag
+source: "https://design-system.service.gov.uk/components/tag/"
 ---
 
 # Tag
 
 > Use the tag component to show users the status of something.
 > Source: https://design-system.service.gov.uk/components/tag/
-
----
 
 ## Overview
 
@@ -283,18 +287,18 @@ The tag component does not have error states. This is a presentational component
 - When tags appear in tables or lists, ensure enough surrounding context exists for users to understand what the tag refers to.
 - Maintain a consistent colour-to-status mapping throughout your service — for example, always use green for "Completed".
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use concise, meaningful status words — 1 to 3 words.
 - Apply colours consistently throughout the service (green always means the same thing).
 - Ensure the text alone communicates the status, independent of colour.
 
-**Don't:**
-- Don't use tags for interactive elements — use buttons or links.
-- Don't use long phrases inside tags.
-- Don't mix colour meanings across pages — if green means "approved" in one place, it should not mean "active" elsewhere.
-- Don't use more than 3 or 4 different tag colours on a single page — this reduces the signal value of each colour.
+**Do not:**
+- Do not use tags for interactive elements — use buttons or links.
+- Do not use long phrases inside tags.
+- Do not mix colour meanings across pages — if green means "approved" in one place, it should not mean "active" elsewhere.
+- Do not use more than 3 or 4 different tag colours on a single page — this reduces the signal value of each colour.
 
 ## Related Components / Patterns
 

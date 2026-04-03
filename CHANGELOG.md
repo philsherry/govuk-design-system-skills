@@ -4,7 +4,35 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
----
+## [1.1.0] — 2026-04-03
+
+### Added
+
+- Full `nhsuk-design-system/` coverage: 38 components, 8 styles, 12 patterns, 3 foundations, and 1 accessibility guide
+- 7 NHS UK agent personas adapted for the NHS Digital Service Manual
+- `nhsuk-design-system/agents/README.md` with NHS agent guidance
+- `docs/nhsuk/GUIDE.md` and `docs/nhsuk/INSTALL.md` for NHS UK usage and setup
+- `docs/govuk/GUIDE.md` and `docs/govuk/INSTALL.md` for GOV.UK-specific usage and setup
+- `docs/AUDIT_EXAMPLE.md` and `.vscode/audit.code-snippets` for accessibility audit workflows
+- `markdownlint-cli`, `npm run lint:md`, `.vale.ini`, and a `postinstall` Vale sync step
+- `source` and `keywords` frontmatter fields across all `SKILLS.md` files
+- WCAG 2.2, WAI-ARIA, frontend repo, prototype kit, and service manual links across guidance and agents
+- "What is the user need?" and custom pattern guidance across all 14 agent personas
+- NHS UK Design System licensing in `LICENSE`
+- "Adding a new design system" guidance in `CONTRIBUTING.md`
+- Markdown and gitignore updates for the new docs and tooling
+
+### Changed
+
+- Moved `agents/` into `govuk-design-system/agents/` so each design system owns its agents
+- Reworked `README.md` so getting started appears first and the directory tree sits in a collapsible section
+- Updated lint discovery in `scripts/lint-write-good.js` and `package.json` to scan `*-design-system` directories
+- Updated `CLAUDE.md` wording and examples to work across both design systems
+- Updated `last-reviewed` dates to 2026-04-03 across all `SKILLS.md` files
+- Enabled markdownlint MD012 and removed horizontal rules from content files
+- Standardised NHS blockquotes and Nunjucks parameter casing in details and expander components
+- Cleaned filler words from auto-generated keywords across 26 files
+- Bumped the package version to `1.1.0`
 
 ## [1.0.0] — 2026-03-30
 

@@ -2,16 +2,22 @@
 category: components
 description: Use the text input component when users need to enter a single line of text.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "form input"
+  - "input"
+  - "input field"
+  - "text"
+  - "text field"
+  - "text input"
+last-reviewed: "2026-04-03"
 name: Text Input
+source: "https://design-system.service.gov.uk/components/text-input/"
 ---
 
 # Text Input
 
 > Use the text input component when users need to enter a single line of text.
 > Source: https://design-system.service.gov.uk/components/text-input/
-
----
 
 ## Overview
 
@@ -332,7 +338,7 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 - Set `spellcheck="false"` for inputs where spell-checking is unhelpful — email addresses, reference numbers, codes, usernames.
 - Prefix and suffix elements use `aria-hidden="true"` — make sure the label or hint conveys the unit in text (for example, "Cost in pounds" rather than "Cost" when using a £ prefix).
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the narrowest appropriate width for the expected content.
@@ -340,11 +346,11 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 - Disable spell-checking for non-word inputs.
 - Use `isPageHeading: true` when the label is the main page heading.
 
-**Don't:**
-- Don't use a text input for multi-line responses — use textarea.
-- Don't use a text input for passwords — use the password input component.
-- Don't use full-width inputs for short data like postcodes, years, or codes.
-- Don't use a text input when a constrained input (radios, select, date input) would be more appropriate.
+**Do not:**
+- Do not use a text input for multi-line responses — use textarea.
+- Do not use a text input for passwords — use the password input component.
+- Do not use full-width inputs for short data like postcodes, years, or codes.
+- Do not use a text input when a constrained input (radios, select, date input) would be more appropriate.
 
 ## Related Components / Patterns
 

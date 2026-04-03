@@ -2,16 +2,20 @@
 category: components
 description: Use the select component when users need to choose one option from a long list — but use radios instead wherever possible.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "dropdown"
+  - "option list"
+  - "select"
+  - "select box"
+last-reviewed: "2026-04-03"
 name: Select
+source: "https://design-system.service.gov.uk/components/select/"
 ---
 
 # Select
 
 > Use the select component when users need to choose one option from a long list — but use radios instead wherever possible.
 > Source: https://design-system.service.gov.uk/components/select/
-
----
 
 ## Overview
 
@@ -245,18 +249,18 @@ Use the top-level `value` parameter to pre-select an option when re-rendering af
 - Avoid using `size` or `multiple` attributes on the select — both create usability and accessibility problems.
 - Ensure the select is wide enough to display options without truncation.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Provide a blank placeholder option ("Select a [thing]") when no default should be pre-selected.
 - Use the top-level `value` option to restore an earlier selection when re-rendering after validation.
 - Consider whether radios would be a better choice before deciding to use select.
 
-**Don't:**
-- Don't use a select for fewer than around 15 options — radios are more usable.
-- Don't use a select for selecting more than one option — use checkboxes or a different pattern.
-- Don't use disabled options within the list for items users cannot choose — omit those items instead.
-- Don't use select for date or time entry — use the date input component.
+**Do not:**
+- Do not use a select for fewer than around 15 options — radios are more usable.
+- Do not use a select for selecting more than one option — use checkboxes or a different pattern.
+- Do not use disabled options within the list for items users cannot choose — omit those items instead.
+- Do not use select for date or time entry — use the date input component.
 
 ## Related Components / Patterns
 

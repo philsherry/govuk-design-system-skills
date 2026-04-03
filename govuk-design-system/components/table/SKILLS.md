@@ -2,16 +2,20 @@
 category: components
 description: Use the table component to make information easier to compare and scan when there are relationships between sets of data.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "data table"
+  - "rows and columns"
+  - "table"
+  - "tabular data"
+last-reviewed: "2026-04-03"
 name: Table
+source: "https://design-system.service.gov.uk/components/table/"
 ---
 
 # Table
 
 > Use the table component to make information easier to compare and scan when there are relationships between sets of data.
 > Source: https://design-system.service.gov.uk/components/table/
-
----
 
 ## Overview
 
@@ -258,7 +262,7 @@ The table component does not have error states. This is a display component.
 - Do not use tables for layout — screen readers announce the number of columns and rows when a user enters a table, which is confusing when tables serve as layout containers.
 - Avoid complex tables with large numbers of merged cells (`colspan`/`rowspan`) — test thoroughly with screen readers, as header-to-cell associations can break.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always provide a caption that describes the table's content.
@@ -266,11 +270,11 @@ The table component does not have error states. This is a display component.
 - Use `firstCellIsHeader: true` when the first column contains row labels.
 - Keep tables as simple as possible.
 
-**Don't:**
-- Don't use tables for key–value pairs — use the summary list component.
-- Don't use tables for page layout.
-- Don't use merged cells unless there is no alternative.
-- Don't put large blocks of prose text in table cells.
+**Do not:**
+- Do not use tables for key–value pairs — use the summary list component.
+- Do not use tables for page layout.
+- Do not use merged cells unless there is no alternative.
+- Do not put large blocks of prose text in table cells.
 
 ## Related Components / Patterns
 

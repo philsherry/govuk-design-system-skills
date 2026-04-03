@@ -1,4 +1,4 @@
-# GOV.UK Design System Skills
+# Design System Skills
 
 ## Writing style
 
@@ -24,8 +24,10 @@ Avoid words that `write-good` flags as weasel words, weakeners, or wordy phrases
 Not every `write-good` flag needs fixing. Ignore flags on:
 
 - **WCAG criterion names** — "(Minimum)" in "Focus Not Obscured (Minimum)" is a proper name
+- **WCAG technical headings and terms** — phrases such as "Minimum contrast ratios" and "minimum target size" use the standard accessibility terminology
 - **Example text showing what not to write** — e.g., "write 'buy' not 'purchase'" must keep "purchase"
-- **"only" as a necessary qualifier** — "Only use classes documented in GOV.UK Frontend" is direct and correct. Do not weaken instructions by removing "only" where it restricts scope.
+- **"only" as a necessary qualifier** — "Only use classes documented in the frontend library" is direct and correct. Do not weaken instructions by removing "only" where it restricts scope.
+- **Accessibility compounds and constrained use phrases** — terms such as "keyboard-only", "screen-reader-only", and "official government use only" are precise and should stay
 - **"minimum" as a technical term** — "minimum target size" is the standard term
 - **"requirement" meaning an actual rule** — "progressive enhancement is a requirement" is precise. Only replace when a simpler word works without losing meaning.
 

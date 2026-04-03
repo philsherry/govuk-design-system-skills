@@ -2,8 +2,17 @@
 category: patterns
 description: Use this pattern when your service needs to take a payment by debit or credit card — ideally by directing users to GOV.UK Pay rather than building your own card collection.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "card"
+  - "card number"
+  - "card payment"
+  - "debit credit"
+  - "details"
+  - "payment"
+  - "payment card details"
+last-reviewed: "2026-04-03"
 name: Payment Card Details
+source: "https://design-system.service.gov.uk/patterns/payment-card-details/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +20,6 @@ subcategory: ask-users-for
 
 > Use this pattern when your service needs to take a payment by debit or credit card — ideally by directing users to GOV.UK Pay rather than building your own card collection.
 > Source: https://design-system.service.gov.uk/patterns/payment-card-details/
-
----
 
 ## Overview
 
@@ -299,7 +306,7 @@ Consider detecting the card type from the first 4 digits of the card number and 
 - Hint text and error messages must link to their input via `aria-describedby`.
 - Set `spellcheck="false"` on name fields.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use GOV.UK Pay if available to your service.
@@ -310,12 +317,12 @@ Consider detecting the card type from the first 4 digits of the card number and 
 - Perform a Luhn algorithm check on the card number client-side or server-side.
 - Provide hint text about where to find the security code.
 
-**Don't:**
-- Don't use `type="number"` for any card detail field.
-- Don't store raw card details on your server without PCI DSS compliance.
-- Don't use a single combined expiry date field — use separate month and year inputs.
-- Don't disable copy and paste — users with password managers need it.
-- Don't ask for the card's PIN — this is never required for a card-not-present transaction.
+**Do not:**
+- Do not use `type="number"` for any card detail field.
+- Do not store raw card details on your server without PCI DSS compliance.
+- Do not use a single combined expiry date field — use separate month and year inputs.
+- Do not disable copy and paste — users with password managers need it.
+- Do not ask for the card's PIN — this is never required for a card-not-present transaction.
 
 ## Related Components / Patterns
 

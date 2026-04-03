@@ -2,8 +2,16 @@
 category: accessibility
 description: WCAG 2.2 requirements, focus states, and accessibility guidance for GOV.UK services.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "ARIA"
+  - "WCAG"
+  - "a11y"
+  - "contrast"
+  - "keyboard"
+  - "screen reader"
+last-reviewed: "2026-04-03"
 name: Accessibility
+source: "https://design-system.service.gov.uk/accessibility/"
 ---
 
 # Accessibility
@@ -11,13 +19,19 @@ name: Accessibility
 > WCAG 2.2 requirements, focus states, and accessibility guidance for GOV.UK services.
 > Source: <https://design-system.service.gov.uk/accessibility/>
 
----
-
 ## Overview
 
 GOV.UK services must meet WCAG 2.2 Level-AA as the Public Sector Bodies Accessibility Regulations 2018 require. GOV.UK Frontend is accessible by default, but correct implementation is essential.
 
 ## WCAG 2.2 Principles
+
+Reference these resources when checking criteria and implementing fixes:
+
+- [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/) — the authoritative source for all success criteria
+- [Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) — filterable list of criteria with techniques and failures
+- [What's new in WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/) — summary of criteria added in 2.2
+- [Techniques](https://www.w3.org/WAI/WCAG22/Techniques/) — sufficient and advisory techniques for meeting each criterion
+- [Understanding WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/) — intent, benefits, and examples for each criterion
 
 The four WCAG principles (POUR):
 
@@ -40,7 +54,7 @@ New in WCAG 2.2:
 - 2.5.7 Dragging Movements (AA): alternatives to drag operations
 - 2.5.8 Target Size (Minimum) (AA): 24×24px minimum target size
 - 3.2.6 Consistent Help (A): help mechanisms in consistent location
-- 3.3.7 Redundant Entry (A): don't ask for info already provided
+- 3.3.7 Redundant Entry (A): do not ask for info already provided
 - 3.3.8 Accessible Authentication (Minimum) (AA): no cognitive tests required
 
 ## Focus States
@@ -57,7 +71,7 @@ Focus state CSS:
 }
 ```
 
-Don't remove focus outlines (`outline: none`). If redesigning focus states, ensure:
+Do not remove focus outlines (`outline: none`). If redesigning focus states, ensure:
 
 - 3:1 contrast ratio between focused and unfocused state
 - Focus indicator has minimum area requirement
@@ -72,6 +86,11 @@ Use correct HTML elements:
 - `<label>` associated with every input
 - `<fieldset>` + `<legend>` for grouped inputs
 - `role="alert"` for dynamic error messages
+
+When ARIA is necessary, reference the spec:
+
+- [WAI-ARIA overview](https://www.w3.org/WAI/standards-guidelines/aria/) — introduction and links to all ARIA resources
+- [ARIA specification](https://w3c.github.io/aria/) — the living standard with roles, states, and properties
 
 ## Screen Reader Considerations
 
@@ -147,7 +166,7 @@ Public sector services must publish an accessibility statement. The statement mu
 - Reference enforcement body (EHRC)
 - Update when accessibility status changes
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 
@@ -157,7 +176,7 @@ Public sector services must publish an accessibility statement. The statement mu
 - Use `aria-describedby` to connect hints and errors to inputs
 - Ensure focus states are always visible
 
-**Don't:**
+**Do not:**
 
 - Use `outline: none` on focused elements
 - Use `tabindex` values greater than 0

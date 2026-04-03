@@ -2,8 +2,15 @@
 category: styles
 description: The GOV.UK page template provides the required HTML structure, meta tags, skip link, header, main content area, and footer for any GOV.UK service page. This is the mandatory starting point for all services using GOV.UK Frontend.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "HTML template"
+  - "document structure"
+  - "page structure"
+  - "page template"
+  - "template"
+last-reviewed: "2026-04-03"
 name: Page Template
+source: "https://design-system.service.gov.uk/styles/page-template/"
 ---
 
 # Page Template
@@ -11,27 +18,19 @@ name: Page Template
 > The GOV.UK page template provides the required HTML structure, meta tags, skip link, header, main content area, and footer for any GOV.UK service page. This is the mandatory starting point for all services using GOV.UK Frontend.
 > Source: https://design-system.service.gov.uk/styles/page-template/
 
----
-
 ## Overview
 
 The GOV.UK page template defines the full HTML document structure required for a compliant GOV.UK service. It includes all required meta tags, the GOV.UK header and footer, a skip link for keyboard accessibility, and the main content wrapper. Using the template ensures consistency across services and satisfies GOV.UK accessibility and branding requirements.
 
 The template ships as a Nunjucks macro (via `govuk/template.njk`) for use with Node.js-based services, and as a plain HTML reference for other environments.
 
----
-
 ## When to use this style
 
 Use the page template for every page in a GOV.UK service. All public-facing GOV.UK services must use this structure.
 
----
-
 ## When not to use this style
 
 Do not use this template for internal tools, admin interfaces, or pages that are not part of a public GOV.UK service. Non-GOV.UK products should not use GDS Transport or GOV.UK branding.
-
----
 
 ## How it works
 
@@ -129,8 +128,6 @@ Extend the base template and override the provided blocks:
 | `footer` | Replace or augment the GOV.UK footer |
 | `bodyEnd` | Content directly before `</body>` closes (scripts) |
 
----
-
 ## Code Examples
 
 ### Minimal HTML page template
@@ -190,8 +187,6 @@ When a page contains a validation error, prefix the title with "Error:":
 Error: [Page or error heading] – [Service name] – GOV.UK
 ```
 
----
-
 ## Accessibility
 
 - The skip link must be the first focusable element on the page. It allows keyboard users to skip repeated navigation.
@@ -201,9 +196,7 @@ Error: [Page or error heading] – [Service name] – GOV.UK
 - The `govuk-frontend-supported` class tells GOV.UK Frontend JavaScript to activate enhanced behaviour in supported browsers only, preserving a no-JS baseline.
 - Page titles must be unique and descriptive. Avoid generic titles such as "GOV.UK".
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Include `charset="UTF-8"` within the first 1024 bytes of the document.
@@ -213,14 +206,12 @@ Error: [Page or error heading] – [Service name] – GOV.UK
 - Add `id="main-content"` to the `<main>` element.
 - Initialise GOV.UK Frontend JavaScript using `initAll()` or individual component imports.
 
-**Don't:**
+**Do not:**
 - Remove or reorder the skip link.
 - Use `govuk-template` or `govuk-template__body` classes for non-GOV.UK services.
 - Omit the `lang` attribute from `<html>`.
 - Place render-blocking scripts inside `<head>` unless they are essential and properly deferred.
 - Use GDS Transport typeface outside gov.uk domains — it requires a Crown licence.
-
----
 
 ## Related Components / Patterns
 

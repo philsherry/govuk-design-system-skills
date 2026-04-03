@@ -2,8 +2,17 @@
 category: patterns
 description: Use this pattern to help users complete a service that involves multiple distinct tasks, by giving them an overview of all tasks and their progress.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "application sections"
+  - "complete"
+  - "complete multiple tasks"
+  - "multi-task"
+  - "multiple"
+  - "task list pattern"
+  - "tasks"
+last-reviewed: "2026-04-03"
 name: Complete multiple tasks
+source: "https://design-system.service.gov.uk/patterns/complete-multiple-tasks/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +20,6 @@ subcategory: help-users-to
 
 > Use this pattern to help users complete a service that involves multiple distinct tasks, by giving them an overview of all tasks and their progress.
 > Source: https://design-system.service.gov.uk/patterns/complete-multiple-tasks/
-
----
 
 ## Overview
 
@@ -322,7 +329,7 @@ The `govukTaskList` macro accepts the following options:
 - Place the progress count ("You have completed X of Y sections") before the task list in the DOM so users encounter it before the list.
 - Use the `idPrefix` option when rendering more than one task list on the same page to avoid duplicate IDs.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Show the number of completed tasks at the top of the task list page.
@@ -331,12 +338,12 @@ The `govukTaskList` macro accepts the following options:
 - Link directly to the relevant task, not to the start of the whole service.
 - Group tasks into sections with headings when the list is long.
 
-**Don't:**
-- Don't make the task list page the final submission step — use a separate "Check your answers" page.
-- Don't use this pattern for short, simple services that users can complete in a single linear flow.
-- Don't show "Completed" status for tasks that still have required fields missing.
-- Don't prevent users from returning to completed tasks to make changes unless there is a strong reason.
-- Don't use more status states than necessary — a large number of states confuses users.
+**Do not:**
+- Do not make the task list page the final submission step — use a separate "Check your answers" page.
+- Do not use this pattern for short, simple services that users can complete in a single linear flow.
+- Do not show "Completed" status for tasks that still have required fields missing.
+- Do not prevent users from returning to completed tasks to make changes unless there is a strong reason.
+- Do not use more status states than necessary — a large number of states confuses users.
 
 ## Related Components / Patterns
 

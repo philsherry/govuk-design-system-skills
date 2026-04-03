@@ -2,16 +2,20 @@
 category: components
 description: Use the textarea component when users need to enter an amount of text that's longer than a single line.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "free text"
+  - "multi-line"
+  - "text area"
+  - "textarea"
+last-reviewed: "2026-04-03"
 name: Textarea
+source: "https://design-system.service.gov.uk/components/textarea/"
 ---
 
 # Textarea
 
 > Use the textarea component when users need to enter an amount of text that's longer than a single line.
 > Source: https://design-system.service.gov.uk/components/textarea/
-
----
 
 ## Overview
 
@@ -246,7 +250,7 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 - Do not use JavaScript to auto-resize the textarea — this is disorienting and can cause scroll issues for users with disabilities.
 - If there is a character limit, use the character count component rather than a plain textarea — users need visible, accessible feedback on remaining characters.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Set `rows` to reflect the expected length of input.
@@ -254,11 +258,11 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 - Pre-populate the textarea with data entered before re-rendering after validation.
 - Use `isPageHeading: true` when this is the only question on the page.
 
-**Don't:**
-- Don't use a textarea for single-line input — use the text input component.
-- Don't auto-resize the textarea with JavaScript.
-- Don't use a textarea when a more structured input would be more appropriate.
-- Don't set an unreasonably large `rows` value — it makes the page feel overwhelming.
+**Do not:**
+- Do not use a textarea for single-line input — use the text input component.
+- Do not auto-resize the textarea with JavaScript.
+- Do not use a textarea when a more structured input would be more appropriate.
+- Do not set an unreasonably large `rows` value — it makes the page feel overwhelming.
 
 ## Related Components / Patterns
 

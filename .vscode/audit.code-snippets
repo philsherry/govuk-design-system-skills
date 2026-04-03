@@ -1,0 +1,1645 @@
+{
+	"Appendix: reading": {
+		"body": [
+			"### Appendix: reading",
+			"",
+			"- [Accessibility Developer Guide](https://www.accessibility-developer-guide.com/)",
+			"- [Adrian Roselli — Consultant, Writer, Speaker](https://adrianroselli.com/)",
+			"- [Modern CSS Solutions](https://moderncss.dev/)",
+			"- [Web Accessibility Cookbook](https://accessibility-cookbook.com/)",
+		],
+		"description": "Appendix: required reading after the report",
+		"prefix": "appx_reading"
+	},
+	"Appendix: writing": {
+		"body": [
+			"### Appendix: writing",
+			"",
+			"- [Can I Use](https://caniuse.com/)",
+			"[HTML Standard - WHATWG](https://html.spec.whatwg.org/)",
+			"- [WCAG 2.2](https://www.w3.org/TR/WCAG22/)",
+			"- [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/)",
+			"- [W3C WAI](https://www.w3.org/WAI/)",
+		],
+		"description": "Appendix: references used while writing the report",
+		"prefix": "appx_writing"
+	},
+	"Audit: executive summary": {
+		"body": [
+			"## Executive summary",
+			"",
+			"${1:Auditor name} conducted an accessibility audit of ${2:service name}, starting on ${CURRENT_DATE} ${CURRENT_MONTH_NAME}.",
+			"",
+			"The service ${3:failed to meet} WCAG 2.2 to a minimum of Level AA, as summarised below.",
+			"",
+			"${4:summ_vib}",
+		],
+		"description": "Executive summary for the report",
+		"prefix": "summ_exec"
+	},
+	"Audit: issue": {
+		"body": [
+			"### ${1:Issue title}",
+			"",
+			"- **WCAG 2.2 violation**: ${5:sc-title};",
+			"- **Page**: ${6:page-name};",
+			"- **URL**: ${7:url};",
+			"- **Journey/step**: ${8:journey-step};",
+			"",
+			"#### Description",
+			"",
+			"${2:Describe the issue here.}",
+			"",
+			"#### Impact",
+			"",
+			"${3:Describe the impact of the issue.}",
+			"",
+			"#### Recommendation",
+			"",
+			"${4:Provide a recommendation for fixing the issue.}",
+			"",
+			"```html",
+			"${0:Include any relevant code snippets or examples here.}",
+			"```",
+			"",
+			"##### Recommended reading",
+			"",
+			"- ${9:Link to relevant documentation or resources}",
+			"- [Can I Use](https://caniuse.com/)",
+		],
+		"description": "Main template for an audit issue",
+		"prefix": "audit_issue"
+	},
+	"Audit: observations": {
+		"body": [
+			"### Observations",
+			"",
+			"Observations made during the audit.",
+			"",
+			"- **${1:Observation title}**: ${2:Describe the observation here.}",
+			"- **Impact**: ${3:Describe the impact of the observation.}",
+			"- **Recommendation**: ${4:Provide a recommendation for addressing the observation.}",
+			"- **Recommended reading**: ${5:Link to relevant documentation or resources}",
+			"",
+			"#### Additional Notes",
+			"",
+			"${6:Include any additional notes or comments here.}",
+		],
+		"description": "Observations section of the audit",
+		"prefix": "audit_obs"
+	},
+	"Report: recommendations": {
+		"body": [
+			"### Recommendations"
+		],
+		"description": "Recommendations section of the report",
+		"prefix": "report_recs"
+	},
+	"Report: suggestions": {
+		"body": [
+			"### Suggestions"
+		],
+		"description": "Suggestions section of the report",
+		"prefix": "report_suggs"
+	},
+	"Report: WCAG table": {
+		"body": [
+			"## Appendix I: Web Content Accessibility Guidelines (WCAG) 2.2",
+			"",
+			"### Classification of Accessibility Issues",
+			"",
+			"The following scoring system was used to indicate the status of the service with regards to each W3C WAI checkpoint, up to and including Level AAA.",
+			"",
+			"| Status                      | Description                                                                                                                                   |",
+			"| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |",
+			"| 🟢 (P) Pass                  | The service meets the requirements of the checkpoint.                                                                                         |",
+			"| 🔴 (H) Fail: High Priority   | The service fails to meet the requirements against A criteria measured against WCAG 2.2 and more severe accessibility issues were identified. |",
+			"| 🟠 (M) Fail: Medium Priority | The service fails to meet the requirements against AA criteria measured against WCAG 2.2                                                      |",
+			"| 🟣 (L) Fail: Low Priority    | The service fails to meet the requirements against AAA criteria measured against WCAG 2.2                                                     |",
+			"| ⚪️ (N/A) Not Applicable      | No content was found on the service to which the checkpoint would relate                                                                      |",
+			"| ⚫️ (N/T) No Time             | Not enough time was available for a thorough audit of all functionality.                                                                      |",
+			"",
+			"### Perceivable",
+			"",
+			"Information and user interface components must be presentable to users in ways they can perceive.",
+			"",
+			"#### Guideline 1.1 Text Alternatives",
+			"",
+			"Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+			"",
+			"| Status | Level | Success Criterion                                                                  |",
+			"| ------ | ----- | ---------------------------------------------------------------------------------- |",
+			"|        | A     | [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) |",
+			"",
+			"#### Guideline 1.2 Time-based Media",
+			"",
+			"Provide alternatives for time-based media.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [1.2.1 Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#audio-only-and-video-only-prerecorded) |",
+			"|        | A | [1.2.2 Captions (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded) |",
+			"|        | A | [1.2.3 Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#audio-description-or-media-alternative-prerecorded) |",
+			"|        | AA | [1.2.4 Captions (Live)](https://www.w3.org/WAI/WCAG22/quickref/#captions-live) |",
+			"|        | AA | [1.2.5 Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#audio-description-prerecorded) |",
+			"|        | AAA | [1.2.6 Sign Language (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#sign-language-prerecorded) |",
+			"|        | AAA | [1.2.7 Extended Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#extended-audio-description-prerecorded) |",
+			"|        | AAA | [1.2.8 Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/quickref/#media-alternative-prerecorded) |",
+			"|        | AAA | [1.2.9 Audio-only (Live)](https://www.w3.org/WAI/WCAG22/quickref/#audio-only-live) |",
+			"",
+			"#### Guideline 1.3 Adaptable",
+			"",
+			"Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) |",
+			"|        | A | [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) |",
+			"|        | A | [1.3.3 Sensory Characteristics](https://www.w3.org/WAI/WCAG22/quickref/#sensory-characteristics) |",
+			"|        | AA | [1.3.4 Orientation](https://www.w3.org/WAI/WCAG22/quickref/#orientation) |",
+			"|        | AA | [1.3.5 Identify Input Purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-input-purpose) |",
+			"|        | AAA | [1.3.6 Identify Purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) |",
+			"",
+			"#### Guideline 1.4 Distinguishable",
+			"",
+			"Make it easier for users to see and hear content including separating foreground from background.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) |",
+			"|        | A | [1.4.2 Audio Control](https://www.w3.org/WAI/WCAG22/quickref/#audio-control) |",
+			"|        | AA | [1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum) |",
+			"|        | AA | [1.4.4 Resize text](https://www.w3.org/WAI/WCAG22/quickref/#resize-text) |",
+			"|        | AA | [1.4.5 Images of Text](https://www.w3.org/WAI/WCAG22/quickref/#images-of-text) |",
+			"|        | AAA | [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced) |",
+			"|        | AAA | [1.4.7 Low or No Background Audio](https://www.w3.org/WAI/WCAG22/quickref/#low-or-no-background-audio) |",
+			"|        | AAA | [1.4.8 Visual Presentation](https://www.w3.org/WAI/WCAG22/quickref/#visual-presentation) |",
+			"|        | AAA | [1.4.9 Images of Text (No Exception)](https://www.w3.org/WAI/WCAG22/quickref/#images-of-text-no-exception) |",
+			"|        | AA | [1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) |",
+			"|        | AA | [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) |",
+			"|        | AA | [1.4.12 Text Spacing](https://www.w3.org/WAI/WCAG22/quickref/#text-spacing) |",
+			"|        | AA | [1.4.13 Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus) |",
+			"",
+			"### Operable",
+			"",
+			"User interface components and navigation must be operable.",
+			"",
+			"#### Guideline 2.1 Keyboard Accessible",
+			"",
+			"Make all functionality available from a keyboard.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) |",
+			"|        | A | [2.1.2 No Keyboard Trap](https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap) |",
+			"|        | AAA | [2.1.3 Keyboard (No Exception)](https://www.w3.org/WAI/WCAG22/quickref/#keyboard-no-exception) |",
+			"|        | A | [2.1.4 Character Key Shortcuts](https://www.w3.org/WAI/WCAG22/quickref/#character-key-shortcuts) |",
+			"",
+			"#### Guideline 2.2 Enough Time",
+			"",
+			"Provide users enough time to read and use content.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [2.2.1 Timing Adjustable](https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable) |",
+			"|        | A | [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) |",
+			"|        | AAA | [2.2.3 No Timing](https://www.w3.org/WAI/WCAG22/quickref/#no-timing) |",
+			"|        | AAA | [2.2.4 Interruptions](https://www.w3.org/WAI/WCAG22/quickref/#interruptions) |",
+			"|        | AAA | [2.2.5 Re-authenticating](https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating) |",
+			"|        | AAA | [2.2.6 Timeouts](https://www.w3.org/WAI/WCAG22/quickref/#timeouts) |",
+			"",
+			"#### Guideline 2.3 Seizures and Physical Reactions",
+			"",
+			"Do not design content in a way that is known to cause seizures or physical reactions.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) |",
+			"|        | AAA | [2.3.2 Three Flashes](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes) |",
+			"|        | AAA | [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) |",
+			"",
+			"#### Guideline 2.4 Navigable",
+			"",
+			"Provide ways to help users navigate, find content, and determine where they are.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks) |",
+			"|        | A | [2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/quickref/#page-titled) |",
+			"|        | A | [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) |",
+			"|        | A | [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) |",
+			"|        | AA | [2.4.5 Multiple Ways](https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways) |",
+			"|        | AA | [2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) |",
+			"|        | AA | [2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible) |",
+			"|        | AAA | [2.4.8 Location](https://www.w3.org/WAI/WCAG22/quickref/#location) |",
+			"|        | AAA | [2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only) |",
+			"|        | AAA | [2.4.10 Section Headings](https://www.w3.org/WAI/WCAG22/quickref/#section-headings) |",
+			"|        | AA | [2.4.11 Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum) |",
+			"|        | AA | [2.4.12 Focus Not Obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-enhanced) |",
+			"|        | AA | [2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance) |",
+			"",
+			"#### Guideline 2.5 Input Modalities",
+			"",
+			"Make it easier for users to operate functionality through various inputs beyond keyboard.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [2.5.1 Pointer Gestures](https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures) |",
+			"|        | A | [2.5.2 Pointer Cancellation](https://www.w3.org/WAI/WCAG22/quickref/#pointer-cancellation) |",
+			"|        | A | [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) |",
+			"|        | A | [2.5.4 Motion Actuation](https://www.w3.org/WAI/WCAG22/quickref/#motion-actuation) |",
+			"|        | AAA | [2.5.5 Target Size](https://www.w3.org/WAI/WCAG22/quickref/#target-size) |",
+			"|        | AAA | [2.5.6 Concurrent Input Mechanisms](https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms) |",
+			"|        | AA | [2.5.7 Dragging Movements](https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements) |",
+			"|        | AA | [2.5.8 Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum) |",
+			"",
+			"### Understandable",
+			"",
+			"Information and the operation of user interface must be understandable.",
+			"",
+			"#### Guideline 3.1 Readable",
+			"",
+			"Make text content readable and understandable.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [3.1.1 Language of Page](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page) |",
+			"|        | AA | [3.1.2 Language of Parts](https://www.w3.org/WAI/WCAG22/quickref/#language-of-parts) |",
+			"|        | AAA | [3.1.3 Unusual Words](https://www.w3.org/WAI/WCAG22/quickref/#unusual-words) |",
+			"|        | AAA | [3.1.4 Abbreviations](https://www.w3.org/WAI/WCAG22/quickref/#abbreviations) |",
+			"|        | AAA | [3.1.5 Reading Level](https://www.w3.org/WAI/WCAG22/quickref/#reading-level) |",
+			"|        | AAA | [3.1.6 Pronunciation](https://www.w3.org/WAI/WCAG22/quickref/#pronunciation) |",
+			"",
+			"#### Guideline 3.2 Predictable",
+			"",
+			"Make Web pages appear and operate in predictable ways.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [3.2.1 On Focus](https://www.w3.org/WAI/WCAG22/quickref/#on-focus) |",
+			"|        | A | [3.2.2 On Input](https://www.w3.org/WAI/WCAG22/quickref/#on-input) |",
+			"|        | AA | [3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation) |",
+			"|        | AA | [3.2.4 Consistent Identification](https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification) |",
+			"|        | AAA | [3.2.5 Change on Request](https://www.w3.org/WAI/WCAG22/quickref/#change-on-request) |",
+			"|        | AA | [3.2.6 Consistent Help](https://www.w3.org/WAI/WCAG22/quickref/#consistent-help) |",
+			"",
+			"#### Guideline 3.3 Input Assistance",
+			"",
+			"Help users avoid and correct mistakes.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) |",
+			"|        | A | [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) |",
+			"|        | AA | [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) |",
+			"|        | AA | [3.3.4 Error Prevention (Legal, Financial, Data)](https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-legal-financial-data) |",
+			"|        | AAA | [3.3.5 Help](https://www.w3.org/WAI/WCAG22/quickref/#help) |",
+			"|        | AAA | [3.3.6 Error Prevention (All)](https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-all) |",
+			"|        | AA | [3.3.7 Redundant Entry](https://www.w3.org/WAI/WCAG22/quickref/#redundant-entry) |",
+			"|        | AA | [3.3.8 Accessible Authentication (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum) |",
+			"|        | AAA | [3.3.9 Accessible Authentication (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-enhanced) |",
+			"",
+			"### Robust",
+			"",
+			"Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
+			"",
+			"#### Guideline 4.1 Compatible",
+			"",
+			"Maximize compatibility with current and future user agents, including assistive technologies.",
+			"",
+			"| Status | Level | Success Criterion |",
+			"| ------ | ----- | ---------------- |",
+			"|        | A | [4.1.1 Parsing](https://www.w3.org/WAI/WCAG22/quickref/#parsing) |",
+			"|        | A | [4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value) |",
+			"|        | AA | [4.1.3 Status Messages](https://www.w3.org/WAI/WCAG22/quickref/#status-messages) |",
+		],
+		"description": "Table for WCAG 2.2 checkpoints",
+		"prefix": "report_wcag_table"
+	},
+	"SC sc-1.1.1 Non-text Content": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG22/#non-text-content) |",
+		],
+		"description": "WCAG SC 1.1.1 Non-text Content table row",
+		"prefix": "sc_1_1_1"
+	},
+	"SC sc-1.2.1 Audio-only and Video-only (Prerecorded)": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.2.1 Audio-only and Video-only (Prerecorded)](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.1 Audio-only and Video-only (Prerecorded) table row",
+		"prefix": "sc_1_2_1"
+	},
+	"SC sc-1.2.2 Captions (Prerecorded)": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG22/#captions-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.2 Captions (Prerecorded) table row",
+		"prefix": "sc_1_2_2"
+	},
+	"SC sc-1.2.3 Audio Description or Media Alternative (Prerecorded)": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.2.3 Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.3 Audio Description or Media Alternative (Prerecorded) table row",
+		"prefix": "sc_1_2_3"
+	},
+	"SC sc-1.2.4 Captions (Live)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.2.4 Captions (Live)](https://www.w3.org/TR/WCAG22/#captions-live) |",
+		],
+		"description": "WCAG SC 1.2.4 Captions (Live) table row",
+		"prefix": "sc_1_2_4"
+	},
+	"SC sc-1.2.5 Audio Description (Prerecorded)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.2.5 Audio Description (Prerecorded)](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.5 Audio Description (Prerecorded) table row",
+		"prefix": "sc_1_2_5"
+	},
+	"SC sc-1.2.6 Sign Language (Prerecorded)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.2.6 Sign Language (Prerecorded)](https://www.w3.org/TR/WCAG22/#sign-language-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.6 Sign Language (Prerecorded) table row",
+		"prefix": "sc_1_2_6"
+	},
+	"SC sc-1.2.7 Extended Audio Description (Prerecorded)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.2.7 Extended Audio Description (Prerecorded)](https://www.w3.org/TR/WCAG22/#extended-audio-description-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.7 Extended Audio Description (Prerecorded) table row",
+		"prefix": "sc_1_2_7"
+	},
+	"SC sc-1.2.8 Media Alternative (Prerecorded)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.2.8 Media Alternative (Prerecorded)](https://www.w3.org/TR/WCAG22/#media-alternative-prerecorded) |",
+		],
+		"description": "WCAG SC 1.2.8 Media Alternative (Prerecorded) table row",
+		"prefix": "sc_1_2_8"
+	},
+	"SC sc-1.2.9 Audio-only (Live)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.2.9 Audio-only (Live)](https://www.w3.org/TR/WCAG22/#audio-only-live) |",
+		],
+		"description": "WCAG SC 1.2.9 Audio-only (Live) table row",
+		"prefix": "sc_1_2_9"
+	},
+	"SC sc-1.3.1 Info and Relationships": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG22/#info-and-relationships) |",
+		],
+		"description": "WCAG SC 1.3.1 Info and Relationships table row",
+		"prefix": "sc_1_3_1"
+	},
+	"SC sc-1.3.2 Meaningful Sequence": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.3.2 Meaningful Sequence](https://www.w3.org/TR/WCAG22/#meaningful-sequence) |",
+		],
+		"description": "WCAG SC 1.3.2 Meaningful Sequence table row",
+		"prefix": "sc_1_3_2"
+	},
+	"SC sc-1.3.3 Sensory Characteristics": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.3.3 Sensory Characteristics](https://www.w3.org/TR/WCAG22/#sensory-characteristics) |",
+		],
+		"description": "WCAG SC 1.3.3 Sensory Characteristics table row",
+		"prefix": "sc_1_3_3"
+	},
+	"SC sc-1.3.4 Orientation": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.3.4 Orientation](https://www.w3.org/TR/WCAG22/#orientation) |",
+		],
+		"description": "WCAG SC 1.3.4 Orientation table row",
+		"prefix": "sc_1_3_4"
+	},
+	"SC sc-1.3.5 Identify Input Purpose": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG22/#identify-input-purpose) |",
+		],
+		"description": "WCAG SC 1.3.5 Identify Input Purpose table row",
+		"prefix": "sc_1_3_5"
+	},
+	"SC sc-1.3.6 Identify Purpose": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.3.6 Identify Purpose](https://www.w3.org/TR/WCAG22/#identify-purpose) |",
+		],
+		"description": "WCAG SC 1.3.6 Identify Purpose table row",
+		"prefix": "sc_1_3_6"
+	},
+	"SC sc-1.4.1 Use of Color": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.4.1 Use of Color](https://www.w3.org/TR/WCAG22/#use-of-color) |",
+		],
+		"description": "WCAG SC 1.4.1 Use of Color table row",
+		"prefix": "sc_1_4_1"
+	},
+	"SC sc-1.4.10 Reflow": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.10 Reflow](https://www.w3.org/TR/WCAG22/#reflow) |",
+		],
+		"description": "WCAG SC 1.4.10 Reflow table row",
+		"prefix": "sc_1_4_10"
+	},
+	"SC sc-1.4.11 Non-text Contrast": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG22/#non-text-contrast) |",
+		],
+		"description": "WCAG SC 1.4.11 Non-text Contrast table row",
+		"prefix": "sc_1_4_11"
+	},
+	"SC sc-1.4.12 Text Spacing": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.12 Text Spacing](https://www.w3.org/TR/WCAG22/#text-spacing) |",
+		],
+		"description": "WCAG SC 1.4.12 Text Spacing table row",
+		"prefix": "sc_1_4_12"
+	},
+	"SC sc-1.4.13 Content on Hover or Focus": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.13 Content on Hover or Focus](https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus) |",
+		],
+		"description": "WCAG SC 1.4.13 Content on Hover or Focus table row",
+		"prefix": "sc_1_4_13"
+	},
+	"SC sc-1.4.2 Audio Control": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [1.4.2 Audio Control](https://www.w3.org/TR/WCAG22/#audio-control) |",
+		],
+		"description": "WCAG SC 1.4.2 Audio Control table row",
+		"prefix": "sc_1_4_2"
+	},
+	"SC sc-1.4.3 Contrast (Minimum)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG22/#contrast-minimum) |",
+		],
+		"description": "WCAG SC 1.4.3 Contrast (Minimum) table row",
+		"prefix": "sc_1_4_3"
+	},
+	"SC sc-1.4.4 Resize text": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.4 Resize text](https://www.w3.org/TR/WCAG22/#resize-text) |",
+		],
+		"description": "WCAG SC 1.4.4 Resize text table row",
+		"prefix": "sc_1_4_4"
+	},
+	"SC sc-1.4.5 Images of Text": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [1.4.5 Images of Text](https://www.w3.org/TR/WCAG22/#images-of-text) |",
+		],
+		"description": "WCAG SC 1.4.5 Images of Text table row",
+		"prefix": "sc_1_4_5"
+	},
+	"SC sc-1.4.6 Contrast (Enhanced)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.4.6 Contrast (Enhanced)](https://www.w3.org/TR/WCAG22/#contrast-enhanced) |",
+		],
+		"description": "WCAG SC 1.4.6 Contrast (Enhanced) table row",
+		"prefix": "sc_1_4_6"
+	},
+	"SC sc-1.4.7 Low or No Background Audio": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.4.7 Low or No Background Audio](https://www.w3.org/TR/WCAG22/#low-or-no-background-audio) |",
+		],
+		"description": "WCAG SC 1.4.7 Low or No Background Audio table row",
+		"prefix": "sc_1_4_7"
+	},
+	"SC sc-1.4.8 Visual Presentation": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.4.8 Visual Presentation](https://www.w3.org/TR/WCAG22/#visual-presentation) |",
+		],
+		"description": "WCAG SC 1.4.8 Visual Presentation table row",
+		"prefix": "sc_1_4_8"
+	},
+	"SC sc-1.4.9 Images of Text (No Exception)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [1.4.9 Images of Text (No Exception)](https://www.w3.org/TR/WCAG22/#images-of-text-no-exception) |",
+		],
+		"description": "WCAG SC 1.4.9 Images of Text (No Exception) table row",
+		"prefix": "sc_1_4_9"
+	},
+	"SC sc-2.1.1 Keyboard": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.1.1 Keyboard](https://www.w3.org/TR/WCAG22/#keyboard) |",
+		],
+		"description": "WCAG SC 2.1.1 Keyboard table row",
+		"prefix": "sc_2_1_1"
+	},
+	"SC sc-2.1.2 No Keyboard Trap": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.1.2 No Keyboard Trap](https://www.w3.org/TR/WCAG22/#no-keyboard-trap) |",
+		],
+		"description": "WCAG SC 2.1.2 No Keyboard Trap table row",
+		"prefix": "sc_2_1_2"
+	},
+	"SC sc-2.1.3 Keyboard (No Exception)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.1.3 Keyboard (No Exception)](https://www.w3.org/TR/WCAG22/#keyboard-no-exception) |",
+		],
+		"description": "WCAG SC 2.1.3 Keyboard (No Exception) table row",
+		"prefix": "sc_2_1_3"
+	},
+	"SC sc-2.1.4 Character Key Shortcuts": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.1.4 Character Key Shortcuts](https://www.w3.org/TR/WCAG22/#character-key-shortcuts) |",
+		],
+		"description": "WCAG SC 2.1.4 Character Key Shortcuts table row",
+		"prefix": "sc_2_1_4"
+	},
+	"SC sc-2.2.1 Timing Adjustable": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.2.1 Timing Adjustable](https://www.w3.org/TR/WCAG22/#timing-adjustable) |",
+		],
+		"description": "WCAG SC 2.2.1 Timing Adjustable table row",
+		"prefix": "sc_2_2_1"
+	},
+	"SC sc-2.2.2 Pause, Stop, Hide": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.2.2 Pause, Stop, Hide](https://www.w3.org/TR/WCAG22/#pause-stop-hide) |",
+		],
+		"description": "WCAG SC 2.2.2 Pause, Stop, Hide table row",
+		"prefix": "sc_2_2_2"
+	},
+	"SC sc-2.2.3 No Timing": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.2.3 No Timing](https://www.w3.org/TR/WCAG22/#no-timing) |",
+		],
+		"description": "WCAG SC 2.2.3 No Timing table row",
+		"prefix": "sc_2_2_3"
+	},
+	"SC sc-2.2.4 Interruptions": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.2.4 Interruptions](https://www.w3.org/TR/WCAG22/#interruptions) |",
+		],
+		"description": "WCAG SC 2.2.4 Interruptions table row",
+		"prefix": "sc_2_2_4"
+	},
+	"SC sc-2.2.5 Re-authenticating": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.2.5 Re-authenticating](https://www.w3.org/TR/WCAG22/#re-authenticating) |",
+		],
+		"description": "WCAG SC 2.2.5 Re-authenticating table row",
+		"prefix": "sc_2_2_5"
+	},
+	"SC sc-2.2.6 Timeouts": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.2.6 Timeouts](https://www.w3.org/TR/WCAG22/#timeouts) |",
+		],
+		"description": "WCAG SC 2.2.6 Timeouts table row",
+		"prefix": "sc_2_2_6"
+	},
+	"SC sc-2.3.1 Three Flashes or Below Threshold": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold) |",
+		],
+		"description": "WCAG SC 2.3.1 Three Flashes or Below Threshold table row",
+		"prefix": "sc_2_3_1"
+	},
+	"SC sc-2.3.2 Three Flashes": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.3.2 Three Flashes](https://www.w3.org/TR/WCAG22/#three-flashes) |",
+		],
+		"description": "WCAG SC 2.3.2 Three Flashes table row",
+		"prefix": "sc_2_3_2"
+	},
+	"SC sc-2.3.3 Animation from Interactions": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.3.3 Animation from Interactions](https://www.w3.org/TR/WCAG22/#animation-from-interactions) |",
+		],
+		"description": "WCAG SC 2.3.3 Animation from Interactions table row",
+		"prefix": "sc_2_3_3"
+	},
+	"SC sc-2.4.1 Bypass Blocks": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.4.1 Bypass Blocks](https://www.w3.org/TR/WCAG22/#bypass-blocks) |",
+		],
+		"description": "WCAG SC 2.4.1 Bypass Blocks table row",
+		"prefix": "sc_2_4_1"
+	},
+	"SC sc-2.4.10 Section Headings": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.4.10 Section Headings](https://www.w3.org/TR/WCAG22/#section-headings) |",
+		],
+		"description": "WCAG SC 2.4.10 Section Headings table row",
+		"prefix": "sc_2_4_10"
+	},
+	"SC sc-2.4.11 Focus Not Obscured (Minimum)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.4.11 Focus Not Obscured (Minimum)](https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum) |",
+		],
+		"description": "WCAG SC 2.4.11 Focus Not Obscured (Minimum) table row",
+		"prefix": "sc_2_4_11"
+	},
+	"SC sc-2.4.12 Focus Not Obscured (Enhanced)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.4.12 Focus Not Obscured (Enhanced)](https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced) |",
+		],
+		"description": "WCAG SC 2.4.12 Focus Not Obscured (Enhanced) table row",
+		"prefix": "sc_2_4_12"
+	},
+	"SC sc-2.4.13 Focus Appearance": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.4.13 Focus Appearance](https://www.w3.org/TR/WCAG22/#focus-appearance) |",
+		],
+		"description": "WCAG SC 2.4.13 Focus Appearance table row",
+		"prefix": "sc_2_4_13"
+	},
+	"SC sc-2.4.2 Page Titled": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.4.2 Page Titled](https://www.w3.org/TR/WCAG22/#page-titled) |",
+		],
+		"description": "WCAG SC 2.4.2 Page Titled table row",
+		"prefix": "sc_2_4_2"
+	},
+	"SC sc-2.4.3 Focus Order": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.4.3 Focus Order](https://www.w3.org/TR/WCAG22/#focus-order) |",
+		],
+		"description": "WCAG SC 2.4.3 Focus Order table row",
+		"prefix": "sc_2_4_3"
+	},
+	"SC sc-2.4.4 Link Purpose (In Context)": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG22/#link-purpose-in-context) |",
+		],
+		"description": "WCAG SC 2.4.4 Link Purpose (In Context) table row",
+		"prefix": "sc_2_4_4"
+	},
+	"SC sc-2.4.5 Multiple Ways": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.4.5 Multiple Ways](https://www.w3.org/TR/WCAG22/#link-purpose-in-context) |",
+		],
+		"description": "WCAG SC 2.4.5 Multiple Ways table row",
+		"prefix": "sc_2_4_5"
+	},
+	"SC sc-2.4.6 Headings and Labels": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.4.6 Headings and Labels](https://www.w3.org/TR/WCAG22/#headings-and-labels) |",
+		],
+		"description": "WCAG SC 2.4.6 Headings and Labels table row",
+		"prefix": "sc_2_4_6"
+	},
+	"SC sc-2.4.7 Focus Visible": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.4.7 Focus Visible](https://www.w3.org/TR/WCAG22/#focus-visible) |",
+		],
+		"description": "WCAG SC 2.4.7 Focus Visible table row",
+		"prefix": "sc_2_4_7"
+	},
+	"SC sc-2.4.8 Location": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.4.8 Location](https://www.w3.org/TR/WCAG22/#location) |",
+		],
+		"description": "WCAG SC 2.4.8 Location table row",
+		"prefix": "sc_2_4_8"
+	},
+	"SC sc-2.4.9 Link Purpose (Link Only)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.4.9 Link Purpose (Link Only)](https://www.w3.org/TR/WCAG22/#link-purpose-link-only) |",
+		],
+		"description": "WCAG SC 2.4.9 Link Purpose (Link Only) table row",
+		"prefix": "sc_2_4_9"
+	},
+	"SC sc-2.5.1 Pointer Gestures": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.5.1 Pointer Gestures](https://www.w3.org/TR/WCAG22/#pointer-gestures) |",
+		],
+		"description": "WCAG SC 2.5.1 Pointer Gestures table row",
+		"prefix": "sc_2_5_1"
+	},
+	"SC sc-2.5.2 Pointer Cancellation": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.5.2 Pointer Cancellation](https://www.w3.org/TR/WCAG22/#pointer-cancellation) |",
+		],
+		"description": "WCAG SC 2.5.2 Pointer Cancellation table row",
+		"prefix": "sc_2_5_2"
+	},
+	"SC sc-2.5.3 Label in Name": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.5.3 Label in Name](https://www.w3.org/TR/WCAG22/#label-in-name) |",
+		],
+		"description": "WCAG SC 2.5.3 Label in Name table row",
+		"prefix": "sc_2_5_3"
+	},
+	"SC sc-2.5.4 Motion Actuation": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [2.5.4 Motion Actuation](https://www.w3.org/TR/WCAG22/#motion-actuation) |",
+		],
+		"description": "WCAG SC 2.5.4 Motion Actuation table row",
+		"prefix": "sc_2_5_4"
+	},
+	"SC sc-2.5.5 Target Size": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.5.5 Target Size](https://www.w3.org/TR/WCAG22/#target-size) |",
+		],
+		"description": "WCAG SC 2.5.5 Target Size table row",
+		"prefix": "sc_2_5_5"
+	},
+	"SC sc-2.5.6 Concurrent Input Mechanisms": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [2.5.6 Concurrent Input Mechanisms](https://www.w3.org/TR/WCAG22/#concurrent-input-mechanisms) |",
+		],
+		"description": "WCAG SC 2.5.6 Concurrent Input Mechanisms table row",
+		"prefix": "sc_2_5_6"
+	},
+	"SC sc-2.5.7 Dragging Movements": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.5.7 Dragging Movements](https://www.w3.org/TR/WCAG22/#dragging-movements) |",
+		],
+		"description": "WCAG SC 2.5.7 Dragging Movements table row",
+		"prefix": "sc_2_5_7"
+	},
+	"SC sc-2.5.8 Target Size (Minimum)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [2.5.8 Target Size (Minimum)](https://www.w3.org/TR/WCAG22/#target-size-minimum) |",
+		],
+		"description": "WCAG SC 2.5.8 Target Size (Minimum) table row",
+		"prefix": "sc_2_5_8"
+	},
+	"SC sc-3.1.1 Language of Page": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.1.1 Language of Page](https://www.w3.org/TR/WCAG22/#language-of-page) |",
+		],
+		"description": "WCAG SC 3.1.1 Language of Page table row",
+		"prefix": "sc_3_1_1"
+	},
+	"SC sc-3.1.2 Language of Parts": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.1.2 Language of Parts](https://www.w3.org/TR/WCAG22/#language-of-parts) |",
+		],
+		"description": "WCAG SC 3.1.2 Language of Parts table row",
+		"prefix": "sc_3_1_2"
+	},
+	"SC sc-3.1.3 Unusual Words": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.1.3 Unusual Words](https://www.w3.org/TR/WCAG22/#unusual-words) |",
+		],
+		"description": "WCAG SC 3.1.3 Unusual Words table row",
+		"prefix": "sc_3_1_3"
+	},
+	"SC sc-3.1.4 Abbreviations": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.1.4 Abbreviations](https://www.w3.org/TR/WCAG22/#abbreviations) |",
+		],
+		"description": "WCAG SC 3.1.4 Abbreviations table row",
+		"prefix": "sc_3_1_4"
+	},
+	"SC sc-3.1.5 Reading Level": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.1.5 Reading Level](https://www.w3.org/TR/WCAG22/#reading-level) |",
+		],
+		"description": "WCAG SC 3.1.5 Reading Level table row",
+		"prefix": "sc_3_1_5"
+	},
+	"SC sc-3.1.6 Pronunciation": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.1.6 Pronunciation](https://www.w3.org/TR/WCAG22/#pronunciation) |",
+		],
+		"description": "WCAG SC 3.1.6 Pronunciation table row",
+		"prefix": "sc_3_1_6"
+	},
+	"SC sc-3.2.1 On Focus": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.2.1 On Focus](https://www.w3.org/TR/WCAG22/#on-focus) |",
+		],
+		"description": "WCAG SC 3.2.1 On Focus table row",
+		"prefix": "sc_3_2_1"
+	},
+	"SC sc-3.2.2 On Input": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.2.2 On Input](https://www.w3.org/TR/WCAG22/#on-input) |",
+		],
+		"description": "WCAG SC 3.2.2 On Input table row",
+		"prefix": "sc_3_2_2"
+	},
+	"SC sc-3.2.3 Consistent Navigation": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.2.3 Consistent Navigation](https://www.w3.org/TR/WCAG22/#consistent-navigation) |",
+		],
+		"description": "WCAG SC 3.2.3 Consistent Navigation table row",
+		"prefix": "sc_3_2_3"
+	},
+	"SC sc-3.2.4 Consistent Identification": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.2.4 Consistent Identification](https://www.w3.org/TR/WCAG22/#consistent-identification) |",
+		],
+		"description": "WCAG SC 3.2.4 Consistent Identification table row",
+		"prefix": "sc_3_2_4"
+	},
+	"SC sc-3.2.5 Change on Request": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.2.5 Change on Request](https://www.w3.org/TR/WCAG22/#change-on-request) |",
+		],
+		"description": "WCAG SC 3.2.5 Change on Request table row",
+		"prefix": "sc_3_2_5"
+	},
+	"SC sc-3.2.6 Consistent Help": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.2.6 Consistent Help](https://www.w3.org/TR/WCAG22/#consistent-help) |",
+		],
+		"description": "WCAG SC 3.2.6 Consistent Help table row",
+		"prefix": "sc_3_2_6"
+	},
+	"SC sc-3.3.1 Error Identification": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.3.1 Error Identification](https://www.w3.org/TR/WCAG22/#error-identification) |",
+		],
+		"description": "WCAG SC 3.3.1 Error Identification table row",
+		"prefix": "sc_3_3_1"
+	},
+	"SC sc-3.3.2 Labels or Instructions": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.3.2 Labels or Instructions](https://www.w3.org/TR/WCAG22/#labels-or-instructions) |",
+		],
+		"description": "WCAG SC 3.3.2 Labels or Instructions table row",
+		"prefix": "sc_3_3_2"
+	},
+	"SC sc-3.3.3 Error Suggestion": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.3.3 Error Suggestion](https://www.w3.org/TR/WCAG22/#error-suggestion) |",
+		],
+		"description": "WCAG SC 3.3.3 Error Suggestion table row",
+		"prefix": "sc_3_3_3"
+	},
+	"SC sc-3.3.4 Error Prevention (Legal, Financial, Data)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.3.4 Error Prevention (Legal, Financial, Data)](https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data) |",
+		],
+		"description": "WCAG SC 3.3.4 Error Prevention (Legal, Financial, Data) table row",
+		"prefix": "sc_3_3_4"
+	},
+	"SC sc-3.3.5 Help": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.3.5 Help](https://www.w3.org/TR/WCAG22/#help) |",
+		],
+		"description": "WCAG SC 3.3.5 Help table row",
+		"prefix": "sc_3_3_5"
+	},
+	"SC sc-3.3.6 Error Prevention (All)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.3.6 Error Prevention (All)](https://www.w3.org/TR/WCAG22/#error-prevention-all) |",
+		],
+		"description": "WCAG SC 3.3.6 Error Prevention (All) table row",
+		"prefix": "sc_3_3_6"
+	},
+	"SC sc-3.3.7 Redundant Entry": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [3.3.7 Redundant Entry](https://www.w3.org/TR/WCAG22/#redundant-entry) |",
+		],
+		"description": "WCAG SC 3.3.7 Redundant Entry table row",
+		"prefix": "sc_3_3_7"
+	},
+	"SC sc-3.3.8 Accessible Authentication (Minimum)": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [3.3.8 Accessible Authentication (Minimum)](https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum) |",
+		],
+		"description": "WCAG SC 3.3.8 Accessible Authentication (Minimum) table row",
+		"prefix": "sc_3_3_8"
+	},
+	"SC sc-3.3.9 Accessible Authentication (Enhanced)": {
+		"body": [
+			"| 🟣 (L) | AAA | [${1:Issue description}](${2:#}) | [3.3.9 Accessible Authentication (Enhanced)](https://www.w3.org/TR/WCAG22/#accessible-authentication-enhanced) |",
+		],
+		"description": "WCAG SC 3.3.9 Accessible Authentication (Enhanced) table row",
+		"prefix": "sc_3_3_9"
+	},
+	"SC sc-4.1.1 Parsing": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [4.1.1 Parsing](https://www.w3.org/TR/WCAG22/#parsing) |",
+		],
+		"description": "WCAG SC 4.1.1 Parsing table row",
+		"prefix": "sc_4_1_1"
+	},
+	"SC sc-4.1.2 Name, Role, Value": {
+		"body": [
+			"| 🔴 (H) | A | [${1:Issue description}](${2:#}) | [4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG22/#name-role-value) |",
+		],
+		"description": "WCAG SC 4.1.2 Name, Role, Value table row",
+		"prefix": "sc_4_1_2"
+	},
+	"SC sc-4.1.3 Status Messages": {
+		"body": [
+			"| 🟠 (M) | AA | [${1:Issue description}](${2:#}) | [4.1.3 Status Messages](https://www.w3.org/TR/WCAG22/#status-messages) |",
+		],
+		"description": "WCAG SC 4.1.3 Status Messages table row",
+		"prefix": "sc_4_1_3"
+	},
+	"SC title_1_1_1_non_text_content": {
+		"body": [
+			"[1.1.1 Non-text Content (A)](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)",
+		],
+		"description": "WCAG SC title 1.1.1 Non-text Content",
+		"prefix": "sc_title_1_1_1_non_text_content"
+	},
+	"SC title_1_2_1_audio_only_and_video_only_prerecorded": {
+		"body": [
+			"[1.2.1 Audio-only and Video-only (Prerecorded) (A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.1 Audio-only and Video-only (Prerecorded)",
+		"prefix": "sc_title_1_2_1_audio_only_and_video_only_prerecorded"
+	},
+	"SC title_1_2_2_captions_prerecorded": {
+		"body": [
+			"[1.2.2 Captions (Prerecorded) (A)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.2 Captions (Prerecorded)",
+		"prefix": "sc_title_1_2_2_captions_prerecorded"
+	},
+	"SC title_1_2_3_audio_description_or_media_alternative_prerecorded": {
+		"body": [
+			"[1.2.3 Audio Description or Media Alternative (Prerecorded) (A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.3 Audio Description or Media Alternative (Prerecorded)",
+		"prefix": "sc_title_1_2_3_audio_description_or_media_alternative_prerecorded"
+	},
+	"SC title_1_2_4_captions_live": {
+		"body": [
+			"[1.2.4 Captions (Live) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html)",
+		],
+		"description": "WCAG SC title 1.2.4 Captions (Live)",
+		"prefix": "sc_title_1_2_4_captions_live"
+	},
+	"SC title_1_2_5_audio_description_prerecorded": {
+		"body": [
+			"[1.2.5 Audio Description (Prerecorded) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.5 Audio Description (Prerecorded)",
+		"prefix": "sc_title_1_2_5_audio_description_prerecorded"
+	},
+	"SC title_1_2_6_sign_language_prerecorded": {
+		"body": [
+			"[1.2.6 Sign Language (Prerecorded) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.6 Sign Language (Prerecorded)",
+		"prefix": "sc_title_1_2_6_sign_language_prerecorded"
+	},
+	"SC title_1_2_7_extended_audio_description_prerecorded": {
+		"body": [
+			"[1.2.7 Extended Audio Description (Prerecorded) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.7 Extended Audio Description (Prerecorded)",
+		"prefix": "sc_title_1_2_7_extended_audio_description_prerecorded"
+	},
+	"SC title_1_2_8_media_alternative_prerecorded": {
+		"body": [
+			"[1.2.8 Media Alternative (Prerecorded) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html)",
+		],
+		"description": "WCAG SC title 1.2.8 Media Alternative (Prerecorded)",
+		"prefix": "sc_title_1_2_8_media_alternative_prerecorded"
+	},
+	"SC title_1_2_9_audio_only_live": {
+		"body": [
+			"[1.2.9 Audio-only (Live) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live.html)",
+		],
+		"description": "WCAG SC title 1.2.9 Audio-only (Live)",
+		"prefix": "sc_title_1_2_9_audio_only_live"
+	},
+	"SC title_1_3_1_info_and_relationships": {
+		"body": [
+			"[1.3.1 Info and Relationships (A)](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)",
+		],
+		"description": "WCAG SC title 1.3.1 Info and Relationships",
+		"prefix": "sc_title_1_3_1_info_and_relationships"
+	},
+	"SC title_1_3_2_meaningful_sequence": {
+		"body": [
+			"[1.3.2 Meaningful Sequence (A)](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html)",
+		],
+		"description": "WCAG SC title 1.3.2 Meaningful Sequence",
+		"prefix": "sc_title_1_3_2_meaningful_sequence"
+	},
+	"SC title_1_3_3_sensory_characteristics": {
+		"body": [
+			"[1.3.3 Sensory Characteristics (A)](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html)",
+		],
+		"description": "WCAG SC title 1.3.3 Sensory Characteristics",
+		"prefix": "sc_title_1_3_3_sensory_characteristics"
+	},
+	"SC title_1_3_4_orientation": {
+		"body": [
+			"[1.3.4 Orientation (AA)](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html)",
+		],
+		"description": "WCAG SC title 1.3.4 Orientation",
+		"prefix": "sc_title_1_3_4_orientation"
+	},
+	"SC title_1_3_5_identify_input_purpose": {
+		"body": [
+			"[1.3.5 Identify Input Purpose (AA)](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)",
+		],
+		"description": "WCAG SC title 1.3.5 Identify Input Purpose",
+		"prefix": "sc_title_1_3_5_identify_input_purpose"
+	},
+	"SC title_1_3_6_identify_purpose": {
+		"body": [
+			"[1.3.6 Identify Purpose (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html)",
+		],
+		"description": "WCAG SC title 1.3.6 Identify Purpose",
+		"prefix": "sc_title_1_3_6_identify_purpose"
+	},
+	"SC title_1_4_1_use_of_color": {
+		"body": [
+			"[1.4.1 Use of Color (A)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)",
+		],
+		"description": "WCAG SC title 1.4.1 Use of Color",
+		"prefix": "sc_title_1_4_1_use_of_color"
+	},
+	"SC title_1_4_10_reflow": {
+		"body": [
+			"[1.4.10 Reflow (AA)](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html)",
+		],
+		"description": "WCAG SC title 1.4.10 Reflow",
+		"prefix": "sc_title_1_4_10_reflow"
+	},
+	"SC title_1_4_11_non_text_contrast": {
+		"body": [
+			"[1.4.11 Non-text Contrast (AA)](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)",
+		],
+		"description": "WCAG SC title 1.4.11 Non-text Contrast",
+		"prefix": "sc_title_1_4_11_non_text_contrast"
+	},
+	"SC title_1_4_12_text_spacing": {
+		"body": [
+			"[1.4.12 Text Spacing (AA)](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html)",
+		],
+		"description": "WCAG SC title 1.4.12 Text Spacing",
+		"prefix": "sc_title_1_4_12_text_spacing"
+	},
+	"SC title_1_4_13_content_on_hover_or_focus": {
+		"body": [
+			"[1.4.13 Content on Hover or Focus (AA)](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html)",
+		],
+		"description": "WCAG SC title 1.4.13 Content on Hover or Focus",
+		"prefix": "sc_title_1_4_13_content_on_hover_or_focus"
+	},
+	"SC title_1_4_2_audio_control": {
+		"body": [
+			"[1.4.2 Audio Control (A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html)",
+		],
+		"description": "WCAG SC title 1.4.2 Audio Control",
+		"prefix": "sc_title_1_4_2_audio_control"
+	},
+	"SC title_1_4_3_contrast_minimum": {
+		"body": [
+			"[1.4.3 Contrast (Minimum) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)",
+		],
+		"description": "WCAG SC title 1.4.3 Contrast (Minimum)",
+		"prefix": "sc_title_1_4_3_contrast_minimum"
+	},
+	"SC title_1_4_4_resize_text": {
+		"body": [
+			"[1.4.4 Resize text (AA)](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html)",
+		],
+		"description": "WCAG SC title 1.4.4 Resize text",
+		"prefix": "sc_title_1_4_4_resize_text"
+	},
+	"SC title_1_4_5_images_of_text": {
+		"body": [
+			"[1.4.5 Images of Text (AA)](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html)",
+		],
+		"description": "WCAG SC title 1.4.5 Images of Text",
+		"prefix": "sc_title_1_4_5_images_of_text"
+	},
+	"SC title_1_4_6_contrast_enhanced": {
+		"body": [
+			"[1.4.6 Contrast (Enhanced) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html)",
+		],
+		"description": "WCAG SC title 1.4.6 Contrast (Enhanced)",
+		"prefix": "sc_title_1_4_6_contrast_enhanced"
+	},
+	"SC title_1_4_7_low_or_no_background_audio": {
+		"body": [
+			"[1.4.7 Low or No Background Audio (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/low-or-no-background-audio.html)",
+		],
+		"description": "WCAG SC title 1.4.7 Low or No Background Audio",
+		"prefix": "sc_title_1_4_7_low_or_no_background_audio"
+	},
+	"SC title_1_4_8_visual_presentation": {
+		"body": [
+			"[1.4.8 Visual Presentation (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html)",
+		],
+		"description": "WCAG SC title 1.4.8 Visual Presentation",
+		"prefix": "sc_title_1_4_8_visual_presentation"
+	},
+	"SC title_1_4_9_images_of_text_no_exception": {
+		"body": [
+			"[1.4.9 Images of Text (No Exception) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception.html)",
+		],
+		"description": "WCAG SC title 1.4.9 Images of Text (No Exception)",
+		"prefix": "sc_title_1_4_9_images_of_text_no_exception"
+	},
+	"SC title_2_1_1_keyboard": {
+		"body": [
+			"[2.1.1 Keyboard (A)](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)",
+		],
+		"description": "WCAG SC title 2.1.1 Keyboard",
+		"prefix": "sc_title_2_1_1_keyboard"
+	},
+	"SC title_2_1_2_no_keyboard_trap": {
+		"body": [
+			"[2.1.2 No Keyboard Trap (A)](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)",
+		],
+		"description": "WCAG SC title 2.1.2 No Keyboard Trap",
+		"prefix": "sc_title_2_1_2_no_keyboard_trap"
+	},
+	"SC title_2_1_3_keyboard_no_exception": {
+		"body": [
+			"[2.1.3 Keyboard (No Exception) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception.html)",
+		],
+		"description": "WCAG SC title 2.1.3 Keyboard (No Exception)",
+		"prefix": "sc_title_2_1_3_keyboard_no_exception"
+	},
+	"SC title_2_1_4_character_key_shortcuts": {
+		"body": [
+			"[2.1.4 Character Key Shortcuts (A)](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html)",
+		],
+		"description": "WCAG SC title 2.1.4 Character Key Shortcuts",
+		"prefix": "sc_title_2_1_4_character_key_shortcuts"
+	},
+	"SC title_2_2_1_timing_adjustable": {
+		"body": [
+			"[2.2.1 Timing Adjustable (A)](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html)",
+		],
+		"description": "WCAG SC title 2.2.1 Timing Adjustable",
+		"prefix": "sc_title_2_2_1_timing_adjustable"
+	},
+	"SC title_2_2_2_pause_stop_hide": {
+		"body": [
+			"[2.2.2 Pause, Stop, Hide (A)](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)",
+		],
+		"description": "WCAG SC title 2.2.2 Pause, Stop, Hide",
+		"prefix": "sc_title_2_2_2_pause_stop_hide"
+	},
+	"SC title_2_2_3_no_timing": {
+		"body": [
+			"[2.2.3 No Timing (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html)",
+		],
+		"description": "WCAG SC title 2.2.3 No Timing",
+		"prefix": "sc_title_2_2_3_no_timing"
+	},
+	"SC title_2_2_4_interruptions": {
+		"body": [
+			"[2.2.4 Interruptions (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/interruptions.html)",
+		],
+		"description": "WCAG SC title 2.2.4 Interruptions",
+		"prefix": "sc_title_2_2_4_interruptions"
+	},
+	"SC title_2_2_5_re_authenticating": {
+		"body": [
+			"[2.2.5 Re-authenticating (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/re-authenticating.html)",
+		],
+		"description": "WCAG SC title 2.2.5 Re-authenticating",
+		"prefix": "sc_title_2_2_5_re_authenticating"
+	},
+	"SC title_2_2_6_timeouts": {
+		"body": [
+			"[2.2.6 Timeouts (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/timeouts.html)",
+		],
+		"description": "WCAG SC title 2.2.6 Timeouts",
+		"prefix": "sc_title_2_2_6_timeouts"
+	},
+	"SC title_2_3_1_three_flashes_or_below_threshold": {
+		"body": [
+			"[2.3.1 Three Flashes or Below Threshold (A)](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html)",
+		],
+		"description": "WCAG SC title 2.3.1 Three Flashes or Below Threshold",
+		"prefix": "sc_title_2_3_1_three_flashes_or_below_threshold"
+	},
+	"SC title_2_3_2_three_flashes": {
+		"body": [
+			"[2.3.2 Three Flashes (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes.html)",
+		],
+		"description": "WCAG SC title 2.3.2 Three Flashes",
+		"prefix": "sc_title_2_3_2_three_flashes"
+	},
+	"SC title_2_3_3_animation_from_interactions": {
+		"body": [
+			"[2.3.3 Animation from Interactions (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)",
+		],
+		"description": "WCAG SC title 2.3.3 Animation from Interactions",
+		"prefix": "sc_title_2_3_3_animation_from_interactions"
+	},
+	"SC title_2_4_1_bypass_blocks": {
+		"body": [
+			"[2.4.1 Bypass Blocks (A)](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html)",
+		],
+		"description": "WCAG SC title 2.4.1 Bypass Blocks",
+		"prefix": "sc_title_2_4_1_bypass_blocks"
+	},
+	"SC title_2_4_10_section_headings": {
+		"body": [
+			"[2.4.10 Section Headings (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html)",
+		],
+		"description": "WCAG SC title 2.4.10 Section Headings",
+		"prefix": "sc_title_2_4_10_section_headings"
+	},
+	"SC title_2_4_11_focus_not_obscured_minimum": {
+		"body": [
+			"[2.4.11 Focus Not Obscured (Minimum) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html)",
+		],
+		"description": "WCAG SC title 2.4.11 Focus Not Obscured (Minimum)",
+		"prefix": "sc_title_2_4_11_focus_not_obscured_minimum"
+	},
+	"SC title_2_4_12_focus_not_obscured_enhanced": {
+		"body": [
+			"[2.4.12 Focus Not Obscured (Enhanced) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html)",
+		],
+		"description": "WCAG SC title 2.4.12 Focus Not Obscured (Enhanced)",
+		"prefix": "sc_title_2_4_12_focus_not_obscured_enhanced"
+	},
+	"SC title_2_4_13_focus_appearance": {
+		"body": [
+			"[2.4.13 Focus Appearance (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html)",
+		],
+		"description": "WCAG SC title 2.4.13 Focus Appearance",
+		"prefix": "sc_title_2_4_13_focus_appearance"
+	},
+	"SC title_2_4_2_page_titled": {
+		"body": [
+			"[2.4.2 Page Titled (A)](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html)",
+		],
+		"description": "WCAG SC title 2.4.2 Page Titled",
+		"prefix": "sc_title_2_4_2_page_titled"
+	},
+	"SC title_2_4_3_focus_order": {
+		"body": [
+			"[2.4.3 Focus Order (A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)",
+		],
+		"description": "WCAG SC title 2.4.3 Focus Order",
+		"prefix": "sc_title_2_4_3_focus_order"
+	},
+	"SC title_2_4_4_link_purpose_in_context": {
+		"body": [
+			"[2.4.4 Link Purpose (In Context) (A)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)",
+		],
+		"description": "WCAG SC title 2.4.4 Link Purpose (In Context)",
+		"prefix": "sc_title_2_4_4_link_purpose_in_context"
+	},
+	"SC title_2_4_5_multiple_ways": {
+		"body": [
+			"[2.4.5 Multiple Ways (AA)](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html)",
+		],
+		"description": "WCAG SC title 2.4.5 Multiple Ways",
+		"prefix": "sc_title_2_4_5_multiple_ways"
+	},
+	"SC title_2_4_6_headings_and_labels": {
+		"body": [
+			"[2.4.6 Headings and Labels (AA)](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html)",
+		],
+		"description": "WCAG SC title 2.4.6 Headings and Labels",
+		"prefix": "sc_title_2_4_6_headings_and_labels"
+	},
+	"SC title_2_4_7_focus_visible": {
+		"body": [
+			"[2.4.7 Focus Visible (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)",
+		],
+		"description": "WCAG SC title 2.4.7 Focus Visible",
+		"prefix": "sc_title_2_4_7_focus_visible"
+	},
+	"SC title_2_4_8_location": {
+		"body": [
+			"[2.4.8 Location (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/location.html)",
+		],
+		"description": "WCAG SC title 2.4.8 Location",
+		"prefix": "sc_title_2_4_8_location"
+	},
+	"SC title_2_4_9_link_purpose_link_only": {
+		"body": [
+			"[2.4.9 Link Purpose (Link Only) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only.html)",
+		],
+		"description": "WCAG SC title 2.4.9 Link Purpose (Link Only)",
+		"prefix": "sc_title_2_4_9_link_purpose_link_only"
+	},
+	"SC title_2_5_1_pointer_gestures": {
+		"body": [
+			"[2.5.1 Pointer Gestures (A)](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html)",
+		],
+		"description": "WCAG SC title 2.5.1 Pointer Gestures",
+		"prefix": "sc_title_2_5_1_pointer_gestures"
+	},
+	"SC title_2_5_2_pointer_cancellation": {
+		"body": [
+			"[2.5.2 Pointer Cancellation (A)](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html)",
+		],
+		"description": "WCAG SC title 2.5.2 Pointer Cancellation",
+		"prefix": "sc_title_2_5_2_pointer_cancellation"
+	},
+	"SC title_2_5_3_label_in_name": {
+		"body": [
+			"[2.5.3 Label in Name (A)](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html)",
+		],
+		"description": "WCAG SC title 2.5.3 Label in Name",
+		"prefix": "sc_title_2_5_3_label_in_name"
+	},
+	"SC title_2_5_4_motion_actuation": {
+		"body": [
+			"[2.5.4 Motion Actuation (A)](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html)",
+		],
+		"description": "WCAG SC title 2.5.4 Motion Actuation",
+		"prefix": "sc_title_2_5_4_motion_actuation"
+	},
+	"SC title_2_5_5_target_size": {
+		"body": [
+			"[2.5.5 Target Size (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/target-size.html)",
+		],
+		"description": "WCAG SC title 2.5.5 Target Size",
+		"prefix": "sc_title_2_5_5_target_size"
+	},
+	"SC title_2_5_6_concurrent_input_mechanisms": {
+		"body": [
+			"[2.5.6 Concurrent Input Mechanisms (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/concurrent-input-mechanisms.html)",
+		],
+		"description": "WCAG SC title 2.5.6 Concurrent Input Mechanisms",
+		"prefix": "sc_title_2_5_6_concurrent_input_mechanisms"
+	},
+	"SC title_2_5_7_dragging_movements": {
+		"body": [
+			"[2.5.7 Dragging Movements (AA)](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html)",
+		],
+		"description": "WCAG SC title 2.5.7 Dragging Movements",
+		"prefix": "sc_title_2_5_7_dragging_movements"
+	},
+	"SC title_2_5_8_target_size_minimum": {
+		"body": [
+			"[2.5.8 Target Size (Minimum) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html)",
+		],
+		"description": "WCAG SC title 2.5.8 Target Size (Minimum)",
+		"prefix": "sc_title_2_5_8_target_size_minimum"
+	},
+	"SC title_3_1_1_language_of_page": {
+		"body": [
+			"[3.1.1 Language of Page (A)](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html)",
+		],
+		"description": "WCAG SC title 3.1.1 Language of Page",
+		"prefix": "sc_title_3_1_1_language_of_page"
+	},
+	"SC title_3_1_2_language_of_parts": {
+		"body": [
+			"[3.1.2 Language of Parts (AA)](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html)",
+		],
+		"description": "WCAG SC title 3.1.2 Language of Parts",
+		"prefix": "sc_title_3_1_2_language_of_parts"
+	},
+	"SC title_3_1_3_unusual_words": {
+		"body": [
+			"[3.1.3 Unusual Words (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/unusual-words.html)",
+		],
+		"description": "WCAG SC title 3.1.3 Unusual Words",
+		"prefix": "sc_title_3_1_3_unusual_words"
+	},
+	"SC title_3_1_4_abbreviations": {
+		"body": [
+			"[3.1.4 Abbreviations (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/abbreviations.html)",
+		],
+		"description": "WCAG SC title 3.1.4 Abbreviations",
+		"prefix": "sc_title_3_1_4_abbreviations"
+	},
+	"SC title_3_1_5_reading_level": {
+		"body": [
+			"[3.1.5 Reading Level (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html)",
+		],
+		"description": "WCAG SC title 3.1.5 Reading Level",
+		"prefix": "sc_title_3_1_5_reading_level"
+	},
+	"SC title_3_1_6_pronunciation": {
+		"body": [
+			"[3.1.6 Pronunciation (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/pronunciation.html)",
+		],
+		"description": "WCAG SC title 3.1.6 Pronunciation",
+		"prefix": "sc_title_3_1_6_pronunciation"
+	},
+	"SC title_3_2_1_on_focus": {
+		"body": [
+			"[3.2.1 On Focus (A)](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html)",
+		],
+		"description": "WCAG SC title 3.2.1 On Focus",
+		"prefix": "sc_title_3_2_1_on_focus"
+	},
+	"SC title_3_2_2_on_input": {
+		"body": [
+			"[3.2.2 On Input (A)](https://www.w3.org/WAI/WCAG22/Understanding/on-input.html)",
+		],
+		"description": "WCAG SC title 3.2.2 On Input",
+		"prefix": "sc_title_3_2_2_on_input"
+	},
+	"SC title_3_2_3_consistent_navigation": {
+		"body": [
+			"[3.2.3 Consistent Navigation (AA)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html)",
+		],
+		"description": "WCAG SC title 3.2.3 Consistent Navigation",
+		"prefix": "sc_title_3_2_3_consistent_navigation"
+	},
+	"SC title_3_2_4_consistent_identification": {
+		"body": [
+			"[3.2.4 Consistent Identification (AA)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html)",
+		],
+		"description": "WCAG SC title 3.2.4 Consistent Identification",
+		"prefix": "sc_title_3_2_4_consistent_identification"
+	},
+	"SC title_3_2_5_change_on_request": {
+		"body": [
+			"[3.2.5 Change on Request (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/change-on-request.html)",
+		],
+		"description": "WCAG SC title 3.2.5 Change on Request",
+		"prefix": "sc_title_3_2_5_change_on_request"
+	},
+	"SC title_3_2_6_consistent_help": {
+		"body": [
+			"[3.2.6 Consistent Help (A)](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html)",
+		],
+		"description": "WCAG SC title 3.2.6 Consistent Help",
+		"prefix": "sc_title_3_2_6_consistent_help"
+	},
+	"SC title_3_3_1_error_identification": {
+		"body": [
+			"[3.3.1 Error Identification (A)](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html)",
+		],
+		"description": "WCAG SC title 3.3.1 Error Identification",
+		"prefix": "sc_title_3_3_1_error_identification"
+	},
+	"SC title_3_3_2_labels_or_instructions": {
+		"body": [
+			"[3.3.2 Labels or Instructions (A)](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html)",
+		],
+		"description": "WCAG SC title 3.3.2 Labels or Instructions",
+		"prefix": "sc_title_3_3_2_labels_or_instructions"
+	},
+	"SC title_3_3_3_error_suggestion": {
+		"body": [
+			"[3.3.3 Error Suggestion (AA)](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html)",
+		],
+		"description": "WCAG SC title 3.3.3 Error Suggestion",
+		"prefix": "sc_title_3_3_3_error_suggestion"
+	},
+	"SC title_3_3_4_error_prevention_legal_financial_data": {
+		"body": [
+			"[3.3.4 Error Prevention (Legal, Financial, Data) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html)",
+		],
+		"description": "WCAG SC title 3.3.4 Error Prevention (Legal, Financial, Data)",
+		"prefix": "sc_title_3_3_4_error_prevention_legal_financial_data"
+	},
+	"SC title_3_3_5_help": {
+		"body": [
+			"[3.3.5 Help (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/help.html)",
+		],
+		"description": "WCAG SC title 3.3.5 Help",
+		"prefix": "sc_title_3_3_5_help"
+	},
+	"SC title_3_3_6_error_prevention_all": {
+		"body": [
+			"[3.3.6 Error Prevention (All) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all.html)",
+		],
+		"description": "WCAG SC title 3.3.6 Error Prevention (All)",
+		"prefix": "sc_title_3_3_6_error_prevention_all"
+	},
+	"SC title_3_3_7_redundant_entry": {
+		"body": [
+			"[3.3.7 Redundant Entry (A)](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html)",
+		],
+		"description": "WCAG SC title 3.3.7 Redundant Entry",
+		"prefix": "sc_title_3_3_7_redundant_entry"
+	},
+	"SC title_3_3_8_accessible_authentication_minimum": {
+		"body": [
+			"[3.3.8 Accessible Authentication (Minimum) (AA)](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html)",
+		],
+		"description": "WCAG SC title 3.3.8 Accessible Authentication (Minimum)",
+		"prefix": "sc_title_3_3_8_accessible_authentication_minimum"
+	},
+	"SC title_3_3_9_accessible_authentication_enhanced": {
+		"body": [
+			"[3.3.9 Accessible Authentication (Enhanced) (AAA)](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html)",
+		],
+		"description": "WCAG SC title 3.3.9 Accessible Authentication (Enhanced)",
+		"prefix": "sc_title_3_3_9_accessible_authentication_enhanced"
+	},
+	"SC title_4_1_1_parsing": {
+		"body": [
+			"[4.1.1 Parsing (A)](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html)",
+		],
+		"description": "WCAG SC title 4.1.1 Parsing",
+		"prefix": "sc_title_4_1_1_parsing"
+	},
+	"SC title_4_1_2_name_role_value": {
+		"body": [
+			"[4.1.2 Name, Role, Value (A)](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)",
+		],
+		"description": "WCAG SC title 4.1.2 Name, Role, Value",
+		"prefix": "sc_title_4_1_2_name_role_value"
+	},
+	"SC title_4_1_3_status_messages": {
+		"body": [
+			"[4.1.3 Status Messages (AA)](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)",
+		],
+		"description": "WCAG SC title 4.1.3 Status Messages",
+		"prefix": "sc_title_4_1_3_status_messages"
+	},
+	"User journey": {
+		"body": [
+			"# User journey",
+			"",
+			"## Details for the ${1} service",
+			"",
+			"### Instructions to access the service",
+			"",
+			"${2:ujd:User journey details}",
+			"",
+			"The user journey is a sequence of steps that a user takes to complete a task on the website. It includes the following steps:",
+			"",
+			"${3:ujse}",
+			"",
+			"Each step should be tested for accessibility issues and documented in the report.",
+		],
+		"description": "User journey section for the report",
+		"prefix": "uj"
+	},
+	"User journey details": {
+		"body": [
+			"- URL: `${1:https://beta.nhs.net/}`",
+			"- Browser: `${2:|Chrome,Edge,Firefox,Safari|}`",
+			"- Operating system: `${3:|Windows,macOS,Linux,Android,iOS|}`",
+			"- Assistive technology: `${4:|NVDA,JAWS,VoiceOver,TalkBack|}`",
+		],
+		"description": "Any required details for the user journey",
+		"prefix": "ujd"
+	},
+	"User journey step: choose": {
+		"body": [
+			"1. **${1:Describe what this step is}**",
+			"",
+			"\t\t1. choose <kbd>Yes</kbd>",
+			"\t\t1. then select <kbd>Continue</kbd>",
+		],
+		"description": "The keyboard command to choose a radio option",
+		"prefix": "ujsc"
+	},
+	"User journey step: enter": {
+		"body": [
+			"1. **${1:Describe what this step is}**",
+			"",
+			"\t\t1. enter `${2:8008135}`",
+			"\t\t1. then select <kbd>Continue</kbd>",
+		],
+		"description": "The user journey step to enter a value",
+		"prefix": "ujse"
+	},
+	"User journey step: select": {
+		"body": [
+			"1. **${1:Describe what this step is}**",
+			"",
+			"\t\t1. select <kbd>Continue</kbd>",
+		],
+		"description": "The keyboard command to submit a form",
+		"prefix": "ujss"
+	},
+	"WCAG violation summary (brief)": {
+		"body": [
+			"### WCAG violation summary (brief)",
+			"",
+			"The following violations need fixing to comply to a AA standard.",
+			"",
+			"| Status | Level | Amount |",
+			"| ----- | ----- | ----- |",
+			"| 🔴 (H) Fail: High Priority | A | ${0} |",
+			"| 🟠 (M) Fail: Medium Priority | AA | |",
+			"| 🟣 (L) Fail: Low Priority | AAA | |",
+			"",
+			"There are also some usability failings which, while not WCAG violations, should still be fixed before a retest.",
+		],
+		"description": "WCAG violation summary (brief) for the report",
+		"prefix": "summ_vib"
+	},
+	"WCAG violation summary (details)": {
+		"body": [
+			"### WCAG violation summary (details)",
+			"",
+			"We used the following scoring system to show how the service meets each W3C checkpoint, up to and including Level AA.",
+			"",
+			"| Status | Level | Description |",
+			"| ----- | ----- | ---------- |",
+			"| 🔴 (H) Fail: High Priority | A | The service fails to meet the requirements against A criteria measured against WCAG 2.1 and more severe accessibility issues were identified. |",
+			"| 🟠 (M) Fail: Medium Priority | AA | The service fails to meet the requirements against AA criteria measured against WCAG 2.1 |",
+			"| 🟣 (L) Fail: Low Priority | AAA | The service almost meets the requirements of the checkpoint. Only a small number of minor problems were identified. The site fails to meet the requirements against AAA criteria measured against WCAG 2.1 |",
+			"",
+		],
+		"description": "WCAG violation summary (details) for the report",
+		"prefix": "summ_vid"
+	},
+	"WCAG violation summary (details) table cell": {
+		"body": [
+			"| ${1|🔴 (H),🟠 (M),🟣 (L)|} | ${2|A,AA,AAA|} | [${3:Issue description}](${4:#}) | [${5:WCAG SC}](${6:WCAG-SC-Understanding-URL}) |",
+		],
+		"description": "WCAG violation summary (details) table header",
+		"prefix": "summ_vitd"
+	},
+	"WCAG violation summary (details) table header": {
+		"body": [
+			"The following violations need fixing in order to comply to a AA standard.",
+			"",
+			"| Status | Level | Issue | Success Criterion |",
+			"| ------ | ----- | ----- | ----------------- |",
+		],
+		"description": "WCAG violation summary (details) table header",
+		"prefix": "summ_vith"
+	}
+}

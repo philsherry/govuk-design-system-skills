@@ -2,8 +2,18 @@
 category: foundations
 description: Rapid prototyping tool for building realistic GOV.UK service prototypes for user research.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "Express"
+  - "branching"
+  - "gov.uk prototype kit"
+  - "kit"
+  - "prototype"
+  - "prototyping"
+  - "routes"
+  - "session data"
+last-reviewed: "2026-04-03"
 name: GOV.UK Prototype Kit
+source: "https://prototype-kit.service.gov.uk/docs/"
 ---
 
 # GOV.UK Prototype Kit
@@ -11,15 +21,11 @@ name: GOV.UK Prototype Kit
 > Rapid prototyping tool for building realistic GOV.UK service prototypes for user research.
 > Source: https://prototype-kit.service.gov.uk/docs/
 
----
-
 ## Overview
 
 The GOV.UK Prototype Kit is a rapid prototyping tool built on Node.js and Express. It lets designers and developers build realistic, interactive HTML prototypes of GOV.UK services without writing production code. The kit ships with GOV.UK Frontend pre-installed, so prototypes look and behave like real GOV.UK services from the first page.
 
 Use the kit for user research and design exploration only. The kit is not a production application framework. Never use prototypes built with the kit to handle real user data or present them to the public as a live service.
-
----
 
 ## When to use
 
@@ -37,15 +43,11 @@ Use the kit for user research and design exploration only. The kit is not a prod
 - As a substitute for auditing the accessibility of a production service.
 - As a CMS or long-term content management tool.
 
----
-
 ## How it works
 
 The kit is an Express.js application with Nunjucks templating. When you create a prototype, the kit scaffolds a project directory and installs GOV.UK Frontend as a dependency. The development server watches your files and reloads the browser on save with Browsersync.
 
 All GOV.UK Frontend Nunjucks macros are available globally in every template — you do not need to import them individually. The kit's middleware automatically saves session data submitted via HTML forms and makes it available to all templates as the `data` object.
-
----
 
 ## Installation
 
@@ -70,8 +72,6 @@ The kit opens at `http://localhost:3000` in your browser. The server watches all
 ```bash
 npx govuk-prototype-kit@14 create my-prototype
 ```
-
----
 
 ## Project Structure
 
@@ -107,8 +107,6 @@ my-prototype/
 | `app/data/session-data-defaults.js` | Default values for session data on a fresh session. |
 | `app/assets/` | Custom CSS, JavaScript, and images served statically. |
 | `app/config.js` | Service name, port, and authentication settings. |
-
----
 
 ## Layout
 
@@ -172,8 +170,6 @@ In practice the kit re-exports this as `layouts/main.html`, so in most projects 
 {% endblock %}
 ```
 
----
-
 ## Using Macros
 
 All GOV.UK Frontend Nunjucks macros are available globally in every template without imports. The macro name is always `govuk` + PascalCase component name.
@@ -210,8 +206,6 @@ All GOV.UK Frontend Nunjucks macros are available globally in every template wit
 }) }}
 ```
 
----
-
 ## Configuration
 
 Edit `app/config.js` to configure the service:
@@ -229,8 +223,6 @@ module.exports = {
   password: 'correct-horse-battery-staple'
 }
 ```
-
----
 
 ## Routing
 
@@ -293,8 +285,6 @@ router.get('/summary', function (req, res) {
   })
 })
 ```
-
----
 
 ## Session Data
 
@@ -385,8 +375,6 @@ Navigate to `/prototype-admin/clear-data`, or in a route:
 req.session.data = {}
 ```
 
----
-
 ## Auto Data Plugin
 
 The kit's built-in middleware automatically saves every form field to `req.session.data` on POST. You do not need to write code to capture form values — submit a form and the data is available at once in the next template as `data['field-name']`.
@@ -394,8 +382,6 @@ The kit's built-in middleware automatically saves every form field to `req.sessi
 This behaviour applies to all `<input>`, `<textarea>`, and `<select>` elements with a `name` attribute. It does not apply to inputs with `name` attributes that conflict with reserved kit properties.
 
 Use hyphens in field names, not spaces: `name="first-name"`, not `name="first name"`.
-
----
 
 ## Research Tips
 
@@ -417,8 +403,6 @@ Use hyphens in field names, not spaces: `name="first-name"`, not `name="first na
 
 **Never use for real services** — The kit has no security hardening, rate limiting, or production data persistence. Never use it as a live service or present it to the public as one.
 
----
-
 ## Accessibility
 
 Prototypes built with the kit inherit GOV.UK Frontend's accessibility features, but:
@@ -428,9 +412,7 @@ Prototypes built with the kit inherit GOV.UK Frontend's accessibility features, 
 - Do not use a prototype as a proxy for auditing the accessibility of a production service.
 - Ensure your custom Nunjucks and HTML does not break the accessibility of GOV.UK Frontend components — do not remove `for`/`id` associations, ARIA attributes, or focus management.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do** use the kit only for prototyping and user research — never as a production service.
 
@@ -446,17 +428,15 @@ Prototypes built with the kit inherit GOV.UK Frontend's accessibility features, 
 
 **Do** name form fields with hyphens, not spaces: `name="date-of-birth"` not `name="date of birth"`.
 
-**Don't** store real personal data in a prototype — the kit stores session data unencrypted.
+**Do not** store real personal data in a prototype — the kit stores session data unencrypted.
 
-**Don't** use the kit to build production services — it has no security hardening, rate limiting, or proper data persistence.
+**Do not** use the kit to build production services — it has no security hardening, rate limiting, or proper data persistence.
 
-**Don't** define routes for every page — only add entries to `routes.js` where you need branching logic or custom data manipulation.
+**Do not** define routes for every page — only add entries to `routes.js` where you need branching logic or custom data manipulation.
 
-**Don't** call `npm start` and `npm run dev` interchangeably without checking which starts the live-reload server — use `npm run dev` during active design work.
+**Do not** call `npm start` and `npm run dev` interchangeably without checking which starts the live-reload server — use `npm run dev` during active design work.
 
-**Don't** import jQuery or large libraries unless necessary for a specific research question.
-
----
+**Do not** import jQuery or large libraries unless necessary for a specific research question.
 
 ## Related
 

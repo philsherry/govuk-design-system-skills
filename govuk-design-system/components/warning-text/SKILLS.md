@@ -2,16 +2,21 @@
 category: components
 description: Use the warning text component when you need to warn users about something important, such as legal consequences of an action.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "alert text"
+  - "exclamation"
+  - "text"
+  - "warning"
+  - "warning text"
+last-reviewed: "2026-04-03"
 name: Warning Text
+source: "https://design-system.service.gov.uk/components/warning-text/"
 ---
 
 # Warning Text
 
 > Use the warning text component when you need to warn users about something important, such as legal consequences of an action.
 > Source: https://design-system.service.gov.uk/components/warning-text/
-
----
 
 ## Overview
 
@@ -157,7 +162,7 @@ The warning text component does not have error states. This is a presentational 
 - Ensure warning content is specific: say what will happen, not that something is important.
 - Translate `iconFallbackText` for services in languages other than English.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use warning text for genuinely high-stakes situations: legal obligations, serious financial consequences, irreversible actions.
@@ -165,11 +170,11 @@ The warning text component does not have error states. This is a presentational 
 - Always include `iconFallbackText` and translate it for non-English services.
 - Keep warning text concise — do not write entire paragraphs inside the component.
 
-**Don't:**
-- Don't use warning text for general important information — use inset text instead.
-- Don't use warning text so frequently that it loses impact.
-- Don't omit `iconFallbackText` — screen reader users will not hear "Warning" before the text.
-- Don't use the component for positive messages, success confirmations, or decorative purposes.
+**Do not:**
+- Do not use warning text for general important information — use inset text instead.
+- Do not use warning text so frequently that it loses impact.
+- Do not omit `iconFallbackText` — screen reader users will not hear "Warning" before the text.
+- Do not use the component for positive messages, success confirmations, or decorative purposes.
 
 ## Related Components / Patterns
 

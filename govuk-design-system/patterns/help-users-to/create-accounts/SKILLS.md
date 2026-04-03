@@ -2,8 +2,14 @@
 category: patterns
 description: Only ask users to create an account if it genuinely benefits them — and consider GOV.UK One Login before building a custom system.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "account creation"
+  - "accounts"
+  - "registration"
+  - "sign up"
+last-reviewed: "2026-04-03"
 name: Help users to create accounts
+source: "https://design-system.service.gov.uk/patterns/create-accounts/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +17,6 @@ subcategory: help-users-to
 
 > Only ask users to create an account if it genuinely benefits them — and consider GOV.UK One Login before building a custom system.
 > Source: https://design-system.service.gov.uk/patterns/create-accounts/
-
----
 
 ## Overview
 
@@ -332,7 +336,7 @@ Consider the returning user journey from the start of the design process. A clea
 - Sign-in error messages should be generic (do not reveal whether the email or password was wrong) to prevent account enumeration attacks.
 - Ensure the registration form is fully operable by keyboard and compatible with screen readers.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Consider GOV.UK One Login before building a custom account system.
@@ -344,13 +348,13 @@ Consider the returning user journey from the start of the design process. A clea
 - Provide a clear password reset flow.
 - Allow guest completion of the service if an account is not strictly required.
 
-**Don't:**
-- Don't require account creation before users can understand what the service does.
-- Don't enforce password complexity rules (uppercase, special characters) — length is more important than complexity.
-- Don't reveal whether an email address is already registered when handling sign-in failures.
-- Don't set an artificially low maximum password length.
-- Don't disable paste in password fields.
-- Don't store passwords in plain text — always hash and salt.
+**Do not:**
+- Do not require account creation before users can understand what the service does.
+- Do not enforce password complexity rules (uppercase, special characters) — length is more important than complexity.
+- Do not reveal whether an email address is already registered when handling sign-in failures.
+- Do not set an artificially low maximum password length.
+- Do not disable paste in password fields.
+- Do not store passwords in plain text — always hash and salt.
 
 ## Related Components / Patterns
 

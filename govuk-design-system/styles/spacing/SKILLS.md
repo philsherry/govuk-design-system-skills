@@ -2,8 +2,15 @@
 category: styles
 description: GOV.UK Frontend provides a nine-point spacing scale and override utility classes for applying margins and padding. The scale is also available as a Sass function for use inside custom stylesheets.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "margin"
+  - "padding"
+  - "spacing"
+  - "spacing scale"
+  - "whitespace"
+last-reviewed: "2026-04-03"
 name: Spacing
+source: "https://design-system.service.gov.uk/styles/spacing/"
 ---
 
 # Spacing
@@ -11,15 +18,11 @@ name: Spacing
 > GOV.UK Frontend provides a nine-point spacing scale and override utility classes for applying margins and padding. The scale is also available as a Sass function for use inside custom stylesheets.
 > Source: https://design-system.service.gov.uk/styles/spacing/
 
----
-
 ## Overview
 
 Consistent spacing is central to the GOV.UK Design System. All spacing in GOV.UK Frontend comes from a scale of nine fixed values (points 1 through 9) plus zero. Override utility classes let you apply these values as margin or padding to any element without writing custom CSS. The same scale is available in Sass via the `govuk-spacing()` function.
 
 At the tablet breakpoint (641px and above), the larger spacing values (6 through 9) increase automatically to give proportionally more breathing room on wider screens.
-
----
 
 ## When to use this style
 
@@ -27,13 +30,9 @@ Use spacing override classes when you need to adjust the default spacing on a co
 
 Use the `govuk-spacing()` Sass function when writing custom component styles that need to align to the GOV.UK spacing scale.
 
----
-
 ## When not to use this style
 
 Do not use arbitrary pixel or rem values for spacing in custom CSS — always reference the scale. Do not use spacing override classes as a substitute for correct HTML structure or semantic markup.
-
----
 
 ## How it works
 
@@ -102,8 +101,6 @@ Use `govuk-spacing()` to reference a scale value inside custom Sass:
 
 The function accepts any integer from 0 to 9.
 
----
-
 ## Code Examples
 
 ### Adding bottom margin to a heading
@@ -155,17 +152,13 @@ The function accepts any integer from 0 to 9.
 </p>
 ```
 
----
-
 ## Accessibility
 
 - Spacing override classes use `!important` and will override component default spacing. Use them with care — removing spacing between elements can reduce readability and affect touch target size.
 - Ensure that adjusting spacing does not cause interactive elements to fall below the recommended 44×44px touch target size.
 - Do not use negative spacing to overlay content in a way that hides it from screen readers.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the spacing scale for all margin and padding values in custom CSS.
@@ -173,12 +166,10 @@ The function accepts any integer from 0 to 9.
 - Use `govuk-spacing(0)` to reset spacing rather than `margin: 0` written by hand.
 - Consider responsive behaviour — points 6–9 differ between mobile and tablet.
 
-**Don't:**
+**Do not:**
 - Introduce arbitrary pixel values for spacing in new styles.
 - Apply more than two spacing override classes to a single element to compensate for a structural problem — consider fixing the HTML instead.
 - Override spacing on components in a way that breaks their internal visual logic.
-
----
 
 ## Related Components / Patterns
 

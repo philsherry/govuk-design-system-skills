@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern to ask users for a phone number, accepting a range of formats and checking only what is necessary.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "mobile number"
+  - "numbers"
+  - "phone"
+  - "phone field"
+  - "phone numbers"
+  - "telephone"
+last-reviewed: "2026-04-03"
 name: Phone Numbers
+source: "https://design-system.service.gov.uk/patterns/phone-numbers/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +19,6 @@ subcategory: ask-users-for
 
 > Use this pattern to ask users for a phone number, accepting a range of formats and checking only what is necessary.
 > Source: https://design-system.service.gov.uk/patterns/phone-numbers/
-
----
 
 ## Overview
 
@@ -280,7 +286,7 @@ If your service accepts either mobile or landline, say so: "Enter a UK phone num
 - Include a realistic example in the hint or error message to show the expected format.
 - Do not use placeholder text as a substitute for label or hint text.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `type="tel"` on the input.
@@ -292,13 +298,13 @@ If your service accepts either mobile or landline, say so: "Enter a UK phone num
 - Make it clear if you need a mobile number specifically.
 - Make the field optional if a phone number is not essential.
 
-**Don't:**
-- Don't reject numbers because of how the user formats them (spaces, hyphens, brackets).
-- Don't split the phone number across separate fields for different parts.
-- Don't require a phone number unless your service genuinely needs it.
-- Don't use placeholder text as a substitute for label or hint text.
-- Don't restrict input to only UK formats if your service accepts international numbers.
-- Don't use `type="number"` for phone numbers — it strips leading zeros and disallows + signs.
+**Do not:**
+- Do not reject numbers because of how the user formats them (spaces, hyphens, brackets).
+- Do not split the phone number across separate fields for different parts.
+- Do not require a phone number unless your service genuinely needs it.
+- Do not use placeholder text as a substitute for label or hint text.
+- Do not restrict input to only UK formats if your service accepts international numbers.
+- Do not use `type="number"` for phone numbers — it strips leading zeros and disallows + signs.
 
 ## Related Components / Patterns
 

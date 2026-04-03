@@ -2,16 +2,20 @@
 category: components
 description: Use the tabs component to let users navigate between related sections of content, displaying one section at a time.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "tab list"
+  - "tab panel"
+  - "tabbed content"
+  - "tabs"
+last-reviewed: "2026-04-03"
 name: Tabs
+source: "https://design-system.service.gov.uk/components/tabs/"
 ---
 
 # Tabs
 
 > Use the tabs component to let users navigate between related sections of content, displaying one section at a time.
 > Source: https://design-system.service.gov.uk/components/tabs/
-
----
 
 ## Overview
 
@@ -196,7 +200,7 @@ The tabs component does not have error states. This is a navigation/display comp
 - Without JavaScript, all panels are visible as static sections — ensure the no-JS experience is fully usable.
 - Tab labels must be concise and meaningful as standalone link text.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Include a heading inside each panel that matches the tab label.
@@ -204,11 +208,11 @@ The tabs component does not have error states. This is a navigation/display comp
 - Use tabs for genuinely distinct sections of related content.
 - Ensure all panel content is meaningful in the no-JS degraded view.
 
-**Don't:**
-- Don't use tabs when users need to compare content across panels — show it side by side or on separate pages.
-- Don't use tabs for navigating between pages — use service navigation.
-- Don't nest tabs within tabs.
-- Don't use more than about 5–6 tabs — the tab bar becomes unwieldy.
+**Do not:**
+- Do not use tabs when users need to compare content across panels — show it side by side or on separate pages.
+- Do not use tabs for navigating between pages — use service navigation.
+- Do not nest tabs within tabs.
+- Do not use more than about 5–6 tabs — the tab bar becomes unwieldy.
 
 ## Related Components / Patterns
 

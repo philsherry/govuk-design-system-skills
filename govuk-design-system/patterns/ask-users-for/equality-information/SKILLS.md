@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern when you need to collect equality information from users to track bias or meet legal requirements — always making clear why you collect the data and that answering is optional.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "diversity"
+  - "equality"
+  - "equality information"
+  - "equality monitoring"
+  - "information"
+  - "protected characteristics"
+last-reviewed: "2026-04-03"
 name: Equality Information
+source: "https://design-system.service.gov.uk/patterns/equality-information/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +19,6 @@ subcategory: ask-users-for
 
 > Use this pattern when you need to collect equality information from users to track bias or meet legal requirements — always making clear why you collect the data and that answering is optional.
 > Source: https://design-system.service.gov.uk/patterns/equality-information/
-
----
 
 ## Overview
 
@@ -308,7 +314,7 @@ If you make a question optional and the user submits without answering, treat th
 - Associate hint text explaining why you collect the data with the fieldset via `aria-describedby`.
 - Do not use colour alone to show whether a question is optional.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always make equality questions optional.
@@ -319,13 +325,13 @@ If you make a question optional and the user submits without answering, treat th
 - Use a divider to visually separate "Prefer not to say" from other options.
 - Allow users to describe their own identity in their own words for "Other" options.
 
-**Don't:**
-- Don't make equality questions mandatory.
-- Don't embed equality questions in the middle of transactional flows.
-- Don't use equality information to determine eligibility or outcomes.
-- Don't use outdated or non-standard categories that users cannot relate to.
-- Don't ask for more information than you will actually use.
-- Don't use gendered language in your service that could make non-binary or trans users feel excluded.
+**Do not:**
+- Do not make equality questions mandatory.
+- Do not embed equality questions in the middle of transactional flows.
+- Do not use equality information to determine eligibility or outcomes.
+- Do not use outdated or non-standard categories that users cannot relate to.
+- Do not ask for more information than you will actually use.
+- Do not use gendered language in your service that could make non-binary or trans users feel excluded.
 
 ## Related Components / Patterns
 

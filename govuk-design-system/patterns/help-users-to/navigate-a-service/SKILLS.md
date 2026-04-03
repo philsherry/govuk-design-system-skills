@@ -2,8 +2,14 @@
 category: patterns
 description: Choose the right navigation pattern for your service — back links for linear transactional journeys, breadcrumbs for content sites, service navigation for multi-section services.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "navigate"
+  - "orientation"
+  - "service navigation"
+  - "wayfinding"
+last-reviewed: "2026-04-03"
 name: Help users to navigate a service
+source: "https://design-system.service.gov.uk/patterns/navigate-a-service/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +17,6 @@ subcategory: help-users-to
 
 > Choose the right navigation pattern for your service — back links for linear transactional journeys, breadcrumbs for content sites, service navigation for multi-section services.
 > Source: https://design-system.service.gov.uk/patterns/navigate-a-service/
-
----
 
 ## Overview
 
@@ -315,7 +319,7 @@ Do not use a "Step X of Y" indicator as the primary navigation mechanism for mul
 - Pagination must use a `<nav>` element with `aria-label="Pagination"` and `aria-current="page"` on the active page item.
 - Do not use both breadcrumbs and a back link on the same page.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use a back link on transactional (form-based) service pages.
@@ -325,12 +329,12 @@ Do not use a "Step X of Y" indicator as the primary navigation mechanism for mul
 - Preserve user-entered data when navigating back — do not clear form state.
 - Mark the current page with `aria-current="page"` in navigation components.
 
-**Don't:**
-- Don't use both back links and breadcrumbs on the same page.
-- Don't use a "Step X of Y" indicator as the primary navigation mechanism.
-- Don't add breadcrumbs to transactional pages (question pages, confirmation pages).
-- Don't show a back link on the first page of a service.
-- Don't use navigation that resets or discards user-entered data when the user navigates back.
+**Do not:**
+- Do not use both back links and breadcrumbs on the same page.
+- Do not use a "Step X of Y" indicator as the primary navigation mechanism.
+- Do not add breadcrumbs to transactional pages (question pages, confirmation pages).
+- Do not show a back link on the first page of a service.
+- Do not use navigation that resets or discards user-entered data when the user navigates back.
 
 ## Related Components / Patterns
 

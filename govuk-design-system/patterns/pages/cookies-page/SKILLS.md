@@ -2,8 +2,15 @@
 category: patterns
 description: Tell users about the cookies your service sets on their device, and let them accept or reject non-essential cookies.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "consent"
+  - "cookie policy"
+  - "cookie settings"
+  - "cookies"
+  - "cookies page"
+last-reviewed: "2026-04-03"
 name: Cookies page
+source: "https://design-system.service.gov.uk/patterns/cookies-page/"
 subcategory: pages
 ---
 
@@ -11,8 +18,6 @@ subcategory: pages
 
 > Tell users about the cookies your service sets on their device, and let them accept or reject non-essential cookies.
 > Source: https://design-system.service.gov.uk/patterns/cookies-page/
-
----
 
 ## Overview
 
@@ -244,7 +249,7 @@ After a user saves their preferences, show a `govukNotificationBanner` with `typ
 - After the user saves preferences, focus should return to a logical position (typically the notification banner or the top of the page)
 - Do not use JavaScript to change the page in a way that removes the ability to save preferences without JS — the form must work without JavaScript using a standard POST
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use "Cookies on [service name]" as the page title
@@ -256,7 +261,7 @@ After a user saves their preferences, show a `govukNotificationBanner` with `typ
 - Pre-select "Do not use" for non-essential cookies when there is no prior consent
 - Update the page whenever you add or change cookies
 
-**Don't:**
+**Do not:**
 - Set non-essential cookies before the user has given consent
 - Use checkboxes for consent — use radio buttons
 - Redirect to a different page after saving — show the confirmation on the same page

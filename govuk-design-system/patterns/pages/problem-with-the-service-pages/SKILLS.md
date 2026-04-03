@@ -2,8 +2,14 @@
 category: patterns
 description: Tell users when something has gone wrong on the service side (HTTP 5xx errors) so they know the fault is not theirs.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "500"
+  - "problem"
+  - "server error"
+  - "something went wrong"
+last-reviewed: "2026-04-03"
 name: Problem with the service pages
+source: "https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/"
 subcategory: pages
 ---
 
@@ -11,8 +17,6 @@ subcategory: pages
 
 > Tell users when something has gone wrong on the service side (HTTP 5xx errors) so they know the fault is not theirs.
 > Source: https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/
-
----
 
 ## Overview
 
@@ -114,7 +118,7 @@ This page should use the full service page template — header, footer, and skip
 - Contact information must appear in a list format that screen reader users can navigate without difficulty
 - Do not display raw error messages or stack traces — these may confuse screen reader users and are a security concern
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the exact heading "Sorry, there is a problem with the service"
@@ -124,7 +128,7 @@ This page should use the full service page template — header, footer, and skip
 - Return an appropriate HTTP error status code (500, 502, 503, or 504)
 - Log the actual error server-side for debugging
 
-**Don't:**
+**Do not:**
 - Show technical error messages, exception traces, or error codes to users
 - Say "error" or use error codes in the page content
 - Say the service is "down" or use maintenance jargon

@@ -2,15 +2,20 @@
 category: components
 description: A component that lets users show and hide sections of related content on a page.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "accordion"
+  - "collapsible"
+  - "expandable sections"
+  - "show hide sections"
+last-reviewed: "2026-04-03"
 name: Accordion
+source: "https://design-system.service.gov.uk/components/accordion/"
 ---
 
 # Accordion
 
 > A component that lets users show and hide sections of related content on a page.
 > Source: https://design-system.service.gov.uk/components/accordion/
----
 
 ## Overview
 
@@ -259,7 +264,7 @@ The component is fully keyboard operable: Tab moves focus to each section button
 
 Without JavaScript, the component falls back to showing all sections fully expanded with no toggle buttons.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Provide a unique `id` for each accordion on the page.
@@ -267,11 +272,11 @@ Without JavaScript, the component falls back to showing all sections fully expan
 - Use a `summary` line to give users context before they open a section.
 - Test with JavaScript disabled to confirm all content remains accessible.
 
-**Don't:**
-- Don't use the accordion to hide information that all users need to read.
-- Don't nest accordions inside each other.
-- Don't use the accordion as a substitute for good page structure and information architecture.
-- Don't set `rememberExpanded: false` without a specific reason — the default improves repeat-visit usability.
+**Do not:**
+- Do not use the accordion to hide information that all users need to read.
+- Do not nest accordions inside each other.
+- Do not use the accordion as a substitute for good page structure and information architecture.
+- Do not set `rememberExpanded: false` without a specific reason — the default improves repeat-visit usability.
 
 ## Related Components / Patterns
 

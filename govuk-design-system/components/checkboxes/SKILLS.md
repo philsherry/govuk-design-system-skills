@@ -2,15 +2,20 @@
 category: components
 description: A form component that lets users select one or more options from a list.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "checkbox"
+  - "checkboxes"
+  - "multi-select"
+  - "tick boxes"
+last-reviewed: "2026-04-03"
 name: Checkboxes
+source: "https://design-system.service.gov.uk/components/checkboxes/"
 ---
 
 # Checkboxes
 
 > A form component that lets users select one or more options from a list.
 > Source: https://design-system.service.gov.uk/components/checkboxes/
----
 
 ## Overview
 
@@ -333,7 +338,7 @@ Conditional reveal content uses `data-aria-controls` on the checkbox and `aria-e
 
 The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to standard checkbox behaviour — the server must handle deselection logic.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always use a fieldset and legend when displaying a group of checkboxes.
@@ -341,11 +346,11 @@ The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to stan
 - Use `idPrefix` to ensure unique `id` values when more than one checkbox group appears on the same page.
 - Use `behaviour: "exclusive"` for "None of the above" options rather than implementing custom JavaScript.
 
-**Don't:**
-- Don't use checkboxes when users can select only one option — use radios.
-- Don't use conditional reveal to show large amounts of content — consider a separate page.
-- Don't pre-check checkboxes by default unless the user has already chosen that value.
-- Don't rely on the `exclusive` behaviour alone — check server-side that mutually exclusive options are not submitted together.
+**Do not:**
+- Do not use checkboxes when users can select only one option — use radios.
+- Do not use conditional reveal to show large amounts of content — consider a separate page.
+- Do not pre-check checkboxes by default unless the user has already chosen that value.
+- Do not rely on the `exclusive` behaviour alone — check server-side that mutually exclusive options are not submitted together.
 
 ## Related Components / Patterns
 

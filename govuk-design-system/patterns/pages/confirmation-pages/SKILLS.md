@@ -2,8 +2,15 @@
 category: patterns
 description: Tell users their task is complete using a green panel, a reference number, and clear information about what happens next.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "confirmation"
+  - "confirmation pages"
+  - "reference number"
+  - "submission complete"
+  - "success page"
+last-reviewed: "2026-04-03"
 name: Confirmation pages
+source: "https://design-system.service.gov.uk/patterns/confirmation-pages/"
 subcategory: pages
 ---
 
@@ -11,8 +18,6 @@ subcategory: pages
 
 > Tell users their task is complete using a green panel, a reference number, and clear information about what happens next.
 > Source: https://design-system.service.gov.uk/patterns/confirmation-pages/
-
----
 
 ## Overview
 
@@ -107,7 +112,7 @@ The "What happens next" section should explain:
 - Do not auto-redirect away from the confirmation page — users may need time to note their reference number or print the page.
 - Destroy session data after displaying the confirmation page so that navigating back does not re-submit or replay the form.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the green panel component with a clear, positive H1
@@ -117,7 +122,7 @@ The "What happens next" section should explain:
 - Include a survey link so users can give feedback
 - Keep the page simple — users have finished
 
-**Don't:**
+**Do not:**
 - Show a back link or breadcrumbs on this page
 - Use vague H1 text such as "Success" or "Thank you"
 - Display error messages on this page

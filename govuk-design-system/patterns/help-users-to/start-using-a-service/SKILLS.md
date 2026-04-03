@@ -2,8 +2,14 @@
 category: patterns
 description: Give users everything they need before they start — what the service does, what they will need, and a clear green Start now button.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "landing page"
+  - "service entry"
+  - "start"
+  - "start now"
+last-reviewed: "2026-04-03"
 name: Help users to start using a service
+source: "https://design-system.service.gov.uk/patterns/start-using-a-service/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +17,6 @@ subcategory: help-users-to
 
 > Give users everything they need before they start — what the service does, what they will need, and a clear green Start now button.
 > Source: https://design-system.service.gov.uk/patterns/start-using-a-service/
-
----
 
 ## Overview
 
@@ -257,7 +261,7 @@ The URL that the Start now button links to must be stable and bookmarkable. Do n
 - Lists must use `<ul>` and `<li>` with the appropriate GOV.UK list classes.
 - All links must use descriptive text — do not use "click here" or "here" as link text.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use the GOV.UK start page on www.gov.uk as the canonical entry point for public-facing services.
@@ -268,12 +272,12 @@ The URL that the Start now button links to must be stable and bookmarkable. Do n
 - Use `isStartButton: true` with an `href` for the Start now button.
 - Link to a sign-in journey separately, below the Start now button.
 
-**Don't:**
-- Don't put eligibility screening on the GOV.UK start page — put it on the service.
-- Don't combine the sign-in and start-new journeys into a single call to action.
-- Don't use a `<button>` element for the Start now button — it must be an `<a>` that navigates to the service.
-- Don't use a session-dependent URL as the service entry point.
-- Don't reproduce GOV.UK guidance content on the start page — link to it instead.
+**Do not:**
+- Do not put eligibility screening on the GOV.UK start page — put it on the service.
+- Do not combine the sign-in and start-new journeys into a single call to action.
+- Do not use a `<button>` element for the Start now button — it must be an `<a>` that navigates to the service.
+- Do not use a session-dependent URL as the service entry point.
+- Do not reproduce GOV.UK guidance content on the start page — link to it instead.
 
 ## Related Components / Patterns
 

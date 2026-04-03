@@ -2,16 +2,22 @@
 category: components
 description: Use the summary list to summarise information, for example a user's responses at the end of a form.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "check answers"
+  - "definition list"
+  - "key value"
+  - "list"
+  - "summary"
+  - "summary list"
+last-reviewed: "2026-04-03"
 name: Summary List
+source: "https://design-system.service.gov.uk/components/summary-list/"
 ---
 
 # Summary List
 
 > Use the summary list to summarise information, for example a user's responses at the end of a form.
 > Source: https://design-system.service.gov.uk/components/summary-list/
-
----
 
 ## Overview
 
@@ -303,7 +309,7 @@ The summary list does not have error states. This is a display component.
 - Card titles use heading elements — ensure the heading level fits the page's heading hierarchy.
 - When more than one row on the same page shares the same action text (e.g. "Change"), the visually hidden text is essential to differentiate them.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always provide `visuallyHiddenText` on action links.
@@ -311,10 +317,10 @@ The summary list does not have error states. This is a display component.
 - Use `html` values when the value contains line breaks, lists, or links.
 - Group related rows together logically.
 
-**Don't:**
-- Don't use the summary list for tabular data with more than one column — use the table component.
-- Don't omit `visuallyHiddenText` on "Change" links — screen reader users will not have context.
-- Don't use the summary list to display long blocks of text.
+**Do not:**
+- Do not use the summary list for tabular data with more than one column — use the table component.
+- Do not omit `visuallyHiddenText` on "Change" links — screen reader users will not have context.
+- Do not use the summary list to display long blocks of text.
 
 ## Related Components / Patterns
 

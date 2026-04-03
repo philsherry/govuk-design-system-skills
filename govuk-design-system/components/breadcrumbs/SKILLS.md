@@ -2,15 +2,19 @@
 category: components
 description: A navigation aid that shows the user where they are in the site hierarchy.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "breadcrumb trail"
+  - "breadcrumbs"
+  - "navigation path"
+last-reviewed: "2026-04-03"
 name: Breadcrumbs
+source: "https://design-system.service.gov.uk/components/breadcrumbs/"
 ---
 
 # Breadcrumbs
 
 > A navigation aid that shows the user where they are in the site hierarchy.
 > Source: https://design-system.service.gov.uk/components/breadcrumbs/
----
 
 ## Overview
 
@@ -176,7 +180,7 @@ Using an `<ol>` communicates to screen readers that the items are in an ordered 
 
 Ensure breadcrumb link text is descriptive and matches the destination page title so users know where each link leads.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Place breadcrumbs at the top of the page, above the `<main>` element and page heading.
@@ -184,11 +188,11 @@ Ensure breadcrumb link text is descriptive and matches the destination page titl
 - Use `collapseOnMobile: true` on deep hierarchies to improve mobile readability.
 - Match breadcrumb labels to the page titles they link to.
 
-**Don't:**
-- Don't use breadcrumbs on transactional services — use the back link component instead.
-- Don't use breadcrumbs alongside a back link on the same page.
-- Don't include the current page as a link (it should have no `href`).
-- Don't use breadcrumbs when there is a single level of hierarchy.
+**Do not:**
+- Do not use breadcrumbs on transactional services — use the back link component instead.
+- Do not use breadcrumbs alongside a back link on the same page.
+- Do not include the current page as a link (it should have no `href`).
+- Do not use breadcrumbs when there is a single level of hierarchy.
 
 ## Related Components / Patterns
 

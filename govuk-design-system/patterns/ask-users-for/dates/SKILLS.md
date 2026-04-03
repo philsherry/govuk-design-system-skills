@@ -2,8 +2,14 @@
 category: patterns
 description: Use this pattern to help users enter a memorable date, a date from a document, or to select a date from a range — choosing the right input type based on what kind of date you are asking for.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "date entry"
+  - "date of birth"
+  - "date pattern"
+  - "dates"
+last-reviewed: "2026-04-03"
 name: Dates
+source: "https://design-system.service.gov.uk/patterns/dates/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +17,6 @@ subcategory: ask-users-for
 
 > Use this pattern to help users enter a memorable date, a date from a document, or to select a date from a range — choosing the right input type based on what kind of date you are asking for.
 > Source: https://design-system.service.gov.uk/patterns/dates/
-
----
 
 ## Overview
 
@@ -312,7 +316,7 @@ Follow these patterns for error messages. Highlight only the fields that need co
 - Only apply the error class to the specific fields that are wrong — not to all fields.
 - Provide hint text with a realistic example date (for example, "For example, 31 3 1980").
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use three separate fields for day, month, and year.
@@ -324,13 +328,13 @@ Follow these patterns for error messages. Highlight only the fields that need co
 - Apply the error style only to the specific incorrect fields.
 - Use specific, helpful error messages that tell users what is wrong.
 
-**Don't:**
-- Don't use `type="date"` — it produces inconsistent native UI across browsers.
-- Don't use a date picker (calendar widget) for memorable dates or dates from documents.
-- Don't use a single text input for a date — it requires too much format enforcement.
-- Don't place the hint text between the legend and the date inputs if it will interfere with the fieldset's ARIA structure.
-- Don't apply error styling to fields that the user filled in as intended.
-- Don't ask for a date if you only need the year or month.
+**Do not:**
+- Do not use `type="date"` — it produces inconsistent native UI across browsers.
+- Do not use a date picker (calendar widget) for memorable dates or dates from documents.
+- Do not use a single text input for a date — it requires too much format enforcement.
+- Do not place the hint text between the legend and the date inputs if it will interfere with the fieldset's ARIA structure.
+- Do not apply error styling to fields that the user filled in as intended.
+- Do not ask for a date if you only need the year or month.
 
 ## Related Components / Patterns
 

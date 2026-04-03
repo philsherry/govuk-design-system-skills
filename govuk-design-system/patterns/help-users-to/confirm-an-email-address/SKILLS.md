@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern to verify that an email address belongs to the user by sending them a confirmation link or one-time code.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "address"
+  - "confirm an email address"
+  - "email"
+  - "email code"
+  - "email confirmation"
+  - "verify email"
+last-reviewed: "2026-04-03"
 name: Confirm an email address
+source: "https://design-system.service.gov.uk/patterns/confirm-an-email-address/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +19,6 @@ subcategory: help-users-to
 
 > Use this pattern to verify that an email address belongs to the user by sending them a confirmation link or one-time code.
 > Source: https://design-system.service.gov.uk/patterns/confirm-an-email-address/
-
----
 
 ## Overview
 
@@ -331,7 +337,7 @@ Tell users what to check if they cannot find the email:
 - For "confirm email" fields, do not prevent copy-paste — some users rely on it.
 - Expiry pages must provide a clear next action — do not leave users at a dead end.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Tell users where you sent the email (show the email address).
@@ -341,12 +347,12 @@ Tell users what to check if they cannot find the email:
 - Allow users to correct a wrongly entered email address.
 - Implement rate limiting on resend requests.
 
-**Don't:**
-- Don't require users to verify their email address for low-stakes interactions.
-- Don't make confirmation links expire too fast — email providers can delay delivery.
-- Don't leave users without a way to continue if they cannot access the email account they registered with.
-- Don't block account creation entirely if email verification fails — consider allowing users to re-enter their email.
-- Don't prevent copy-paste on "confirm email" fields.
+**Do not:**
+- Do not require users to verify their email address for low-stakes interactions.
+- Do not make confirmation links expire too fast — email providers can delay delivery.
+- Do not leave users without a way to continue if they cannot access the email account they registered with.
+- Do not block account creation entirely if email verification fails — consider allowing users to re-enter their email.
+- Do not prevent copy-paste on "confirm email" fields.
 
 ## Related Components / Patterns
 

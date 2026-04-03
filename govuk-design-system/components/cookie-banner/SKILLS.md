@@ -2,15 +2,22 @@
 category: components
 description: A banner that lets users accept or reject cookies and confirms their choice.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "banner"
+  - "consent"
+  - "cookie"
+  - "cookie banner"
+  - "cookies"
+  - "privacy"
+last-reviewed: "2026-04-03"
 name: Cookie Banner
+source: "https://design-system.service.gov.uk/components/cookie-banner/"
 ---
 
 # Cookie Banner
 
 > A banner that lets users accept or reject cookies and confirms their choice.
 > Source: https://design-system.service.gov.uk/components/cookie-banner/
----
 
 ## Overview
 
@@ -234,7 +241,7 @@ When the confirmation message appears after a user makes a choice, focus managem
 
 The banner must be the first significant element in the `<body>`, before the skip link, so it appears near the top of the reading order without interfering with main content navigation.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Place the cookie banner before the skip link at the top of the `<body>`.
@@ -242,11 +249,11 @@ The banner must be the first significant element in the `<body>`, before the ski
 - Use server-side logic to suppress the banner once the service saves the user's preference.
 - Provide a way for users to change their cookie settings at any time (link to cookies page).
 
-**Don't:**
-- Don't use the cookie banner for non-cookie-consent purposes — use the notification banner instead.
-- Don't show the banner to users who have already set their cookie preferences.
-- Don't block page content with the banner or make it modal.
-- Don't set analytics cookies before the user has given consent.
+**Do not:**
+- Do not use the cookie banner for non-cookie-consent purposes — use the notification banner instead.
+- Do not show the banner to users who have already set their cookie preferences.
+- Do not block page content with the banner or make it modal.
+- Do not set analytics cookies before the user has given consent.
 
 ## Related Components / Patterns
 

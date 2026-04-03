@@ -2,8 +2,16 @@
 category: styles
 description: The section break is a styled horizontal rule used to create a visible or invisible thematic separation between blocks of content. It maps to the HTML `<hr>` element with GOV.UK-specific modifier classes.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "break"
+  - "content separator"
+  - "divider"
+  - "horizontal rule"
+  - "section"
+  - "section break"
+last-reviewed: "2026-04-03"
 name: Section Break
+source: "https://design-system.service.gov.uk/styles/section-break/"
 ---
 
 # Section Break
@@ -11,25 +19,17 @@ name: Section Break
 > The section break is a styled horizontal rule used to create a visible or invisible thematic separation between blocks of content. It maps to the HTML `<hr>` element with GOV.UK-specific modifier classes.
 > Source: https://design-system.service.gov.uk/styles/section-break/
 
----
-
 ## Overview
 
 Apply `govuk-section-break` to an `<hr>` element to create a thematic break between sections of content. By default the section break is invisible — it contributes spacing but renders no visible line. Adding the `govuk-section-break--visible` modifier displays a 1px border in the GOV.UK border colour. Size modifiers control the amount of vertical margin added above and below the break.
-
----
 
 ## When to use this style
 
 Use a section break to separate distinct groups of related content on a long page. The visible variant is appropriate when the content needs a clear visual division. The invisible variant is useful when you need consistent vertical rhythm between sections without a decorative element.
 
----
-
 ## When not to use this style
 
 Do not use a section break as a substitute for correct heading hierarchy or proper sectioning elements. If the content is genuinely a separate section, consider using a `<section>` with an appropriate heading instead. Do not use section breaks inside tables, forms, or component internals.
-
----
 
 ## How it works
 
@@ -60,8 +60,6 @@ Size modifiers control the vertical margin (space above and below the break). Yo
 | `govuk-section-break--xl` | 25px | 40px |
 
 If you do not apply a size modifier, the browser default `<hr>` margin applies unless the GOV.UK Frontend base styles reset it.
-
----
 
 ## Code Examples
 
@@ -111,30 +109,24 @@ If you do not apply a size modifier, the browser default `<hr>` margin applies u
 </div>
 ```
 
----
-
 ## Accessibility
 
 - `<hr>` has an implicit ARIA role of `separator`. Screen readers will announce it as a thematic break. This is appropriate when the element genuinely separates distinct content sections.
 - Do not use `<hr>` purely for decorative horizontal lines unrelated to content structure — use CSS borders on a surrounding element instead, and apply `role="presentation"` or `aria-hidden="true"` if the visual treatment conveys no semantic meaning.
 - Ensure the visible line meets contrast requirements against its background. GOV.UK designed the border colour `#b1b4b6` for use against white `#ffffff` backgrounds.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `<hr>` for genuine thematic breaks between content sections.
 - Combine a size modifier with the visible modifier when you need both spacing and a visible line.
 - Use the invisible variant to maintain consistent vertical rhythm without adding decoration.
 
-**Don't:**
+**Do not:**
 - Use section breaks inside tables, lists, or form groups.
 - Use a section break as the only means of separating sections — also consider heading structure.
 - Apply the visible modifier when the surrounding context already provides clear visual separation.
 - Use more than one section break in quick succession to accumulate spacing; use spacing override classes on surrounding elements instead.
-
----
 
 ## Related Components / Patterns
 

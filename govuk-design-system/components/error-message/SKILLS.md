@@ -2,15 +2,22 @@
 category: components
 description: A message that explains a validation error and tells users how to fix it.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "error"
+  - "error message"
+  - "form error"
+  - "inline error"
+  - "message"
+  - "validation"
+last-reviewed: "2026-04-03"
 name: Error Message
+source: "https://design-system.service.gov.uk/components/error-message/"
 ---
 
 # Error Message
 
 > A message that explains a validation error and tells users how to fix it.
 > Source: https://design-system.service.gov.uk/components/error-message/
----
 
 ## Overview
 
@@ -198,7 +205,7 @@ The error message `id` must appear in the associated input's `aria-describedby` 
 
 The `govuk-form-group--error` class adds a red left border to the whole form group. The `govuk-input--error` class adds a red border to the input. Both visual cues must be present — do not rely on colour alone.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Always pair inline error messages with an error summary at the top of the page.
@@ -206,11 +213,11 @@ The `govuk-form-group--error` class adds a red left border to the whole form gro
 - Write messages that say what went wrong and how to fix it.
 - Use the `visuallyHiddenText` parameter to localise the "Error:" prefix for Welsh or other languages.
 
-**Don't:**
-- Don't show error messages before the user has submitted the form.
-- Don't use vague messages like "Invalid input" or "Required field".
-- Don't omit the error summary — inline messages alone are insufficient for accessibility.
-- Don't use the error message component for general guidance or hints.
+**Do not:**
+- Do not show error messages before the user has submitted the form.
+- Do not use vague messages like "Invalid input" or "Required field".
+- Do not omit the error summary — inline messages alone are insufficient for accessibility.
+- Do not use the error message component for general guidance or hints.
 
 ## Related Components / Patterns
 

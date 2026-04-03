@@ -2,8 +2,14 @@
 category: styles
 description: GOV.UK Frontend provides a `govuk-list` class for unstyled, bulleted, and numbered lists. A spaced modifier adds extra margin between list items for improved readability.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "bullet list"
+  - "lists"
+  - "numbered list"
+  - "ordered unordered"
+last-reviewed: "2026-04-03"
 name: Lists
+source: "https://design-system.service.gov.uk/styles/typography/"
 ---
 
 # Lists
@@ -11,25 +17,17 @@ name: Lists
 > GOV.UK Frontend provides a `govuk-list` class for unstyled, bulleted, and numbered lists. A spaced modifier adds extra margin between list items for improved readability.
 > Source: https://design-system.service.gov.uk/styles/typography/
 
----
-
 ## Overview
 
 The GOV.UK list styles remove the browser default list indentation and reset margins. Modifier classes add bullet points or numbers, and a spacing modifier increases the gap between items when lists contain longer entries.
-
----
 
 ## When to use this style
 
 Use `govuk-list` for any list of items in body content. Add `govuk-list--bullet` when the items have no specific order and need visual bullet markers. Add `govuk-list--number` for ordered sequences. Add `govuk-list--spaced` when list items contain more than around 5 words each.
 
----
-
 ## When not to use this style
 
 Do not use a list when items would be better presented as a table (for comparative data), a definition list (for term-and-definition pairs), or a series of paragraphs (for content that requires explanation rather than enumeration). Do not use `govuk-list--bullet` in navigation contexts — use a nav component instead.
-
----
 
 ## How it works
 
@@ -97,8 +95,6 @@ A plain `govuk-list` (without bullet or number) is the standard pattern for a li
 </ul>
 ```
 
----
-
 ## Code Examples
 
 ### Bullet list
@@ -150,8 +146,6 @@ A plain `govuk-list` (without bullet or number) is the standard pattern for a li
 
 Use HTML directly. No `govukList` macro exists. Lists are standard HTML elements styled with CSS classes.
 
----
-
 ## Accessibility
 
 - Use `<ul>` for unordered lists and `<ol>` for ordered lists. Do not use `<ul>` for a sequence of steps — use `<ol>` so screen readers convey the order.
@@ -160,9 +154,7 @@ Use HTML directly. No `govukList` macro exists. Lists are standard HTML elements
 - If a list contains links, ensure each link has descriptive text that makes sense out of context.
 - `govuk-list--spaced` improves readability for all users, including those with dyslexia, by providing clear visual separation between items.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `<ul>` for unordered content and `<ol>` for sequential or ranked content.
@@ -170,14 +162,12 @@ Use HTML directly. No `govukList` macro exists. Lists are standard HTML elements
 - Use a plain `govuk-list` (no bullet or number modifier) for link lists.
 - Keep list items short and parallel in structure where possible.
 
-**Don't:**
+**Do not:**
 - Use bullet lists for two or fewer items — consider running them together in a sentence instead.
 - Nest lists more than two levels deep without a strong content reason.
 - Apply `govuk-list--bullet` to an `<ol>` or `govuk-list--number` to a `<ul>`.
 - Use lists for navigation menus — use a dedicated navigation component instead.
 - Create fake lists using `<p>` tags or CSS `content` bullet characters.
-
----
 
 ## Related Components / Patterns
 

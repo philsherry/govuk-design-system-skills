@@ -2,8 +2,14 @@
 category: patterns
 description: Use this pattern to ask users for their name, using a single full name field in most cases rather than separate first name and last name fields.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "first name last name"
+  - "full name"
+  - "name field"
+  - "names"
+last-reviewed: "2026-04-03"
 name: Names
+source: "https://design-system.service.gov.uk/patterns/names/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +17,6 @@ subcategory: ask-users-for
 
 > Use this pattern to ask users for their name, using a single full name field in most cases rather than separate first name and last name fields.
 > Source: https://design-system.service.gov.uk/patterns/names/
-
----
 
 ## Overview
 
@@ -254,7 +258,7 @@ Set `spellcheck="false"` on name inputs to prevent browsers from underlining nam
 - Link error messages to the input via `aria-describedby`.
 - Do not use placeholder text as a substitute for a label.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use a single "Full name" field in most cases.
@@ -264,13 +268,13 @@ Set `spellcheck="false"` on name inputs to prevent browsers from underlining nam
 - Be inclusive of users who have a single name (mononym).
 - If you need to split the name, use "First name" and "Last name" rather than "Forename" and "Surname" — these terms are more widely understood.
 
-**Don't:**
-- Don't split names into first/last without a genuine operational reason.
-- Don't ask for a title (Mr, Mrs, Miss, Ms) unless specifically required.
-- Don't validate names against a strict character set — names include hyphens, apostrophes, accented letters, and other characters from a wide range of scripts.
-- Don't enforce an unreasonably short upper length limit.
-- Don't use "Christian name" or "Forename" — use "First name" or "Given name".
-- Don't use placeholder text to convey the expected format.
+**Do not:**
+- Do not split names into first/last without a genuine operational reason.
+- Do not ask for a title (Mr, Mrs, Miss, Ms) unless specifically required.
+- Do not validate names against a strict character set — names include hyphens, apostrophes, accented letters, and other characters from a wide range of scripts.
+- Do not enforce an unreasonably short upper length limit.
+- Do not use "Christian name" or "Forename" — use "First name" or "Given name".
+- Do not use placeholder text to convey the expected format.
 
 ## Related Components / Patterns
 

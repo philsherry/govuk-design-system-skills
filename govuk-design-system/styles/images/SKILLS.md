@@ -2,8 +2,14 @@
 category: styles
 description: Guidance for using images in GOV.UK services, including responsive image styles, alt text requirements, decorative image handling, and inline SVG accessibility.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "image styles"
+  - "images"
+  - "picture element"
+  - "responsive images"
+last-reviewed: "2026-04-03"
 name: Images
+source: "https://design-system.service.gov.uk/styles/images/"
 ---
 
 # Images
@@ -11,25 +17,17 @@ name: Images
 > Guidance for using images in GOV.UK services, including responsive image styles, alt text requirements, decorative image handling, and inline SVG accessibility.
 > Source: https://design-system.service.gov.uk/styles/images/
 
----
-
 ## Overview
 
 GOV.UK Frontend provides a `govuk-image` class that makes images responsive by default (max-width 100%, height auto). A `govuk-image--no-margin` modifier removes the default bottom margin. All images in GOV.UK services must meet accessibility requirements: meaningful images need descriptive alt text, and decorative images must use an empty alt attribute so screen readers ignore them.
-
----
 
 ## When to use this style
 
 Use `govuk-image` on any content image that should scale with its container. Use inline SVGs for icons and other vector graphics that are part of the UI. Apply the `govuk-image` class to `<img>` elements in body content, not to images inside components that manage their own image styling.
 
----
-
 ## When not to use this style
 
 Do not use images to convey information that text can communicate. Avoid images that are purely decorative but contain embedded text — screen readers and users who override fonts or zoom in will not see the text as expected. Do not use images to replace proper semantic HTML, such as using a screenshot of a table instead of a real table.
-
----
 
 ## How it works
 
@@ -126,8 +124,6 @@ To hide an image visually and from assistive technologies, use the display overr
 
 To hide an image visually but keep it accessible, use `govuk-visually-hidden` on a container instead.
 
----
-
 ## Code Examples
 
 ### Standard content image
@@ -173,8 +169,6 @@ To hide an image visually but keep it accessible, use `govuk-visually-hidden` on
 </button>
 ```
 
----
-
 ## Accessibility
 
 - All `<img>` elements must have an `alt` attribute. Omitting the attribute is a WCAG failure.
@@ -186,9 +180,7 @@ To hide an image visually but keep it accessible, use `govuk-visually-hidden` on
 - Do not use images that convey information solely through colour — users who cannot distinguish colour will lose that information.
 - Complex images (diagrams, charts, infographics) need a longer text description placed next to the image or via a link to a separate page.
 
----
-
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `govuk-image` on all content `<img>` elements.
@@ -197,14 +189,12 @@ To hide an image visually but keep it accessible, use `govuk-visually-hidden` on
 - Add `focusable="false"` and `aria-hidden="true"` to decorative inline SVGs.
 - Use `<figure>` and `<figcaption>` to associate images with their captions.
 
-**Don't:**
+**Do not:**
 - Omit the `alt` attribute from any `<img>` element.
 - Use images of text — use real text with GOV.UK typography instead.
 - Convey information using colour alone in images.
 - Use large, high-resolution images without providing responsive alternatives.
 - Use `govuk-image` inside components that provide their own image layout.
-
----
 
 ## Related Components / Patterns
 

@@ -2,8 +2,15 @@
 category: patterns
 description: Use this pattern to let users review and confirm their answers before they submit a form or complete a transaction.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "answers"
+  - "change answers"
+  - "check answers"
+  - "review answers"
+  - "summary page"
+last-reviewed: "2026-04-03"
 name: Check answers
+source: "https://design-system.service.gov.uk/patterns/check-answers/"
 subcategory: help-users-to
 ---
 
@@ -11,8 +18,6 @@ subcategory: help-users-to
 
 > Use this pattern to let users review and confirm their answers before they submit a form or complete a transaction.
 > Source: https://design-system.service.gov.uk/patterns/check-answers/
-
----
 
 ## Overview
 
@@ -364,7 +369,7 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - The declaration and submit button must be inside a `<form>` element.
 - Do not use `<table>` elements for the summary list â€” use the `govuk-summary-list` component which uses a `<dl>` element.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Include a "Change" link on every row so users can correct mistakes.
@@ -374,12 +379,12 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - Label the submit button with the specific action ("Accept and send", "Confirm and send").
 - Group related answers under section headings when there are 4 or more questions.
 
-**Don't:**
-- Don't label the submit button "Continue" or "Next" on a check answers page.
-- Don't repeat the question wording in full in the key column â€” use a short label.
-- Don't show a check answers page for single-question forms.
-- Don't let users change their answers after submission without a clear correction process.
-- Don't omit the declaration where there is a legal or policy requirement to confirm accuracy.
+**Do not:**
+- Do not label the submit button "Continue" or "Next" on a check answers page.
+- Do not repeat the question wording in full in the key column â€” use a short label.
+- Do not show a check answers page for single-question forms.
+- Do not let users change their answers after submission without a clear correction process.
+- Do not omit the declaration where there is a legal or policy requirement to confirm accuracy.
 
 ## Related Components / Patterns
 

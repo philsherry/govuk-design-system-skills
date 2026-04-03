@@ -2,16 +2,22 @@
 category: components
 description: Use the password input component to help users enter their password securely, with the option to show or hide the password.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "hide password"
+  - "input"
+  - "password"
+  - "password field"
+  - "password input"
+  - "show password"
+last-reviewed: "2026-04-03"
 name: Password Input
+source: "https://design-system.service.gov.uk/components/password-input/"
 ---
 
 # Password Input
 
 > Use the password input component to help users enter their password securely, with the option to show or hide the password.
 > Source: https://design-system.service.gov.uk/components/password-input/
-
----
 
 ## Overview
 
@@ -242,7 +248,7 @@ Follow the GOV.UK Design System error message guidance. Recommended error messag
 - The input includes `spellcheck="false"` and `autocapitalize="none"` to prevent spell-checking and auto-capitalisation, which would interfere with password entry.
 - The `autocomplete` attribute helps password managers work as expected, reducing the need for users to type passwords manually.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Set the correct `autocomplete` value (`current-password` or `new-password`).
@@ -250,11 +256,11 @@ Follow the GOV.UK Design System error message guidance. Recommended error messag
 - Use the component as part of the passwords pattern or create accounts pattern.
 - Allow pasting into password fields — do not disable the paste action.
 
-**Don't:**
-- Don't pre-populate password fields with a value entered earlier.
-- Don't use this component for inputs that are not passwords.
-- Don't disable the show/hide toggle unless there is a specific security justification.
-- Don't ask users to confirm their password on the same page unless there is a strong reason (the show/hide toggle reduces entry errors).
+**Do not:**
+- Do not pre-populate password fields with a value entered earlier.
+- Do not use this component for inputs that are not passwords.
+- Do not disable the show/hide toggle unless there is a specific security justification.
+- Do not ask users to confirm their password on the same page unless there is a strong reason (the show/hide toggle reduces entry errors).
 
 ## Related Components / Patterns
 

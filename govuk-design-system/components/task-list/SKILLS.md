@@ -2,16 +2,22 @@
 category: components
 description: Use the task list component to display the tasks a user needs to do, and allow them to navigate to the tasks.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "checklist"
+  - "list"
+  - "progress"
+  - "task"
+  - "task list"
+  - "task tracker"
+last-reviewed: "2026-04-03"
 name: Task List
+source: "https://design-system.service.gov.uk/components/task-list/"
 ---
 
 # Task List
 
 > Use the task list component to display the tasks a user needs to do, and allow them to navigate to the tasks.
 > Source: https://design-system.service.gov.uk/components/task-list/
-
----
 
 ## Overview
 
@@ -257,7 +263,7 @@ The task list component does not have error states. This is a navigation/status 
 - Use consistent tag colours and status labels throughout the service.
 - Do not rely on colour alone for status — the text inside each tag must convey the state.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Show all tasks and their statuses, including those users cannot start yet.
@@ -265,11 +271,11 @@ The task list component does not have error states. This is a navigation/status 
 - Provide hint text when a task title alone may not be clear enough.
 - Use a unique `idPrefix` for each task list on the same page.
 
-**Don't:**
-- Don't use the task list for a simple linear form flow — use page-by-page navigation.
-- Don't hide tasks that users cannot start yet — show them with a "Cannot start yet" status.
-- Don't use links for tasks that are unavailable — they should be plain text.
-- Don't use the task list for displaying completed answer summaries — use the summary list.
+**Do not:**
+- Do not use the task list for a simple linear form flow — use page-by-page navigation.
+- Do not hide tasks that users cannot start yet — show them with a "Cannot start yet" status.
+- Do not use links for tasks that are unavailable — they should be plain text.
+- Do not use the task list for displaying completed answer summaries — use the summary list.
 
 ## Related Components / Patterns
 

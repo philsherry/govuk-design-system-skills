@@ -2,8 +2,16 @@
 category: patterns
 description: Use this pattern to ask users for their email address, with appropriate input settings to improve accuracy and reduce errors.
 govuk-frontend: "5.x"
-last-reviewed: "2026-03-30"
+keywords:
+  - "addresses"
+  - "email"
+  - "email addresses"
+  - "email field"
+  - "email input"
+  - "email validation"
+last-reviewed: "2026-04-03"
 name: Email Addresses
+source: "https://design-system.service.gov.uk/patterns/email-addresses/"
 subcategory: ask-users-for
 ---
 
@@ -11,8 +19,6 @@ subcategory: ask-users-for
 
 > Use this pattern to ask users for their email address, with appropriate input settings to improve accuracy and reduce errors.
 > Source: https://design-system.service.gov.uk/patterns/email-addresses/
-
----
 
 ## Overview
 
@@ -205,7 +211,7 @@ Where the reason may not be obvious, tell users what you will use the email addr
 - Link hint text and error messages to the input via `aria-describedby`.
 - Do not disable copy and paste on email inputs — users should be able to paste email addresses from password managers.
 
-## Do / Don't
+## Do and Do not
 
 **Do:**
 - Use `type="email"` on the input.
@@ -216,13 +222,13 @@ Where the reason may not be obvious, tell users what you will use the email addr
 - Ask users to confirm their email address when getting it wrong would cause significant problems.
 - Allow users to paste into the email field.
 
-**Don't:**
-- Don't over-validate the format — a simple @ check is enough for most services.
-- Don't use `autocomplete="off"` on confirmation fields.
-- Don't prevent copy and paste.
-- Don't ask for an email address that you won't use.
-- Don't use placeholder text as a substitute for a label.
-- Don't show the email address hint text in the input placeholder — use the `hint` component instead.
+**Do not:**
+- Do not over-validate the format — a simple @ check is enough for most services.
+- Do not use `autocomplete="off"` on confirmation fields.
+- Do not prevent copy and paste.
+- Do not ask for an email address that you will not use.
+- Do not use placeholder text as a substitute for a label.
+- Do not show the email address hint text in the input placeholder — use the `hint` component instead.
 
 ## Related Components / Patterns
 
