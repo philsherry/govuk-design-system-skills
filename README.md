@@ -37,7 +37,7 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   │   └── new-content.md
   │   └── workflows/
   │       ├── lint.yml
-  │       └── release.yml
+  │       └── tag-release.yml
   ├── CHANGELOG.md
   ├── CLAUDE.md
   ├── GUIDE.md
@@ -249,27 +249,27 @@ See [docs/AUDIT_EXAMPLE.md](docs/AUDIT_EXAMPLE.md) for a worked example showing 
 
 ## Releases
 
-This repo auto-tags releases from `main` when a merged release PR updates both
-`CHANGELOG.md` and `package.json`. The existing release workflow then publishes
-the GitHub Release from the matching changelog entry.
+This repo auto-tags and publishes releases from `main` when a merged release
+PR updates `CHANGELOG.md`, `package.json`, and `package-lock.json`.
 
 1. Update `CHANGELOG.md`, `package.json`, and `package-lock.json` in your release PR.
 2. Merge to `main`.
-3. Wait for the `tag-release.yml` workflow to create and push the semantic
-  version tag automatically.
+3. Wait for the `tag-release.yml` workflow to create the semantic version tag
+  and publish the GitHub Release automatically.
 
 The `tag-release.yml` workflow reads the version from `package.json`, checks
-that `CHANGELOG.md` has a matching heading such as `## [1.2.0]`, and pushes a
-tag like `v1.2.0`.
-
-The `release.yml` workflow then reads the matching `CHANGELOG.md` section for
-`1.2.0` and publishes the GitHub Release with that body.
+that `CHANGELOG.md` and `package-lock.json` match it, creates a tag like
+`v1.2.0` if needed, and publishes the GitHub Release from the matching
+changelog section.
 
 If you want to check the release metadata before opening or merging the PR, run:
 
 ```bash
 npm run release:check
 ```
+
+If you need to backfill a release for an existing tag, you can run
+`tag-release.yml` manually from the Actions tab.
 
 If you want to preview the generated release notes locally, run:
 

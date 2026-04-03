@@ -8,12 +8,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- `tag-release.yml` to create and push a semantic version tag when a release PR merges to `main`
+- `tag-release.yml` to create and push a semantic version tag and publish the GitHub Release when a release PR merges to `main`
 - `scripts/check-release-version.js` and `npm run release:check` to verify version alignment across `package.json`, `package-lock.json`, and `CHANGELOG.md`
 
 ### Changed
 
 - Updated the lint workflow to run the release metadata check on pull requests
+- Replaced the separate tag-triggered release workflow with a single workflow that tags and publishes in one job
 - Updated release documentation in `README.md`, `GUIDE.md`, and `.github/CONTRIBUTING.md` to reflect automatic tagging
 - Bumped the package version to `1.2.1`
 
