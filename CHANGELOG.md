@@ -4,6 +4,19 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.1] — 2026-04-03
+
+### Added
+
+- `tag-release.yml` to create and push a semantic version tag when a release PR merges to `main`
+- `scripts/check-release-version.js` and `npm run release:check` to verify version alignment across `package.json`, `package-lock.json`, and `CHANGELOG.md`
+
+### Changed
+
+- Updated the lint workflow to run the release metadata check on pull requests
+- Updated release documentation in `README.md`, `GUIDE.md`, and `.github/CONTRIBUTING.md` to reflect automatic tagging
+- Bumped the package version to `1.2.1`
+
 ## [1.2.0] — 2026-04-03
 
 ### Added

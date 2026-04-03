@@ -249,20 +249,27 @@ See [docs/AUDIT_EXAMPLE.md](docs/AUDIT_EXAMPLE.md) for a worked example showing 
 
 ## Releases
 
-This repo can publish GitHub Releases from `CHANGELOG.md` when you push a semantic version tag such as `v1.2.0`.
+This repo auto-tags releases from `main` when a merged release PR updates both
+`CHANGELOG.md` and `package.json`. The existing release workflow then publishes
+the GitHub Release from the matching changelog entry.
 
-1. Update `CHANGELOG.md` and `package.json` in your release PR.
+1. Update `CHANGELOG.md`, `package.json`, and `package-lock.json` in your release PR.
 2. Merge to `main`.
-3. Tag the release commit and push the tag:
+3. Wait for the `tag-release.yml` workflow to create and push the semantic
+  version tag automatically.
+
+The `tag-release.yml` workflow reads the version from `package.json`, checks
+that `CHANGELOG.md` has a matching heading such as `## [1.2.0]`, and pushes a
+tag like `v1.2.0`.
+
+The `release.yml` workflow then reads the matching `CHANGELOG.md` section for
+`1.2.0` and publishes the GitHub Release with that body.
+
+If you want to check the release metadata before opening or merging the PR, run:
 
 ```bash
-git checkout main
-git pull --ff-only origin main
-git tag -a v1.2.0 -m "Release v1.2.0"
-git push origin v1.2.0
+npm run release:check
 ```
-
-The `release.yml` workflow reads the matching `CHANGELOG.md` section for `1.2.0` and publishes the GitHub Release with that body.
 
 If you want to preview the generated release notes locally, run:
 

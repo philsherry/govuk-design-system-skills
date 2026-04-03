@@ -106,18 +106,22 @@ Before opening a PR, confirm:
 This repo publishes GitHub Releases from `CHANGELOG.md` when you push a semantic version tag.
 
 1. Add the new version entry to `CHANGELOG.md`.
-2. Bump the version in `package.json`.
+2. Bump the version in `package.json` and `package-lock.json`.
 3. Merge the release PR to `main`.
-4. Tag the release commit and push the tag:
+4. Wait for the auto-tag workflow to create and push the matching semantic
+  version tag.
+
+The auto-tag workflow reads the version from `package.json`, checks that the
+same version exists in `CHANGELOG.md`, and pushes a tag such as `v1.2.0`.
+
+The release workflow reads the matching `CHANGELOG.md` section for `1.2.0` and
+publishes the GitHub Release with that body.
+
+To check release metadata locally before you merge, run:
 
 ```bash
-git checkout main
-git pull --ff-only origin main
-git tag -a v1.2.0 -m "Release v1.2.0"
-git push origin v1.2.0
+npm run release:check
 ```
-
-The release workflow reads the matching `CHANGELOG.md` section for `1.2.0` and publishes the GitHub Release with that body.
 
 To preview the generated release notes before you push a tag, run:
 
