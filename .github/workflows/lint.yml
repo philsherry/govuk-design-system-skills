@@ -4,12 +4,13 @@ name: Lint
 on:
   pull_request:
     paths:
-      - "govuk-design-system/**/*.md"
-      - "nhsuk-design-system/**/*.md"
-      - "docs/**/*.md"
       - ".github/workflows/lint.yml"
-      - "package.json"
+      - "docs/**/*.md"
+      - "govuk-design-system/**/*.md"
+      - "hmrc-design-patterns/**/*.md"
+      - "nhsuk-design-system/**/*.md"
       - "package-lock.json"
+      - "package.json"
       - "scripts/lint-write-good.js"
 
 jobs:

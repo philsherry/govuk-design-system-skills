@@ -7,7 +7,7 @@
 	"bugs": {
 		"url": "https://github.com/philsherry/govuk-design-system-skills/issues"
 	},
-	"description": "SKILLS.md reference files and agent personas for the GOV.UK and NHS UK Design Systems",
+	"description": "SKILLS.md reference files and agent personas for the GOV.UK, NHS UK, and HMRC Design Systems",
 	"devDependencies": {
 		"markdownlint-cli": "^0.48.0",
 		"write-good": "^1.0.8"
@@ -28,5 +28,5 @@
 		"release:notes": "node scripts/release-notes-from-changelog.js",
 		"test": "npm run lint:passive"
 	},
-	"version": "1.1.1"
+	"version": "1.2.0"
 }

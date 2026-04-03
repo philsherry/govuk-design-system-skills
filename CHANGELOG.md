@@ -4,6 +4,23 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.0] — 2026-04-03
+
+### Added
+
+- Full `hmrc-design-patterns/` coverage: 29 patterns across 5 categories (identifiers, service, identity, headers, pages) and 2 foundations files
+- 7 HMRC agent personas adapted for HMRC's dual-system context (GOV.UK + HMRC)
+- `hmrc-design-patterns/agents/README.md` with HMRC agent guidance
+- `docs/hmrc/GUIDE.md` and `docs/hmrc/INSTALL.md` for HMRC usage and setup
+- HMRC Design Patterns licensing in `LICENSE`
+
+### Changed
+
+- Updated lint discovery in `scripts/lint-write-good.js` to scan `*-design-patterns` directories alongside `*-design-system`
+- Added `hmrc-design-patterns/**/*.md` to the lint workflow path trigger
+- Updated `README.md` with HMRC directory tree, getting started row, and licence section
+- Bumped the package version to `1.2.0`
+
 ## [1.1.1] — 2026-04-03
 
 ### Added
