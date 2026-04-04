@@ -63,10 +63,12 @@ jobs:
           fi
 
           signing_key_path="$RUNNER_TEMP/release_signing_key"
-          trap 'rm -f "$signing_key_path"' EXIT
+          public_key_path="$signing_key_path.pub"
+          trap 'rm -f "$signing_key_path" "$public_key_path"' EXIT
           printf '%s\n' "$RELEASE_SIGNING_SSH_PRIVATE_KEY" > "$signing_key_path"
           chmod 600 "$signing_key_path"
-          derived_fingerprint="$(ssh-keygen -y -f "$signing_key_path" | ssh-keygen -lf - | awk '{print $2}')"
+          ssh-keygen -y -f "$signing_key_path" > "$public_key_path"
+          derived_fingerprint="$(ssh-keygen -lf "$public_key_path" | awk '{print $2}')"
 
           if [ "$derived_fingerprint" != "$RELEASE_SIGNING_FINGERPRINT" ]; then
             echo "Configured release signing key does not match the expected fingerprint" >&2
