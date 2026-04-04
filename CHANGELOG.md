@@ -4,6 +4,21 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.1] — 2026-04-04
+
+### Added
+
+- `.github/RELEASE.md` with one-time setup, `gh` and `op` commands, verification steps, and failure checks for signed releases
+
+### Changed
+
+- Updated `.github/workflows/tag-release.yml` to create signed SSH tags, use an explicit release tagger identity, and stop if the configured private key does not match the expected public key
+- Updated `README.md`, `GUIDE.md`, and `.github/CONTRIBUTING.md` to point to the signed release setup and runbook
+
+### Fixed
+
+- Re-signed the existing release tags so current GitHub releases verify correctly
+
 ## [1.3.0] — 2026-04-04
 
 ### Added

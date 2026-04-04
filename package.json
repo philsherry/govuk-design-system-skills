@@ -29,5 +29,5 @@
 		"release:notes": "node scripts/release-notes-from-changelog.js",
 		"test": "npm run lint:passive"
 	},
-	"version": "1.3.0"
+	"version": "1.3.1"
 }

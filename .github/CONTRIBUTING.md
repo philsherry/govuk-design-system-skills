@@ -117,6 +117,10 @@ The auto-tag workflow reads the version from `package.json`, checks that the
 same version exists in `CHANGELOG.md` and `package-lock.json`, creates a tag
 such as `v1.2.0` if needed, and publishes the matching GitHub Release.
 
+Add the `RELEASE_SIGNING_SSH_PRIVATE_KEY` repository secret before you rely on
+auto-release. The workflow uses that SSH private key to create a signed tag.
+See `.github/RELEASE.md` for release setup and the verification steps.
+
 To check release metadata locally before you merge, run:
 
 ```bash

@@ -94,6 +94,10 @@ same version exists in `CHANGELOG.md` and `package-lock.json`, creates the
 semantic version tag if needed, and publishes the GitHub Release with the
 matching changelog notes.
 
+Add the `RELEASE_SIGNING_SSH_PRIVATE_KEY` repository secret before you rely on
+auto-release. The workflow uses that SSH private key to create a signed tag.
+See `.github/RELEASE.md` for release setup and the verification steps.
+
 To check the version metadata before you merge, run:
 
 ```bash

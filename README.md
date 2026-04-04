@@ -300,6 +300,10 @@ that `CHANGELOG.md` and `package-lock.json` match it, creates a tag like
 `v1.2.0` if needed, and publishes the GitHub Release from the matching
 changelog section.
 
+Add the `RELEASE_SIGNING_SSH_PRIVATE_KEY` repository secret before you rely on
+auto-release. The workflow uses that SSH private key to create a signed tag.
+See `.github/RELEASE.md` for release setup and the verification steps.
+
 If you want to check the release metadata before opening or merging the PR, run:
 
 ```bash

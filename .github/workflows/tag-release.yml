@@ -18,6 +18,10 @@ jobs:
   publish:
     name: Tag and publish release
     runs-on: ubuntu-latest
+    env:
+      RELEASE_SIGNING_FINGERPRINT: SHA256:2kX0buOoOaq0Hkz859CsfPvbWmmdWQtWnKTM/xwA9M8
+      RELEASE_TAGGER_EMAIL: 272769+philsherry@users.noreply.github.com
+      RELEASE_TAGGER_NAME: Phil Sherry
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,10 +54,30 @@ jobs:
 
       - name: Create and push tag
         if: steps.tag_check.outputs.exists == 'false'
+        env:
+          RELEASE_SIGNING_SSH_PRIVATE_KEY: ${{ secrets.RELEASE_SIGNING_SSH_PRIVATE_KEY }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git tag -a "${{ steps.version.outputs.tag }}" -m "Release ${{ steps.version.outputs.tag }}"
+          if [ -z "$RELEASE_SIGNING_SSH_PRIVATE_KEY" ]; then
+            echo "Missing RELEASE_SIGNING_SSH_PRIVATE_KEY secret" >&2
+            exit 1
+          fi
+
+          signing_key_path="$RUNNER_TEMP/release_signing_key"
+          trap 'rm -f "$signing_key_path"' EXIT
+          printf '%s\n' "$RELEASE_SIGNING_SSH_PRIVATE_KEY" > "$signing_key_path"
+          chmod 600 "$signing_key_path"
+          derived_fingerprint="$(ssh-keygen -y -f "$signing_key_path" | ssh-keygen -lf - | awk '{print $2}')"
+
+          if [ "$derived_fingerprint" != "$RELEASE_SIGNING_FINGERPRINT" ]; then
+            echo "Configured release signing key does not match the expected fingerprint" >&2
+            exit 1
+          fi
+
+          git config user.name "$RELEASE_TAGGER_NAME"
+          git config user.email "$RELEASE_TAGGER_EMAIL"
+          git config gpg.format ssh
+          git config user.signingkey "$signing_key_path"
+          git tag -s "${{ steps.version.outputs.tag }}" -m "Release ${{ steps.version.outputs.tag }}"
           git push origin "${{ steps.version.outputs.tag }}"
 
       - name: Build release notes from changelog
