@@ -163,7 +163,7 @@ If the service does not save progress, tell users: "We did not save your answers
 - The confirmation page must have a clear heading that tells users the outcome. Screen readers announce the heading when the page loads.
 - Do not use JavaScript-only sign-out actions. The sign-out link must work as a standard link or form submission.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

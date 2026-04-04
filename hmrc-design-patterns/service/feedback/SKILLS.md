@@ -73,7 +73,7 @@ Keep the form on one page. Do not ask users to sign in to leave feedback.
 
 Open the feedback form in a new tab. Add `target="_blank"` and include "(opens in new tab)" in the link text for accessibility.
 
-## Code Examples
+## Code examples
 
 ### Phase banner with feedback link (beta)
 
@@ -153,7 +153,7 @@ Open the feedback form in a new tab. Add `target="_blank"` and include "(opens i
 - Do not use a pop-up or modal for feedback — they create barriers for screen reader and keyboard users. Use a separate page instead.
 - The phase banner feedback link must sit inside the `govuk-phase-banner__text` span so assistive technologies associate it with the banner context.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Add a feedback link to every HMRC service.
@@ -171,7 +171,7 @@ Open the feedback form in a new tab. Add `target="_blank"` and include "(opens i
 - Do not ask users for personal information on the feedback form unless the service needs it to respond.
 - Do not use feedback forms as a replacement for structured user research.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/phase-banner/SKILLS.md](../../../govuk-design-system/components/phase-banner/SKILLS.md)
 - [../../../govuk-design-system/components/footer/SKILLS.md](../../../govuk-design-system/components/footer/SKILLS.md)

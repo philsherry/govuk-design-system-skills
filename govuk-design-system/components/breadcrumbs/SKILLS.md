@@ -44,7 +44,7 @@ The last item in the list represents the current page. By convention it has no `
 
 When we set `collapseOnMobile: true`, we hide all items except the last one on mobile viewports, and show no ellipsis — only the direct parent link remains visible. The `govuk-breadcrumbs--collapse-on-mobile` modifier class handles this.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -153,7 +153,7 @@ When we set `collapseOnMobile: true`, we hide all items except the last one on m
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -166,7 +166,7 @@ When we set `collapseOnMobile: true`, we hide all items except the last one on m
 | classes | string | No | Classes to add to the `<nav>` element. |
 | attributes | object | No | HTML attributes to add to the `<nav>` element as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The breadcrumbs component does not accept user input and does not produce validation error messages.
 
@@ -180,7 +180,7 @@ Using an `<ol>` communicates to screen readers that the items are in an ordered 
 
 Ensure breadcrumb link text is descriptive and matches the destination page title so users know where each link leads.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place breadcrumbs at the top of the page, above the `<main>` element and page heading.
@@ -194,7 +194,7 @@ Ensure breadcrumb link text is descriptive and matches the destination page titl
 - Do not include the current page as a link (it should have no `href`).
 - Do not use breadcrumbs when there is a single level of hierarchy.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Back link](https://design-system.service.gov.uk/components/back-link/) — for navigating back within a linear transactional flow.
 - [Header](https://design-system.service.gov.uk/components/header/) — the primary site navigation element used alongside breadcrumbs.

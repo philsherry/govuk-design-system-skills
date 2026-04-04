@@ -45,7 +45,7 @@ Each section consists of a header (containing the heading and optional summary l
 
 Session storage remembers the expanded/collapsed state of each section between page loads in the same session. The "Show all sections" / "Hide all sections" button at the top right controls all sections simultaneously.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -229,7 +229,7 @@ Session storage remembers the expanded/collapsed state of each section between p
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -250,7 +250,7 @@ Session storage remembers the expanded/collapsed state of each section between p
 | classes | string | No | Classes to add to the accordion container `<div>`. |
 | attributes | object | No | HTML attributes to add to the accordion container as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The accordion does not accept user input, so it does not produce validation error messages.
 
@@ -264,7 +264,7 @@ The component is fully keyboard operable: Tab moves focus to each section button
 
 Without JavaScript, the component falls back to showing all sections fully expanded with no toggle buttons.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Provide a unique `id` for each accordion on the page.
@@ -278,7 +278,7 @@ Without JavaScript, the component falls back to showing all sections fully expan
 - Do not use the accordion as a substitute for good page structure and information architecture.
 - Do not set `rememberExpanded: false` without a specific reason — the default improves repeat-visit usability.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Details](https://design-system.service.gov.uk/components/details/) — for a single collapsible section of supplementary content.
 - [Tabs](https://design-system.service.gov.uk/components/tabs/) — for switching between related panels of content.

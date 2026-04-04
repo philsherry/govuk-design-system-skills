@@ -48,7 +48,7 @@ The reverse button variant uses the `nhsuk-button--reverse` modifier class for u
 
 Disabled buttons use the `disabled` HTML attribute alongside `aria-disabled="true"`. Avoid disabled buttons unless you have no alternative — they fail WCAG 2.2 for contrast and confuse users who cannot understand why an action is unavailable.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -148,7 +148,7 @@ Disabled buttons use the `disabled` HTML attribute alongside `aria-disabled="tru
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -164,7 +164,7 @@ Disabled buttons use the `disabled` HTML attribute alongside `aria-disabled="tru
 | classes | string | No | Classes to add to the button element. |
 | attributes | object | No | HTML attributes to add to the button element as key-value pairs. |
 
-## Error Messages
+## Error messages
 
 The button component does not accept user input and does not produce validation error messages.
 
@@ -178,7 +178,7 @@ Disabled buttons have `aria-disabled="true"` alongside the `disabled` attribute.
 
 The reverse button (`nhsuk-button--reverse`) works on dark or coloured backgrounds only. Do not use it on white or light grey backgrounds as it will fail colour contrast requirements.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single primary button per page to show the main action.
@@ -192,7 +192,7 @@ The reverse button (`nhsuk-button--reverse`) works on dark or coloured backgroun
 - Do not use a reverse button on a white or light background.
 - Do not use a button when a standard text link would be more appropriate.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Error summary](../error-summary/SKILLS.md) — displayed above the form when submission fails validation.
 - [Back link](../back-link/SKILLS.md) — for navigating to the previous page.

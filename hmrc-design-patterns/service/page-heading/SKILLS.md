@@ -127,7 +127,7 @@ Write the caption as the section name — for example, "Income", "Employment", o
 - Each page must have one `<h1>`. The `hmrcPageHeading` macro produces a single `<h1>` that wraps both the caption and heading text.
 - Do not use the caption as a substitute for a breadcrumb or back link. It shows the current section, not the navigation path.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

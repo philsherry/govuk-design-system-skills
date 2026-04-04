@@ -174,7 +174,7 @@ Set the `lang` attribute on the `<html>` element to match the current language:
 - Set the `lang` attribute on the `<html>` element to match the current language. Screen readers use this attribute to select the correct speech synthesis voice.
 - Translate the `aria-label` on the `<nav>` element when the page displays in Welsh.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -200,4 +200,4 @@ Set the `lang` attribute on the `<html>` element to match the current language:
 - [Page title](../page-title/SKILLS.md) — the HMRC page title pattern (translate the title when switching language)
 - [Page heading](../page-heading/SKILLS.md) — the HMRC page heading pattern (translate headings and captions)
 - [Header](../../../govuk-design-system/components/header/SKILLS.md) — the GOV.UK header component
-- [HMRC Frontend](../foundations/hmrc-frontend/SKILLS.md) — installation and setup for the hmrc-frontend package
+- [HMRC Frontend](../../foundations/hmrc-frontend/SKILLS.md) — installation and setup for the hmrc-frontend package

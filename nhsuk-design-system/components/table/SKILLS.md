@@ -49,7 +49,7 @@ A caption describes what the table contains. Always provide one for accessibilit
 
 On small screens, NHS UK Frontend tables can stack vertically. The `nhsuk-table-responsive` wrapper enables this behaviour, showing column headers as inline labels on each cell.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -196,7 +196,7 @@ Use `nhsuk-u-visually-hidden` when a heading directly above the table already de
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -228,7 +228,7 @@ Use `nhsuk-u-visually-hidden` when a heading directly above the table already de
 - Do not use tables for layout — screen readers announce the number of columns and rows when a user enters a table, which causes confusion when tables serve as layout containers.
 - Use the responsive table wrapper for tables that might overflow on small screens.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always provide a caption that describes the table's content.
@@ -242,7 +242,7 @@ Use `nhsuk-u-visually-hidden` when a heading directly above the table already de
 - Do not use merged cells unless no alternative exists.
 - Do not put large blocks of prose text in table cells.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Summary List](../summary-list/SKILLS.md) — for key-value pairs
 - [Tag](../tag/SKILLS.md) — often embedded in table cells to show status

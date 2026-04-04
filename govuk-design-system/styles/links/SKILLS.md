@@ -103,7 +103,7 @@ Avoid opening links in a new tab or window without warning the user. If you must
 
 Do not use `target="_blank"` without informing the user.
 
-## Code Examples
+## Code examples
 
 ### Inline link in body text
 
@@ -171,7 +171,7 @@ Do not use `target="_blank"` without informing the user.
 - If a link opens in a new tab, inform the user in the link text so they are not disoriented.
 - Visited link colour (`#4c2c92`) helps users understand which pages they have already seen. Disable the visited state only when it would genuinely mislead.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Apply `govuk-link` to all `<a>` elements in body content.
@@ -186,7 +186,7 @@ Do not use `target="_blank"` without informing the user.
 - Use `target="_blank"` without informing the user.
 - Override the focus styles.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Paragraphs style](https://design-system.service.gov.uk/styles/typography/)
 - [Button component](https://design-system.service.gov.uk/components/button/)

@@ -61,7 +61,7 @@ Size modifiers control the vertical margin (space above and below the break). Yo
 
 If you do not apply a size modifier, the browser default `<hr>` margin applies unless the GOV.UK Frontend base styles reset it.
 
-## Code Examples
+## Code examples
 
 ### Invisible section break with medium spacing
 
@@ -115,7 +115,7 @@ If you do not apply a size modifier, the browser default `<hr>` margin applies u
 - Do not use `<hr>` purely for decorative horizontal lines unrelated to content structure — use CSS borders on a surrounding element instead, and apply `role="presentation"` or `aria-hidden="true"` if the visual treatment conveys no semantic meaning.
 - Ensure the visible line meets contrast requirements against its background. GOV.UK designed the border colour `#b1b4b6` for use against white `#ffffff` backgrounds.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `<hr>` for genuine thematic breaks between content sections.
@@ -128,7 +128,7 @@ If you do not apply a size modifier, the browser default `<hr>` margin applies u
 - Apply the visible modifier when the surrounding context already provides clear visual separation.
 - Use more than one section break in quick succession to accumulate spacing; use spacing override classes on surrounding elements instead.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Spacing style](https://design-system.service.gov.uk/styles/spacing/)
 - [Typography – headings](https://design-system.service.gov.uk/styles/typography/)

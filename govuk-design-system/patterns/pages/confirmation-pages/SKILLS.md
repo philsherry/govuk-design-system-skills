@@ -54,7 +54,7 @@ The "What happens next" section should explain:
 - How the service will contact users
 - What users need to do in the meantime, if anything
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -112,7 +112,7 @@ The "What happens next" section should explain:
 - Do not auto-redirect away from the confirmation page — users may need time to note their reference number or print the page.
 - Destroy session data after displaying the confirmation page so that navigating back does not re-submit or replay the form.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the green panel component with a clear, positive H1
@@ -130,7 +130,7 @@ The "What happens next" section should explain:
 - Use the panel component for inline success messages — use Notification banner instead
 - Session-expire this page before users have had time to note their reference number
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/panel/SKILLS.md](../../../components/panel/SKILLS.md)
 - [../../../components/notification-banner/SKILLS.md](../../../components/notification-banner/SKILLS.md)

@@ -91,7 +91,7 @@ For body content and long-form text, constrain the line length to two-thirds wid
 </div>
 ```
 
-## Code Examples
+## Code examples
 
 ### Two-thirds and one-third layout
 
@@ -161,7 +161,7 @@ For body content and long-form text, constrain the line length to two-thirds wid
 - Do not use grid columns to reorder content visually when that would create a mismatch with the DOM order — this causes confusion for screen reader users.
 - Ensure colour contrast meets WCAG AA requirements regardless of the column layout chosen.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -177,7 +177,7 @@ For body content and long-form text, constrain the line length to two-thirds wid
 - Nest grid rows deeply — keep layouts as flat as possible.
 - Apply `nhsuk-grid-column-*` classes outside an `nhsuk-grid-row` container.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Page template style](https://service-manual.nhs.uk/design-system/styles/page-template)
 - [Spacing style](https://service-manual.nhs.uk/design-system/styles/spacing)

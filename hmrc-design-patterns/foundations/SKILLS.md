@@ -145,7 +145,7 @@ HMRC services must meet WCAG 2.2 Level-AA, the minimum the Public Sector Bodies 
 
 HMRC adds one requirement beyond GOV.UK: every service must publish an accessibility statement through the centralised accessibility-statement-frontend service using a YAML file.
 
-## Do and Do not
+## Do and do not
 
 **Do** check the GOV.UK Design System first — use `govuk-` components for all core interface needs.
 

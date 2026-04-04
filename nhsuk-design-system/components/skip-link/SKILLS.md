@@ -42,7 +42,7 @@ The component renders as an `<a>` element with the class `nhsuk-skip-link`. The 
 
 The target element (the `<main>` element with `id="maincontent"`) must be focusable. NHS UK Frontend adds `tabindex="-1"` to the main wrapper to allow programmatic focus from the skip link without placing it in the natural tab order.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -102,7 +102,7 @@ If your page uses a different `id` for the main content area, point the skip lin
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -119,7 +119,7 @@ If your page uses a different `id` for the main content area, point the skip lin
 - The skip link uses CSS to stay visually hidden until it receives keyboard focus.
 - The standard text "Skip to main content" is well understood by screen reader users. Changing it requires strong user research justification.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the skip link as the first element inside `<body>`, before everything else.
@@ -133,6 +133,6 @@ If your page uses a different `id` for the main content area, point the skip lin
 - Do not point the skip link to an element that does not exist on the page or that lacks `tabindex="-1"`.
 - Do not make the skip link permanently visible — it should only appear when it receives keyboard focus.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header](../header/SKILLS.md) — place the skip link before the header

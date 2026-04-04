@@ -412,7 +412,7 @@ Prototypes built with the kit inherit GOV.UK Frontend's accessibility features, 
 - Do not use a prototype as a proxy for auditing the accessibility of a production service.
 - Ensure your custom Nunjucks and HTML does not break the accessibility of GOV.UK Frontend components — do not remove `for`/`id` associations, ARIA attributes, or focus management.
 
-## Do and Do not
+## Do and do not
 
 **Do** use the kit only for prototyping and user research — never as a production service.
 

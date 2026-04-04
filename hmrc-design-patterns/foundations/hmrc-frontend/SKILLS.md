@@ -203,7 +203,7 @@ HMRC Frontend components meet WCAG 2.2 Level-AA. Using the components as documen
 
 HMRC Frontend relies on GOV.UK Frontend's focus state styles — the yellow-and-black focus indicator. Do not override these styles on HMRC components.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

@@ -50,7 +50,7 @@ The current page link renders with `aria-current="page"`. Each page link has an 
 
 Omit `items` and provide only `previous` and/or `next` objects. The layout switches to a block style (`govuk-pagination--block`). Each link can include `labelText` to show the title of the adjacent page below the Previous/Next label.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (results with numbered pages)
 
@@ -244,7 +244,7 @@ Omit `items` to use the block layout for linear content navigation.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -273,7 +273,7 @@ Omit `items` to use the block layout for linear content navigation.
 | `current` | boolean | No | If `true`, marks this as the current page. Adds `aria-current="page"` and current styling. |
 | `ellipsis` | boolean | No | If `true`, renders a non-interactive ellipsis item (`…`) instead of a page number link. |
 
-## Error Messages
+## Error messages
 
 The pagination component does not have error states.
 
@@ -286,7 +286,7 @@ The pagination component does not have error states.
 - Ellipsis items have `aria-hidden="true"` so screen readers do not read them as interactive elements.
 - SVG icons in previous/next links use `aria-hidden="true"` and `focusable="false"`.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Show the total count of results or pages alongside pagination where possible (for example, "Showing 1–20 of 143 results").
@@ -299,7 +299,7 @@ The pagination component does not have error states.
 - Do not use pagination for multi-step forms — use back links and step indicators.
 - Do not mix the results layout and the block layout on the same page.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Back Link](../back-link/SKILLS.md) — for navigating back in a linear flow
 - [Breadcrumbs](../breadcrumbs/SKILLS.md) — for hierarchical navigation

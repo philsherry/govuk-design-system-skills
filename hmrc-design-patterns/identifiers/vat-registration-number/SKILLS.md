@@ -71,7 +71,7 @@ Set `spellcheck="false"` to prevent browsers from marking the digits as spelling
 
 Do not set `autocomplete="on"` for VAT registration number fields — browser autofill does not recognise this format.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -212,7 +212,7 @@ Do not set `autocomplete="on"` for VAT registration number fields — browser au
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty
 
@@ -239,7 +239,7 @@ Include an example in the error message if it helps users understand the format:
 - Associate hint text and error messages with the input using `aria-describedby`.
 - Use the `govuk-input--width-10` class to set an appropriate width that signals the expected input length to users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single text input for the VAT registration number.
@@ -257,7 +257,7 @@ Include an example in the error message if it helps users understand the format:
 - Do not use `type="number"` — use `type="text"` to avoid unwanted browser behaviour with spinner controls.
 - Do not prefix with "GB" unless the service specifically handles EU VAT numbers.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)
 - [../../../govuk-design-system/components/error-message/SKILLS.md](../../../govuk-design-system/components/error-message/SKILLS.md)

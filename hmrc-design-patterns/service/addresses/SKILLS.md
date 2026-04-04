@@ -71,7 +71,7 @@ When your service needs to accept addresses from outside the UK:
 | UK and international | Address lookup for UK, manual entry with country selector for non-UK |
 | International only | Manual entry with country selector |
 
-## Code Examples
+## Code examples
 
 ### UK address fields
 
@@ -169,7 +169,7 @@ When your service needs to accept addresses from outside the UK:
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 - Address line 1: "Enter the first line of your address"
 - Town or city: "Enter your town or city"
@@ -186,7 +186,7 @@ When your service needs to accept addresses from outside the UK:
 - Link error messages to their input using `aria-describedby`.
 - When using a country selector with autocomplete, test that keyboard users can navigate the suggestions and that screen readers announce results.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Start with the GOV.UK address lookup pattern for UK addresses.
@@ -204,7 +204,7 @@ When your service needs to accept addresses from outside the UK:
 - Do not collect county unless the service needs it.
 - Do not use placeholder text to show expected formats.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/patterns/ask-users-for/addresses/SKILLS.md](../../../govuk-design-system/patterns/ask-users-for/addresses/SKILLS.md)
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)

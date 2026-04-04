@@ -59,7 +59,7 @@ Use the narrowest appropriate width for the expected content:
 
 Use a prefix or suffix to add context to the input — for example, `£` before a currency amount, or `kg` after a weight. Prefix/suffix text is `aria-hidden="true"` — ensure the label or hint text communicates the unit to screen reader users.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -295,7 +295,7 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -319,7 +319,7 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 | `describedBy` | string | No | Extra element IDs to include in `aria-describedby`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the input. |
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -338,7 +338,7 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 - Set `spellcheck="false"` for inputs where spell-checking is unhelpful — email addresses, reference numbers, codes, usernames.
 - Prefix and suffix elements use `aria-hidden="true"` — make sure the label or hint conveys the unit in text (for example, "Cost in pounds" rather than "Cost" when using a £ prefix).
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the narrowest appropriate width for the expected content.
@@ -352,7 +352,7 @@ Use a prefix or suffix to add context to the input — for example, `£` before 
 - Do not use full-width inputs for short data like postcodes, years, or codes.
 - Do not use a text input when a constrained input (radios, select, date input) would be more appropriate.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Textarea](../textarea/SKILLS.md) — for multi-line text input
 - [Password Input](../password-input/SKILLS.md) — for password entry

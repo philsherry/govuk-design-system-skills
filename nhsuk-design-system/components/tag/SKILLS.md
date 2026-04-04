@@ -58,7 +58,7 @@ The tag renders as `<strong class="nhsuk-tag">`. Colour modifier classes change 
 | `nhsuk-tag--yellow` | Yellow | Warning, requires attention |
 | `nhsuk-tag--white` | White | Inactive or low priority |
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (blue)
 
@@ -199,7 +199,7 @@ The tag renders as `<strong class="nhsuk-tag">`. Colour modifier classes change 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -216,7 +216,7 @@ The tag renders as `<strong class="nhsuk-tag">`. Colour modifier classes change 
 - When tags appear in tables or lists, ensure enough surrounding context exists for users to understand what the tag refers to.
 - Maintain a consistent colour-to-status mapping throughout your service — for example, always use green for "Completed".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use concise, meaningful status words — 1 to 3 words.
@@ -229,7 +229,7 @@ The tag renders as `<strong class="nhsuk-tag">`. Colour modifier classes change 
 - Do not mix colour meanings across pages — if green means "confirmed" in one place, it should not mean "active" elsewhere.
 - Do not use more than 3 or 4 different tag colours on a single page — this reduces the signal value of each colour.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Task List](../task-list/SKILLS.md) — uses tags for task completion status
 - [Table](../table/SKILLS.md) — tags are often embedded in table cells

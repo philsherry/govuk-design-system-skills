@@ -125,7 +125,7 @@ Extend the base template and override the provided blocks:
 | `footer` | Replace or augment the NHS footer |
 | `bodyEnd` | Content directly before `</body>` closes (scripts) |
 
-## Code Examples
+## Code examples
 
 ### Minimal HTML page template
 
@@ -186,7 +186,7 @@ Error: [Page heading] - [Service name] - NHS
 - `role="main"` supports older assistive technologies that do not fully support HTML5 landmark elements.
 - Page titles must be unique and descriptive. Avoid generic titles such as "NHS".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -204,7 +204,7 @@ Error: [Page heading] - [Service name] - NHS
 - Use the NHS Frutiger typeface outside NHS services — it requires an NHS licence.
 - Place render-blocking scripts inside `<head>` unless they are essential and properly deferred.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header component](https://service-manual.nhs.uk/design-system/components/header)
 - [Footer component](https://service-manual.nhs.uk/design-system/components/footer)

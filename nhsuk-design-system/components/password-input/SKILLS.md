@@ -53,7 +53,7 @@ The `data-module="nhsuk-password-input"` attribute on the outer container activa
 
 The component sets `spellcheck="false"` and `autocapitalize="none"` by default to prevent interference with password entry.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -192,7 +192,7 @@ The component sets `spellcheck="false"` and `autocapitalize="none"` by default t
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -212,7 +212,7 @@ The component sets `spellcheck="false"` and `autocapitalize="none"` by default t
 | `showPasswordAriaLabelText` | string | No | Custom `aria-label` for the show button. Defaults to `"Show password"`. |
 | `hidePasswordAriaLabelText` | string | No | Custom `aria-label` for the hide button. Defaults to `"Hide password"`. |
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -230,7 +230,7 @@ The component sets `spellcheck="false"` and `autocapitalize="none"` by default t
 - Set `autocomplete` to `"current-password"` for sign-in fields and `"new-password"` for creation fields. This helps password managers fill in or generate passwords.
 - The input type switches between `"password"` and `"text"` — screen readers will announce the type change when the user interacts with the toggle.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `autocomplete="current-password"` on sign-in pages.
@@ -244,7 +244,7 @@ The component sets `spellcheck="false"` and `autocapitalize="none"` by default t
 - Do not use a standard text input for passwords — users expect the masking behaviour.
 - Do not prevent pasting into the password field — this breaks password managers and hurts security.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Text Input](../text-input/SKILLS.md) — the base single-line input component.
 - [Error Message](../error-message/SKILLS.md) — for inline validation errors.

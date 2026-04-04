@@ -240,7 +240,7 @@ npm update nhsuk-frontend
 - Focus states use the NHS yellow-and-black style and meet the 3:1 contrast ratio required by WCAG 2.2 SC 1.4.11.
 - JavaScript components degrade gracefully. When JavaScript is unavailable, the HTML remains functional.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

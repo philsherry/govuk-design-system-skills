@@ -44,7 +44,7 @@ The last item in the list represents the current page, has no `href`, and the `<
 
 Below the breadcrumb list, a `<p class="nhsuk-breadcrumb__back">` element contains a "Back to" link pointing to the parent page. This shows on mobile viewports where the full breadcrumb trail hides.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -114,7 +114,7 @@ Below the breadcrumb list, a `<p class="nhsuk-breadcrumb__back">` element contai
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -139,7 +139,7 @@ Ensure breadcrumb link text matches the destination page title so users know whe
 
 The mobile "Back to" link provides a simplified navigation path for small screens, reducing visual clutter without removing the ability to navigate upward.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place breadcrumbs at the top of the page, above the `<main>` element and page heading.
@@ -153,7 +153,7 @@ The mobile "Back to" link provides a simplified navigation path for small screen
 - Do not include the current page as a link.
 - Do not use breadcrumbs when the site has a single level of hierarchy.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Back link](https://service-manual.nhs.uk/design-system/components/back-link) — for navigating back within a linear transactional flow.
 - [Header](https://service-manual.nhs.uk/design-system/components/header) — the primary site navigation element used alongside breadcrumbs.

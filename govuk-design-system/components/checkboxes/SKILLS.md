@@ -49,7 +49,7 @@ The exclusive behaviour (`behaviour: "exclusive"`) is for "None of the above" ch
 
 Small checkboxes (`govuk-checkboxes--small`) are available for filter panels or compact layouts with limited space.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -294,7 +294,7 @@ Small checkboxes (`govuk-checkboxes--small`) are available for filter panels or 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -321,7 +321,7 @@ Small checkboxes (`govuk-checkboxes--small`) are available for filter panels or 
 | attributes | object | No | HTML attributes for the checkboxes container. |
 | values | array | No | Array of values to pre-check. Alternative to setting `checked` on individual items. |
 
-## Error Messages
+## Error messages
 
 - "Select [option]" — when the user has not selected any required checkbox.
 - "Select [option A] or [option B]" — when the user must select at least one of those specific options.
@@ -338,7 +338,7 @@ Conditional reveal content uses `data-aria-controls` on the checkbox and `aria-e
 
 The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to standard checkbox behaviour — the server must handle deselection logic.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always use a fieldset and legend when displaying a group of checkboxes.
@@ -352,7 +352,7 @@ The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to stan
 - Do not pre-check checkboxes by default unless the user has already chosen that value.
 - Do not rely on the `exclusive` behaviour alone — check server-side that mutually exclusive options are not submitted together.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Radios](https://design-system.service.gov.uk/components/radios/) — when the user must select one option and one option only.
 - [Fieldset](https://design-system.service.gov.uk/components/fieldset/) — the wrapping element used for grouped form inputs.

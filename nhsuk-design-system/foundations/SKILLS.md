@@ -125,7 +125,7 @@ All components:
 
 Teams are responsible for ensuring their use of components remains accessible. Custom CSS that changes colour, spacing, or visibility can break accessibility. Test with real assistive technologies before release.
 
-## Do and Do not
+## Do and do not
 
 **Do** use the Design System before building anything custom — the team has tested components for accessibility, and NHS users find them familiar.
 
@@ -143,7 +143,7 @@ Teams are responsible for ensuring their use of components remains accessible. C
 
 **Do not** use `nhsuk-` class names, the NHS logo, or the Frutiger typeface on non-NHS services.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - `foundations/nhsuk-frontend/SKILLS.md` — NHS UK Frontend npm package setup and usage
 - `foundations/prototype-kit/SKILLS.md` — NHS prototype kit setup

@@ -131,7 +131,7 @@ Do not place it at the top of the page where users might miss the main content.
 - Keep hidden content short. Assistive technology users navigate through expanded content linearly, so long blocks add navigation burden.
 - Write summary text that describes the hidden content. Vague labels such as "More information" do not help users decide whether to expand.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

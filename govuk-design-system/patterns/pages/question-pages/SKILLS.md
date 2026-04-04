@@ -86,7 +86,7 @@ Include a back link if users have come from a previous step in the service. Do n
 
 Use "Continue" as the button label for most question pages. Only use a different label when the action is final and irreversible (for example, "Submit application", "Confirm and pay") or the service has a defined save point ("Save and continue"). Do not use "Next" or "Submit" as generic button labels.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -230,7 +230,7 @@ With hint text:
 - Do not use placeholder text — it disappears on input and has poor contrast
 - Do not disable the submit button during form submission — use `data-prevent-double-click` on the button instead
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Ask one thing per page as the default
@@ -253,7 +253,7 @@ With hint text:
 - Show error messages before the user has attempted to submit the form
 - Mark required fields as "(required)" — mark optional ones as "(optional)" instead
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../../../components/radios/SKILLS.md](../../../components/radios/SKILLS.md)

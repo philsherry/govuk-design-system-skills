@@ -70,7 +70,7 @@ The Task list component (available in govuk-frontend) appears inside transaction
 | Shows progress | Yes — highlights current step | Yes — shows status of each task |
 | Suitable for | Multi-agency guidance journeys | Single service applications |
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -182,7 +182,7 @@ For transactional services, use the Task list component instead:
 - The `<ol>` element conveys the ordered sequence to assistive technology — do not rely on the numbered circles alone
 - Links within each step must have descriptive text — avoid "click here" or bare URLs
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use step by step navigation for complex multi-stage guidance journeys on GOV.UK
@@ -197,7 +197,7 @@ For transactional services, use the Task list component instead:
 - Use it for simple linear journeys with 2 or 3 steps
 - Use it for journeys where the steps can run in any order with no clear sequence
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/task-list/SKILLS.md](../../../components/task-list/SKILLS.md)
 - [../question-pages/SKILLS.md](../question-pages/SKILLS.md)

@@ -78,7 +78,7 @@ For date ranges (a start date and an end date), ask for the start date on one sc
 - Validate that the date exists (for example, 31 February is invalid).
 - Validate that the date is within an acceptable range for your service.
 
-## Code Examples
+## Code examples
 
 ### Date of birth (memorable date)
 
@@ -266,7 +266,7 @@ For date ranges (a start date and an end date), ask for the start date on one sc
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 Follow these patterns for error messages. Highlight only the fields that need correction — apply the error class (`govuk-input--error`) to the individual day, month, or year field(s) that contain the error.
 
@@ -316,7 +316,7 @@ Follow these patterns for error messages. Highlight only the fields that need co
 - Only apply the error class to the specific fields that are wrong — not to all fields.
 - Provide hint text with a realistic example date (for example, "For example, 31 3 1980").
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use three separate fields for day, month, and year.
@@ -336,9 +336,9 @@ Follow these patterns for error messages. Highlight only the fields that need co
 - Do not apply error styling to fields that the user filled in as intended.
 - Do not ask for a date if you only need the year or month.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/date-input/SKILLS.md](../../components/date-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
-- [../../components/fieldset/SKILLS.md](../../components/fieldset/SKILLS.md)
+- [../../components/date-input/SKILLS.md](../../../components/date-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
+- [../../components/fieldset/SKILLS.md](../../../components/fieldset/SKILLS.md)

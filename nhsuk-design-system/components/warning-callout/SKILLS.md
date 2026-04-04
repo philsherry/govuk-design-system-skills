@@ -47,7 +47,7 @@ The component renders as a `<div class="nhsuk-warning-callout">` containing a he
 
 The heading includes a visually hidden prefix "Important:" which screen readers announce, ensuring the callout's significance is clear to all users.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -115,7 +115,7 @@ Use a different heading level when the default `<h3>` does not fit your page's h
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -134,7 +134,7 @@ Use a different heading level when the default `<h3>` does not fit your page's h
 - Do not rely on colour alone to communicate urgency — the heading text and body content must convey the message independently.
 - Ensure the heading level fits the page's heading hierarchy so screen reader users can navigate headings consistently.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Start the visible heading with a specific topic (for example, "When to get urgent help") or use "Important" as the default.
@@ -149,7 +149,7 @@ Use a different heading level when the default `<h3>` does not fit your page's h
 - Do not use the warning callout for form errors or success messages.
 - Do not put entire paragraphs of standard content inside a warning callout — keep it concise and actionable.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Inset Text](../inset-text/SKILLS.md) — for supplementary information that does not require action
 - [Notification Banner](../notification-banner/SKILLS.md) — for service-level notifications and success messages

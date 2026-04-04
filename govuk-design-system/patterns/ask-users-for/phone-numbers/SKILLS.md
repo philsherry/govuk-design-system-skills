@@ -86,7 +86,7 @@ If your service will only send SMS messages, make clear that you need a mobile n
 
 If your service accepts either mobile or landline, say so: "Enter a UK phone number, like 01632 960 001, 07700 900 982 or +44 808 157 0192."
 
-## Code Examples
+## Code examples
 
 ### Default (any UK number)
 
@@ -261,7 +261,7 @@ If your service accepts either mobile or landline, say so: "Enter a UK phone num
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty (required)
 
@@ -286,7 +286,7 @@ If your service accepts either mobile or landline, say so: "Enter a UK phone num
 - Include a realistic example in the hint or error message to show the expected format.
 - Do not use placeholder text as a substitute for label or hint text.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `type="tel"` on the input.
@@ -306,10 +306,10 @@ If your service accepts either mobile or landline, say so: "Enter a UK phone num
 - Do not restrict input to only UK formats if your service accepts international numbers.
 - Do not use `type="number"` for phone numbers — it strips leading zeros and disallows + signs.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../email-addresses/SKILLS.md](../email-addresses/SKILLS.md)
 - [../../help-users-to/confirm-a-phone-number/SKILLS.md](../../help-users-to/confirm-a-phone-number/SKILLS.md)

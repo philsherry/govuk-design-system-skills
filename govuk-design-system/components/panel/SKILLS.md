@@ -52,7 +52,7 @@ The heading level defaults to `<h1>`. On a typical confirmation page the panel h
 
 The body area is optional and holds reference numbers or brief supplementary detail.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -142,7 +142,7 @@ Use `titleHtml` when the title requires markup, for example a line break.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -154,7 +154,7 @@ Use `titleHtml` when the title requires markup, for example a line break.
 | `classes` | string | No | Classes to add to the outer `<div>`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the outer `<div>`. |
 
-## Error Messages
+## Error messages
 
 The panel component does not have error states. This is a confirmation component.
 
@@ -166,7 +166,7 @@ The panel component does not have error states. This is a confirmation component
 - The green background with white text meets WCAG 2.1 AA colour contrast requirements.
 - Do not rely on the green colour alone to communicate success — the heading text must also confirm the outcome.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the panel only on confirmation pages at the end of a transaction.
@@ -180,7 +180,7 @@ The panel component does not have error states. This is a confirmation component
 - Do not put large amounts of text in the panel body — keep it to a reference number or brief detail.
 - Do not use more than one panel per page.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Notification Banner](../notification-banner/SKILLS.md) — for success notifications that are not end-of-transaction confirmations
 - [Inset Text](../inset-text/SKILLS.md) — for supplementary information on confirmation pages

@@ -61,7 +61,7 @@ This page should use the full service page template — header, footer, and skip
 - If there is a way for them to complete the task another way (by phone or post), include those details
 - Keep the page short — users do not want a long explanation; they want to know what to do
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -118,7 +118,7 @@ This page should use the full service page template — header, footer, and skip
 - Contact information must appear in a list format that screen reader users can navigate without difficulty
 - Do not display raw error messages or stack traces — these may confuse screen reader users and are a security concern
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the exact heading "Sorry, there is a problem with the service"
@@ -138,7 +138,7 @@ This page should use the full service page template — header, footer, and skip
 - Strip out the service header and footer
 - Claim the service saved user data when it did not
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../page-not-found-pages/SKILLS.md](../page-not-found-pages/SKILLS.md)
 - [../service-unavailable-pages/SKILLS.md](../service-unavailable-pages/SKILLS.md)

@@ -49,7 +49,7 @@ The banner content should:
 
 Do not nest headings inside the banner. Use paragraph text to keep the content flat and scannable.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -95,7 +95,7 @@ Do not nest headings inside the banner. Use paragraph text to keep the content f
 - The banner must remain visible and readable at 400% zoom without horizontal scrolling
 - Do not use colour alone to convey meaning — the text content must communicate the guidance without relying on the blue background
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the banner below the internal header and above the main content
@@ -110,7 +110,7 @@ Do not nest headings inside the banner. Use paragraph text to keep the content f
 - Do not stack more than one guidance banner on a single page
 - Do not use it for content that changes based on user interaction — the banner content should stay static on page load
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Internal header](../internal-header/SKILLS.md) — the caseworker guidance banner sits below this header
 - [GOV.UK Notification banner](../../../govuk-design-system/components/notification-banner/SKILLS.md) — for service-level notifications on public-facing pages

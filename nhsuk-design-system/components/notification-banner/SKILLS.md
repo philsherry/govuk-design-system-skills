@@ -51,7 +51,7 @@ The success variant renders with `role="alert"`, which causes screen readers to 
 
 Pass content (the body of the banner) via `text` or `html`. The body can contain headings, paragraphs, lists, and links.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (Important)
 
@@ -132,7 +132,7 @@ By default, `type: "success"` moves focus to the banner on page load. Use `disab
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -157,7 +157,7 @@ By default, `type: "success"` moves focus to the banner on page load. Use `disab
 - Do not set `role="alert"` on the default/important variant — only the success variant should use `role="alert"`.
 - Keep banner content concise. Long banners or more than one banner on a page can disorient screen reader users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the success variant to confirm a completed action after a page redirect.
@@ -171,7 +171,7 @@ By default, `type: "success"` moves focus to the banner on page load. Use `disab
 - Do not use the success variant for neutral or informational messages.
 - Do not place large amounts of content or complex layouts inside the banner.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Error Summary](../error-summary/SKILLS.md) — for form validation errors at the top of a page
 - [Error Message](../error-message/SKILLS.md) — for inline field-level errors

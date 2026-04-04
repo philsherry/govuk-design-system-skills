@@ -40,7 +40,7 @@ The footer renders as a `<footer class="nhsuk-footer">` element containing a `<d
 
 Each link in the footer uses the class `nhsuk-footer__list-item-link`.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -131,7 +131,7 @@ Each link in the footer uses the class `nhsuk-footer__list-item-link`.
 {{ footer({}) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -153,7 +153,7 @@ Footer links use sufficient colour contrast against the footer's dark background
 
 Ensure link text describes the destination — avoid generic labels like "Link 1".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include the footer on every page of the service.
@@ -168,7 +168,7 @@ Ensure link text describes the destination — avoid generic labels like "Link 1
 - Do not add excessive numbers of links to the footer.
 - Do not duplicate navigation from the header in the footer.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header](https://service-manual.nhs.uk/design-system/components/header) — the primary site header that appears at the top of every page.
 - [Breadcrumbs](https://service-manual.nhs.uk/design-system/components/breadcrumbs) — for hierarchical page navigation.

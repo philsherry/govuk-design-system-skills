@@ -74,7 +74,7 @@ When the page contains a single question, the heading should be the `<legend>` o
 </fieldset>
 ```
 
-## Code Examples
+## Code examples
 
 ### Standard headings
 
@@ -130,7 +130,7 @@ A subsection that is semantically an `<h2>` but should visually appear at the sm
 - Captions placed outside the heading element are not programmatically associated with the heading. Place captions inside the heading using a `<span>` when the association is important for screen reader users.
 - When using a heading as a fieldset legend, nest the `<h1>` inside the `<legend>` element — not the other way around.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use one `<h1>` per page.
@@ -144,7 +144,7 @@ A subsection that is semantically an `<h2>` but should visually appear at the sm
 - Use more than one `<h1>` element on the same page.
 - Place content between the caption and the heading it refers to.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Type scale style](https://design-system.service.gov.uk/styles/type-scale/)
 - [Paragraphs style](https://design-system.service.gov.uk/styles/typography/)

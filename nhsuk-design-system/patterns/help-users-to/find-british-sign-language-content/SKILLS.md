@@ -57,7 +57,7 @@ BSL health content on this topic (opens in a new window)
 
 BSL content often lives on a third-party platform (such as SignHealth or the NHS BSL website). Open BSL links in a new window so users do not lose their place on the NHS page. Always tell users the link opens in a new window.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -88,7 +88,7 @@ BSL content often lives on a third-party platform (such as SignHealth or the NHS
 - Use `rel="noopener noreferrer"` on external links for security.
 - The BSL video content itself should include captions for deaf-blind users and for users who have partial hearing alongside BSL comprehension.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -104,7 +104,7 @@ BSL content often lives on a third-party platform (such as SignHealth or the NHS
 - Assume that providing a text transcript replaces the need for BSL content — BSL is a separate language from English.
 - Use an icon without text to represent BSL — always include a text label.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Action link component](https://service-manual.nhs.uk/design-system/components/action-link)
 - [Inset text component](https://service-manual.nhs.uk/design-system/components/inset-text)

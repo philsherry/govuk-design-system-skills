@@ -76,7 +76,7 @@ Show error messages for:
 - Upload failed: "The file upload failed — try again"
 - Virus detected: "The selected file contains a virus"
 
-## Code Examples
+## Code examples
 
 ### Default file upload with guidance
 
@@ -192,7 +192,7 @@ Show error messages for:
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 - No file selected: "Select a [document type]" — for example, "Select a P60"
 - Wrong file type: "The selected file must be a PDF, JPG, or PNG"
@@ -208,7 +208,7 @@ Show error messages for:
 - Success messages should appear in the page content, not as transient notifications that screen readers might miss.
 - Upload one file at a time rather than using `multiple` — single file uploads give clearer feedback to assistive technology users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - State accepted file types before the file input.
@@ -227,7 +227,7 @@ Show error messages for:
 - Do not show success messages as transient alerts — display them in the page content.
 - Do not let users proceed without confirming they uploaded the correct file.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/file-upload/SKILLS.md](../../../govuk-design-system/components/file-upload/SKILLS.md)
 - [../../../govuk-design-system/components/summary-list/SKILLS.md](../../../govuk-design-system/components/summary-list/SKILLS.md)

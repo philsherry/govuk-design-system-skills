@@ -49,7 +49,7 @@ The "don't" list follows the same pattern but uses the heading "Don't" and `<ul 
 
 Place the "do" list before the "don't" list. The two lists sit as separate components — you can use one without the other if needed.
 
-## Code Examples
+## Code examples
 
 ### Do list
 
@@ -154,7 +154,7 @@ Place the "do" list before the "don't" list. The two lists sit as separate compo
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -175,7 +175,7 @@ Start "don't" list items with lowercase "do not" so they read as complete senten
 
 Start "do" list items with a lowercase verb for consistency (e.g. "cover blisters" not "Cover blisters").
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the "do" list before the "don't" list.
@@ -190,7 +190,7 @@ Start "do" list items with a lowercase verb for consistency (e.g. "cover blister
 - Do not use it for urgent health warnings — use care cards instead.
 - Do not mix "do" and "don't" items in the same list.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Care cards](https://service-manual.nhs.uk/design-system/components/care-cards) — for urgent health advice that needs a prominent visual treatment.
 - [Inset text](https://service-manual.nhs.uk/design-system/components/inset-text) — for highlighting information within body content.

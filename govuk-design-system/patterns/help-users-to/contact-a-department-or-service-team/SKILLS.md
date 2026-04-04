@@ -69,7 +69,7 @@ Before showing contact details, direct users to:
 
 Make sure at least one contact method does not require users to have a phone, internet access, or a particular device. Provide a text relay or similar service for users who are deaf or hard of hearing.
 
-## Code Examples
+## Code examples
 
 ### Basic contact page with more than one channel
 
@@ -323,7 +323,7 @@ Make sure at least one contact method does not require users to have a phone, in
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 For online contact forms, standard validation applies:
 
@@ -343,7 +343,7 @@ For online contact forms, standard validation applies:
 - If using a web chat service, ensure the service is keyboard accessible and works with screen readers.
 - Contact forms must follow standard form accessibility guidance: labels, hints, error messages, and focus management.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Direct users to self-service options before showing contact details.
@@ -360,7 +360,7 @@ For online contact forms, standard validation applies:
 - Do not list contact channels that are not actively monitored.
 - Do not make users explain their problem more than once across different channels.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../../../components/textarea/SKILLS.md](../../../components/textarea/SKILLS.md)

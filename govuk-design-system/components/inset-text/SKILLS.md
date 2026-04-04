@@ -44,7 +44,7 @@ The component renders as a `<div class="govuk-inset-text">`. CSS applies a blue 
 
 The component has no JavaScript dependency and carries no ARIA role — screen readers encounter it as ordinary content.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -125,7 +125,7 @@ Use `html` when the content requires markup such as links or more than one parag
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -135,7 +135,7 @@ Use `html` when the content requires markup such as links or more than one parag
 | `classes` | string | No | Classes to add to the outer `<div>`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the outer `<div>`. |
 
-## Error Messages
+## Error messages
 
 The inset text component is presentational and has no error states.
 
@@ -146,7 +146,7 @@ The inset text component is presentational and has no error states.
 - The component does not rely on colour alone as a differentiator; the border also provides a structural visual cue.
 - When providing an `id`, make sure the value is unique on the page. You can use it as a target for `aria-describedby` or same-page links.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use inset text for important supplementary context that is distinct from body text.
@@ -159,7 +159,7 @@ The inset text component is presentational and has no error states.
 - Do not use more than one inset text block in close succession on the same page.
 - Do not use it purely for decoration or visual variety.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Warning Text](../warning-text/SKILLS.md) — for serious or legal consequences
 - [Notification Banner](../notification-banner/SKILLS.md) — for status and success notifications

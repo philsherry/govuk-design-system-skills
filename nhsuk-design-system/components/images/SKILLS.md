@@ -50,7 +50,7 @@ When you provide a caption, the component adds a `<figcaption class="nhsuk-image
 
 The `<figure>` and `<figcaption>` pairing gives assistive technologies a semantic relationship between the image and its caption.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -107,7 +107,7 @@ The `<figure>` and `<figcaption>` pairing gives assistive technologies a semanti
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -125,11 +125,11 @@ For medical images showing symptoms, describe the visible characteristics: colou
 
 The `<figure>` and `<figcaption>` elements create a semantic link between the image and caption. Screen readers announce the caption as associated with the image.
 
-Do not repeat the alt text in the caption. The alt text describes the image; the caption provides additional context, attribution, or instructions.
+Do not repeat the alt text in the caption. The alt text describes the image; the caption provides Extra context, attribution, or instructions.
 
 Ensure images do not convey information that the surrounding text does not also cover. Users who cannot see the image should still get the full picture from the written content.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Write descriptive alt text for every image.
@@ -145,8 +145,8 @@ Ensure images do not convey information that the surrounding text does not also 
 - Do not use images with embedded text — keep text in the HTML so screen readers and translation tools can process it.
 - Do not omit alt text on any image.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Card](https://service-manual.nhs.uk/design-system/components/card) — for images within a navigable card layout.
 - [Hero](https://service-manual.nhs.uk/design-system/components/hero) — for prominent banner images on landing pages.
-- [Do and don't list](https://service-manual.nhs.uk/design-system/components/do-and-dont-list) — for visual health advice that may accompany image content.
+- [Do and don't list](https://service-manual.nhs.uk/design-system/components/do-and-dont-list) — for visual health advice that may sit alongside image content.

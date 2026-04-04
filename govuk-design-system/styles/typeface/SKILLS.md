@@ -95,7 +95,7 @@ GDS Transport has no italic variant. Italics render in Arial italic.
 
 Redistribution of GDS Transport font files is not permitted. The font files come with the GOV.UK Frontend npm package solely for use on gov.uk domains under the terms of the Crown licence.
 
-## Code Examples
+## Code examples
 
 ### Sass configuration for a gov.uk service
 
@@ -131,7 +131,7 @@ When writing custom styles that must match the GOV.UK typeface, use the `$govuk-
 - Users who apply a custom typeface via browser or operating system settings will see their chosen font instead of GDS Transport. Ensure that layouts do not break when a different typeface replaces it.
 - Do not use CSS font-smoothing properties to alter the rendering of GDS Transport — this can reduce contrast and legibility for some users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Configure the font file path in Sass before importing GOV.UK Frontend.
@@ -145,7 +145,7 @@ When writing custom styles that must match the GOV.UK typeface, use the `$govuk-
 - Set `font-family` values manually — use the provided Sass variable.
 - Apply synthetic bold or italic CSS properties to GDS Transport.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Type scale style](https://design-system.service.gov.uk/styles/type-scale/)
 - [Typography – headings](https://design-system.service.gov.uk/styles/typography/)

@@ -54,7 +54,7 @@ Give users specific next steps. Do not leave them at a dead end. Every failure p
 
 Where the service allows it, offer the user a chance to try verifying their identity again. Place this option before the offline alternatives, because most users prefer to continue online.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -130,7 +130,7 @@ Where the service allows it, offer the user a chance to try verifying their iden
 - The "Try again" button uses `govuk-button--secondary` to avoid implying that it’s the primary action. This prevents users from assuming the button will submit data.
 - Use a logical heading hierarchy: H1 for the page title, H2 for "Other ways to access this service".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a standard page heading that states the outcome: "We could not confirm your identity"
@@ -148,7 +148,7 @@ Where the service allows it, offer the user a chance to try verifying their iden
 - Show technical error codes or system messages
 - Blame the user for the failure
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/button/SKILLS.md](../../../govuk-design-system/components/button/SKILLS.md)
 - [../../../govuk-design-system/patterns/pages/problem-with-the-service-pages/SKILLS.md](../../../govuk-design-system/patterns/pages/problem-with-the-service-pages/SKILLS.md)

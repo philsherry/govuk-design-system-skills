@@ -95,7 +95,7 @@ Always validate on the server. Client-side (browser) validation can supplement s
 
 Only highlight the specific date sub-fields that have errors. If the day is missing, apply the error class to the day input only — do not highlight all three inputs unless all three contain errors.
 
-## Code Examples
+## Code examples
 
 ### Single field error (text input)
 
@@ -330,7 +330,7 @@ Only highlight the specific date sub-fields that have errors. If the day is miss
 - Do not use colour alone to show an error — always use both the red border styling and the error message text.
 - For date inputs, apply the error class only to the specific sub-fields that have errors, not all three fields.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always show both the error summary and inline error messages together.
@@ -352,7 +352,7 @@ Only highlight the specific date sub-fields that have errors. If the day is miss
 - Do not redirect to a separate error page — always show errors on the same page.
 - Do not use red colouring as the sole indicator of an error.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)

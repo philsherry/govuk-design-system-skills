@@ -53,7 +53,7 @@ The header always appears at the top of every page above the main content, the p
 
 **Navigation classes:** The `navigationClasses` parameter adds classes to the navigation `<ul>` element.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (logo only)
 
@@ -281,7 +281,7 @@ The header always appears at the top of every page above the main content, the p
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -313,7 +313,7 @@ The header always appears at the top of every page above the main content, the p
 - When JavaScript is not available, the full navigation shows and the menu button stays hidden (the button has the `hidden` attribute, which JavaScript removes on init).
 - The header uses `data-module="govuk-header"` to activate GOV.UK Frontend JavaScript for the mobile menu toggle.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include the header on every page of the service.
@@ -329,7 +329,7 @@ The header always appears at the top of every page above the main content, the p
 - Do not put content other than the service name and navigation in the header.
 - Do not omit `homepageUrl` on the main GOV.UK header — always link the crown to the homepage.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Footer](../footer/SKILLS.md) — appears at the bottom of every page.
 - [Service navigation](../service-navigation/SKILLS.md) — a secondary navigation component that appears below the header for complex services.

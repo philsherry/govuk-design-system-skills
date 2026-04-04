@@ -81,7 +81,7 @@ When a user returns to a service after leaving mid-journey:
 
 Once all tasks are complete, direct users to a "Check your answers" page or a submission step. The task list page itself is not the final step — that is a navigation hub.
 
-## Code Examples
+## Code examples
 
 ### Basic task list page
 
@@ -301,7 +301,7 @@ Once all tasks are complete, direct users to a "Check your answers" page or a su
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 The `govukTaskList` macro accepts the following options:
 
@@ -329,7 +329,7 @@ The `govukTaskList` macro accepts the following options:
 - Place the progress count ("You have completed X of Y sections") before the task list in the DOM so users encounter it before the list.
 - Use the `idPrefix` option when rendering more than one task list on the same page to avoid duplicate IDs.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Show the number of completed tasks at the top of the task list page.
@@ -345,7 +345,7 @@ The `govukTaskList` macro accepts the following options:
 - Do not prevent users from returning to completed tasks to make changes unless there is a strong reason.
 - Do not use more status states than necessary — a large number of states confuses users.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/task-list/SKILLS.md](../../../components/task-list/SKILLS.md)
 - [../../../components/tag/SKILLS.md](../../../components/tag/SKILLS.md)

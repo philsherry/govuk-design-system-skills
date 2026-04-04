@@ -51,7 +51,7 @@ The heading level defaults to `<h1>`. On a typical confirmation page the panel h
 
 The body area holds reference numbers or brief supplementary detail, and remains optional.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -128,7 +128,7 @@ The body area holds reference numbers or brief supplementary detail, and remains
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -147,7 +147,7 @@ The body area holds reference numbers or brief supplementary detail, and remains
 - When showing a reference number, label it (for example, "Your reference number" on a line above the number).
 - Do not rely on background colour alone to communicate success — the heading text must also confirm the outcome.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the panel only on confirmation pages at the end of a transaction.
@@ -161,7 +161,7 @@ The body area holds reference numbers or brief supplementary detail, and remains
 - Do not put large amounts of text in the panel body — keep it to a reference number or brief detail.
 - Do not use more than one panel per page.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Notification Banner](../notification-banner/SKILLS.md) — for success notifications that are not end-of-transaction confirmations
 - [Inset Text](../inset-text/SKILLS.md) — for supplementary information on confirmation pages

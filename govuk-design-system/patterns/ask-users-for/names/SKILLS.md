@@ -67,7 +67,7 @@ Use `autocomplete="name"` on a full name field. Use `autocomplete="given-name"` 
 
 Set `spellcheck="false"` on name inputs to prevent browsers from underlining names as spelling errors.
 
-## Code Examples
+## Code examples
 
 ### Single full name field
 
@@ -235,7 +235,7 @@ Set `spellcheck="false"` on name inputs to prevent browsers from underlining nam
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the full name field is empty
 
@@ -258,7 +258,7 @@ Set `spellcheck="false"` on name inputs to prevent browsers from underlining nam
 - Link error messages to the input via `aria-describedby`.
 - Do not use placeholder text as a substitute for a label.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single "Full name" field in most cases.
@@ -276,10 +276,10 @@ Set `spellcheck="false"` on name inputs to prevent browsers from underlining nam
 - Do not use "Christian name" or "Forename" — use "First name" or "Given name".
 - Do not use placeholder text to convey the expected format.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../addresses/SKILLS.md](../addresses/SKILLS.md)
 - [../email-addresses/SKILLS.md](../email-addresses/SKILLS.md)

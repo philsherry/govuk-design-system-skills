@@ -87,7 +87,7 @@ Add hint text explaining where to find the security code — for example, "The l
 
 Consider detecting the card type from the first 4 digits of the card number and displaying the card brand logo or name to reassure users. This is optional but improves usability.
 
-## Code Examples
+## Code examples
 
 ### Full payment card form
 
@@ -270,7 +270,7 @@ Consider detecting the card type from the first 4 digits of the card number and 
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### Name on card
 
@@ -306,7 +306,7 @@ Consider detecting the card type from the first 4 digits of the card number and 
 - Hint text and error messages must link to their input via `aria-describedby`.
 - Set `spellcheck="false"` on name fields.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use GOV.UK Pay if available to your service.
@@ -324,10 +324,10 @@ Consider detecting the card type from the first 4 digits of the card number and 
 - Do not disable copy and paste — users with password managers need it.
 - Do not ask for the card's PIN — this is never required for a card-not-present transaction.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/date-input/SKILLS.md](../../components/date-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/date-input/SKILLS.md](../../../components/date-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../bank-details/SKILLS.md](../bank-details/SKILLS.md)

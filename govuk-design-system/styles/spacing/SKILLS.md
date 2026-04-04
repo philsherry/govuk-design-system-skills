@@ -101,7 +101,7 @@ Use `govuk-spacing()` to reference a scale value inside custom Sass:
 
 The function accepts any integer from 0 to 9.
 
-## Code Examples
+## Code examples
 
 ### Adding bottom margin to a heading
 
@@ -158,7 +158,7 @@ The function accepts any integer from 0 to 9.
 - Ensure that adjusting spacing does not cause interactive elements to fall below the recommended 44×44px touch target size.
 - Do not use negative spacing to overlay content in a way that hides it from screen readers.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the spacing scale for all margin and padding values in custom CSS.
@@ -171,7 +171,7 @@ The function accepts any integer from 0 to 9.
 - Apply more than two spacing override classes to a single element to compensate for a structural problem — consider fixing the HTML instead.
 - Override spacing on components in a way that breaks their internal visual logic.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Layout style](https://design-system.service.gov.uk/styles/layout/)
 - [Section break style](https://design-system.service.gov.uk/styles/section-break/)

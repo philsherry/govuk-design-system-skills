@@ -44,7 +44,7 @@ The component renders as a `<div class="nhsuk-inset-text">`. CSS applies a blue 
 
 The component carries no ARIA role — screen readers encounter it as ordinary content.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -107,7 +107,7 @@ Use `html` when the content requires markup such as links or more than one parag
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -124,7 +124,7 @@ Use `html` when the content requires markup such as links or more than one parag
 - Do not rely on the blue border alone to convey meaning — the content itself must communicate why it stands out.
 - When providing an `id`, make sure the value is unique on the page.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use inset text for important supplementary context that stands apart from body text.
@@ -137,7 +137,7 @@ Use `html` when the content requires markup such as links or more than one parag
 - Do not use more than one inset text block in close succession on the same page.
 - Do not use it for decoration or visual variety.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Warning Callout](../warning-callout/SKILLS.md) — for important health warnings
 - [Notification Banner](../notification-banner/SKILLS.md) — for status and success notifications

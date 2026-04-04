@@ -62,7 +62,7 @@ The start button must:
 - State eligibility criteria up front so users know if they can use the service.
 - Mention how long the process takes if you know.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -131,7 +131,7 @@ The start button must:
 - Keep the page content scannable so users can quickly decide whether to proceed.
 - Do not use the start button style for other actions — reserve the green start button for beginning a service.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -149,7 +149,7 @@ The start button must:
 - Hide eligibility criteria — state them before the start button.
 - Add a back link to the start page — users should arrive here from external navigation.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Action link component](https://service-manual.nhs.uk/design-system/components/action-link)
 - [Button component](https://service-manual.nhs.uk/design-system/components/buttons)

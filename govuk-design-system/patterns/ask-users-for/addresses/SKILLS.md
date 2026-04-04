@@ -74,7 +74,7 @@ If your service needs to accept addresses from outside the UK:
 - Add a country selector at the end.
 - Avoid postcode-specific validation for international addresses.
 
-## Code Examples
+## Code examples
 
 ### Address fields
 
@@ -226,7 +226,7 @@ If your service needs to accept addresses from outside the UK:
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 If the user leaves a required field blank:
 
@@ -251,7 +251,7 @@ If the address lookup finds no results:
 - Error messages must link to their input via `aria-describedby`.
 - If using a postcode lookup, ensure keyboard navigation works as expected through the results list, and that screen readers announce the results to users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the `autocomplete` attribute with the correct address tokens on all address fields.
@@ -269,11 +269,11 @@ If the address lookup finds no results:
 - Do not use a rigid UK address structure for international users.
 - Do not check against a specific list of valid towns or counties.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/textarea/SKILLS.md](../../components/textarea/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
-- [../../components/fieldset/SKILLS.md](../../components/fieldset/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/textarea/SKILLS.md](../../../components/textarea/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
+- [../../components/fieldset/SKILLS.md](../../../components/fieldset/SKILLS.md)
 - [../names/SKILLS.md](../names/SKILLS.md)

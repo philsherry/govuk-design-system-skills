@@ -69,7 +69,7 @@ Do not use the word "error" on this page. Do not embed countdown timers or auto-
 
 **Unscheduled but planned:** "We are making improvements to this service. Try again later."
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -139,7 +139,7 @@ Unscheduled — end time unknown:
 - Contact information should be in a list rather than buried in flowing prose
 - Do not embed countdown timers or auto-refresh mechanisms — these cause problems for screen reader users and users who need extra time
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Give a specific date and time when the service will be back if known
@@ -156,7 +156,7 @@ Unscheduled — end time unknown:
 - Remove the service header and footer
 - Embed countdown timers or auto-refresh
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../problem-with-the-service-pages/SKILLS.md](../problem-with-the-service-pages/SKILLS.md)
 - [../page-not-found-pages/SKILLS.md](../page-not-found-pages/SKILLS.md)

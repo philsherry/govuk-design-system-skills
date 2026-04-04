@@ -73,7 +73,7 @@ Set `spellcheck="false"` to prevent browsers from marking the EORI number charac
 
 Do not set `autocomplete="on"` for EORI number fields — browser autofill does not recognise this format.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -214,7 +214,7 @@ Do not set `autocomplete="on"` for EORI number fields — browser autofill does 
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty
 
@@ -241,7 +241,7 @@ Include an example in the error message if it helps users understand the format:
 - Associate hint text and error messages with the input using `aria-describedby`.
 - Use the `govuk-input--width-20` class to set an appropriate width that signals the expected input length to users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single text input for the EORI number.
@@ -258,7 +258,7 @@ Include an example in the error message if it helps users understand the format:
 - Do not reject EORI numbers that include spaces.
 - Do not assume all EORI numbers are exactly 14 characters — older formats may have extra characters.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)
 - [../../../govuk-design-system/components/error-message/SKILLS.md](../../../govuk-design-system/components/error-message/SKILLS.md)

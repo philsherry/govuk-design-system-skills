@@ -87,7 +87,7 @@ If users need eligibility screening before they start, link to an eligibility ch
 
 The URL that the Start now button links to must be stable and bookmarkable. Do not use session-dependent URLs or query-string-only entry points. Users and search engines may link directly to this URL.
 
-## Code Examples
+## Code examples
 
 ### Start now button
 
@@ -261,7 +261,7 @@ The URL that the Start now button links to must be stable and bookmarkable. Do n
 - Lists must use `<ul>` and `<li>` with the appropriate GOV.UK list classes.
 - All links must use descriptive text — do not use "click here" or "here" as link text.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the GOV.UK start page on www.gov.uk as the canonical entry point for public-facing services.
@@ -279,7 +279,7 @@ The URL that the Start now button links to must be stable and bookmarkable. Do n
 - Do not use a session-dependent URL as the service entry point.
 - Do not reproduce GOV.UK guidance content on the start page — link to it instead.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/button/SKILLS.md](../../../components/button/SKILLS.md)
 - [../navigate-a-service/SKILLS.md](../navigate-a-service/SKILLS.md)

@@ -4,7 +4,7 @@ This document shows a sample audit report built from the VS Code snippets in `.v
 
 The snippets create scaffolding — you fill in the specifics. Every issue must include a description of the problem, the impact on users, and a recommendation for fixing it.
 
-For details on each snippet prefix, see the [audit snippets section in README.md](README.md#accessibility-audit-snippets).
+For details on each snippet prefix, see the [audit snippets section in README.md](../README.md#accessibility-audit-snippets).
 
 <!-- summ_exec -->
 

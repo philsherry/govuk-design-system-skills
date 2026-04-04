@@ -95,7 +95,7 @@ A plain `govuk-list` (without bullet or number) is the standard pattern for a li
 </ul>
 ```
 
-## Code Examples
+## Code examples
 
 ### Bullet list
 
@@ -154,7 +154,7 @@ Use HTML directly. No `govukList` macro exists. Lists are standard HTML elements
 - If a list contains links, ensure each link has descriptive text that makes sense out of context.
 - `govuk-list--spaced` improves readability for all users, including those with dyslexia, by providing clear visual separation between items.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `<ul>` for unordered content and `<ol>` for sequential or ranked content.
@@ -169,7 +169,7 @@ Use HTML directly. No `govukList` macro exists. Lists are standard HTML elements
 - Use lists for navigation menus — use a dedicated navigation component instead.
 - Create fake lists using `<p>` tags or CSS `content` bullet characters.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Typography – paragraphs](https://design-system.service.gov.uk/styles/typography/)
 - [Links style](https://design-system.service.gov.uk/styles/typography/)

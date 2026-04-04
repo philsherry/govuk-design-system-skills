@@ -51,7 +51,7 @@ The warning text renders as a `<div class="govuk-warning-text">` containing:
 
 Screen readers announce the visually hidden prefix before the warning content, providing context even when users cannot see the visual icon.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -140,7 +140,7 @@ Override `iconFallbackText` when the service is in Welsh or another language.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -150,7 +150,7 @@ Override `iconFallbackText` when the service is in Welsh or another language.
 | `classes` | string | No | Classes to add to the outer `<div>`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the outer `<div>`. |
 
-## Error Messages
+## Error messages
 
 The warning text component does not have error states. This is a presentational component.
 
@@ -162,7 +162,7 @@ The warning text component does not have error states. This is a presentational 
 - Ensure warning content is specific: say what will happen, not that something is important.
 - Translate `iconFallbackText` for services in languages other than English.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use warning text for genuinely high-stakes situations: legal obligations, serious financial consequences, irreversible actions.
@@ -176,7 +176,7 @@ The warning text component does not have error states. This is a presentational 
 - Do not omit `iconFallbackText` — screen reader users will not hear "Warning" before the text.
 - Do not use the component for positive messages, success confirmations, or decorative purposes.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Inset Text](../inset-text/SKILLS.md) — for important but non-critical supplementary information
 - [Notification Banner](../notification-banner/SKILLS.md) — for service-level or status notifications

@@ -55,7 +55,7 @@ The `card` option wraps the summary list in an `nhsuk-summary-card` container wi
 
 Add `nhsuk-summary-list--no-border` to remove the horizontal borders between rows.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -218,7 +218,7 @@ Cards group rows together with an optional heading and card-level actions.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -264,7 +264,7 @@ Cards group rows together with an optional heading and card-level actions.
 - Card titles use heading elements — ensure the heading level fits the page's heading hierarchy.
 - When more than one row on the same page shares the same action text (for example, "Change"), the visually hidden text is essential to differentiate them.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always provide `visuallyHiddenText` on action links.
@@ -277,7 +277,7 @@ Cards group rows together with an optional heading and card-level actions.
 - Do not omit `visuallyHiddenText` on "Change" links — screen reader users will not have context.
 - Do not use the summary list to display long blocks of text.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Table](../table/SKILLS.md) — for tabular data with more than one column
 - [Task List](../task-list/SKILLS.md) — for multi-task journeys

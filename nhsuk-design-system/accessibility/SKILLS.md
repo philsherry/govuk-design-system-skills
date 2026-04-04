@@ -187,7 +187,7 @@ Public sector services must publish an accessibility statement. The statement mu
 - Reference the enforcement body (EHRC in England and Wales, ECNI in Northern Ireland, EHRC in Scotland).
 - Update when the accessibility status changes.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -208,11 +208,11 @@ Public sector services must publish an accessibility statement. The statement mu
 - Create keyboard traps.
 - Assume that passing automated tests means the service is accessible.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [Focus state style](../../styles/focus-state/SKILLS.md)
-- [Colour style](../../styles/colour/SKILLS.md)
+- [Focus state style](../styles/focus-state/SKILLS.md)
+- [Colour style](../styles/colour/SKILLS.md)
 - [Error summary component](https://service-manual.nhs.uk/design-system/components/error-summary)
 - [Error message component](https://service-manual.nhs.uk/design-system/components/error-message)
 - [Skip link component](https://service-manual.nhs.uk/design-system/components/skip-link)
-- [Foundations](../../foundations/SKILLS.md)
+- [Foundations](../foundations/SKILLS.md)

@@ -70,7 +70,7 @@ If users need to confirm the accuracy of their information or agree to terms bef
 
 Label the submit button with the action. Do not label it "Continue" or "Next" â€” the user needs to understand this is the final submission step. Examples: "Submit application", "Confirm and send", "Accept and send".
 
-## Code Examples
+## Code examples
 
 ### Basic check answers page
 
@@ -369,7 +369,7 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - The declaration and submit button must be inside a `<form>` element.
 - Do not use `<table>` elements for the summary list â€” use the `govuk-summary-list` component which uses a `<dl>` element.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include a "Change" link on every row so users can correct mistakes.
@@ -386,7 +386,7 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - Do not let users change their answers after submission without a clear correction process.
 - Do not omit the declaration where there is a legal or policy requirement to confirm accuracy.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/summary-list/SKILLS.md](../../../components/summary-list/SKILLS.md)
 - [../../../components/button/SKILLS.md](../../../components/button/SKILLS.md)

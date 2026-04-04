@@ -71,15 +71,16 @@ After the frontmatter, each file follows this structure:
 
 1. `# Name` — heading matching the frontmatter `name`
 2. Blockquote — one-line description and source URL
-3. `## When to use this component/pattern/style`
-4. `## When not to use`
-5. `## How it works`
-6. `## Code Examples` — HTML and Nunjucks sub-sections
-7. `## Nunjucks Macro Options` — parameter table
-8. `## Error Messages` — for form components
-9. `## Accessibility`
-10. `## Do and Do not`
-11. `## Related Components / Patterns`
+3. `## Overview`
+4. `## When to use this component/pattern/style`
+5. `## When not to use`
+6. `## How it works`
+7. `## Code examples` — HTML and Nunjucks sub-sections
+8. `## Nunjucks macro options` — parameter table
+9. `## Error messages` — for form components
+10. `## Accessibility`
+11. `## Do and do not`
+12. `## Related components and patterns`
 
 Not every section applies to every file. Omit sections that have no relevant content.
 
@@ -158,6 +159,7 @@ Create a new directory named `{prefix}-design-system/` at the project root for S
 │   ├── content-designer.md
 │   ├── frontend-developer.md
 │   ├── interaction-designer.md
+│   ├── performance-analyst.md
 │   ├── qa-tester.md
 │   ├── service-designer.md
 │   └── user-researcher.md
@@ -191,7 +193,7 @@ docs/{prefix}/
 
 ### Agent personas
 
-- Create all 7 agent personas, adapted for the design system's service standard, content style guide, and component library.
+- Create all 8 agent personas, adapted for the design system's service standard, content style guide, and component library.
 - Each agent should reference SKILLS.md files using relative paths from the `agents/` directory.
 - Every agent must ask "what is the user need?" when users propose custom patterns or deviations from the design system.
 - Every agent must pair problems with solutions — never flag an issue without a recommendation or a link to guidance.
@@ -214,7 +216,7 @@ docs/{prefix}/
 ### Checklist
 
 - [ ] All SKILLS.md files have valid YAML frontmatter with keys in alphabetical order
-- [ ] All 7 agent personas have complete body content
+- [ ] All 8 agent personas have complete body content
 - [ ] `docs/{prefix}/GUIDE.md` and `docs/{prefix}/INSTALL.md` created for the new design system
 - [ ] agents/README.md created
 - [ ] `npm test` passes (passive voice check)

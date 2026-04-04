@@ -77,7 +77,7 @@ Always give users the option to request a new code. This helps users who:
 
 Add rate limiting on resend requests to prevent abuse.
 
-## Code Examples
+## Code examples
 
 ### Enter security code page
 
@@ -281,7 +281,7 @@ Add rate limiting on resend requests to prevent abuse.
 </div>
 ```
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -300,7 +300,7 @@ Add rate limiting on resend requests to prevent abuse.
 - Associate error messages with the input via `aria-describedby`.
 - Do not auto-submit the form when the user enters the last digit — this can cause accessibility problems and trap keyboard users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Tell users where you sent the code.
@@ -317,7 +317,7 @@ Add rate limiting on resend requests to prevent abuse.
 - Do not make the code expire too fast — 15 minutes is a reasonable lower limit.
 - Do not require users to include spaces or dashes in the code.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)

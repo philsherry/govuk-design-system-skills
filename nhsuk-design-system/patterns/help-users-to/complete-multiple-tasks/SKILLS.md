@@ -66,7 +66,7 @@ The task list page should:
 
 Once all tasks are complete, direct users to a "Check your answers" page or a submission step. The task list page is a navigation hub, not the final step.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -176,7 +176,7 @@ Once all tasks are complete, direct users to a "Check your answers" page or a su
 - Place the progress count before the task list in the DOM so users encounter it before the list.
 - Use unique `id` values when rendering more than one task list on the same page.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -192,7 +192,7 @@ Once all tasks are complete, direct users to a "Check your answers" page or a su
 - Show "Completed" status for tasks that still have required fields missing.
 - Prevent users from returning to completed tasks to make changes unless a strong reason exists.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Task list component](https://service-manual.nhs.uk/design-system/components/task-list)
 - [Tag component](https://service-manual.nhs.uk/design-system/components/tag)

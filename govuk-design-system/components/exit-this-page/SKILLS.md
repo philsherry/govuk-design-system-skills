@@ -55,7 +55,7 @@ The component uses `<div class="govuk-exit-this-page" data-module="govuk-exit-th
 
 Place it in the page header area to keep it visible at the top of every page, ideally using a sticky or fixed position so it remains visible as users scroll.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -132,7 +132,7 @@ Place it in the page header area to keep it visible at the top of every page, id
 </div>
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -143,7 +143,7 @@ Place it in the page header area to keep it visible at the top of every page, id
 | classes | string | No | Classes to add to the outer `<div>` container. |
 | attributes | object | No | HTML attributes for the outer `<div>` container. |
 
-## Error Messages
+## Error messages
 
 The exit this page component does not accept user input and does not produce validation error messages.
 
@@ -159,7 +159,7 @@ The button uses `role="button"` and `draggable="false"` because it renders as an
 
 Place the component in a consistent location on every page of the service so users can find it fast. Use a sticky/fixed position at the top of the viewport so it remains visible regardless of scroll position.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the exit this page component on all pages of services that handle sensitive personal information.
@@ -175,7 +175,7 @@ Place the component in a consistent location on every page of the service so use
 - Do not hide it in the footer or a position that users would struggle to find.
 - Do not open the redirect URL in a new tab — doing so leaves the sensitive page visible.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Button](https://design-system.service.gov.uk/components/button/) — the underlying button component, used in warning variant.
 - [Safeguarding pattern](https://design-system.service.gov.uk/patterns/safeguarding/) — broader guidance on designing safe services for at-risk users.

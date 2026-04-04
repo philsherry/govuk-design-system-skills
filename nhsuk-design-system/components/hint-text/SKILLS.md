@@ -51,7 +51,7 @@ For form components (text input, textarea, radios, checkboxes, date input, selec
 
 When hint text appears on individual radios or checkboxes, the hint element sits beneath the option label and uses the same pattern.
 
-## Code Examples
+## Code examples
 
 ### On a text input
 
@@ -166,7 +166,7 @@ When hint text appears on individual radios or checkboxes, the hint element sits
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 The hint text is not a standalone macro in NHS UK Frontend. It integrates into other components through the `hint` parameter. The hint object accepts:
 
@@ -178,7 +178,7 @@ The hint text is not a standalone macro in NHS UK Frontend. It integrates into o
 | `classes` | string | No | Classes to add to the hint element. |
 | `attributes` | object | No | HTML attributes for the hint element. |
 
-## Error Messages
+## Error messages
 
 The hint text component does not have its own error messages. It works alongside error messages on form components.
 
@@ -190,7 +190,7 @@ The hint text component does not have its own error messages. It works alongside
 - Do not use hint text that duplicates the label — if the label is "Email address", do not hint "Enter your email address".
 - Hint text uses a lighter colour than labels. Ensure the colour contrast meets WCAG 2.2 AA standards (at least 4.5:1 for normal-sized text).
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Keep hints to one sentence where possible.
@@ -204,7 +204,7 @@ The hint text component does not have its own error messages. It works alongside
 - Do not rely on hint text for critical validation rules that the label should convey.
 - Do not use hint text on every field — only add it when users need extra help.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Text Input](../text-input/SKILLS.md) — uses `hint` parameter for hint text.
 - [Textarea](../textarea/SKILLS.md) — uses `hint` parameter.

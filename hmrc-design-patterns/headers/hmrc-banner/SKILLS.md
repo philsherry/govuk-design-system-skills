@@ -42,7 +42,7 @@ The HMRC banner renders a thin black strip above the GOV.UK header. It contains 
 
 The macro handles the layout and styling. You do not need to pass configuration options for the default appearance.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -83,7 +83,7 @@ The macro handles the layout and styling. You do not need to pass configuration 
 - The banner uses semantic HTML (`<p>` element) for the organisation name — do not change this to a heading, as it would disrupt the page heading hierarchy
 - The banner must remain visible and readable at 400% zoom
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the HMRC banner above the GOV.UK header
@@ -96,7 +96,7 @@ The macro handles the layout and styling. You do not need to pass configuration 
 - Do not use the banner on internal caseworker tools — use the internal header instead
 - Do not add interactive elements (links or buttons) to the banner
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Header](../../../govuk-design-system/components/header/SKILLS.md) — the HMRC banner sits above this component
 - [Internal header](../internal-header/SKILLS.md) — use this instead for internal HMRC tools

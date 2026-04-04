@@ -47,7 +47,7 @@ Apply error states by passing `nhsuk-input--error` in the `classes` of specific 
 
 Each input uses `inputmode="numeric"` to show the numeric keyboard on mobile devices. Use appropriate `autocomplete` attributes (for example, `bday-day`, `bday-month`, `bday-year` for dates of birth).
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -229,7 +229,7 @@ Each input uses `inputmode="numeric"` to show the numeric keyboard on mobile dev
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -250,7 +250,7 @@ Each input uses `inputmode="numeric"` to show the numeric keyboard on mobile dev
 | classes | string | No | Classes for the date input container. |
 | attributes | object | No | HTML attributes for the date input container. |
 
-## Error Messages
+## Error messages
 
 Apply errors to specific fields by adding `nhsuk-input--error` to the item's `classes`. Use the `errorMessage` parameter for the error text.
 
@@ -274,7 +274,7 @@ The `autocomplete` attributes enable browser autofill for known date types, redu
 
 Avoid using `type="number"` for date fields — it introduces spin controls, disallows leading zeros, and behaves inconsistently across browsers and assistive technologies.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `namePrefix` to automatically generate consistent `name` and `id` attributes.
@@ -288,7 +288,7 @@ Avoid using `type="number"` for date fields — it introduces spin controls, dis
 - Do not use a date picker (calendar widget) for memorable dates.
 - Do not omit the fieldset and legend when displaying all three inputs together.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Fieldset](../fieldset/SKILLS.md) — the wrapping element for grouped inputs.
 - [Text input](../text-input/SKILLS.md) — for single-line inputs.

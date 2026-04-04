@@ -78,7 +78,7 @@ Cookies are typically grouped as:
 
 After a user saves their preferences, show a `govukNotificationBanner` with `type: "success"` at the top of the page, above the `<h1>`. Do not redirect to a different page.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -249,7 +249,7 @@ After a user saves their preferences, show a `govukNotificationBanner` with `typ
 - After the user saves preferences, focus should return to a logical position (typically the notification banner or the top of the page)
 - Do not use JavaScript to change the page in a way that removes the ability to save preferences without JS — the form must work without JavaScript using a standard POST
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use "Cookies on [service name]" as the page title
@@ -269,7 +269,7 @@ After a user saves their preferences, show a `govukNotificationBanner` with `typ
 - Use the cookies page as a privacy notice
 - Make the "Accept all" option the pre-selected default
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/cookie-banner/SKILLS.md](../../../components/cookie-banner/SKILLS.md)
 - [../../../components/notification-banner/SKILLS.md](../../../components/notification-banner/SKILLS.md)

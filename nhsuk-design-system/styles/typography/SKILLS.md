@@ -143,7 +143,7 @@ Sizes: `nhsuk-section-break--xl`, `nhsuk-section-break--l`, `nhsuk-section-break
 <p class="nhsuk-body nhsuk-u-font-weight-bold">Bold text for emphasis.</p>
 ```
 
-## Code Examples
+## Code examples
 
 ### Complete page heading with caption
 
@@ -173,7 +173,7 @@ Sizes: `nhsuk-section-break--xl`, `nhsuk-section-break--l`, `nhsuk-section-break
 - Ensure text resizes up to 200% without loss of content or functionality (WCAG SC 1.4.4).
 - Do not justify text — left-aligned text is easier to read for users with dyslexia and other cognitive differences.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -190,7 +190,7 @@ Sizes: `nhsuk-section-break--xl`, `nhsuk-section-break--l`, `nhsuk-section-break
 - Override the type scale with custom font sizes unless user research supports the change.
 - Justify or centre body text.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Typeface style](https://service-manual.nhs.uk/design-system/styles/use-the-nhs-frutiger-font)
 - [Spacing style](https://service-manual.nhs.uk/design-system/styles/spacing)

@@ -156,7 +156,7 @@ Create a dedicated "session timed out" page that:
 - Keyboard users can operate the dialog — Tab moves between the two actions, and Enter or Space activates them.
 - The 2-minute default countdown period gives users enough time to read and respond. WCAG 2.2 criterion 2.2.1 (Timing Adjustable) requires that users can extend time limits.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -179,4 +179,4 @@ Create a dedicated "session timed out" page that:
 
 - [Sign out](../sign-out/SKILLS.md) — the sign-out pattern for HMRC services
 - [Service unavailable pages](../../../govuk-design-system/patterns/pages/service-unavailable-pages/SKILLS.md) — GOV.UK pattern for unavailable services
-- [HMRC Frontend](../foundations/hmrc-frontend/SKILLS.md) — installation and setup for the hmrc-frontend package
+- [HMRC Frontend](../../foundations/hmrc-frontend/SKILLS.md) — installation and setup for the hmrc-frontend package

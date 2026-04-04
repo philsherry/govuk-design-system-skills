@@ -47,7 +47,7 @@ The simplest implementation links to an explicit URL. You can also use JavaScrip
 
 The component does not require JavaScript to function; it works as a standard link to a previous URL.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -109,7 +109,7 @@ The component does not require JavaScript to function; it works as a standard li
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -119,7 +119,7 @@ The component does not require JavaScript to function; it works as a standard li
 | classes | string | No | Classes to add to the anchor element. |
 | attributes | object | No | HTML attributes to add to the anchor element as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The back link does not accept user input and does not produce validation error messages.
 
@@ -133,7 +133,7 @@ The link must be reachable via keyboard Tab navigation. Position it near the top
 
 If using `history.back()` via JavaScript, ensure the link still functions (or the page still makes sense) when JavaScript is unavailable.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the back link above the `<main>` element, before the page heading and form content.
@@ -147,7 +147,7 @@ If using `history.back()` via JavaScript, ensure the link still functions (or th
 - Do not place it inside the `<main>` element.
 - Do not omit it from pages mid-journey where users may want to review or change earlier answers.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Breadcrumbs](https://design-system.service.gov.uk/components/breadcrumbs/) — for hierarchical site navigation (not for transactional journeys).
 - [Button](https://design-system.service.gov.uk/components/button/) — for the primary form submission action.

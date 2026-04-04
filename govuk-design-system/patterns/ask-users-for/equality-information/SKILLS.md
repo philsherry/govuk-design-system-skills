@@ -100,7 +100,7 @@ Use radio buttons for questions with a fixed set of options. Always include a "P
 
 For "Other" options, provide a conditional text input to allow users to describe their identity in their own words.
 
-## Code Examples
+## Code examples
 
 ### Sex question
 
@@ -300,7 +300,7 @@ For "Other" options, provide a conditional text input to allow users to describe
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 Because all equality questions are optional, you should not show validation errors for unanswered equality questions. However, if a user selects "Other" and the conditional text field appears, you may wish to encourage (but not require) them to complete it.
 
@@ -314,7 +314,7 @@ If you make a question optional and the user submits without answering, treat th
 - Associate hint text explaining why you collect the data with the fieldset via `aria-describedby`.
 - Do not use colour alone to show whether a question is optional.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always make equality questions optional.
@@ -333,10 +333,10 @@ If you make a question optional and the user submits without answering, treat th
 - Do not ask for more information than you will actually use.
 - Do not use gendered language in your service that could make non-binary or trans users feel excluded.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/radios/SKILLS.md](../../components/radios/SKILLS.md)
-- [../../components/checkboxes/SKILLS.md](../../components/checkboxes/SKILLS.md)
-- [../../components/fieldset/SKILLS.md](../../components/fieldset/SKILLS.md)
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
+- [../../components/radios/SKILLS.md](../../../components/radios/SKILLS.md)
+- [../../components/checkboxes/SKILLS.md](../../../components/checkboxes/SKILLS.md)
+- [../../components/fieldset/SKILLS.md](../../../components/fieldset/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../names/SKILLS.md](../names/SKILLS.md)

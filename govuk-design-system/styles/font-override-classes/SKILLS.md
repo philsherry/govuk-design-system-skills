@@ -70,7 +70,7 @@ Both classes use `!important`.
 
 These classes use `!important` to guarantee they override any component-level styles. This means if you try to override them further in custom CSS without `!important`, your styles will not take effect. Use these classes with care and sparingly.
 
-## Code Examples
+## Code examples
 
 ### Overriding font size on a custom element
 
@@ -120,7 +120,7 @@ These classes use `!important` to guarantee they override any component-level st
 - Ensure that reduced font sizes still meet the WCAG 4.5:1 contrast ratio against their background.
 - Do not use font override classes to create heading-like text that is not marked up as a heading — this deprives screen reader users of navigation landmarks.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use font override classes for targeted adjustments in custom components.
@@ -134,7 +134,7 @@ These classes use `!important` to guarantee they override any component-level st
 - Use `govuk-!-font-weight-bold` alone to convey meaning.
 - Use large sizes (`govuk-!-font-size-80`) for body text — reserve them for numerical displays and hero content.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Type scale style](https://design-system.service.gov.uk/styles/type-scale/)
 - [Typography – headings](https://design-system.service.gov.uk/styles/typography/)

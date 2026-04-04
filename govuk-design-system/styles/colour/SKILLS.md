@@ -123,7 +123,7 @@ GOV.UK Frontend v5 exposes colours as CSS custom properties on the `:root` eleme
 }
 ```
 
-## Code Examples
+## Code examples
 
 ### Applying error colour to a custom element
 
@@ -169,7 +169,7 @@ The focus mixin handles the full focus state consistently:
 - Always pair error red (`#d4351c`) with an error message in text. Do not rely on red borders alone to show errors.
 - Check custom colour combinations introduced in service-specific styles for contrast using a contrast checker.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -187,7 +187,7 @@ The focus mixin handles the full focus state consistently:
 - Use `$govuk-error-colour` for decorative highlights or warnings that are not errors.
 - Rely on colour alone to distinguish interactive from non-interactive elements.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Links style](https://design-system.service.gov.uk/styles/typography/)
 - [Error message component](https://design-system.service.gov.uk/components/error-message/)

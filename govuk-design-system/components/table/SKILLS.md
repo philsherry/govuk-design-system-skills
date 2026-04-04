@@ -49,7 +49,7 @@ A caption describes what the table contains. Always provide one for accessibilit
 
 Use `format: "numeric"` on header and data cell objects to right-align numbers and apply `govuk-table__header--numeric` / `govuk-table__cell--numeric` classes. This aligns numbers at the decimal point for easy scanning.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -226,7 +226,7 @@ Use `govuk-visually-hidden` when a heading directly above the table already desc
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -250,7 +250,7 @@ Use `govuk-visually-hidden` when a heading directly above the table already desc
 | `rowspan` | integer | No | Number of rows this cell spans. |
 | `attributes` | object | No | HTML attributes to add to the cell element. |
 
-## Error Messages
+## Error messages
 
 The table component does not have error states. This is a display component.
 
@@ -262,7 +262,7 @@ The table component does not have error states. This is a display component.
 - Do not use tables for layout — screen readers announce the number of columns and rows when a user enters a table, which is confusing when tables serve as layout containers.
 - Avoid complex tables with large numbers of merged cells (`colspan`/`rowspan`) — test thoroughly with screen readers, as header-to-cell associations can break.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always provide a caption that describes the table's content.
@@ -276,7 +276,7 @@ The table component does not have error states. This is a display component.
 - Do not use merged cells unless there is no alternative.
 - Do not put large blocks of prose text in table cells.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Summary List](../summary-list/SKILLS.md) — for key–value pairs
 - [Tag](../tag/SKILLS.md) — often embedded in table cells to show status

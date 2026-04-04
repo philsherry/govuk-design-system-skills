@@ -51,7 +51,7 @@ Do not use a single card in isolation as a call to action — the action link co
 
 **Card group:** A `<ul class="nhsuk-card-group">` with `<li>` items using width classes such as `nhsuk-card-group__item nhsuk-grid-column-one-half` or `nhsuk-grid-column-one-third`.
 
-## Code Examples
+## Code examples
 
 ### Basic card
 
@@ -206,7 +206,7 @@ Do not use a single card in isolation as a call to action — the action link co
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 ### card()
 
@@ -243,7 +243,7 @@ Card images must have meaningful alt text when the image conveys information. Us
 
 Card descriptions should not repeat the heading text — they should add context that helps users decide whether to follow the link.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use clickable cards when each card links to a single destination.
@@ -257,7 +257,7 @@ Card descriptions should not repeat the heading text — they should add context
 - Do not mix clickable and non-clickable cards in the same group.
 - Do not omit alt text on card images that convey information.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Action link](https://service-manual.nhs.uk/design-system/components/action-link) — for single prominent links with an arrow icon.
 - [Contents list](https://service-manual.nhs.uk/design-system/components/contents-list) — for navigating between pages in the same content group.

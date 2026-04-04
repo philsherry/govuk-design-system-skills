@@ -47,7 +47,7 @@ Do not use a background image that reduces the readability of the overlay text. 
 
 **Hero with image beside text:** Uses a `<div class="nhsuk-hero-content">` layout that places an image alongside the text content in a two-column arrangement.
 
-## Code Examples
+## Code examples
 
 ### Text-only hero
 
@@ -121,7 +121,7 @@ Do not use a background image that reduces the readability of the overlay text. 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -142,7 +142,7 @@ Provide meaningful `imageAlt` text when the image conveys information. Use an em
 
 Ensure the hero text remains readable when users increase the browser text size. The text should reflow and remain visible at 200% zoom.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the hero only on landing pages and homepages.
@@ -157,7 +157,7 @@ Ensure the hero text remains readable when users increase the browser text size.
 - Do not use more than one hero on a single page.
 - Do not put interactive elements (buttons, forms, links) inside the hero — place them in the main content below.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Card](https://service-manual.nhs.uk/design-system/components/card) — for presenting linked content below the hero on landing pages.
 - [Header](https://service-manual.nhs.uk/design-system/components/header) — sits above the hero at the top of the page.

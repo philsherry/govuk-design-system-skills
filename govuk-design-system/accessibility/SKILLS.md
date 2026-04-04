@@ -166,7 +166,7 @@ Public sector services must publish an accessibility statement. The statement mu
 - Reference enforcement body (EHRC)
 - Update when accessibility status changes
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -185,10 +185,10 @@ Public sector services must publish an accessibility statement. The statement mu
 - Autoplay media or animations
 - Create keyboard traps
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/skip-link/SKILLS.md](../../components/skip-link/SKILLS.md)
-- [../../components/exit-this-page/SKILLS.md](../../components/exit-this-page/SKILLS.md)
-- [../../foundations/SKILLS.md](../../foundations/SKILLS.md)
+- [../components/error-summary/SKILLS.md](../components/error-summary/SKILLS.md)
+- [../components/error-message/SKILLS.md](../components/error-message/SKILLS.md)
+- [../components/skip-link/SKILLS.md](../components/skip-link/SKILLS.md)
+- [../components/exit-this-page/SKILLS.md](../components/exit-this-page/SKILLS.md)
+- [../foundations/SKILLS.md](../foundations/SKILLS.md)

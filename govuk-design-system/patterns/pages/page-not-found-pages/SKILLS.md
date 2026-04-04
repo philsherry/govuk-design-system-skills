@@ -60,7 +60,7 @@ The body text should follow this pattern:
 
 If the service has a start page on GOV.UK, link to it. If contact details are available, include them so users can get help.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -114,7 +114,7 @@ If the service has a start page on GOV.UK, link to it. If contact details are av
 - Contact information should be in a readable list format, not embedded only in a sentence where phone numbers and email addresses may be hard to identify
 - Do not include error codes (404) in the heading or body text
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the exact heading "Page not found"
@@ -132,7 +132,7 @@ If the service has a start page on GOV.UK, link to it. If contact details are av
 - Remove the navigation or skip link from this page
 - Add a back link — users have arrived from a broken or invalid URL
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../problem-with-the-service-pages/SKILLS.md](../problem-with-the-service-pages/SKILLS.md)
 - [../service-unavailable-pages/SKILLS.md](../service-unavailable-pages/SKILLS.md)

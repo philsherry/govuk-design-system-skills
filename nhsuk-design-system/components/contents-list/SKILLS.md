@@ -47,7 +47,7 @@ The contents list renders inside a `<nav class="nhsuk-contents-list" aria-label=
 
 Place the contents list at the top of the page, before the main content, so users see the navigation options before reading.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -122,7 +122,7 @@ Place the contents list at the top of the page, before the main content, so user
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -147,7 +147,7 @@ Using an `<ol>` communicates to screen readers that the items form an ordered se
 
 Ensure link text matches the destination page headings so users know where each link leads.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the contents list at the top of the page, before the main content.
@@ -161,7 +161,7 @@ Ensure link text matches the destination page headings so users know where each 
 - Do not use the contents list when content fits on a single page.
 - Do not nest contents lists within each other.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Breadcrumbs](https://service-manual.nhs.uk/design-system/components/breadcrumbs) — for navigating a site hierarchy.
 - [Card](https://service-manual.nhs.uk/design-system/components/card) — for presenting topics as navigable blocks.

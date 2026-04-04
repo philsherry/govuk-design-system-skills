@@ -73,7 +73,7 @@ If the service is not suitable, you must:
 
 The eligibility check should feel helpful, not like a locked door. Where possible, let users who are unsure about their eligibility still attempt the service. Do not block users with hard gates unless there is a strong policy or legal reason to do so.
 
-## Code Examples
+## Code examples
 
 ### Single eligibility question (radios, one thing per page)
 
@@ -288,7 +288,7 @@ The eligibility check should feel helpful, not like a locked door. Where possibl
 </form>
 ```
 
-## Error Messages
+## Error messages
 
 If the user does not select an answer:
 
@@ -305,7 +305,7 @@ Always place the error summary at the top of the page and link to the specific f
 - Result pages should use clear, unambiguous heading text that explains the outcome.
 - Alternative service links on "not suitable" pages must be genuine, working links — do not leave users at a dead end.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Keep the number of questions to a minimum — ask only what you need to determine suitability.
@@ -321,7 +321,7 @@ Always place the error summary at the top of the page and link to the specific f
 - Do not make the check longer than necessary — users will abandon if it feels like the whole service.
 - Do not use hard gates unless there is a strong policy or legal reason to do so.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/radios/SKILLS.md](../../../components/radios/SKILLS.md)
 - [../../../components/button/SKILLS.md](../../../components/button/SKILLS.md)

@@ -46,7 +46,7 @@ The component renders an `<input type="file">` within the standard NHS form grou
 
 **Label as page heading:** The `label.isPageHeading` option wraps the label text in an `<h1>`, following the one-question-per-page pattern.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -160,7 +160,7 @@ The component renders an `<input type="file">` within the standard NHS form grou
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -182,7 +182,7 @@ The component renders an `<input type="file">` within the standard NHS form grou
 | `attributes` | object | No | HTML attributes to add to the file input (e.g. `accept`). |
 | `disabled` | boolean | No | Whether the input is disabled. Default is `false`. |
 
-## Error Messages
+## Error messages
 
 **If the user selects no file and the service requires one:**
 "Select [whatever the file is]"
@@ -211,7 +211,7 @@ Example: "The selected file must be smaller than 2MB"
 - Avoid replacing the native file input with a custom JavaScript implementation — these are often inaccessible.
 - The `accept` attribute hints to sighted users but browsers do not enforce it — always validate file types and sizes server-side.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use hint text to tell users what file types and size limits the service supports before they choose a file.
@@ -225,7 +225,7 @@ Example: "The selected file must be smaller than 2MB"
 - Do not use vague error messages like "Upload failed" — tell users what went wrong.
 - Do not require users to upload files when they could enter the same information through a form instead.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Error message](../error-message/SKILLS.md) — for displaying validation errors.
 - [Error summary](../error-summary/SKILLS.md) — for listing page-level errors after form submission.

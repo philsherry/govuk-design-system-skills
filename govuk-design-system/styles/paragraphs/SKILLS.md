@@ -57,7 +57,7 @@ Use the spacing override class `govuk-!-margin-bottom-0` to remove the bottom ma
 
 When you need to draw attention to a paragraph of content without it being an error, warning, or callout box, use the inset text component rather than a styled paragraph.
 
-## Code Examples
+## Code examples
 
 ### Standard body text
 
@@ -118,7 +118,7 @@ To make a standard-size paragraph bold without changing its size, use the font w
 - Do not use colour alone to convey meaning within a paragraph — always pair colour with text or another visual indicator.
 - Avoid justified text alignment, which creates uneven word spacing that is harder to read for users with dyslexia.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `govuk-body` as the default for all standard body text.
@@ -132,7 +132,7 @@ To make a standard-size paragraph bold without changing its size, use the font w
 - Use paragraph classes on non-`<p>` elements without a semantic reason.
 - Override the default line height or letter spacing.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Type scale style](https://design-system.service.gov.uk/styles/type-scale/)
 - [Headings style](https://design-system.service.gov.uk/styles/typography/)

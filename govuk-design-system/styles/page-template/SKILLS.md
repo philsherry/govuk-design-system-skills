@@ -128,7 +128,7 @@ Extend the base template and override the provided blocks:
 | `footer` | Replace or augment the GOV.UK footer |
 | `bodyEnd` | Content directly before `</body>` closes (scripts) |
 
-## Code Examples
+## Code examples
 
 ### Minimal HTML page template
 
@@ -196,7 +196,7 @@ Error: [Page or error heading] – [Service name] – GOV.UK
 - The `govuk-frontend-supported` class tells GOV.UK Frontend JavaScript to activate enhanced behaviour in supported browsers only, preserving a no-JS baseline.
 - Page titles must be unique and descriptive. Avoid generic titles such as "GOV.UK".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include `charset="UTF-8"` within the first 1024 bytes of the document.
@@ -213,7 +213,7 @@ Error: [Page or error heading] – [Service name] – GOV.UK
 - Place render-blocking scripts inside `<head>` unless they are essential and properly deferred.
 - Use GDS Transport typeface outside gov.uk domains — it requires a Crown licence.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header component](https://design-system.service.gov.uk/components/header/)
 - [Footer component](https://design-system.service.gov.uk/components/footer/)

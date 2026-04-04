@@ -52,7 +52,7 @@ Events appear in reverse chronological order, with the most recent event first. 
 
 Use the GOV.UK date format: day month year with no leading zeros and the month as a word. For example, "3 April 2026", not "03/04/2026".
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -130,7 +130,7 @@ Use the GOV.UK date format: day month year with no leading zeros and the month a
 - The vertical line connecting events serves as a visual aid only — it does not convey information that screen reader users miss
 - Ensure text and background colours meet the WCAG 2.2 contrast ratio of at least 4.5:1
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Order events with the newest first (reverse chronological)
@@ -146,7 +146,7 @@ Use the GOV.UK date format: day month year with no leading zeros and the month a
 - Do not omit the date from an event — every event needs a date
 - Do not nest timelines inside other timelines
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Summary list](../../../govuk-design-system/components/summary-list/SKILLS.md) — for key-value pairs, not chronological events
 - [GOV.UK Table](../../../govuk-design-system/components/table/SKILLS.md) — for tabular data where comparison across rows matters

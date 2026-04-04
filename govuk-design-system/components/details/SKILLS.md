@@ -47,7 +47,7 @@ The `open` parameter pre-opens the details element by adding the `open` attribut
 
 The component works without JavaScript. All modern browsers support the `<details>` element natively.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -149,7 +149,7 @@ The component works without JavaScript. All modern browsers support the `<detail
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -162,7 +162,7 @@ The component works without JavaScript. All modern browsers support the `<detail
 | classes | string | No | Classes to add to the `<details>` element. |
 | attributes | object | No | HTML attributes for the `<details>` element as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The details component does not accept user input and does not produce validation error messages.
 
@@ -176,7 +176,7 @@ Do not place interactive elements (links, buttons, form inputs) inside the summa
 
 Ensure the details component does not contain essential form instructions or error information that users might miss if they do not expand it.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use clear, specific summary text that tells users what they will find inside.
@@ -190,7 +190,7 @@ Ensure the details component does not contain essential form instructions or err
 - Do not use it as an alternative to inset text or warning text for important notices.
 - Do not use nested details elements — the design becomes difficult to use and understand.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Accordion](https://design-system.service.gov.uk/components/accordion/) — for more than one expandable section with show/hide all controls.
 - [Inset text](https://design-system.service.gov.uk/components/inset-text/) — for highlighting information that all users should notice.
