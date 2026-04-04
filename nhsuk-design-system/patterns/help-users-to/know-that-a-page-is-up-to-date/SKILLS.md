@@ -56,7 +56,7 @@ Next review due: 15 March 2027
 
 NHS health content follows a clinical review cycle, typically every 3 years. The "next review due" date reflects this cycle.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -84,7 +84,7 @@ NHS health content follows a clinical review cycle, typically every 3 years. The
 - Screen readers read the review date as part of the page content. Do not hide it with `aria-hidden` — users of assistive technology also need to know when content was last reviewed.
 - Use the `<p>` element, not a heading, for the review date — the review date serves as metadata, not a section heading.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -100,7 +100,7 @@ NHS health content follows a clinical review cycle, typically every 3 years. The
 - Use a numerical date format (e.g. 15/03/2024) — write the month in full.
 - Add the review date inside the main content area where it competes with the health information.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Review date component](https://service-manual.nhs.uk/design-system/components/review-date)
 - [Footer component](https://service-manual.nhs.uk/design-system/components/footer)

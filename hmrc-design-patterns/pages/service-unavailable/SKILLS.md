@@ -57,7 +57,7 @@ When you know the downtime window, tell users the specific time the service will
 
 When you do not know when the service will return, tell users to try again later and provide alternative contact methods.
 
-## Code Examples
+## Code examples
 
 ### HTML (planned maintenance)
 
@@ -123,7 +123,7 @@ When you do not know when the service will return, tell users to try again later
 - Present contact information in a list format for easy scanning
 - Do not include HTTP status codes (503) in the heading or body text
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the heading "Sorry, the service is unavailable"
@@ -140,7 +140,7 @@ When you do not know when the service will return, tell users to try again later
 - Do not use this page for unexpected errors in a single transaction — use "There is a problem with the service" instead
 - Do not remove the navigation, header, or skip link
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Service unavailable pages](../../../govuk-design-system/patterns/pages/service-unavailable-pages/SKILLS.md) — the base GOV.UK pattern that this HMRC pattern supplements
 - [Page not found](../page-not-found/SKILLS.md) — for missing pages (HTTP 404)

@@ -67,7 +67,7 @@ If your form has more than a handful of sections, group the answers under sectio
 
 Label the submit button with the action. Do not label it "Continue" or "Next" â€” the user needs to understand this is the final submission step.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -191,7 +191,7 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - The declaration and submit button must be inside a `<form>` element.
 - Do not use `<table>` elements for the summary list â€” use the `nhsuk-summary-list` component which uses a `<dl>` element.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -208,7 +208,7 @@ Label the submit button with the action. Do not label it "Continue" or "Next" â€
 - Show a check answers page for single-question forms.
 - Let users change their answers after submission without a clear correction process.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Summary list component](https://service-manual.nhs.uk/design-system/components/summary-list)
 - [Confirmation page pattern](../../pages/confirmation-page/SKILLS.md)

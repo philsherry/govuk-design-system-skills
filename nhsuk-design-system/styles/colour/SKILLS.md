@@ -113,7 +113,7 @@ The focus state applies a yellow background (`#ffeb3b`) and a thick black bottom
 }
 ```
 
-## Code Examples
+## Code examples
 
 ### Applying error colour to a custom element
 
@@ -155,7 +155,7 @@ The focus state applies a yellow background (`#ffeb3b`) and a thick black bottom
 - Always pair error red (`#d5281b`) with an error message in text. Do not rely on red borders alone to show errors.
 - Check custom colour combinations for contrast using a contrast checker.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -173,7 +173,7 @@ The focus state applies a yellow background (`#ffeb3b`) and a thick black bottom
 - Use `$color_nhsuk-red` for decorative highlights or warnings that are not errors.
 - Rely on colour alone to distinguish interactive from non-interactive elements.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Focus state style](https://service-manual.nhs.uk/design-system/styles/focus-state)
 - [Typography style](https://service-manual.nhs.uk/design-system/styles/typography)

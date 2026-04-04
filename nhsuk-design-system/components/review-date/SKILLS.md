@@ -47,7 +47,7 @@ The component renders as a `<div class="nhsuk-review-date">` containing a `<p>` 
 
 Place the component at the bottom of the page content area, before the footer.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -105,7 +105,7 @@ When you do not yet have a scheduled next review date, display only the last rev
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -121,7 +121,7 @@ When you do not yet have a scheduled next review date, display only the last rev
 - Place the review date consistently at the bottom of the content area so users know where to find it.
 - Do not use abbreviations for month names — write them out in full.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the review date on all pages containing health or clinical information.
@@ -135,7 +135,7 @@ When you do not yet have a scheduled next review date, display only the last rev
 - Do not display future "last reviewed" dates — the date must reflect when the review actually took place.
 - Do not use this component as a generic "last updated" timestamp.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Footer](../footer/SKILLS.md) — the review date sits above the footer
 - [Warning Callout](../warning-callout/SKILLS.md) — for urgent health information within the page content

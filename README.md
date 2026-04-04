@@ -1,10 +1,10 @@
 # Design System Skills
 
-Comprehensive `SKILLS.md` reference files for every style, component, and pattern in the GOV.UK and NHS UK Design Systems, and the HMRC Design Patterns.
+Comprehensive `SKILLS.md` reference files for every style, component, and pattern in the GOV.UK, NHS UK, and DWP Design Systems, and the HMRC Design Patterns.
 
 These files provide LLM context for use when prototyping and building government services. Each `SKILLS.md` file provides a focused, machine-readable reference for a single design system element — covering usage guidance, code examples, macro options, accessibility requirements, and do and do not rules. Load them into your AI assistant or IDE extension, or concatenate them to build a complete design system context for your project.
 
-Based on the [GOV.UK Design System](https://design-system.service.gov.uk/), [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend), the [NHS UK Design System](https://service-manual.nhs.uk/design-system), [NHS UK Frontend](https://github.com/nhsuk/nhsuk-frontend), the [HMRC Design Patterns](https://design.tax.service.gov.uk/hmrc-design-patterns/), and [HMRC Frontend](https://github.com/hmrc/hmrc-frontend).
+Based on the [GOV.UK Design System](https://design-system.service.gov.uk/), [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend), the [NHS UK Design System](https://service-manual.nhs.uk/design-system), [NHS UK Frontend](https://github.com/nhsuk/nhsuk-frontend), the [HMRC Design Patterns](https://design.tax.service.gov.uk/hmrc-design-patterns/), [HMRC Frontend](https://github.com/hmrc/hmrc-frontend), the [DWP Design System](https://design-system.dwp.gov.uk/), and [DWP Frontend](https://www.npmjs.com/package/@dwp/dwp-frontend).
 
 ## Getting started
 
@@ -19,6 +19,7 @@ Each design system also has its own pages with specific prompts, file recommenda
 | GOV.UK | [docs/govuk/INSTALL.md](docs/govuk/INSTALL.md) | [docs/govuk/GUIDE.md](docs/govuk/GUIDE.md) |
 | NHS UK | [docs/nhsuk/INSTALL.md](docs/nhsuk/INSTALL.md) | [docs/nhsuk/GUIDE.md](docs/nhsuk/GUIDE.md) |
 | HMRC | [docs/hmrc/INSTALL.md](docs/hmrc/INSTALL.md) | [docs/hmrc/GUIDE.md](docs/hmrc/GUIDE.md) |
+| DWP | [docs/dwp/INSTALL.md](docs/dwp/INSTALL.md) | [docs/dwp/GUIDE.md](docs/dwp/GUIDE.md) |
 
 <details>
   <summary>Directory tree</summary>
@@ -50,7 +51,13 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   ├── govuk/
   │   │   ├── GUIDE.md
   │   │   └── INSTALL.md
-  │   └── nhsuk/
+  │   ├── nhsuk/
+  │   │   ├── GUIDE.md
+  │   │   └── INSTALL.md
+  │   ├── hmrc/
+  │   │   ├── GUIDE.md
+  │   │   └── INSTALL.md
+  │   └── dwp/
   │       ├── GUIDE.md
   │       └── INSTALL.md
   ├── govuk-design-system/
@@ -60,6 +67,7 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   │   ├── content-designer.md
   │   │   ├── frontend-developer.md
   │   │   ├── interaction-designer.md
+  │   │   ├── performance-analyst.md
   │   │   ├── qa-tester.md
   │   │   ├── service-designer.md
   │   │   └── user-researcher.md
@@ -84,6 +92,7 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   │   ├── content-designer.md
   │   │   ├── frontend-developer.md
   │   │   ├── interaction-designer.md
+  │   │   ├── performance-analyst.md
   │   │   ├── qa-tester.md
   │   │   ├── service-designer.md
   │   │   └── user-researcher.md
@@ -101,24 +110,52 @@ Each design system also has its own pages with specific prompts, file recommenda
   │       ├── ask-users-for/ [1 SKILLS.md file]
   │       ├── help-users-to/ [5 SKILLS.md files]
   │       └── pages/ [6 SKILLS.md files]
-  └── hmrc-design-patterns/
+  ├── hmrc-design-patterns/
+  │   ├── agents/
+  │   │   ├── README.md
+  │   │   ├── accessibility-auditor.md
+  │   │   ├── content-designer.md
+  │   │   ├── frontend-developer.md
+  │   │   ├── interaction-designer.md
+  │   │   ├── performance-analyst.md
+  │   │   ├── qa-tester.md
+  │   │   ├── service-designer.md
+  │   │   └── user-researcher.md
+  │   ├── foundations/
+  │   │   ├── SKILLS.md
+  │   │   └── hmrc-frontend/SKILLS.md
+  │   ├── identifiers/ [5 SKILLS.md files]
+  │   ├── service/ [12 SKILLS.md files]
+  │   ├── identity/ [3 SKILLS.md files]
+  │   ├── headers/ [6 SKILLS.md files]
+  │   └── pages/ [3 SKILLS.md files]
+  └── dwp-design-system/
       ├── agents/
       │   ├── README.md
       │   ├── accessibility-auditor.md
       │   ├── content-designer.md
       │   ├── frontend-developer.md
       │   ├── interaction-designer.md
+      │   ├── performance-analyst.md
       │   ├── qa-tester.md
       │   ├── service-designer.md
       │   └── user-researcher.md
+      ├── accessibility/
+      │   └── SKILLS.md
       ├── foundations/
       │   ├── SKILLS.md
-      │   └── hmrc-frontend/SKILLS.md
-      ├── identifiers/ [5 SKILLS.md files]
-      ├── service/ [12 SKILLS.md files]
-      ├── identity/ [3 SKILLS.md files]
-      ├── headers/ [6 SKILLS.md files]
-      └── pages/ [3 SKILLS.md files]
+      │   └── dwp-frontend/SKILLS.md
+      ├── components/
+      │   ├── horizontal-navigation/SKILLS.md
+      │   ├── internal-service-footer/SKILLS.md
+      │   ├── internal-service-header/SKILLS.md
+      │   ├── language-toggle/SKILLS.md
+      │   ├── quick-reference/SKILLS.md
+      │   ├── side-navigation/SKILLS.md
+      │   ├── timeline/SKILLS.md
+      │   └── uc/SKILLS.md
+      ├── patterns/ [7 SKILLS.md files]
+      └── templates/ [2 SKILLS.md files]
   ```
 
 </details>
@@ -163,7 +200,7 @@ A detailed explanation of the element's behaviour, variants, states, and any
 JavaScript dependencies. Covers defaults, edge cases, and interactions with
 other components.
 
-## Code Examples
+## Code examples
 
 ### HTML
 The rendered markup, suitable for use in any HTML template or static site.
@@ -171,12 +208,12 @@ The rendered markup, suitable for use in any HTML template or static site.
 ### Nunjucks
 The macro call used in Express.js projects and the Prototype Kit.
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 A Markdown table of every parameter the Nunjucks macro accepts, with columns
 for name, type, required/optional, and description.
 
-## Error Messages
+## Error messages
 
 For form components: the standard error message wording recommended by the
 design system, including examples for common validation scenarios.
@@ -187,12 +224,12 @@ Specific accessibility requirements, ARIA roles, keyboard interactions,
 screen reader behaviour, and any known assistive technology considerations
 for this element.
 
-## Do and Do not
+## Do and do not
 
 A concise paired list of recommended practices and anti-patterns, derived
 from design system guidance and research.
 
-## Related Components / Patterns
+## Related components and patterns
 
 Links to related components, patterns, and styles commonly used alongside
 or instead of this element.
@@ -202,11 +239,12 @@ Not every section applies to every file. Omit sections that have no relevant con
 
 ## Agents
 
-Each design system directory contains its own Claude Code agent definitions for 7 multidisciplinary team roles: frontend developer, content designer, interaction designer, accessibility auditor, user researcher, service designer, and QA tester. Each agent reviews your work from its discipline's perspective, referencing the `SKILLS.md` files as its knowledge base.
+Each design system directory contains its own Claude Code agent definitions for 8 multidisciplinary team roles: frontend developer, content designer, interaction designer, accessibility auditor, performance analyst, user researcher, service designer, and QA tester. Each agent reviews your work from its discipline's perspective, referencing the `SKILLS.md` files as its knowledge base.
 
 - **GOV.UK agents**: See [govuk-design-system/agents/README.md](govuk-design-system/agents/README.md) — grounded in the [GOV.UK Service Standard](https://www.gov.uk/service-manual/service-standard)
 - **NHS UK agents**: See [nhsuk-design-system/agents/README.md](nhsuk-design-system/agents/README.md) — grounded in the [NHS Digital Service Manual](https://service-manual.nhs.uk/)
 - **HMRC agents**: See [hmrc-design-patterns/agents/README.md](hmrc-design-patterns/agents/README.md) — grounded in both the GOV.UK Service Standard and [HMRC Design Patterns](https://design.tax.service.gov.uk/)
+- **DWP agents**: See [dwp-design-system/agents/README.md](dwp-design-system/agents/README.md) — grounded in the GOV.UK Service Standard, [DWP Design System](https://design-system.dwp.gov.uk/), and [DWP Accessibility Manual](https://accessibility-manual.dwp.gov.uk/)
 
 ## Accessibility audit snippets
 

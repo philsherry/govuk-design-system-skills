@@ -51,7 +51,7 @@ Do not add more than 8 navigation items — if you need more, consider simplifyi
 
 **Search:** The `showSearch` parameter adds a search form to the header. The search renders as an `<input>` with the class `nhsuk-search__input` inside a `<form>` that submits to the NHS search endpoint or a custom `searchAction` URL.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (logo only)
 
@@ -210,7 +210,7 @@ Do not add more than 8 navigation items — if you need more, consider simplifyi
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -242,7 +242,7 @@ When JavaScript is unavailable, the navigation stays visible and the toggle butt
 
 The search input includes a visible label and a submit button so all users can interact with the search form.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include the header on every page of the service.
@@ -258,7 +258,7 @@ The search input includes a visible label and a submit button so all users can i
 - Do not remove the NHS logo link to the homepage.
 - Do not put content other than the service name, navigation, and search in the header.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Footer](https://service-manual.nhs.uk/design-system/components/footer) — appears at the bottom of every page.
 - [Breadcrumbs](https://service-manual.nhs.uk/design-system/components/breadcrumbs) — for hierarchical navigation below the header.

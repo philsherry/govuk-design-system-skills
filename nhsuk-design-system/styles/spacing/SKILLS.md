@@ -86,7 +86,7 @@ To apply equal padding on all four sides, omit the direction:
 nhsuk-u-padding-[size]
 ```
 
-## Code Examples
+## Code examples
 
 ### Adding bottom margin to a heading
 
@@ -126,7 +126,7 @@ nhsuk-u-padding-[size]
 - Ensure that adjusting spacing does not cause interactive elements to fall below the recommended 24x24px minimum target size (WCAG 2.2 SC 2.5.8).
 - Do not use negative spacing to overlay content in a way that hides it from screen readers.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -140,7 +140,7 @@ nhsuk-u-padding-[size]
 - Apply more than two spacing override classes to a single element to compensate for a structural problem — consider fixing the HTML instead.
 - Override spacing on components in a way that breaks their internal visual logic.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Layout style](https://service-manual.nhs.uk/design-system/styles/layout)
 - [Typography style](https://service-manual.nhs.uk/design-system/styles/typography)

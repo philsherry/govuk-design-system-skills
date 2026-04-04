@@ -243,7 +243,7 @@ Prototypes built with the kit inherit NHS UK Frontend's accessibility features, 
 - Do test with participants who use assistive technology — this is the most valuable accessibility research you can do.
 - Ensure your custom Nunjucks and HTML does not break the accessibility of NHS UK Frontend components — do not remove `for`/`id` associations, ARIA attributes, or focus management.
 
-## Do and Do not
+## Do and do not
 
 **Do** use the kit only for prototyping and user research — never as a production service.
 

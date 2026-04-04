@@ -61,7 +61,7 @@ Use the Pagination component at the bottom of each sub-page to let users move to
 
 The first page in a mini-hub is typically an "Overview" page that introduces the topic and helps users decide which sub-page they need.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -147,7 +147,7 @@ The first page in a mini-hub is typically an "Overview" page that introduces the
 - Use a visually hidden `<h2>` ("Contents") above the contents list for screen reader navigation.
 - The pagination component must include visually hidden text between "Next" and the page title to create a readable phrase for screen readers.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -163,7 +163,7 @@ The first page in a mini-hub is typically an "Overview" page that introduces the
 - Mix transactional form pages into a mini-hub — keep informational and transactional content separate.
 - Create deeply nested mini-hubs — keep the structure flat with one level of sub-pages.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Contents list component](https://service-manual.nhs.uk/design-system/components/contents-list)
 - [Pagination component](https://service-manual.nhs.uk/design-system/components/pagination)

@@ -51,7 +51,7 @@ The `html` parameter accepts arbitrary form content inside the fieldset. The `de
 
 The Nunjucks macro supports the call block pattern: `{% call govukFieldset({...}) %}...{% endcall %}` to render content inside the fieldset.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -207,7 +207,7 @@ The Nunjucks macro supports the call block pattern: `{% call govukFieldset({...}
 {% endcall %}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -222,7 +222,7 @@ The Nunjucks macro supports the call block pattern: `{% call govukFieldset({...}
 | classes | string | No | Classes to add to the `<fieldset>` element. |
 | attributes | object | No | HTML attributes for the `<fieldset>` element as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The fieldset component itself does not render an error message. Individual input components (such as checkboxes or radios) nested inside the fieldset add their own error messages. Those components add `govuk-form-group--error` to the outer group and pass `aria-describedby` references to the error message.
 
@@ -236,7 +236,7 @@ Do not use `aria-labelledby` to associate a heading with a fieldset — this has
 
 For date inputs, add `role="group"` to the fieldset via the `role` parameter to clarify the semantic relationship.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a fieldset with a legend for any group of two or more related inputs (checkboxes, radios, date inputs).
@@ -250,7 +250,7 @@ For date inputs, add `role="group"` to the fieldset via the `role` parameter to 
 - Do not use a fieldset purely for visual styling — it has semantic meaning.
 - Do not place a fieldset inside another fieldset unless the inner group genuinely has its own legend.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Checkboxes](https://design-system.service.gov.uk/components/checkboxes/) — always uses a fieldset.
 - [Radios](https://design-system.service.gov.uk/components/radios/) — always uses a fieldset.

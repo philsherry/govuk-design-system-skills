@@ -604,7 +604,7 @@ Point 13 of the GOV.UK Service Standard requires services to "use and contribute
 - JavaScript components degrade gracefully. When JavaScript is unavailable, the HTML remains functional — accordions show all content expanded, character counts hide the counter, and buttons work as standard `<button>` elements.
 - The `govuk-frontend-supported` body class ensures components only enhance when the browser supports ES modules. Older browsers get the non-JavaScript experience.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

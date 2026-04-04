@@ -44,7 +44,7 @@ The default number of rows is `5`. Adjust this to reflect the expected length of
 
 Do not use JavaScript to auto-resize the textarea as the user types. This creates unpredictable scroll behaviour and can be disorienting for users with cognitive or visual impairments.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -213,7 +213,7 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -233,7 +233,7 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 | `describedBy` | string | No | Extra element IDs to include in `aria-describedby`. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the `<textarea>`. |
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -250,7 +250,7 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 - Do not use JavaScript to auto-resize the textarea — this is disorienting and can cause scroll issues for users with disabilities.
 - If there is a character limit, use the character count component rather than a plain textarea — users need visible, accessible feedback on remaining characters.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Set `rows` to reflect the expected length of input.
@@ -264,7 +264,7 @@ For fields where spell-checking is inappropriate (code snippets, reference data)
 - Do not use a textarea when a more structured input would be more appropriate.
 - Do not set an unreasonably large `rows` value — it makes the page feel overwhelming.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Text Input](../text-input/SKILLS.md) — for single-line text input
 - [Character Count](../character-count/SKILLS.md) — for textareas with a character limit

@@ -48,7 +48,7 @@ The badge appears as a small circle with a number. When the count reaches zero, 
 
 Fetch the count from the server on each page load. Do not cache the count on the client side — a stale count misleads users and creates a poor experience.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -97,7 +97,7 @@ Fetch the count from the server on each page load. Do not cache the count on the
 - Hide the badge when the count reaches zero — do not show an empty or "0" badge, as this adds noise for screen reader users
 - Ensure the badge remains visible and readable at 400% zoom
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Show an accurate, up-to-date count of unread items
@@ -113,7 +113,7 @@ Fetch the count from the server on each page load. Do not cache the count on the
 - Do not place the badge outside navigation links
 - Do not use the badge for total counts that are not unread or outstanding items
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Tag](../../../govuk-design-system/components/tag/SKILLS.md) — for text-based status labels, not numeric counts
 - [GOV.UK Header](../../../govuk-design-system/components/header/SKILLS.md) — the account navigation that often contains notification badges

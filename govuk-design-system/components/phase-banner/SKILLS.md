@@ -48,7 +48,7 @@ Place the component inside the width container, straight after the header, on ev
 - Use **Beta** during the beta phase.
 - Do not use custom phase labels.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (Alpha)
 
@@ -127,7 +127,7 @@ Place the phase banner inside the width container, straight after the header.
 </div>
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -146,7 +146,7 @@ Place the phase banner inside the width container, straight after the header.
 | `classes` | string | No | Classes to add to the tag element. |
 | `attributes` | object | No | HTML attributes to add to the tag element. |
 
-## Error Messages
+## Error messages
 
 The phase banner does not have error states. This is a presentational component.
 
@@ -157,7 +157,7 @@ The phase banner does not have error states. This is a presentational component.
 - The feedback link must be descriptive enough in context. "Your feedback" works when preceded by "This is a new service –".
 - Make sure the feedback destination page is accessible.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Display the phase banner on every page of the service during alpha and beta.
@@ -171,7 +171,7 @@ The phase banner does not have error states. This is a presentational component.
 - Do not leave the phase banner on a live service indefinitely.
 - Do not use the phase banner for service announcements or other messages.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Tag](../tag/SKILLS.md) — used within the phase banner for the phase label
 - [Header](../header/SKILLS.md) — the phase banner sits straight below the header

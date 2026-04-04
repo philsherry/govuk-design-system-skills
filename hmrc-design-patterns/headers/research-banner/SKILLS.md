@@ -49,7 +49,7 @@ The banner should:
 
 Place the banner on every page of the prototype or test service. Do not hide it on specific pages, as participants may land on any page during the session.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -99,7 +99,7 @@ Place the banner on every page of the prototype or test service. Do not hide it 
 - The banner must remain visible and readable at 400% zoom
 - Do not use colour alone to communicate that the service exists for research — the text must convey this
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the research banner on every page of the prototype or test service
@@ -113,7 +113,7 @@ Place the banner on every page of the prototype or test service. Do not hide it 
 - Do not hide the banner on specific pages within the prototype
 - Do not add links or interactive elements inside the banner
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Phase banner](../../../govuk-design-system/components/phase-banner/SKILLS.md) — for alpha and beta services, not for research sessions
 - [GOV.UK Header](../../../govuk-design-system/components/header/SKILLS.md) — the research banner sits below the header

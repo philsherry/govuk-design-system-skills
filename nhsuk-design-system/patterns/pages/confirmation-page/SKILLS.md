@@ -53,7 +53,7 @@ The "What happens next" section should explain:
 - How the service contacts users
 - What users need to do in the meantime, if anything
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -106,7 +106,7 @@ The "What happens next" section should explain:
 - Do not auto-redirect away from the confirmation page — users may need time to note their reference number or print the page.
 - Destroy session data after displaying the confirmation page so that navigating back does not re-submit the form.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -124,7 +124,7 @@ The "What happens next" section should explain:
 - Ask users to do extra tasks after submission unless no other option exists.
 - Use the panel component for inline success messages — use Notification banner instead.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Panel component](https://service-manual.nhs.uk/design-system/components/panel)
 - [Notification banner component](https://service-manual.nhs.uk/design-system/components/notification-banner)

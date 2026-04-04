@@ -45,7 +45,7 @@ The back link renders as an `<a>` element with the class `nhsuk-back-link__link`
 
 The default implementation links to an explicit URL. You can also use JavaScript's `history.back()` by setting `href="#"` and attaching a click handler, but this requires careful handling to avoid breaking when JavaScript is unavailable.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -109,7 +109,7 @@ The default implementation links to an explicit URL. You can also use JavaScript
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -128,7 +128,7 @@ The chevron icon has `aria-hidden="true"` so screen readers skip the decorative 
 
 The link must remain reachable via keyboard Tab navigation. Position it near the top of the page so keyboard users encounter it soon after any skip link.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the back link above the `<main>` element, before the page heading and form content.
@@ -142,7 +142,7 @@ The link must remain reachable via keyboard Tab navigation. Position it near the
 - Do not place it inside the `<main>` element.
 - Do not omit it from pages mid-journey where users may want to review or change earlier answers.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Breadcrumbs](https://service-manual.nhs.uk/design-system/components/breadcrumbs) — for hierarchical site navigation (not for transactional journeys).
 - [Action link](https://service-manual.nhs.uk/design-system/components/action-link) — for prominent links that direct users to take action on another page.

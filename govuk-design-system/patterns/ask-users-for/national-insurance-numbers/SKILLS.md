@@ -77,7 +77,7 @@ Set `spellcheck="false"` to prevent browsers from marking the NINO characters as
 
 Do not set `autocomplete="on"` for National Insurance number fields — browser autofill is not appropriate for sensitive identifiers that users should look up from their documents.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -218,7 +218,7 @@ Do not set `autocomplete="on"` for National Insurance number fields — browser 
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty
 
@@ -241,7 +241,7 @@ Include an example in the error message if it helps users understand the format:
 - Associate hint text and error messages with the input using `aria-describedby`.
 - Use the `govuk-input--width-10` class to set an appropriate width that signals the expected input length to users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single text input for the National Insurance number.
@@ -259,10 +259,10 @@ Include an example in the error message if it helps users understand the format:
 - Do not display the full NINO on screen after submission — mask it.
 - Do not collect a NINO without a clear legal or operational justification.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../names/SKILLS.md](../names/SKILLS.md)
 - [../dates/SKILLS.md](../dates/SKILLS.md)

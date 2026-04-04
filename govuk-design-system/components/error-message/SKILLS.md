@@ -51,7 +51,7 @@ The `govuk-form-group--error` class on the form group wrapper adds a red left bo
 
 Reference the error message `id` in the input's `aria-describedby` so assistive technologies associate the error with the field.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -175,7 +175,7 @@ Reference the error message `id` in the input's `aria-describedby` so assistive 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -186,7 +186,7 @@ Reference the error message `id` in the input's `aria-describedby` so assistive 
 | classes | string | No | Classes to add to the `<p>` element. |
 | attributes | object | No | HTML attributes for the `<p>` element. |
 
-## Error Messages
+## Error messages
 
 The error message content itself should follow these principles:
 
@@ -205,7 +205,7 @@ The error message `id` must appear in the associated input's `aria-describedby` 
 
 The `govuk-form-group--error` class adds a red left border to the whole form group. The `govuk-input--error` class adds a red border to the input. Both visual cues must be present — do not rely on colour alone.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always pair inline error messages with an error summary at the top of the page.
@@ -219,7 +219,7 @@ The `govuk-form-group--error` class adds a red left border to the whole form gro
 - Do not omit the error summary — inline messages alone are insufficient for accessibility.
 - Do not use the error message component for general guidance or hints.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Error summary](https://design-system.service.gov.uk/components/error-summary/) — the page-level error list that must appear alongside inline error messages.
 - [Text input](https://design-system.service.gov.uk/components/text-input/) — the most common component to display error messages on.

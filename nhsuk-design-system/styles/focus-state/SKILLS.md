@@ -99,7 +99,7 @@ NHS UK Frontend provides mixins for applying focus styles to custom elements:
 }
 ```
 
-## Code Examples
+## Code examples
 
 ### Applying focus to a custom link
 
@@ -133,7 +133,7 @@ NHS UK Frontend provides mixins for applying focus styles to custom elements:
 - Never remove focus outlines (`outline: none`) from any interactive element.
 - If you override focus styles, ensure the replacement meets 3:1 contrast against adjacent colours and has a minimum area of `2px` on the shortest side.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -149,7 +149,7 @@ NHS UK Frontend provides mixins for applying focus styles to custom elements:
 - Change the focus colour to something with lower contrast than the default.
 - Apply focus styles to non-interactive elements — this confuses keyboard users about what they can interact with.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Colour style](https://service-manual.nhs.uk/design-system/styles/colour)
 - [Typography style](https://service-manual.nhs.uk/design-system/styles/typography)

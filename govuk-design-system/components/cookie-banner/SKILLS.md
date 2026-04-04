@@ -47,7 +47,7 @@ The initial "ask" message contains the question and two action buttons (Accept a
 
 When a user makes a choice, JavaScript hides the ask message and shows the relevant confirmation message. After the user dismisses the confirmation, the whole banner closes. Without JavaScript, all messages without the `hidden` attribute appear — ensure your server-side code or your own JavaScript sets the `hidden` attribute as needed.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -204,7 +204,7 @@ When a user makes a choice, JavaScript hides the ask message and shows the relev
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -227,7 +227,7 @@ When a user makes a choice, JavaScript hides the ask message and shows the relev
 | classes | string | No | Classes to add to the outer cookie banner `<div>`. |
 | attributes | object | No | HTML attributes for the outer cookie banner `<div>`. |
 
-## Error Messages
+## Error messages
 
 The cookie banner does not accept user input for validation and does not produce field-level error messages. If you use form submission to handle cookie preferences for users without JavaScript, standard form validation applies server-side.
 
@@ -241,7 +241,7 @@ When the confirmation message appears after a user makes a choice, focus managem
 
 The banner must be the first significant element in the `<body>`, before the skip link, so it appears near the top of the reading order without interfering with main content navigation.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the cookie banner before the skip link at the top of the `<body>`.
@@ -255,7 +255,7 @@ The banner must be the first significant element in the `<body>`, before the ski
 - Do not block page content with the banner or make it modal.
 - Do not set analytics cookies before the user has given consent.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Notification banner](https://design-system.service.gov.uk/components/notification-banner/) — for general page-level notifications not related to cookie consent.
 - [Cookies page pattern](https://design-system.service.gov.uk/patterns/cookies-page/) — the recommended pattern for a full cookies settings page.

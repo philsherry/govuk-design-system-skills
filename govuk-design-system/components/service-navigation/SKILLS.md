@@ -46,7 +46,7 @@ Mark the active section with `active: true` on the relevant navigation item. Thi
 
 On mobile, when navigation items are present, a "Menu" toggle button appears and the navigation defaults to hidden. The JavaScript module manages the `aria-expanded` state.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (service name only)
 
@@ -189,7 +189,7 @@ On mobile, when navigation items are present, a "Menu" toggle button appears and
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -216,7 +216,7 @@ On mobile, when navigation items are present, a "Menu" toggle button appears and
 | `classes` | string | No | Classes to add to the `<li>` element. |
 | `attributes` | object | No | HTML attributes to add to the `<a>` element. |
 
-## Error Messages
+## Error messages
 
 The service navigation component does not have error states.
 
@@ -228,7 +228,7 @@ The service navigation component does not have error states.
 - The mobile menu toggle button uses `aria-controls` pointing to the navigation `id` and `aria-expanded` managed by JavaScript.
 - When JavaScript is unavailable, the toggle button is not shown (using the `hidden` attribute) and navigation items are always visible.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Mark the active section with `active: true`.
@@ -242,7 +242,7 @@ The service navigation component does not have error states.
 - Do not use service navigation as a replacement for the GOV.UK header.
 - Do not include navigation links irrelevant to the current service's sections.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header](../header/SKILLS.md) — placed above the service navigation
 - [Phase Banner](../phase-banner/SKILLS.md) — often placed next to the service navigation

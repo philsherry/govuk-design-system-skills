@@ -73,7 +73,7 @@ Set `spellcheck="false"` to prevent browsers from marking the reference characte
 
 Do not set `autocomplete="on"` for Employer PAYE reference fields — browser autofill does not recognise this format.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -214,7 +214,7 @@ Do not set `autocomplete="on"` for Employer PAYE reference fields — browser au
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty
 
@@ -237,7 +237,7 @@ Include an example in the error message if it helps users understand the format:
 - Associate hint text and error messages with the input using `aria-describedby`.
 - Use the `govuk-input--width-10` class to set an appropriate width that signals the expected input length to users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single text input for the Employer PAYE reference.
@@ -254,7 +254,7 @@ Include an example in the error message if it helps users understand the format:
 - Do not reject references that include extra spaces.
 - Do not confuse this with the Accounts Office reference.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)
 - [../../../govuk-design-system/components/error-message/SKILLS.md](../../../govuk-design-system/components/error-message/SKILLS.md)

@@ -49,7 +49,7 @@ The `threshold` parameter (a value from 0 to 100) sets the percentage of the lim
 
 The count message has `aria-live="polite"` so screen readers announce changes to the remaining count without interrupting the user.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (character limit)
 
@@ -165,7 +165,7 @@ The count message has `aria-live="polite"` so screen readers announce changes to
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -184,7 +184,7 @@ The count message has `aria-live="polite"` so screen readers announce changes to
 | attributes | object | No | HTML attributes for the textarea as key-value pairs. |
 | countMessage | object | No | Options for the count message element. Accepts `classes`. |
 
-## Error Messages
+## Error messages
 
 When the user exceeds the character or word count, the count message text turns red and reads "You have X characters/words over the limit". This is a live UI state, not a server-side validation error.
 
@@ -202,7 +202,7 @@ When using `threshold`, the count message hides visually until the threshold pas
 
 Do not add the `maxlength` HTML attribute directly to the `<textarea>` element — this prevents users from pasting over-length content and seeing the error state, breaking the expected character count experience.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `maxlength` unless you specifically need a word count.
@@ -216,7 +216,7 @@ Do not add the `maxlength` HTML attribute directly to the `<textarea>` element �
 - Do not use this component for `<input type="text">` — it works with `<textarea>` only.
 - Do not impose a character limit unless a genuine technical or policy reason exists.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Textarea](../textarea/SKILLS.md) — the base component that character count extends.
 - [Text input](../text-input/SKILLS.md) — for single-line inputs, which do not need a character count.

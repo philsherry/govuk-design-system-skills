@@ -124,7 +124,7 @@ To hide an image visually and from assistive technologies, use the display overr
 
 To hide an image visually but keep it accessible, use `govuk-visually-hidden` on a container instead.
 
-## Code Examples
+## Code examples
 
 ### Standard content image
 
@@ -180,7 +180,7 @@ To hide an image visually but keep it accessible, use `govuk-visually-hidden` on
 - Do not use images that convey information solely through colour — users who cannot distinguish colour will lose that information.
 - Complex images (diagrams, charts, infographics) need a longer text description placed next to the image or via a link to a separate page.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `govuk-image` on all content `<img>` elements.
@@ -196,7 +196,7 @@ To hide an image visually but keep it accessible, use `govuk-visually-hidden` on
 - Use large, high-resolution images without providing responsive alternatives.
 - Use `govuk-image` inside components that provide their own image layout.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Spacing style](https://design-system.service.gov.uk/styles/spacing/)
 - [Colour style](https://design-system.service.gov.uk/styles/colour/)

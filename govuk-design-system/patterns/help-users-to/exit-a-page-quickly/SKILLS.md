@@ -76,7 +76,7 @@ The component attempts to clear the browser history back to the exit page, but n
 
 Include the component in the page template — the `beforeContent` block in the GOV.UK Frontend page template is the recommended location — ensuring the button appears on every page of the service, not only the first page or a subset of pages.
 
-## Code Examples
+## Code examples
 
 ### Basic usage
 
@@ -172,7 +172,7 @@ Include the component in the page template — the `beforeContent` block in the 
 - The component uses the GOV.UK warning button style, which meets colour contrast requirements.
 - Do not remove or change the visually hidden keyboard shortcut instruction text.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use this pattern whenever your service deals with topics that could put users at risk if discovered.
@@ -188,7 +188,7 @@ Include the component in the page template — the `beforeContent` block in the 
 - Do not remove the keyboard shortcut — this is a critical accessibility and safety feature.
 - Do not change the button to a colour other than the GOV.UK warning button red without strong justification and accessibility testing.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/exit-this-page/SKILLS.md](../../../components/exit-this-page/SKILLS.md)
 - [../../../components/button/SKILLS.md](../../../components/button/SKILLS.md)

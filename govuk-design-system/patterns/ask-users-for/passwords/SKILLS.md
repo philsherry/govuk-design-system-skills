@@ -66,7 +66,7 @@ Always ask users to enter their password twice when creating it. Label the field
 
 ### Password input component
 
-The GOV.UK Frontend password input component (`govukPasswordInput`) renders a text input with a "Show" button that toggles between `type="password"` (masked) and `type="text"` (visible). See the [password input component](../../components/password-input/SKILLS.md) for full details.
+The GOV.UK Frontend password input component (`govukPasswordInput`) renders a text input with a "Show" button that toggles between `type="password"` (masked) and `type="text"` (visible). See the [password input component](../../../components/password-input/SKILLS.md) for full details.
 
 ### Telling users about password requirements
 
@@ -74,7 +74,7 @@ Show the requirements as hint text before the password field, not after. Keep re
 
 Do not use "strength meters" unless your research shows they help your users. Strength meters can be misleading and the visual feedback can be distracting.
 
-## Code Examples
+## Code examples
 
 ### Create a password
 
@@ -246,7 +246,7 @@ Do not use "strength meters" unless your research shows they help your users. St
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### Creating a password
 
@@ -269,7 +269,7 @@ Do not use "strength meters" unless your research shows they help your users. St
 - The "show" toggle button must have an `aria-label` that describes its action (for example, "Show password" / "Hide password") and its `aria-controls` must reference the input's `id`.
 - Link error messages to the input via `aria-describedby`.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the `govukPasswordInput` component with the show/hide toggle.
@@ -290,12 +290,12 @@ Do not use "strength meters" unless your research shows they help your users. St
 - Do not use a "remember me" checkbox unless appropriate for your service's security model.
 - Do not display generic error messages that reveal whether someone has registered an email address (to avoid user enumeration attacks).
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/password-input/SKILLS.md](../../components/password-input/SKILLS.md)
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/password-input/SKILLS.md](../../../components/password-input/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../email-addresses/SKILLS.md](../email-addresses/SKILLS.md)
 - [../../help-users-to/create-accounts/SKILLS.md](../../help-users-to/create-accounts/SKILLS.md)
 - [../../help-users-to/create-a-username/SKILLS.md](../../help-users-to/create-a-username/SKILLS.md)

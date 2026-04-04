@@ -55,7 +55,7 @@ The `card` option wraps the summary list in a `govuk-summary-card` container wit
 
 Add `govuk-summary-list--no-border` to remove the horizontal borders between rows.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -259,7 +259,7 @@ Cards group rows together with an optional heading and card-Level-Actions.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -298,7 +298,7 @@ Cards group rows together with an optional heading and card-Level-Actions.
 | `classes` | string | No | Classes to add to the card wrapper. |
 | `attributes` | object | No | HTML attributes to add to the card wrapper. |
 
-## Error Messages
+## Error messages
 
 The summary list does not have error states. This is a display component.
 
@@ -309,7 +309,7 @@ The summary list does not have error states. This is a display component.
 - Card titles use heading elements — ensure the heading level fits the page's heading hierarchy.
 - When more than one row on the same page shares the same action text (e.g. "Change"), the visually hidden text is essential to differentiate them.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always provide `visuallyHiddenText` on action links.
@@ -322,7 +322,7 @@ The summary list does not have error states. This is a display component.
 - Do not omit `visuallyHiddenText` on "Change" links — screen reader users will not have context.
 - Do not use the summary list to display long blocks of text.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Table](../table/SKILLS.md) — for tabular data with more than one column
 - [Task List](../task-list/SKILLS.md) — for multi-task journeys

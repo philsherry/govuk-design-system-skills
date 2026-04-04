@@ -43,7 +43,7 @@ When hint text or an error message is present, `aria-describedby` links them to 
 
 The top-level `value` parameter pre-selects the matching option when the page renders with data entered earlier (for example, after a validation error).
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -209,7 +209,7 @@ Use the top-level `value` parameter to pre-select an option when re-rendering af
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -235,7 +235,7 @@ Use the top-level `value` parameter to pre-select an option when re-rendering af
 | `disabled` | boolean | No | Disables this option. |
 | `attributes` | object | No | HTML attributes to add to the `<option>` element. |
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -249,7 +249,7 @@ Use the top-level `value` parameter to pre-select an option when re-rendering af
 - Avoid using `size` or `multiple` attributes on the select — both create usability and accessibility problems.
 - Ensure the select is wide enough to display options without truncation.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Provide a blank placeholder option ("Select a [thing]") when no default should be pre-selected.
@@ -262,7 +262,7 @@ Use the top-level `value` parameter to pre-select an option when re-rendering af
 - Do not use disabled options within the list for items users cannot choose — omit those items instead.
 - Do not use select for date or time entry — use the date input component.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Radios](../radios/SKILLS.md) — preferred over select for most use cases
 - [Checkboxes](../checkboxes/SKILLS.md) — for selecting more than one option

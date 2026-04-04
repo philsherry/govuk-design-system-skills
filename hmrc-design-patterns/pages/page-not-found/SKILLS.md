@@ -58,7 +58,7 @@ Include the relevant HMRC helpline or contact method for the service. This helps
 - Opening hours
 - A link to the service start page on GOV.UK if one exists
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -125,7 +125,7 @@ Include the relevant HMRC helpline or contact method for the service. This helps
 - Present contact information in a list format so phone numbers and opening hours are easy to find
 - Do not include error codes (404) in the heading or body text
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the exact heading "Page not found"
@@ -143,7 +143,7 @@ Include the relevant HMRC helpline or contact method for the service. This helps
 - Do not remove the navigation or skip link
 - Do not add a back link
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Page not found pages](../../../govuk-design-system/patterns/pages/page-not-found-pages/SKILLS.md) — the base GOV.UK pattern that this HMRC pattern supplements
 - [Service unavailable](../service-unavailable/SKILLS.md) — for planned downtime or maintenance

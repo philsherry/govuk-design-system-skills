@@ -56,7 +56,7 @@ Keep the content short and focused. Users who encounter an interruption page wan
 - Use short sentences and bullet points.
 - Do not repeat information available on other pages.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -104,7 +104,7 @@ Keep the content short and focused. Users who encounter an interruption page wan
 - Do not use the interruption page to create a modal or dialog that traps keyboard focus — the page should be a standard page with a full URL.
 - Screen reader users should understand the importance of the content from the heading and text alone, without relying on the visual distinction of the coloured background.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -121,7 +121,7 @@ Keep the content short and focused. Users who encounter an interruption page wan
 - Remove the continue button — users must have a clear path forward.
 - Use an interruption page as a substitute for good error messaging.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Question pages pattern](../question-pages/SKILLS.md)
 - [Start page pattern](../start-page/SKILLS.md)

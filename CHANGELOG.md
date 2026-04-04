@@ -4,6 +4,36 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] — 2026-04-04
+
+### Added
+
+- Full `dwp-design-system/` coverage: 8 components, 7 patterns, 2 templates, 2 foundations, and 1 accessibility guide
+- 8 DWP agent personas adapted for DWP's dual-system context (GOV.UK + DWP) with internal service and benefits-specific guidance
+- `dwp-design-system/agents/README.md` with DWP agent guidance
+- `docs/dwp/GUIDE.md` and `docs/dwp/INSTALL.md` for DWP usage and setup
+- DWP Design System licensing in `LICENSE`
+- `dwp-design-system/**/*.md` to the lint workflow path trigger
+
+### Changed
+
+- Updated `package.json` description to include DWP
+- Updated `INSTALL.md` from two design systems to four, added HMRC and DWP to all setup guide links
+- Updated `GUIDE.md` with HMRC and DWP design-system-specific guide links
+- Updated `README.md` with DWP directory tree, getting started row, and licence section
+
+### Fixed
+
+- Fixed 50 broken relative links across 17 files
+- `govuk-design-system/accessibility/SKILLS.md`: 5 links used `../../` instead of `../`
+- `nhsuk-design-system/accessibility/SKILLS.md`: 3 links used `../../` instead of `../`
+- `govuk-design-system/patterns/ask-users-for/*/SKILLS.md`: 39 links across 10 files used `../../components/` instead of `../../../components/`
+- `hmrc-design-patterns/service/service-timeout/SKILLS.md`: foundation link used `../` instead of `../../`
+- `hmrc-design-patterns/service/welsh-language-toggle/SKILLS.md`: foundation link used `../` instead of `../../`
+- `govuk-design-system/agents/README.md`: SKILLS.md link used `../` instead of `../../`
+- `nhsuk-design-system/agents/README.md`: SKILLS.md link used `../` instead of `../../`
+- `docs/AUDIT_EXAMPLE.md`: README link used `README.md` instead of `../README.md`
+
 ## [1.2.1] — 2026-04-03
 
 ### Added

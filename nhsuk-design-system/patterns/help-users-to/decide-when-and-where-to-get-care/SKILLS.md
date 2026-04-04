@@ -64,7 +64,7 @@ Each care card contains:
 
 The care card heading defaults to `<h2>`. Change the heading level to match the page's heading hierarchy.
 
-## Code Examples
+## Code examples
 
 ### Non-urgent care card
 
@@ -137,7 +137,7 @@ The care card heading defaults to `<h2>`. Change the heading level to match the 
 - The colour of the care card heading reinforces urgency visually, but the text content must convey the urgency independently — do not rely on colour alone.
 - Set the heading level to maintain the page's heading hierarchy.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -153,7 +153,7 @@ The care card heading defaults to `<h2>`. Change the heading level to match the 
 - Remove the visually hidden prefix — screen reader users depend on it.
 - Use more than one care card of the same type on a single page unless the clinical guidance requires it.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Warning callout component](https://service-manual.nhs.uk/design-system/components/warning-callout)
 - [Do and Don't list component](https://service-manual.nhs.uk/design-system/components/do-and-dont-list)

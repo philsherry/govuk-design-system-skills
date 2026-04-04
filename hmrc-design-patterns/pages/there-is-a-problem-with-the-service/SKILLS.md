@@ -55,7 +55,7 @@ Return an HTTP 500 status code. Log the error details on the server — do not s
 
 If the error occurs mid-transaction, tell users whether the service saved their information. If the service saved it, reassure them. If the service did not save it, tell them they will need to start again.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -132,7 +132,7 @@ If the error occurs mid-transaction, tell users whether the service saved their 
 - Present contact information in a list format for easy scanning
 - Do not include HTTP status codes (500) or stack traces in the page content
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the heading "Sorry, there is a problem with the service"
@@ -151,7 +151,7 @@ If the error occurs mid-transaction, tell users whether the service saved their 
 - Do not show a blank page or a generic server error page
 - Do not use this page for planned maintenance — use "Service unavailable" instead
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Problem with the service pages](../../../govuk-design-system/patterns/pages/problem-with-the-service-pages/SKILLS.md) — the base GOV.UK pattern that this HMRC pattern supplements
 - [Page not found](../page-not-found/SKILLS.md) — for missing pages (HTTP 404)

@@ -47,7 +47,7 @@ The exclusive behaviour (`behaviour: "exclusive"`) handles "None of the above" c
 
 Small checkboxes (`nhsuk-checkboxes--small`) work for filter panels or compact layouts with limited space.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -227,7 +227,7 @@ Small checkboxes (`nhsuk-checkboxes--small`) work for filter panels or compact l
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -254,7 +254,7 @@ Small checkboxes (`nhsuk-checkboxes--small`) work for filter panels or compact l
 | attributes | object | No | HTML attributes for the checkboxes container. |
 | values | array | No | Array of values to pre-check. Alternative to setting `checked` on individual items. |
 
-## Error Messages
+## Error messages
 
 - "Select [option]" — when the user has not selected any required checkbox.
 - "Select [option A] or [option B]" — when the user must select at least one of those specific options.
@@ -271,7 +271,7 @@ Conditional reveal content uses `data-aria-controls` on the checkbox and `aria-e
 
 The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to standard checkbox behaviour — the server must handle deselection logic.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always use a fieldset and legend when displaying a group of checkboxes.
@@ -285,7 +285,7 @@ The exclusive behaviour uses JavaScript. Without JavaScript, it degrades to stan
 - Do not pre-check checkboxes by default unless the user has already chosen that value.
 - Do not rely on the `exclusive` behaviour alone — validate server-side that mutually exclusive options do not arrive together.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Radios](../radios/SKILLS.md) — when the user must select one option only.
 - [Fieldset](../fieldset/SKILLS.md) — the wrapping element for grouped form inputs.

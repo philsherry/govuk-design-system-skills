@@ -86,7 +86,7 @@ NHS UK Frontend then uses Arial throughout.
 
 The NHS logo uses a specific version of the NHS typeface (Frutiger Bold). Do not recreate the NHS logo typographically — always use the official SVG logo provided by NHS UK Frontend.
 
-## Code Examples
+## Code examples
 
 ### Sass configuration for an NHS service
 
@@ -123,7 +123,7 @@ When writing custom styles that must match the NHS typeface, use the font family
 - Do not use CSS font-smoothing properties to alter the rendering of Frutiger — this can reduce contrast and legibility for some users.
 - Ensure minimum text size of 16px for body content to support readability for users with low vision.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -140,7 +140,7 @@ When writing custom styles that must match the NHS typeface, use the font family
 - Apply synthetic bold or italic CSS properties to Frutiger.
 - Recreate the NHS logo using Frutiger text — always use the SVG logo.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Typography style](https://service-manual.nhs.uk/design-system/styles/typography)
 - [Colour style](https://service-manual.nhs.uk/design-system/styles/colour)

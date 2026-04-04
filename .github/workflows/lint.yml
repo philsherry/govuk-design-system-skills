@@ -4,10 +4,11 @@ name: Lint
 on:
   pull_request:
     paths:
-      - ".github/workflows/tag-release.yml"
       - ".github/workflows/lint.yml"
+      - ".github/workflows/tag-release.yml"
       - "CHANGELOG.md"
       - "docs/**/*.md"
+      - "dwp-design-system/**/*.md"
       - "govuk-design-system/**/*.md"
       - "hmrc-design-patterns/**/*.md"
       - "nhsuk-design-system/**/*.md"

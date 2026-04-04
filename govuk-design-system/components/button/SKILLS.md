@@ -48,7 +48,7 @@ Disabled buttons use the `disabled` HTML attribute alongside `aria-disabled="tru
 
 Button groups use a `<div class="govuk-button-group">` wrapper. Within a group, links use styles that match the button height, keeping cancel or secondary links visually aligned with the button.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -212,7 +212,7 @@ Button groups use a `<div class="govuk-button-group">` wrapper. Within a group, 
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -229,7 +229,7 @@ Button groups use a `<div class="govuk-button-group">` wrapper. Within a group, 
 | classes | string | No | Classes to add to the button element. |
 | attributes | object | No | HTML attributes to add to the button element as key–value pairs. |
 
-## Error Messages
+## Error messages
 
 The button component does not accept user input and does not produce validation error messages.
 
@@ -245,7 +245,7 @@ The inverse button (`govuk-button--inverse`) is only for use on dark or coloured
 
 Start buttons should only appear once per journey — on the introductory page before the transaction begins.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a single primary button per page to show the main action.
@@ -261,7 +261,7 @@ Start buttons should only appear once per journey — on the introductory page b
 - Do not use an inverse button on a white or light background.
 - Do not use a button when a standard text link is more appropriate.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Back link](https://design-system.service.gov.uk/components/back-link/) — for navigating to the previous page, not a button action.
 - [Error summary](https://design-system.service.gov.uk/components/error-summary/) — displayed above the form when submission fails validation.

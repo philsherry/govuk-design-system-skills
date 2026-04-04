@@ -50,7 +50,7 @@ When the user selects a tab, the page URL fragment updates to the panel `id`, en
 
 Each panel should contain a heading that matches the tab label — this heading is visible in the no-JS view and provides context when users navigate to a panel from a URL fragment.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -158,7 +158,7 @@ The component updates the URL hash when the user selects a tab. Link directly to
 <a href="/reports#past-week">View past week report</a>
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -186,7 +186,7 @@ The component updates the URL hash when the user selects a tab. Link directly to
 | `html` | string | Yes (or `text`) | HTML content for the panel. |
 | `attributes` | object | No | HTML attributes to add to the panel `<div>`. |
 
-## Error Messages
+## Error messages
 
 The tabs component does not have error states. This is a navigation/display component.
 
@@ -200,7 +200,7 @@ The tabs component does not have error states. This is a navigation/display comp
 - Without JavaScript, all panels are visible as static sections — ensure the no-JS experience is fully usable.
 - Tab labels must be concise and meaningful as standalone link text.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include a heading inside each panel that matches the tab label.
@@ -214,7 +214,7 @@ The tabs component does not have error states. This is a navigation/display comp
 - Do not nest tabs within tabs.
 - Do not use more than about 5–6 tabs — the tab bar becomes unwieldy.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Accordion](../accordion/SKILLS.md) — for showing and hiding sections on the same page (better for mobile)
 - [Service Navigation](../service-navigation/SKILLS.md) — for navigating between service sections

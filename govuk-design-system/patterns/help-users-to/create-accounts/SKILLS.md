@@ -89,7 +89,7 @@ Provide a reliable way for users to recover access if they forget their password
 
 Consider the returning user journey from the start of the design process. A clear sign-in flow with a prominent link from the service start page reduces confusion and avoids users creating duplicate accounts by mistake.
 
-## Code Examples
+## Code examples
 
 ### Registration: email and password
 
@@ -336,7 +336,7 @@ Consider the returning user journey from the start of the design process. A clea
 - Sign-in error messages should be generic (do not reveal whether the email or password was wrong) to prevent account enumeration attacks.
 - Ensure the registration form is fully operable by keyboard and compatible with screen readers.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Consider GOV.UK One Login before building a custom account system.
@@ -356,7 +356,7 @@ Consider the returning user journey from the start of the design process. A clea
 - Do not disable paste in password fields.
 - Do not store passwords in plain text — always hash and salt.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/password-input/SKILLS.md](../../../components/password-input/SKILLS.md)
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)

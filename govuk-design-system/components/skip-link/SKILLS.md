@@ -44,7 +44,7 @@ The target element (the `<main>` element with `id="main-content"`) must be focus
 
 The JavaScript module (`govuk-skip-link`) manages smooth scrolling and focus when the user activates the link.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -104,7 +104,7 @@ If your page uses a different `id` for the main content area, point the skip lin
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -113,7 +113,7 @@ If your page uses a different `id` for the main content area, point the skip lin
 | `classes` | string | No | Classes to add to the `<a>` element. |
 | `attributes` | object | No | HTML attributes (as key–value pairs) to add to the `<a>` element. |
 
-## Error Messages
+## Error messages
 
 The skip link does not have error states. This is a navigation component.
 
@@ -126,7 +126,7 @@ The skip link does not have error states. This is a navigation component.
 - The standard text "Skip to main content" is well understood by screen reader users and changing it requires strong user research justification.
 - The GOV.UK Frontend JavaScript module improves cross-browser compatibility for the focus and scroll behaviour when the user activates the skip link.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the skip link as the first element inside `<body>`, before everything else.
@@ -140,7 +140,7 @@ The skip link does not have error states. This is a navigation component.
 - Do not point the skip link to an element that does not exist on the page or that does not have `tabindex="-1"`.
 - Do not make the skip link permanently visible — it should only appear when it receives keyboard focus.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header](../header/SKILLS.md) — place the skip link before the header
 - [Service Navigation](../service-navigation/SKILLS.md) — the skip link allows bypassing service navigation

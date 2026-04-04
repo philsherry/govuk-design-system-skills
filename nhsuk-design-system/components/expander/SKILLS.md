@@ -49,7 +49,7 @@ When grouping expanders, wrap them in a `<div class="nhsuk-expander-group">`. Th
 
 The component works without JavaScript, relying on native browser support for the `<details>` element.
 
-## Code Examples
+## Code examples
 
 ### Single expander
 
@@ -146,7 +146,7 @@ The component works without JavaScript, relying on native browser support for th
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 ### expander()
 
@@ -178,7 +178,7 @@ Do not place essential form instructions or urgent health information inside exp
 
 Ensure the expanded content does not contain heading levels that break the page's heading hierarchy.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use expanders when you have more than two expandable sections.
@@ -192,7 +192,7 @@ Ensure the expanded content does not contain heading levels that break the page'
 - Do not nest expanders inside other expanders.
 - Do not use expanders for content that most users need — display that content in full view.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Details](https://service-manual.nhs.uk/design-system/components/details) — for a single, less prominent expandable section.
 - [Contents list](https://service-manual.nhs.uk/design-system/components/contents-list) — for splitting long content across pages.

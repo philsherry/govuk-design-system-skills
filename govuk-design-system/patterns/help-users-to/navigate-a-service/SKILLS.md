@@ -88,7 +88,7 @@ For services with more than one distinct task that users can complete in any ord
 
 Do not use a "Step X of Y" indicator as the primary navigation mechanism for multi-step forms. The number of steps can change based on earlier answers, which confuses users. If users need to understand their progress through the service, use a task list instead.
 
-## Code Examples
+## Code examples
 
 ### Back link (using browser history)
 
@@ -319,7 +319,7 @@ Do not use a "Step X of Y" indicator as the primary navigation mechanism for mul
 - Pagination must use a `<nav>` element with `aria-label="Pagination"` and `aria-current="page"` on the active page item.
 - Do not use both breadcrumbs and a back link on the same page.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use a back link on transactional (form-based) service pages.
@@ -336,7 +336,7 @@ Do not use a "Step X of Y" indicator as the primary navigation mechanism for mul
 - Do not show a back link on the first page of a service.
 - Do not use navigation that resets or discards user-entered data when the user navigates back.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/back-link/SKILLS.md](../../../components/back-link/SKILLS.md)
 - [../../../components/breadcrumbs/SKILLS.md](../../../components/breadcrumbs/SKILLS.md)

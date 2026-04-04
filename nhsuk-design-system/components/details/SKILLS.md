@@ -45,7 +45,7 @@ The component renders a `<details class="nhsuk-details">` element. Inside it, th
 
 The component works without JavaScript. All modern browsers support the `<details>` element natively.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -97,7 +97,7 @@ The component works without JavaScript. All modern browsers support the `<detail
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -118,7 +118,7 @@ Do not place interactive elements (links, buttons, form inputs) inside the summa
 
 Ensure the details component does not contain essential health advice or urgent information that users might miss if they do not expand it.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use specific summary text that tells users what they will find inside.
@@ -132,7 +132,7 @@ Ensure the details component does not contain essential health advice or urgent 
 - Do not use it as an alternative to care cards or warning callouts for urgent advice.
 - Do not use nested details elements.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Expander](https://service-manual.nhs.uk/design-system/components/expander) — for longer expandable sections with a more prominent visual style.
 - [Contents list](https://service-manual.nhs.uk/design-system/components/contents-list) — for splitting long content across pages instead of hiding it.

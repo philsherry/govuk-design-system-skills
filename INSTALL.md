@@ -2,12 +2,14 @@
 
 This guide walks you through setting up the design system skills and agents with your AI coding tool. It assumes you have some familiarity with your design system's Prototype Kit but have not used AI tools for coding before.
 
-This project supports two design systems:
+This project supports four design systems:
 
 - **[GOV.UK Design System](govuk-design-system/)** — for UK government services
 - **[NHS UK Design System](nhsuk-design-system/)** — for NHS digital services
+- **[HMRC Design Patterns](hmrc-design-patterns/)** — for HMRC tax services
+- **[DWP Design System](dwp-design-system/)** — for DWP benefits and pensions services
 
-Pick the one you need, or use both.
+Pick the one you need, or use more than one.
 
 ## What you get
 
@@ -35,7 +37,7 @@ Go to the repository page on GitHub, click the green "Code" button, then "Downlo
 
 ## Step 2: Set up your AI tool
 
-Pick the tool you use from the list below. You only need to follow the instructions for your tool. Replace `{system}` with `govuk-design-system` or `nhsuk-design-system` depending on which design system you use.
+Pick the tool you use from the list below. You only need to follow the instructions for your tool. Replace `{system}` with `govuk-design-system`, `nhsuk-design-system`, `hmrc-design-patterns`, or `dwp-design-system` depending on which design system you use.
 
 ### Claude Code (CLI or desktop app)
 
@@ -81,6 +83,8 @@ To make Claude always aware of the design system when working on your prototype,
 
 - [GOV.UK setup details](docs/govuk/INSTALL.md)
 - [NHS UK setup details](docs/nhsuk/INSTALL.md)
+- [HMRC setup details](docs/hmrc/INSTALL.md)
+- [DWP setup details](docs/dwp/INSTALL.md)
 
 ### Cursor
 
@@ -103,6 +107,8 @@ Create a `.mdc` rule file in `.cursor/rules/` with instructions specific to your
 
 - [GOV.UK Cursor setup](docs/govuk/INSTALL.md)
 - [NHS UK Cursor setup](docs/nhsuk/INSTALL.md)
+- [HMRC Cursor setup](docs/hmrc/INSTALL.md)
+- [DWP Cursor setup](docs/dwp/INSTALL.md)
 
 ### GitHub Copilot
 
@@ -114,6 +120,8 @@ Create a file at `my-prototype/.github/copilot-instructions.md` with design-syst
 
 - [GOV.UK Copilot setup](docs/govuk/INSTALL.md)
 - [NHS UK Copilot setup](docs/nhsuk/INSTALL.md)
+- [HMRC Copilot setup](docs/hmrc/INSTALL.md)
+- [DWP Copilot setup](docs/dwp/INSTALL.md)
 
 #### Reference skills files
 
@@ -172,8 +180,12 @@ For design-system-specific setup details, example instructions, and `CLAUDE.md` 
 
 - **GOV.UK**: [docs/govuk/INSTALL.md](docs/govuk/INSTALL.md)
 - **NHS UK**: [docs/nhsuk/INSTALL.md](docs/nhsuk/INSTALL.md)
+- **HMRC**: [docs/hmrc/INSTALL.md](docs/hmrc/INSTALL.md)
+- **DWP**: [docs/dwp/INSTALL.md](docs/dwp/INSTALL.md)
 
 For usage guidance, example prompts, and tips:
 
 - **GOV.UK**: [docs/govuk/GUIDE.md](docs/govuk/GUIDE.md)
 - **NHS UK**: [docs/nhsuk/GUIDE.md](docs/nhsuk/GUIDE.md)
+- **HMRC**: [docs/hmrc/GUIDE.md](docs/hmrc/GUIDE.md)
+- **DWP**: [docs/dwp/GUIDE.md](docs/dwp/GUIDE.md)

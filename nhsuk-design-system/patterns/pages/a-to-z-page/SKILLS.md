@@ -53,7 +53,7 @@ The letter navigation panel sits between the page heading and the list. Each let
 
 Include "Back to top" links after each letter section so users can return to the letter navigation without scrolling.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -106,7 +106,7 @@ Include "Back to top" links after each letter section so users can return to the
 - Grey out unavailable letters using a `<span>` rather than a disabled link — disabled links are confusing for screen reader users.
 - "Back to top" links should be visible and functional for keyboard users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -122,7 +122,7 @@ Include "Back to top" links after each letter section so users can return to the
 - Remove the letter navigation panel — it provides essential orientation.
 - Use this pattern as a replacement for search — provide both when possible.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Contents list component](https://service-manual.nhs.uk/design-system/components/contents-list)
 - [Pagination component](https://service-manual.nhs.uk/design-system/components/pagination)

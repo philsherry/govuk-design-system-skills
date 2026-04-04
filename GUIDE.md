@@ -6,6 +6,8 @@ For design-system-specific prompts and file lists, see:
 
 - **GOV.UK**: [docs/govuk/GUIDE.md](docs/govuk/GUIDE.md)
 - **NHS UK**: [docs/nhsuk/GUIDE.md](docs/nhsuk/GUIDE.md)
+- **HMRC**: [docs/hmrc/GUIDE.md](docs/hmrc/GUIDE.md)
+- **DWP**: [docs/dwp/GUIDE.md](docs/dwp/GUIDE.md)
 
 ## Using agents effectively
 

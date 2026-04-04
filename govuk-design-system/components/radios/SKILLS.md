@@ -58,7 +58,7 @@ Add `govuk-radios--small` for smaller radios. Use only in dense interfaces such 
 
 Use `{ divider: "or" }` as an item to insert a text divider between radio options, commonly used before a "None of the above" option.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -315,7 +315,7 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -345,7 +345,7 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 | `disabled` | boolean | No | Whether this item is disabled. |
 | `attributes` | object | No | HTML attributes to add to the input element. |
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -360,7 +360,7 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 - Conditional content uses `aria-expanded` on the radio input and CSS to show/hide — not `display:none` — ensuring smooth and accessible transitions.
 - Avoid using disabled radios for options users might expect to be available — if an option is unavailable, explain why in hint text or exclude it.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Always use a fieldset and legend for radio groups.
@@ -374,7 +374,7 @@ Use `{ divider: "or" }` as an item to insert a text divider between radio option
 - Do not use radios for long option lists — consider a select or autocomplete.
 - Do not use more than one inline radio group per page.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Checkboxes](../checkboxes/SKILLS.md) — for questions where users can select more than one answer
 - [Select](../select/SKILLS.md) — for long option lists where radios are impractical

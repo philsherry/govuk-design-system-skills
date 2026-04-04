@@ -71,7 +71,7 @@ When a user selects "Change", take them back through the question pages for that
 
 When users have not added any items yet, show a message (for example, "You have not added any directors") and a button labelled "Add a director" instead of the summary list and radio question.
 
-## Code Examples
+## Code examples
 
 ### Summary page with items
 
@@ -247,7 +247,7 @@ When users have not added any items yet, show a message (for example, "You have 
 - Heading text on the summary page should state the count of items (for example, "You have added 2 directors") so users know how many items exist without reading the full list.
 - The remove confirmation page prevents accidental deletions and gives keyboard and screen reader users a clear decision point.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the one-thing-per-page approach for item entry questions.
@@ -264,7 +264,7 @@ When users have not added any items yet, show a message (for example, "You have 
 - Do not show the "add another" radio question when the list is empty — show an "Add a [item]" button instead.
 - Do not mix different item types in the same list.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/summary-list/SKILLS.md](../../../govuk-design-system/components/summary-list/SKILLS.md)
 - [../../../govuk-design-system/components/radios/SKILLS.md](../../../govuk-design-system/components/radios/SKILLS.md)

@@ -47,7 +47,7 @@ The action link renders a `<div class="nhsuk-action-link">` containing a link wi
 
 The arrow icon uses an inline SVG with `aria-hidden="true"` so screen readers skip the decorative graphic and announce only the link text.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -100,7 +100,7 @@ The arrow icon uses an inline SVG with `aria-hidden="true"` so screen readers sk
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -118,7 +118,7 @@ When a link opens in a new window, include "(opens in a new window)" in the link
 
 Ensure the link text makes sense out of context — screen reader users may navigate by listing all links on a page.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use action links to direct users to a task or service on another page.
@@ -132,7 +132,7 @@ Ensure the link text makes sense out of context — screen reader users may navi
 - Do not stack more than two action links together — the visual weight becomes excessive.
 - Do not use vague link text like "Click here" or "More info".
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Button](https://service-manual.nhs.uk/design-system/components/buttons) — for submitting forms and triggering actions on the current page.
 - [Card](https://service-manual.nhs.uk/design-system/components/card) — for presenting linked content as a navigable block.

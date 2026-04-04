@@ -75,7 +75,7 @@ Use a text input. The roll number format varies by building society — typicall
 
 You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checking/) algorithm to validate that a sort code and account number combination is plausible, but this is not a guarantee the account exists or belongs to the user.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -211,7 +211,7 @@ You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checki
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### Account name
 
@@ -241,7 +241,7 @@ You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checki
 - Hints and error messages must link to their input via `aria-describedby`.
 - Avoid using placeholder text to convey format information — use a hint instead.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Explain why you need bank details and what you will use them for.
@@ -259,9 +259,9 @@ You can use the [Modulus Checking](https://www.vocalink.com/tools/modulus-checki
 - Do not validate the sort code/account number combination without informing users what went wrong.
 - Do not store raw bank details in session logs or analytics.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../payment-card-details/SKILLS.md](../payment-card-details/SKILLS.md)

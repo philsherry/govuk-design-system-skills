@@ -86,7 +86,7 @@ Use `govuk-font-size` when you need only the size and line height without the fo
 
 The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`, `36`, `48`, `80`.
 
-## Code Examples
+## Code examples
 
 ### Body text at different sizes
 
@@ -135,7 +135,7 @@ The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`,
 - Avoid using `govuk-body-xs` (14px) for large blocks of running text — small text is harder to read, especially for users with low vision.
 - The type scale sets line height to aid readability. Do not reduce it.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `govuk-body` for most body text.
@@ -149,7 +149,7 @@ The scale points available to the Sass mixins are: `14`, `16`, `19`, `24`, `27`,
 - Override `font-size` with inline styles.
 - Use `govuk-body-xs` for body content — reserve it for metadata, captions, or labels where space is tight.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Typeface style](https://design-system.service.gov.uk/styles/typeface/)
 - [Typography – headings](https://design-system.service.gov.uk/styles/typography/)

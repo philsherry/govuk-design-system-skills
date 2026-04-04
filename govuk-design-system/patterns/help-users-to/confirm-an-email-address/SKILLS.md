@@ -74,7 +74,7 @@ Tell users what to check if they cannot find the email:
 - Check the email address they entered is correct.
 - Request a new link or code if needed.
 
-## Code Examples
+## Code examples
 
 ### Check your email page (confirmation link approach)
 
@@ -317,7 +317,7 @@ Tell users what to check if they cannot find the email:
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 | Situation | Error message |
 |-----------|---------------|
@@ -337,7 +337,7 @@ Tell users what to check if they cannot find the email:
 - For "confirm email" fields, do not prevent copy-paste — some users rely on it.
 - Expiry pages must provide a clear next action — do not leave users at a dead end.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Tell users where you sent the email (show the email address).
@@ -354,7 +354,7 @@ Tell users what to check if they cannot find the email:
 - Do not block account creation entirely if email verification fails — consider allowing users to re-enter their email.
 - Do not prevent copy-paste on "confirm email" fields.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)

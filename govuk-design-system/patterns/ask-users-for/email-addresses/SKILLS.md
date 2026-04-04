@@ -72,7 +72,7 @@ Where the reason may not be obvious, tell users what you will use the email addr
 - Avoid over-validation — technically valid email addresses use formats that strict regex would reject.
 - If you use a confirmation field, check the two values match.
 
-## Code Examples
+## Code examples
 
 ### Default
 
@@ -188,7 +188,7 @@ Where the reason may not be obvious, tell users what you will use the email addr
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 ### If the field is empty
 
@@ -211,7 +211,7 @@ Where the reason may not be obvious, tell users what you will use the email addr
 - Link hint text and error messages to the input via `aria-describedby`.
 - Do not disable copy and paste on email inputs — users should be able to paste email addresses from password managers.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `type="email"` on the input.
@@ -230,10 +230,10 @@ Where the reason may not be obvious, tell users what you will use the email addr
 - Do not use placeholder text as a substitute for a label.
 - Do not show the email address hint text in the input placeholder — use the `hint` component instead.
 
-## Related Components / Patterns
+## Related components and patterns
 
-- [../../components/text-input/SKILLS.md](../../components/text-input/SKILLS.md)
-- [../../components/error-message/SKILLS.md](../../components/error-message/SKILLS.md)
-- [../../components/error-summary/SKILLS.md](../../components/error-summary/SKILLS.md)
+- [../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
+- [../../components/error-message/SKILLS.md](../../../components/error-message/SKILLS.md)
+- [../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)
 - [../passwords/SKILLS.md](../passwords/SKILLS.md)
 - [../../help-users-to/confirm-an-email-address/SKILLS.md](../../help-users-to/confirm-an-email-address/SKILLS.md)

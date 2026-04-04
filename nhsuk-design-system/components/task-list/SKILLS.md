@@ -65,7 +65,7 @@ When you omit `href` from an item, the title renders as plain text, indicating t
 
 Use `idPrefix` on each task list to generate unique `id` attributes for status elements (used by `aria-describedby`). When more than one task list appears on one page, each must have a unique `idPrefix`.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -221,7 +221,7 @@ Group related tasks under headings. Use a unique `idPrefix` for each group to av
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -258,7 +258,7 @@ Group related tasks under headings. Use a unique `idPrefix` for each group to av
 - Use consistent tag colours and status labels throughout the service.
 - Do not rely on colour alone for status — the text inside each tag must convey the state.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Show all tasks and their statuses, including those users cannot start yet.
@@ -272,7 +272,7 @@ Group related tasks under headings. Use a unique `idPrefix` for each group to av
 - Do not use links for tasks that are unavailable — they should be plain text.
 - Do not use the task list for displaying completed answer summaries — use the summary list.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Tag](../tag/SKILLS.md) — used for status indicators within each task item
 - [Summary List](../summary-list/SKILLS.md) — for displaying answers at the end of a journey

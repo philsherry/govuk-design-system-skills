@@ -51,7 +51,7 @@ Always provide a service name. This helps caseworkers identify which tool they a
 
 You can add navigation links for sections within the internal service. Each link has a `text` and `href` property. Mark the active link with `active: true`.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -107,7 +107,7 @@ You can add navigation links for sections within the internal service. Each link
 - The header must remain usable at 400% zoom — navigation links should wrap rather than overflow
 - Keyboard users must be able to tab through the service name link and all navigation links in order
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the internal header on all pages of the internal service
@@ -122,7 +122,7 @@ You can add navigation links for sections within the internal service. Each link
 - Do not add more than 5 navigation links — if you need more, consider a different navigation pattern
 - Do not remove the service name
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [GOV.UK Header](../../../govuk-design-system/components/header/SKILLS.md) — use this on public-facing services instead
 - [HMRC banner](../hmrc-banner/SKILLS.md) — not needed when using the internal header

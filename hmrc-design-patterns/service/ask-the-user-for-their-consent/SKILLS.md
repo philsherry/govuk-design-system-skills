@@ -62,7 +62,7 @@ When users can give consent to more than one item independently (for example, em
 
 Tell users what happens if they do not give consent. For example: "If you do not agree, we will not share your details and your agent will not have access to your tax records."
 
-## Code Examples
+## Code examples
 
 ### Single consent checkbox
 
@@ -171,7 +171,7 @@ Tell users what happens if they do not give consent. For example: "If you do not
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 - When the user does not select a required consent checkbox: "Select whether you agree to [specific action]"
 - When the user does not select any communication preference and the service requires at least one: "Select how you would like us to contact you"
@@ -184,7 +184,7 @@ Tell users what happens if they do not give consent. For example: "If you do not
 - Error messages must link to the first checkbox using `aria-describedby`.
 - The explanatory text about what consent means should sit before the checkboxes in the DOM order so screen readers encounter it first.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use checkboxes for consent — they require an active step from the user.
@@ -201,7 +201,7 @@ Tell users what happens if they do not give consent. For example: "If you do not
 - Do not use legal jargon — explain consent in plain English.
 - Do not use consent checkboxes to confirm that information is correct.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/checkboxes/SKILLS.md](../../../govuk-design-system/components/checkboxes/SKILLS.md)
 - [../../../govuk-design-system/components/radios/SKILLS.md](../../../govuk-design-system/components/radios/SKILLS.md)

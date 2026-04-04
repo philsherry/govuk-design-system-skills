@@ -70,7 +70,7 @@ Provide a way for users to continue without an NHS number. Options include:
 - An alternative path that looks up the patient by name, date of birth, and postcode.
 - A "I do not know my NHS number" option that routes users to an alternative verification method.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -163,7 +163,7 @@ Provide a way for users to continue without an NHS number. Options include:
 - The page `<title>` must include "Error: " as a prefix when validation fails.
 - Provide the "Find your NHS number" link as part of the hint, not hidden behind a disclosure.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -181,7 +181,7 @@ Provide a way for users to continue without an NHS number. Options include:
 - Store or display NHS numbers without appropriate data protection measures.
 - Assume all users have an NHS number (some users may be exempt or unregistered).
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Question pages pattern](../../pages/question-pages/SKILLS.md)
 - [Check answers pattern](../../help-users-to/check-answers/SKILLS.md)

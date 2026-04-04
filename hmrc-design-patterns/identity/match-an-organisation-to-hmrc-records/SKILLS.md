@@ -76,7 +76,7 @@ When HMRC cannot match the organisation:
 
 Do not reveal details about HMRC records. Keep error messages focused on what the user can do, not on what the system found or failed to find.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -201,7 +201,7 @@ Do not reveal details about HMRC records. Keep error messages focused on what th
 - Error messages must explain what went wrong and how to fix it. For example: "Enter the organisation's Unique Taxpayer Reference" or "The Unique Taxpayer Reference must be 10 digits".
 - The match failure page must have a page `<title>` that reflects the outcome, for example "We could not find the organisation – Service name – GOV.UK".
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Ask for one identifier per page (one-thing-per-page approach)
@@ -220,7 +220,7 @@ Do not reveal details about HMRC records. Keep error messages focused on what th
 - Show technical error codes or system information
 - Use free-text search for organisation names — use structured identifiers instead
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)
 - [../../../govuk-design-system/components/error-message/SKILLS.md](../../../govuk-design-system/components/error-message/SKILLS.md)

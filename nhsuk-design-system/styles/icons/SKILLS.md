@@ -75,7 +75,7 @@ Icons inherit the text colour of their parent element through `fill: currentColo
 }
 ```
 
-## Code Examples
+## Code examples
 
 ### Action link with icon
 
@@ -114,7 +114,7 @@ Icons inherit the text colour of their parent element through `fill: currentColo
 - Do not use icon fonts — use inline SVGs for better accessibility and rendering control.
 - Inline SVGs work in Windows High Contrast Mode because they use `currentColor` for fill values.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -132,7 +132,7 @@ Icons inherit the text colour of their parent element through `fill: currentColo
 - Introduce custom icons when NHS UK Frontend provides an equivalent.
 - Use icons purely for decoration.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Action link component](https://service-manual.nhs.uk/design-system/components/action-link)
 - [Do and Don't list component](https://service-manual.nhs.uk/design-system/components/do-and-dont-list)

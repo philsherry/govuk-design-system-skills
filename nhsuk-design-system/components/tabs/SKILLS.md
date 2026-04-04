@@ -50,7 +50,7 @@ When the user selects a tab, the page URL fragment updates to the panel `id`, en
 
 Each panel should contain a heading that matches the tab label — this heading is visible in the no-JS view and provides context when users navigate to a panel from a URL fragment.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -151,7 +151,7 @@ The component updates the URL hash when the user selects a tab. Link to a tab by
 <a href="/conditions/diabetes#treatment">View treatment options</a>
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -189,7 +189,7 @@ The component updates the URL hash when the user selects a tab. Link to a tab by
 - Without JavaScript, all panels are visible as static sections — ensure the no-JS experience is fully usable.
 - Tab labels must be concise and meaningful as standalone link text.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include a heading inside each panel that matches the tab label.
@@ -203,7 +203,7 @@ The component updates the URL hash when the user selects a tab. Link to a tab by
 - Do not nest tabs within tabs.
 - Do not use more than about 5 or 6 tabs — the tab bar becomes unwieldy.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Expander](../expander/SKILLS.md) — for showing and hiding sections on the same page
 - [Details](../details/SKILLS.md) — for optional supplementary content hidden behind a toggle

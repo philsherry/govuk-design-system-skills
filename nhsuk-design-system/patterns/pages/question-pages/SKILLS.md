@@ -78,7 +78,7 @@ Include a back link if users have come from a previous step. Do not show a back 
 
 Use "Continue" as the button label for most question pages. Only use a different label when the action is final ("Submit registration", "Confirm and send") or the service has a save point ("Save and continue"). Do not use "Next" or "Submit" as generic button labels.
 
-## Code Examples
+## Code examples
 
 ### HTML — single question, label as page heading
 
@@ -187,7 +187,7 @@ Use "Continue" as the button label for most question pages. Only use a different
 - Use `autocomplete` attributes on relevant inputs to meet WCAG SC 1.3.5 (Identify Input Purpose).
 - Do not use placeholder text — it disappears on input and has poor contrast.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 
@@ -209,7 +209,7 @@ Use "Continue" as the button label for most question pages. Only use a different
 - Add a separate `<h1>` when the label or legend is already the page heading.
 - Disable the submit button to prevent double submission.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Text input component](https://service-manual.nhs.uk/design-system/components/text-input)
 - [Radios component](https://service-manual.nhs.uk/design-system/components/radios)

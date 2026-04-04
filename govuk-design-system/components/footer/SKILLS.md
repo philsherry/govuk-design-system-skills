@@ -52,7 +52,7 @@ The footer has two main sections:
 
 **Navigation column widths:** The `width` property on navigation columns controls the CSS grid width. Valid values are `"full"`, `"one-half"`, `"one-third"`, `"two-thirds"`, `"one-quarter"`, `"three-quarters"`.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic (no navigation or meta)
 
@@ -317,7 +317,7 @@ The footer has two main sections:
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -354,7 +354,7 @@ The footer has two main sections:
 - The Crown copyright link points to the National Archives, which provides context for the copyright.
 - Footer links use the `govuk-footer__link` class which meets colour contrast requirements on the footer's dark grey background.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Include an accessibility statement link in the meta section on every service.
@@ -369,7 +369,7 @@ The footer has two main sections:
 - Do not add excessive numbers of links to the footer — use the header or service navigation for primary navigation.
 - Do not change the Open Government Licence text without authorisation.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Header](../header/SKILLS.md) — the primary site header, which appears at the top of every page.
 - [Service navigation](../service-navigation/SKILLS.md) — for primary navigation within a service.

@@ -95,7 +95,7 @@ Offset classes push a column to the right without filling the space to its left:
 
 Available offsets follow the same fractional naming: `--offset-one-quarter`, `--offset-one-third`, `--offset-one-half`, `--offset-two-thirds`, `--offset-three-quarters`.
 
-## Code Examples
+## Code examples
 
 ### Two-thirds and one-third layout
 
@@ -184,7 +184,7 @@ You can nest grid rows inside columns. Each nested row starts a new 12-column gr
 - Do not use grid columns to reorder content visually when that would create a mismatch with the DOM order — this causes confusion for screen reader users.
 - Ensure colour contrast meets WCAG AA requirements regardless of the column layout chosen.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `govuk-width-container` on every page to maintain consistent maximum width and horizontal margins.
@@ -198,7 +198,7 @@ You can nest grid rows inside columns. Each nested row starts a new 12-column gr
 - Nest grid rows deeply — keep layouts as flat as possible.
 - Apply `govuk-grid-column-*` classes outside a `govuk-grid-row` container.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Page template](https://design-system.service.gov.uk/styles/page-template/)
 - [Spacing style](https://design-system.service.gov.uk/styles/spacing/)

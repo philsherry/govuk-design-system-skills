@@ -77,7 +77,7 @@ Be specific about what went wrong and tell the user how to fix it.
 
 Where a username is already taken, suggest alternatives if the system supports it (for example, by appending a number to the attempted value).
 
-## Code Examples
+## Code examples
 
 ### Basic username input
 
@@ -213,7 +213,7 @@ Where a username is already taken, suggest alternatives if the system supports i
 - Link error messages to the input via `aria-describedby`.
 - Do not check availability inline as users type — this creates a confusing experience for screen reader users and can cause performance issues on slower connections.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Prefer using email address as the sign-in identifier — users remember it, email addresses are unique, and they reduce support requests.
@@ -231,7 +231,7 @@ Where a username is already taken, suggest alternatives if the system supports i
 - Do not use the username as a display name if the user's real name is also needed elsewhere.
 - Do not prevent copy-paste into the username field.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../components/text-input/SKILLS.md](../../../components/text-input/SKILLS.md)
 - [../../../components/error-summary/SKILLS.md](../../../components/error-summary/SKILLS.md)

@@ -259,7 +259,7 @@ All components:
 
 Teams are responsible for ensuring their use of components remains accessible. Custom CSS that changes colour, spacing, or visibility can break accessibility. Test with real assistive technologies before release.
 
-## Do and Do not
+## Do and do not
 
 **Do** use the Design System before building anything custom — the team has tested components for accessibility, and users of GOV.UK find them familiar to users of GOV.UK.
 
@@ -285,7 +285,7 @@ Teams are responsible for ensuring their use of components remains accessible. C
 
 **Do not** use the GOV.UK Prototype Kit for real services or collect real user data in prototypes.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - `foundations/prototype-kit/SKILLS.md` — GOV.UK Prototype Kit setup and usage
 - `styles/page-template/SKILLS.md` — The GOV.UK page template

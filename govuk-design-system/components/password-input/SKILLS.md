@@ -52,7 +52,7 @@ Set the `autocomplete` attribute appropriately:
 
 This allows password managers to work as expected.
 
-## Code Examples
+## Code examples
 
 ### Default (sign-in password)
 
@@ -178,7 +178,7 @@ This allows password managers to work as expected.
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -227,7 +227,7 @@ This allows password managers to work as expected.
 | `classes` | string | No | Classes to add to the error message. |
 | `attributes` | object | No | HTML attributes to add to the error message. |
 
-## Error Messages
+## Error messages
 
 Follow the GOV.UK Design System error message guidance. Recommended error messages for password inputs:
 
@@ -248,7 +248,7 @@ Follow the GOV.UK Design System error message guidance. Recommended error messag
 - The input includes `spellcheck="false"` and `autocapitalize="none"` to prevent spell-checking and auto-capitalisation, which would interfere with password entry.
 - The `autocomplete` attribute helps password managers work as expected, reducing the need for users to type passwords manually.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Set the correct `autocomplete` value (`current-password` or `new-password`).
@@ -262,7 +262,7 @@ Follow the GOV.UK Design System error message guidance. Recommended error messag
 - Do not disable the show/hide toggle unless there is a specific security justification.
 - Do not ask users to confirm their password on the same page unless there is a strong reason (the show/hide toggle reduces entry errors).
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Text Input](../text-input/SKILLS.md) — the base component for text entry
 - [Error Message](../error-message/SKILLS.md) — for inline field errors

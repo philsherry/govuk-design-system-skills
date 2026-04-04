@@ -141,7 +141,7 @@ Error: What is your total income? - Income - Self Assessment - GOV.UK
 - Keep the page heading as the first part of the title. Screen readers and browser tabs show the beginning of the title first, so the most specific information must come first.
 - Match the page title to the `<h1>` text. Mismatched titles and headings confuse users.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 

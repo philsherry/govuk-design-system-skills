@@ -52,7 +52,7 @@ The page title should confirm the outcome, for example "Identity confirmed – [
 
 Do not reveal details about the identity verification process on this page. The user needs to know the outcome and next step, not the method.
 
-## Code Examples
+## Code examples
 
 ### HTML
 
@@ -103,7 +103,7 @@ Do not reveal details about the identity verification process on this page. The 
 - Do not auto-redirect away from this page. Users need time to read and understand the outcome before they continue.
 - The "Continue" button uses the `role="button"` attribute and `data-module="govuk-button"` to ensure it works with assistive technologies when rendered as a link.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use the green panel component with "Identity confirmed" as the heading
@@ -119,7 +119,7 @@ Do not reveal details about the identity verification process on this page. The 
 - Display error messages on this page
 - Combine this page with other transaction confirmations — keep identity confirmation separate
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/panel/SKILLS.md](../../../govuk-design-system/components/panel/SKILLS.md)
 - [../../../govuk-design-system/components/button/SKILLS.md](../../../govuk-design-system/components/button/SKILLS.md)

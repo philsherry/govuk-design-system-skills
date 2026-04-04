@@ -58,7 +58,7 @@ The input uses `inputmode="decimal"` rather than `type="number"`. This shows a n
 - Reject values with more than two decimal places.
 - Reject negative values unless the service expects them (for example, refunds).
 
-## Code Examples
+## Code examples
 
 ### Default currency input
 
@@ -165,7 +165,7 @@ The input uses `inputmode="decimal"` rather than `type="number"`. This shows a n
 }) }}
 ```
 
-## Error Messages
+## Error messages
 
 - Empty field: "Enter [what the amount is for]" — for example, "Enter how much you earned from self-employment"
 - Non-numeric input: "Enter [what the amount is for] as a number" — for example, "Enter the amount as a number"
@@ -180,7 +180,7 @@ The input uses `inputmode="decimal"` rather than `type="number"`. This shows a n
 - Error messages must connect to the input using `aria-describedby`.
 - The label must describe what the amount is for, not state "Amount" alone.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Use `inputmode="decimal"` to trigger a numeric keyboard on mobile devices.
@@ -199,7 +199,7 @@ The input uses `inputmode="decimal"` rather than `type="number"`. This shows a n
 - Do not pre-fill the input with "0" or "0.00".
 - Do not include "£" in the label or hint text alongside the prefix — it duplicates the visual cue.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [../../../govuk-design-system/components/text-input/SKILLS.md](../../../govuk-design-system/components/text-input/SKILLS.md)
 - [../../../govuk-design-system/components/error-message/SKILLS.md](../../../govuk-design-system/components/error-message/SKILLS.md)

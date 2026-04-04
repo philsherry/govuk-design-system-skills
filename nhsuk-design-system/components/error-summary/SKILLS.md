@@ -47,7 +47,7 @@ The title should read "There is a problem". Each error in the `errorList` is a l
 
 Without JavaScript, the error summary still appears but does not receive automatic focus — users will see it at the top of the page when the form re-renders.
 
-## Code Examples
+## Code examples
 
 ### Default / Basic
 
@@ -106,7 +106,7 @@ Without JavaScript, the error summary still appears but does not receive automat
 }) }}
 ```
 
-## Nunjucks Macro Options
+## Nunjucks macro options
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -123,7 +123,7 @@ Without JavaScript, the error summary still appears but does not receive automat
 | classes | string | No | Classes to add to the error summary container. |
 | attributes | object | No | HTML attributes for the error summary container. |
 
-## Error Messages
+## Error messages
 
 The error summary component displays other components' error messages. Its own content follows these conventions:
 
@@ -142,7 +142,7 @@ The links in the error list allow users to jump directly to the problematic fiel
 
 Ensure the `href` in each error list item matches the `id` of the corresponding input. For composite inputs (like date-input), link to the first errored field, not the fieldset.
 
-## Do and Do not
+## Do and do not
 
 **Do:**
 - Place the error summary at the top of `<main>`, before the page heading.
@@ -158,7 +158,7 @@ Ensure the `href` in each error list item matches the `id` of the corresponding 
 - Do not disable auto-focus unless another mechanism manages focus on load.
 - Do not link to a fieldset `id` — link to the first relevant input within the fieldset.
 
-## Related Components / Patterns
+## Related components and patterns
 
 - [Error message](../error-message/SKILLS.md) — inline error messages used alongside the summary.
 - [Text input](../text-input/SKILLS.md) — receives `errorMessage` parameter for inline errors.
