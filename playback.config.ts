@@ -1,4 +1,4 @@
-import { defineConfig } from './src/config';
+import { defineConfig } from 'playback-cli/config';
 
 /**
  * Project-level configuration for playback.
