@@ -14,8 +14,12 @@ on:
       - "nhsuk-design-system/**/*.md"
       - "package-lock.json"
       - "package.json"
-      - "scripts/check-release-version.js"
-      - "scripts/lint-write-good.js"
+      - "playback.config.ts"
+      - "scripts/check-release-version.cjs"
+      - "scripts/lint-write-good.cjs"
+      - "scripts/release-notes-from-changelog.cjs"
+      - "tapes/**/*.md"
+      - "tapes/**/*.yaml"
 
 jobs:
   write-good:

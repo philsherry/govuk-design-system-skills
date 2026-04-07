@@ -1,0 +1,18 @@
+---
+description: >
+  Select the right SKILLS.md files for your prototype and attach them
+  to a Claude.ai Project so Claude references them in every conversation.
+episode: 3
+locale: en-GB
+poster: 6
+series: setup-by-tool
+tags:
+  - setup
+  - claude-ai
+title: Setting up govuk-design-system-skills with Claude.ai
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

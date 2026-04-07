@@ -1,0 +1,83 @@
+---
+title: Run the linter
+output: s6-quality/01-run-the-linter
+steps:
+  - action: comment
+    narration: >
+      Every skills file in the repository is written in active voice. A
+      custom linter enforces this — it wraps write-good with filters for
+      false positives so it doesn't flag code examples, table rows, or
+      prescribed error message wording. Let's see it in action.
+
+  - action: type
+    command: npm test
+    narration: >
+      npm test runs the passive voice linter across all the skills
+      files and eight agent files.
+    pause: 2
+
+  - action: run
+    narration: >
+      A clean pass. No passive voice found outside the allowed exceptions.
+      This is the gate every pull request must clear before merging.
+    pause: 3
+
+  - action: type
+    command: head -40 scripts/lint-write-good.cjs
+    narration: Let's look at what the linter does under the hood.
+    pause: 2
+
+  - action: run
+    narration: >
+      The script wraps write-good's passive voice check and filters out
+      seven categories of false positive — table rows, fenced code blocks,
+      indented code samples, YAML frontmatter, inline quoted examples,
+      prescribed error message wording, and standard technical phrases
+      like "is expanded" or "is disabled."
+    pause: 6
+
+  - action: type
+    command: sed -n '208,250p' scripts/lint-write-good.cjs
+    narration: >
+      The filtering logic in more detail.
+    pause: 2
+
+  - action: run
+    narration: >
+      Without these filters, the linter would flag dozens of lines that
+      are correctly written — code examples that show HTML attributes,
+      error messages that use prescribed GOV.UK wording, and technical
+      descriptions of component states. The filters let it focus on prose
+      that the author actually controls.
+    pause: 5
+
+  - action: comment
+    narration: >
+      Now let's see what a failure looks like. If you introduce passive
+      voice in a skills file — say, "the button is clicked by the user"
+      instead of "the user clicks the button" — the linter catches it.
+      The output shows the file path, the line number, the flagged phrase,
+      and the source line. Fix the sentence to active voice and the check
+      passes again.
+
+  - action: type
+    command: npm run lint
+    narration: >
+      npm run lint is the broader check — it runs all of write-good's
+      rules, not just passive voice. Weasel words, wordy phrases, and
+      other readability flags.
+    pause: 2
+
+  - action: run
+    narration: >
+      This is advisory — it doesn't block merging. But it helps
+      contributors spot weak phrasing before review. The passive voice
+      check is the strict gate; the full lint is the polish step.
+    pause: 4
+
+  - action: comment
+    narration: >-
+      That's the quality workflow. npm test for the gate, npm run lint for
+      the polish. Both run in GitHub Actions on every pull request. The
+      next video covers the SKILLS.md format itself — what goes in each
+      section and how to write a new file from scratch.

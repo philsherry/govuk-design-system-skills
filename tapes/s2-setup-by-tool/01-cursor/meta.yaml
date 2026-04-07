@@ -1,0 +1,18 @@
+---
+description: >
+  Copy the GOV.UK Design System skills files into a Cursor project's
+  rules directory so Cursor applies them when editing HTML and Nunjucks.
+episode: 1
+locale: en-GB
+poster: 10
+series: setup-by-tool
+tags:
+  - setup
+  - cursor
+title: Setting up govuk-design-system-skills with Cursor
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

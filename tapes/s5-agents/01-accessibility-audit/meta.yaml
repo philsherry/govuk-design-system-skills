@@ -1,0 +1,21 @@
+---
+description: >
+  Inside the accessibility auditor agent — WCAG 2.2 review criteria,
+  severity levels, worked examples citing specific success criteria,
+  and the skills files it draws from.
+episode: 1
+locale: en-GB
+poster: 4
+series: agents
+tags:
+  - agents
+  - accessibility
+  - wcag
+  - audit
+title: Accessibility audit with the accessibility auditor agent
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

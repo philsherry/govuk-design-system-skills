@@ -1,0 +1,154 @@
+---
+title: "Sequential review: the full discipline chain"
+output: s5-agents/03-full-discipline-chain
+steps:
+  - action: comment
+    narration: >
+      A real GOV.UK multidisciplinary team reviews work from multiple
+      angles — interaction design, content, code, accessibility,
+      performance, testing, service design, and research. The agents in
+      this library follow the same sequence. Each one catches things the
+      others miss.
+
+  - action: type
+    command: sed -n '38,58p' {{GDS_SKILLS_AGENTS_DIR}}/README.md
+    narration: >
+      The agents README describes the recommended review order.
+    pause: 2
+
+  - action: run
+    narration: >
+      Eight agents, eight disciplines, in sequence. Interaction designer
+      first, then content designer, front-end developer, accessibility
+      auditor, performance analyst, QA tester, service designer, and user
+      researcher. Let's see what each one brings.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/interaction-designer.md
+    narration: >
+      The interaction designer goes first. It checks the user journey —
+      the flow between pages, the question order, and whether the pattern
+      choices are right.
+    pause: 2
+
+  - action: run
+    narration: >
+      This agent applies the one-thing-per-page principle, chooses between
+      radios and checkboxes, decides whether a task list or a linear flow
+      is appropriate, and structures the path from start page to
+      confirmation. It shapes the journey before anyone writes a word of
+      content or a line of code.
+    pause: 6
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: >
+      The content designer goes second. It takes the journey the interaction
+      designer shaped and checks the words.
+    pause: 2
+
+  - action: run
+    narration: >
+      Reading level, sentence length, error messages, button labels, hint
+      text. It catches passive voice, jargon, and anything that doesn't
+      meet the GOV.UK content standard. The interaction designer decided
+      what to ask — the content designer decides how to ask it.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/frontend-developer.md
+    narration: >
+      The front-end developer goes third. It turns the designed journey
+      into correct GOV.UK markup.
+    pause: 2
+
+  - action: run
+    narration: >
+      Nunjucks macros, BEM class names, progressive enhancement, form
+      structure — labels, fieldsets, error handling. It references the
+      component skills files for every piece of markup it writes. The
+      interaction designer chose the pattern, the content designer wrote
+      the words, and the front-end developer builds it.
+    pause: 5
+
+  - action: type
+    command: head -14 {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: >
+      The accessibility auditor goes fourth. It reviews what the others
+      built against WCAG 2.2.
+    pause: 2
+
+  - action: run
+    narration: >
+      Focus states, keyboard navigation, screen reader announcements,
+      contrast ratios, heading hierarchy, error message placement. It
+      catches accessibility failures that none of the previous agents
+      were looking for — because accessibility cuts across every discipline.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/performance-analyst.md
+    narration: >
+      The performance analyst goes fifth. It checks what the build costs
+      users in load time and page weight.
+    pause: 2
+
+  - action: run
+    narration: >
+      Core Web Vitals, render-blocking resources, page weight budgets,
+      and progressive enhancement verification. It catches performance
+      problems that affect real users on slow connections — the kind of
+      issue a service assessment panel will ask about.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/qa-tester.md
+    narration: >
+      The QA tester goes sixth. It asks what nobody else thought to check.
+    pause: 2
+
+  - action: run
+    narration: >
+      Edge cases, cross-browser issues, assistive technology compatibility,
+      error paths nobody tested, what happens when JavaScript fails. It
+      turns the confidence of five previous reviews into a set of test
+      cases that prove the work is solid.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/service-designer.md
+    narration: >
+      The service designer goes seventh. It steps back from the prototype
+      and looks at the whole service.
+    pause: 2
+
+  - action: run
+    narration: >
+      Does the prototype reflect the real end-to-end journey? Are there
+      offline steps, handoffs to other departments, or policy constraints
+      the digital service needs to account for? This agent thinks beyond
+      the screen.
+    pause: 5
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/user-researcher.md
+    narration: >
+      The user researcher goes last. It asks what assumptions need testing.
+    pause: 2
+
+  - action: run
+    narration: >
+      What do you need to learn from users before this goes live? Which
+      parts of the journey have the most risk? Is the prototype ready for
+      a research session with real participants? This agent turns a
+      finished build into a testable artefact.
+    pause: 5
+
+  - action: comment
+    narration: >-
+      Eight agents, eight disciplines, one piece of work reviewed from
+      every angle a GOV.UK service assessment would examine. You don't
+      need a full team to get a multidisciplinary review — you need the
+      right skills files and the right agents. That's the end of the
+      agents series.

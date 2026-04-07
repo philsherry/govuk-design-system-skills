@@ -1,0 +1,18 @@
+---
+description: >
+  Clone the repository, explore the structure, and understand what's inside
+  before using the skills files and agents with your AI tools.
+episode: 1
+locale: en-GB
+poster: 5
+series: getting-started
+tags:
+  - getting-started
+  - install
+title: Installing govuk-design-system-skills
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

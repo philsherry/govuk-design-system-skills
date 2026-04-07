@@ -1,0 +1,88 @@
+---
+title: Accessibility audit with the accessibility auditor agent
+output: s5-agents/01-accessibility-audit
+steps:
+  - action: comment
+    narration: >
+      The accessibility auditor agent reviews your work against WCAG 2.2
+      Level AA. It doesn't just flag issues — it cites the specific success
+      criterion, explains what's wrong, and references the relevant skills
+      file for the fix. Let's look inside.
+
+  - action: type
+    command: head -14 {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: >
+      The agent opens with its role — legal mandate, direct feedback,
+      WCAG 2.2 Level AA as the baseline.
+    pause: 2
+
+  - action: run
+    pause: 4
+
+  - action: type
+    command: sed -n '15,76p' {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: >
+      The core knowledge section covers the four WCAG principles, the new
+      2.2 criteria, and GOV.UK-specific requirements.
+    pause: 2
+
+  - action: run
+    narration: >
+      It knows the exact GOV.UK focus state colours — yellow background,
+      black border. It knows the contrast ratios — 4.5 to 1 for text,
+      3 to 1 for large text and interface components. It knows assistive
+      technology by name — NVDA, JAWS, VoiceOver — and what each one
+      announces for different markup patterns.
+    pause: 7
+
+  - action: type
+    command: sed -n '104,122p' {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: The review criteria checklist.
+    pause: 2
+
+  - action: run
+    narration: >
+      Fourteen specific checks — alt text, form labels, fieldset grouping,
+      error messages, focus order, skip links, heading hierarchy, colour
+      usage, focus indicators, keyboard traps, language attributes, page
+      titles, autocomplete, and target size. The agent distinguishes
+      between "must fix" — a WCAG failure with a cited success criterion —
+      and "should fix" for best practices that go beyond the legal baseline.
+    pause: 7
+
+  - action: type
+    command: sed -n '124,160p' {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: >
+      The example interactions show what the agent's feedback looks like
+      in practice.
+    pause: 2
+
+  - action: run
+    narration: >
+      In this example, the agent spots unlabeled inputs. It cites WCAG
+      1.3.1 Info and Relationships, explains that screen readers won't
+      announce the field purpose, and provides the fix — a label element
+      with a matching for attribute, referencing the text input skills file
+      for the full implementation detail.
+    pause: 7
+
+  - action: type
+    command: sed -n '222,237p' {{GDS_SKILLS_AGENTS_DIR}}/accessibility-auditor.md
+    narration: The reference material — the skills files this agent draws from.
+    pause: 2
+
+  - action: run
+    narration: >
+      Eleven paths to component and style skills files. The agent uses
+      these as its evidence base — when it flags an issue, it points at
+      the skills file that describes how to fix it. That's the difference
+      between "this is wrong" and "this is wrong, here's the standard,
+      and here's how to fix it."
+    pause: 5
+
+  - action: comment
+    narration: >-
+      Accessibility is everyone's responsibility, but not everyone knows
+      WCAG 2.2 by heart. This agent does. The next video covers the content
+      designer agent — plain English, reading level, and GOV.UK error
+      message wording.

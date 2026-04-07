@@ -1,0 +1,78 @@
+---
+title: Question pages pattern
+output: s4-patterns/03-question-pages
+steps:
+  - action: comment
+    narration: >
+      One thing per page. That's the most fundamental design principle in
+      GOV.UK services, and the question pages pattern is where it lives.
+      Every form in a government service is built from question pages, so
+      getting this right shapes the entire user journey.
+
+  - action: type
+    command: head -54 {{GDS_SKILLS_PATTERNS_DIR}}/pages/question-pages/SKILLS.md
+    narration: >
+      The skills file opens with the principle — ask one question per page
+      unless the questions are closely related, like the parts of a name
+      or the fields in a date.
+    pause: 2
+
+  - action: run
+    narration: >
+      A question page has five core elements: a heading that is the question,
+      optional hint text below it, a form control — text input, radios,
+      checkboxes, date input — a Continue button, and an optional back link.
+      That's it. One question, one action, move on.
+    pause: 6
+
+  - action: type
+    command: sed -n '56,82p' {{GDS_SKILLS_PATTERNS_DIR}}/pages/question-pages/SKILLS.md
+    narration: >
+      The section on making the label or legend the page heading is a detail
+      AI assistants regularly get wrong.
+    pause: 2
+
+  - action: run
+    narration: >
+      When the page asks a single question, the heading and the form label
+      should be the same element — not two separate pieces of text saying
+      the same thing. The Nunjucks macro uses isPageHeading true to wrap the
+      label in an H1. For grouped inputs like radios or checkboxes, the
+      fieldset legend becomes the H1 instead. This avoids redundancy and
+      keeps the page structure clean for screen readers.
+    pause: 7
+
+  - action: type
+    command: sed -n '84,140p' {{GDS_SKILLS_PATTERNS_DIR}}/pages/question-pages/SKILLS.md
+    narration: A code example showing this in practice.
+    pause: 2
+
+  - action: run
+    narration: >
+      The label is the H1. The hint text sits below it. The input follows.
+      The Continue button submits the form. No sidebar, no secondary content,
+      no distractions. Users answer one question and move forward.
+    pause: 5
+
+  - action: type
+    command: sed -n '218,268p' {{GDS_SKILLS_PATTERNS_DIR}}/pages/question-pages/SKILLS.md
+    narration: Accessibility, do's and don'ts, and the Related section.
+    pause: 2
+
+  - action: run
+    narration: >
+      The accessibility section reinforces the label-as-heading pattern and
+      the importance of hint text for complex questions. The do's and don'ts
+      are firm — don't ask more than one question unless the questions are
+      related, don't use multi-column layouts, and label the button
+      "Continue" not "Next" or "Submit." The Related section connects to
+      ten components — every form element that can appear on a question page.
+    pause: 7
+
+  - action: comment
+    narration: >-
+      Question pages are where patterns and components intersect most
+      visibly. The pattern gives the structure, and the component skills
+      files give the implementation details for each form element. Together,
+      they let an AI assistant build a complete, accessible question page
+      from a single prompt. That's the end of the patterns series.

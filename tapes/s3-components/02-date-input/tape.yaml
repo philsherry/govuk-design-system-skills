@@ -1,0 +1,87 @@
+---
+title: Date input with validation
+output: s3-components/02-date-input
+steps:
+  - action: comment
+    narration: >
+      Date input is one of the components AI assistants get wrong most often.
+      It uses three separate fields instead of a single date picker, it has
+      prescribed error messages for every failure case, and it highlights
+      only the specific fields that contain errors. The skills file covers
+      all of this.
+
+  - action: type
+    command: head -42 {{GDS_SKILLS_COMPONENTS_DIR}}/date-input/SKILLS.md
+    narration: >
+      The overview explains the three-field pattern — day, month, and year
+      as separate text inputs inside a fieldset. No date picker. This is a
+      deliberate GOV.UK design decision based on user research.
+    pause: 2
+
+  - action: run
+    pause: 5
+
+  - action: type
+    command: sed -n '45,100p' {{GDS_SKILLS_COMPONENTS_DIR}}/date-input/SKILLS.md
+    narration: Let's look at the default code example.
+    pause: 2
+
+  - action: run
+    narration: >
+      Each field gets its own div, its own label, and a width class — width
+      two for day and month, width four for year. The namePrefix parameter
+      generates consistent naming: passport-issued-day, passport-issued-month,
+      passport-issued-year.
+    pause: 6
+
+  - action: type
+    command: sed -n '141,178p' {{GDS_SKILLS_COMPONENTS_DIR}}/date-input/SKILLS.md
+    narration: >
+      Now the error state. This is where the skills file earns its keep.
+    pause: 2
+
+  - action: run
+    narration: >
+      When a date has an error, the component highlights only the fields
+      that are wrong. If the day is missing, only the day input gets the
+      error class. The fieldset wrapper gets govuk-form-group dash dash error,
+      and the inline error message sits between the legend and the inputs.
+    pause: 6
+
+  - action: type
+    command: sed -n '318,330p' {{GDS_SKILLS_COMPONENTS_DIR}}/date-input/SKILLS.md
+    narration: >
+      The error messages section prescribes the exact wording for every case.
+    pause: 2
+
+  - action: run
+    narration: >
+      "Enter" followed by the field name when all fields are empty. "Enter a
+      real" date when the value is impossible — like the 31st of February.
+      "Must include a day" or "must include a month" when specific fields are
+      missing. "Must be in the past" or "must be on or before" a date for
+      range constraints. This is the wording GOV.UK services must use — and
+      without the skills file, AI assistants invent their own.
+    pause: 7
+
+  - action: type
+    command: sed -n '325,354p' {{GDS_SKILLS_COMPONENTS_DIR}}/date-input/SKILLS.md
+    narration: The accessibility section and the do's and don'ts.
+    pause: 2
+
+  - action: run
+    narration: >
+      The inputs use inputmode numeric — not type number — so mobile users
+      get a number pad without the spinner controls. Validation must happen
+      server-side, not in JavaScript. And the do's and don'ts reinforce the
+      key points: highlight only the fields with errors, never use a date
+      picker, and always use the prescribed error message wording.
+    pause: 6
+
+  - action: comment
+    narration: >-
+      Date input is a component where getting the details wrong means failing
+      an accessibility audit or confusing users with non-standard error
+      messages. The skills file makes those details available to any AI
+      assistant. The next video shows how two components — error message and
+      error summary — work together as a pair.

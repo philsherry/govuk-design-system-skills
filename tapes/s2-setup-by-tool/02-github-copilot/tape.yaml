@@ -1,0 +1,60 @@
+---
+title: Setting up govuk-design-system-skills with GitHub Copilot
+output: s2-setup-by-tool/02-github-copilot
+steps:
+  - action: comment
+    narration: >
+      GitHub Copilot reads instructions from a file in your project's
+      dot-github directory. Add your GOV.UK Design System guidance there
+      and Copilot applies it to every conversation in that project.
+
+  - action: type
+    command: mkdir -p my-prototype/.github/instructions
+    narration: >
+      Create two directories: dot-github at the root, and an instructions
+      subdirectory for context files that apply to specific file types.
+    pause: 1
+
+  - action: run
+
+  - action: type
+    command: cp -r {{GDS_SKILLS_COMPONENTS_DIR}} my-prototype/docs/govuk/
+    narration: >
+      Copy the skills files into a docs directory so Copilot can index them
+      as part of your repository.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: ls my-prototype/.github/
+    narration: Check the structure.
+    pause: 1
+
+  - action: run
+    narration: >
+      The dot-github directory is where we'll put the instruction files.
+      The instructions subdirectory is for context that applies to specific
+      file patterns — for example, only when editing Nunjucks views.
+    pause: 3
+
+  - action: comment
+    narration: >
+      There are two files to create. The first is copilot-instructions.md
+      in the dot-github directory — this is the project-wide instruction
+      file. Tell Copilot this is a GOV.UK Prototype Kit project, what markup
+      to use, and which patterns to follow.
+
+  - action: comment
+    narration: >
+      The second is an instructions file inside the instructions subdirectory.
+      Set the applyTo frontmatter field to your Nunjucks view paths and add
+      component-specific guidance. Copilot loads this file automatically when
+      you're editing a matching file. The INSTALL guide has the exact wording
+      for both files.
+
+  - action: comment
+    narration: >-
+      That's the setup for GitHub Copilot. The next video covers Claude.ai
+      on the web, which works differently — you attach files to a Project
+      rather than copying them into your repository.

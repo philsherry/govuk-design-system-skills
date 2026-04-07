@@ -1,0 +1,19 @@
+---
+description: >
+  Load a discipline-specific agent in Claude Code to review your work from
+  a front-end developer, content designer, or accessibility auditor perspective.
+episode: 3
+locale: en-GB
+poster: 4
+series: getting-started
+tags:
+  - getting-started
+  - claude-code
+  - agents
+title: Using an agent in Claude Code
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

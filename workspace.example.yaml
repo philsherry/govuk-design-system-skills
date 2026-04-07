@@ -1,0 +1,77 @@
+---
+# workspace.example.yaml — example workspace config for playback.
+#
+# Copy this file to workspace.yaml and adjust paths to match your setup:
+#
+#   cp workspace.example.yaml workspace.yaml
+#
+# workspace.yaml is git-ignored — it contains local paths that differ per
+# machine. This example file is the tracked reference.
+#
+# The workspace config tells playback where to find external repositories
+# and how to make them available inside each VHS recording session. It also
+# defines the named placeholders you can use in tape.yaml commands as {{KEY}}.
+#
+# Tapes that don't use any placeholders (like studio/example/) work without
+# a workspace config.
+
+# ── Sources ──────────────────────────────────────────────────────────────────
+# External directories (repos, clones, local folders) used by your tapes.
+# Each source has a short name, a path (relative to this file or absolute),
+# and an optional list of directories that must exist for validation.
+
+sources:
+  govuk-design-system-skills:
+    path: workspace/govuk-design-system-skills
+    required:
+      - govuk-design-system/agents
+      - govuk-design-system/accessibility
+      - govuk-design-system/components
+      - govuk-design-system/foundations
+      - govuk-design-system/patterns
+      - govuk-design-system/styles
+
+# ── Mounts ───────────────────────────────────────────────────────────────────
+# How source directories map into the VHS recording sandbox.
+#
+# Each entry creates a symlink so tape commands see a stable path structure
+# regardless of where the real source lives on disk. The "source" field
+# is <source-name>/<path-within-source>. The "sandbox" field is the path
+# your tape commands will reference.
+#
+# This is useful when the source repo's internal structure differs from what
+# you want tapes to see. For example, the govuk-design-system-skills repo
+# nests components under govuk-design-system/, but tapes reference them as
+# govuk-design-system-skills/components/ for brevity.
+
+mounts:
+  - source: govuk-design-system-skills/govuk-design-system/agents
+    sandbox: govuk-design-system-skills/agents
+  - source: govuk-design-system-skills/govuk-design-system/accessibility
+    sandbox: govuk-design-system-skills/accessibility
+  - source: govuk-design-system-skills/govuk-design-system/components
+    sandbox: govuk-design-system-skills/components
+  - source: govuk-design-system-skills/govuk-design-system/foundations
+    sandbox: govuk-design-system-skills/foundations
+  - source: govuk-design-system-skills/govuk-design-system/patterns
+    sandbox: govuk-design-system-skills/patterns
+  - source: govuk-design-system-skills/govuk-design-system/styles
+    sandbox: govuk-design-system-skills/styles
+
+# ── Constants ────────────────────────────────────────────────────────────────
+# Named placeholders for use in tape.yaml commands. Write {{KEY}} in a type
+# step's command field and playback replaces it with the value before
+# recording. Values are sandbox-relative paths.
+#
+# Example tape.yaml usage:
+#   - action: type
+#     command: cat {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+
+constants:
+  GDS_SKILLS_ROOT: govuk-design-system-skills
+  GDS_SKILLS_AGENTS_DIR: govuk-design-system-skills/agents
+  GDS_SKILLS_ACCESSIBILITY_DIR: govuk-design-system-skills/accessibility
+  GDS_SKILLS_COMPONENTS_DIR: govuk-design-system-skills/components
+  GDS_SKILLS_FOUNDATIONS_DIR: govuk-design-system-skills/foundations
+  GDS_SKILLS_PATTERNS_DIR: govuk-design-system-skills/patterns
+  GDS_SKILLS_STYLES_DIR: govuk-design-system-skills/styles

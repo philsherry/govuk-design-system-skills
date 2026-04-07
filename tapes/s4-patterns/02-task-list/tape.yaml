@@ -1,0 +1,80 @@
+---
+title: Task list pattern
+output: s4-patterns/02-task-list
+steps:
+  - action: narrate
+    narration: >
+      Some government services ask users to complete several things — provide
+      personal details, upload documents, answer eligibility questions — and
+      the order might not be fixed. The task list pattern gives users a hub
+      page that shows what needs doing and tracks their progress.
+    commands:
+      - ls {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/
+      - sed -n '1,/^---$/p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/complete-multiple-tasks/SKILLS.md
+
+  - action: type
+    command: head -47 {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/complete-multiple-tasks/SKILLS.md
+    narration: >
+      The pattern file starts with when to use a task list — services with
+      multiple sections that users might complete across several sessions.
+    pause: 2
+
+  - action: run
+    narration: >
+      The page structure is a navigation hub, not a form step. It lists
+      every task grouped under headings, with a status tag on each one.
+      Users choose which task to do next, complete it, and return here.
+    pause: 5
+
+  - action: type
+    command: sed -n '49,82p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/complete-multiple-tasks/SKILLS.md
+    narration: >
+      Task statuses, ordering, and what happens when everything is complete.
+    pause: 2
+
+  - action: run
+    narration: >
+      Four statuses: "Cannot start yet" in grey for tasks with unmet
+      dependencies, "Not yet started" for available tasks, "In progress"
+      in light blue for partially completed tasks, and "Completed" in green.
+      When all tasks show completed, the user moves to a check your answers
+      page — the pattern we covered in the previous video.
+    pause: 7
+
+  - action: type
+    command: sed -n '325,355p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/complete-multiple-tasks/SKILLS.md
+    narration: The do's, don'ts, and Related section.
+    pause: 2
+
+  - action: run
+    narration: >
+      The Related section points at the task list component for the markup,
+      the tag component for status indicators, and the check your answers
+      pattern for the submission step. This is where patterns and components
+      connect — the pattern describes the design decision, the component
+      provides the implementation.
+    pause: 5
+
+  - action: type
+    command: head -61 {{GDS_SKILLS_COMPONENTS_DIR}}/task-list/SKILLS.md
+    narration: >
+      Let's look at the component. This is the markup that renders what
+      the pattern describes.
+    pause: 2
+
+  - action: run
+    narration: >
+      The task list component renders as a list with each item containing
+      a link to the task and a status tag. The Nunjucks macro takes an
+      items array — each item has a title, href, and status with a tag
+      object. This is the implementation detail an AI assistant needs to
+      write the actual code.
+    pause: 6
+
+  - action: comment
+    narration: >-
+      That's the relationship between patterns and components in the skills
+      library. The pattern tells you when and why. The component tells you
+      how. Both files are available to AI assistants, so they can make the
+      design decision and write the markup. The next video covers the most
+      fundamental GOV.UK pattern — question pages and one thing per page.

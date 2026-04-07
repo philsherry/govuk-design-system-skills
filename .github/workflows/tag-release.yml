@@ -50,7 +50,7 @@ jobs:
 
       - name: Check release metadata
         run: |
-          node scripts/check-release-version.js
+          node scripts/check-release-version.cjs
 
       - name: Create and push tag
         if: steps.tag_check.outputs.exists == 'false'
@@ -84,7 +84,7 @@ jobs:
 
       - name: Build release notes from changelog
         run: |
-          node scripts/release-notes-from-changelog.js "${{ steps.version.outputs.version }}" > release-notes.md
+          node scripts/release-notes-from-changelog.cjs "${{ steps.version.outputs.version }}" > release-notes.md
 
       - name: Create or update GitHub release
         uses: softprops/action-gh-release@v2

@@ -1,0 +1,53 @@
+---
+title: Setting up govuk-design-system-skills with Claude.ai
+output: s2-setup-by-tool/03-claude-ai-web
+steps:
+  - action: comment
+    narration: >
+      Claude.ai on the web works differently from the command-line tools.
+      Instead of copying files into your project, you attach SKILLS.md files
+      directly to a Claude.ai Project. Claude reads them at the start of
+      every conversation in that project.
+
+  - action: type
+    command: ls {{GDS_SKILLS_COMPONENTS_DIR}}/
+    narration: >
+      You don't need all 34 component files at once. Start by looking at
+      what's available and choosing the components relevant to the prototype
+      you're building.
+    pause: 1
+
+  - action: run
+    narration: >
+      Each directory contains a SKILLS.md file. For a typical GOV.UK
+      service, you might upload button, text-input, radios, checkboxes,
+      date-input, error-message, and error-summary to begin with.
+    pause: 4
+
+  - action: type
+    command: ls {{GDS_SKILLS_PATTERNS_DIR}}/
+    narration: >
+      Patterns are worth uploading too — particularly if you're designing
+      question pages, a check-your-answers screen, or a task list.
+    pause: 1
+
+  - action: run
+    narration: >
+      Ask yourself what the service does, then pick the patterns that match.
+      Upload those SKILLS.md files to your Claude.ai Project alongside
+      the component files.
+    pause: 4
+
+  - action: comment
+    narration: >
+      To attach files in Claude.ai: open your Project, go to Project
+      instructions, and upload the SKILLS.md files you want Claude to
+      reference. Claude reads everything in the Project knowledge for every
+      conversation — so keep it focused on what you actually need.
+
+  - action: comment
+    narration: >-
+      That covers all three setup videos. Whether you're using Cursor,
+      GitHub Copilot, or Claude.ai, the skills files work the same way —
+      you give your AI tool the context it needs to write correct GOV.UK
+      markup. The next series goes deeper into individual components.

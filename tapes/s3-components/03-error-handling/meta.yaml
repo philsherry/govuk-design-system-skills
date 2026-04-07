@@ -1,0 +1,22 @@
+---
+description: >
+  How the error message and error summary components work as a pair — inline
+  errors next to the field, a linked summary at the top of the page, and
+  matching wording in both places.
+episode: 3
+locale: en-GB
+poster: 5
+series: components
+tags:
+  - components
+  - error-message
+  - error-summary
+  - validation
+  - accessibility
+title: 'Error handling: error message and error summary together'
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

@@ -1,0 +1,21 @@
+---
+description: >
+  The one-thing-per-page principle in practice — question page structure,
+  making the label the heading, and the five core elements every GOV.UK
+  form page needs.
+episode: 3
+locale: en-GB
+poster: 4
+series: patterns
+tags:
+  - patterns
+  - question-pages
+  - one-thing-per-page
+  - forms
+title: Question pages pattern
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female
