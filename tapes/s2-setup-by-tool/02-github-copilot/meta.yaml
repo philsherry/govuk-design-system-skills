@@ -1,0 +1,18 @@
+---
+description: >
+  Copy the GOV.UK Design System skills files into your repository and
+  create the Copilot instruction files that tell Copilot how to use them.
+episode: 2
+locale: en-GB
+poster: 8
+series: setup-by-tool
+tags:
+  - setup
+  - github-copilot
+title: Setting up govuk-design-system-skills with GitHub Copilot
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

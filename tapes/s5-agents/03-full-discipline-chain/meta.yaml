@@ -1,0 +1,22 @@
+---
+description: >
+  Running eight agents in sequence on the same piece of work — interaction
+  designer, content designer, front-end developer, accessibility auditor,
+  performance analyst, QA tester, service designer, and user researcher —
+  showing what each discipline catches.
+episode: 3
+locale: en-GB
+poster: 5
+series: agents
+tags:
+  - agents
+  - sequential-review
+  - multidisciplinary
+  - workflow
+title: 'Sequential review: the full discipline chain'
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

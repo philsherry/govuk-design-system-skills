@@ -1,0 +1,121 @@
+---
+title: The SKILLS.md format
+output: s6-quality/02-skills-md-format
+steps:
+  - action: comment
+    narration: >
+      Every skills file in the repository follows the same structure — YAML
+      frontmatter, then ten sections in a fixed order. This consistency
+      is what makes the library machine-readable. If you want to contribute
+      a new file or update an existing one, this is the format to follow.
+
+  - action: type
+    command: head -14 {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      Let's use the button component as our example. It starts with YAML
+      frontmatter — seven fields.
+    pause: 2
+
+  - action: run
+    narration: >
+      Category — components, patterns, styles, foundations, or accessibility.
+      Description — one sentence. GOV.UK Frontend version — currently 5.x.
+      Keywords — search terms for the component. Last reviewed — the date
+      someone checked the file against the live design system. Name — the
+      human-readable component name. Source — the URL of the live page.
+      Patterns also get a subcategory field.
+    pause: 6
+
+  - action: type
+    command: sed -n '15,34p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      After the frontmatter, the first three sections set the context.
+    pause: 2
+
+  - action: run
+    narration: >
+      Overview — what the component is and what problem it solves. When to
+      use — the scenarios where this is the right choice. When not to use —
+      what to reach for instead. These sections are short and direct. Active
+      voice, no hedging.
+    pause: 5
+
+  - action: type
+    command: sed -n '35,50p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      How it works covers variants, states, and behaviour.
+    pause: 2
+
+  - action: run
+    narration: >
+      This is where the detail lives — every variant the component supports,
+      JavaScript dependencies, edge cases, and technical constraints. For
+      the button, that's five variants and the double-click prevention
+      behaviour. The length of this section varies by component complexity.
+    pause: 5
+
+  - action: type
+    command: sed -n '45,85p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      Code examples follow — HTML first, then Nunjucks.
+    pause: 2
+
+  - action: run
+    narration: >
+      Every variant gets both an HTML example and a Nunjucks macro call.
+      HTML for projects that don't use Nunjucks, Nunjucks for the Prototype
+      Kit and production services that do. Both must be correct and complete
+      — an AI assistant might use either one.
+    pause: 5
+
+  - action: type
+    command: sed -n '209,240p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      The remaining sections: macro options, error messages, accessibility,
+      and do's and don'ts.
+    pause: 2
+
+  - action: run
+    narration: >
+      Nunjucks macro options is a table — name, type, required, and
+      description for every parameter. Error messages lists prescribed
+      wording if the component has validation. Accessibility covers WCAG
+      criteria, keyboard behaviour, and screen reader expectations. Do
+      and don't is a paired list backed by research.
+    pause: 6
+
+  - action: type
+    command: tail -10 {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: The file ends with the Related section.
+    pause: 2
+
+  - action: run
+    narration: >
+      Related links to other components, patterns, and styles that connect
+      to this one. These cross-references are how the library holds
+      together — each file is self-contained, but they form a network.
+    pause: 4
+
+  - action: type
+    command: head -53 CLAUDE.md
+    narration: >
+      The CLAUDE.md file in the repository root is the writing style guide
+      for contributors.
+    pause: 2
+
+  - action: run
+    narration: >
+      It covers the words to avoid — weasel words, weakeners, wordy phrases
+      — and provides direct replacement patterns. "Correctly" becomes
+      "as expected." "Majority of" becomes "most." "Multiple" becomes
+      "more than one." Follow this guide, run npm test to check for passive
+      voice, and your file will match the standard.
+    pause: 6
+
+  - action: comment
+    narration: >-
+      That's the full format — seven frontmatter fields, ten content sections
+      in order, active voice throughout, and a style guide to keep it
+      consistent. Every one of the eighty GOV.UK skills files follows this
+      structure. That's the end of the quality series, and the final video
+      in the collection.

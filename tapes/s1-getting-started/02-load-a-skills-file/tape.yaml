@@ -1,0 +1,51 @@
+---
+title: Loading a skills file in Claude Code
+output: s1-getting-started/02-load-a-skills-file
+steps:
+  - action: type
+    command: ls {{GDS_SKILLS_COMPONENTS_DIR}}
+    narration: >
+      The govuk-design-system directory contains skills files for every
+      component in the GOV.UK Design System.
+    pause: 2
+
+  - action: run
+    narration: >
+      There are thirty-four components — from accordion to warning text.
+      Each one has its own SKILLS.md file.
+    pause: 3
+
+  - action: type
+    command: head -40 {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: Let's look at the button component as an example.
+    pause: 2
+
+  - action: run
+    narration: >
+      Every skills file follows the same structure. YAML frontmatter at
+      the top with metadata, then sections covering overview, when to use
+      it, when not to use it, how it works, code examples, accessibility
+      requirements, and a list of do's and don'ts.
+    pause: 5
+
+  - action: comment
+    narration: >
+      To use this in Claude Code, you reference the file in your prompt
+      using the at symbol followed by the file path. For example, at
+      govuk-design-system components button SKILLS.md, then your question.
+
+  - action: comment
+    narration: >
+      Claude reads the skills file as context alongside your question. It
+      sees the exact macro parameters, the correct class names, and the
+      accessibility requirements — so the answer it gives you is grounded
+      in the official GOV.UK Design System documentation. Your Claude
+      might use different wording to ours, but the facts it draws from
+      are the same skills file.
+
+  - action: comment
+    narration: >-
+      You don't need to load every file at once. Reference only the skills
+      files relevant to what you're building. In the next video, we'll
+      load an agent — a role-based persona that reviews your work from a
+      specific discipline's perspective.

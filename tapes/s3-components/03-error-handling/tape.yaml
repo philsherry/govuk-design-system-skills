@@ -1,0 +1,101 @@
+---
+title: "Error handling: error message and error summary together"
+output: s3-components/03-error-handling
+steps:
+  - action: comment
+    narration: >
+      GOV.UK error handling uses two components that always appear together.
+      The error message sits inline, next to the field that has a problem.
+      The error summary sits at the top of the page and lists every error
+      with a link to the relevant field. One without the other is incomplete.
+      Let's look at both.
+
+  - action: type
+    command: head -45 {{GDS_SKILLS_COMPONENTS_DIR}}/error-message/SKILLS.md
+    narration: >
+      Starting with the error message component. This is the inline part —
+      a paragraph element that appears below the label and above the input.
+    pause: 2
+
+  - action: run
+    narration: >
+      The overview explains the structure: a paragraph with a visually
+      hidden "Error" prefix, so screen readers announce "Error" before
+      reading the message. Sighted users see the message in red alongside
+      the field.
+    pause: 5
+
+  - action: type
+    command: sed -n '189,199p' {{GDS_SKILLS_COMPONENTS_DIR}}/error-message/SKILLS.md
+    narration: >
+      The prescribed wording section is where this component matters most.
+    pause: 2
+
+  - action: run
+    narration: >
+      Tell users what went wrong and how to fix it. Use the specific field
+      label in the message. Be concise — one sentence per error. Do not
+      start with "Please" and do not blame the user. So "Enter your date of
+      birth" — not "Invalid date" or "Please enter a valid date."
+    pause: 6
+
+  - action: type
+    command: sed -n '201,228p' {{GDS_SKILLS_COMPONENTS_DIR}}/error-message/SKILLS.md
+    narration: The do's, don'ts, and the Related section.
+    pause: 2
+
+  - action: run
+    narration: >
+      Notice the Related section at the bottom. It points directly at the
+      error summary component — "the page-level error list that must appear
+      alongside inline error messages." That's the other half.
+    pause: 5
+
+  - action: type
+    command: head -43 {{GDS_SKILLS_COMPONENTS_DIR}}/error-summary/SKILLS.md
+    narration: >
+      Now let's open the error summary. This is the box that appears at the
+      top of the page when a form has validation errors.
+    pause: 2
+
+  - action: run
+    narration: >
+      The summary uses role alert so screen readers announce it when the page
+      loads. JavaScript moves focus to the summary automatically, so keyboard
+      users land on it first.
+    pause: 5
+
+  - action: type
+    command: sed -n '45,80p' {{GDS_SKILLS_COMPONENTS_DIR}}/error-summary/SKILLS.md
+    narration: >
+      The code example shows the link-to-field pattern.
+    pause: 2
+
+  - action: run
+    narration: >
+      Each error in the summary list is a link. The href points to the id
+      of the affected input field. Click the link and focus moves to that
+      field. For composite inputs like date input or radios, the link
+      points to the first input in the group.
+    pause: 6
+
+  - action: type
+    command: sed -n '191,220p' {{GDS_SKILLS_COMPONENTS_DIR}}/error-summary/SKILLS.md
+    narration: The do's, don'ts, and Related section of the error summary.
+    pause: 2
+
+  - action: run
+    narration: >
+      The same cross-reference in reverse — error summary points at error
+      message and says "both must be present." The error text in the summary
+      must match the inline error message word for word. Same wording in
+      both places, linked together.
+    pause: 5
+
+  - action: comment
+    narration: >-
+      This is why the skills files exist. An AI assistant that only knows
+      one of these components will produce incomplete error handling — either
+      missing the summary at the top of the page, or missing the inline
+      message next to the field. The skills files describe both components
+      and explicitly connect them. That's the end of the components series.

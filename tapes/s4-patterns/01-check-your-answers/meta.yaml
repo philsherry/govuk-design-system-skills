@@ -1,0 +1,20 @@
+---
+description: >
+  The check your answers pattern — summary list structure, change links with
+  visually hidden text, and the last step before users submit a multi-page form.
+episode: 1
+locale: en-GB
+poster: 4
+series: patterns
+tags:
+  - patterns
+  - check-answers
+  - summary-list
+  - accessibility
+title: Check your answers page
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

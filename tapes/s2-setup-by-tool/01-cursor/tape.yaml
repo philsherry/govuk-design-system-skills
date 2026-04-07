@@ -1,0 +1,64 @@
+---
+title: Setting up govuk-design-system-skills with Cursor
+output: s2-setup-by-tool/01-cursor
+steps:
+  - action: comment
+    narration: >
+      Cursor reads context files from a rules directory inside your project.
+      Point it at the GOV.UK Design System skills files and it will apply
+      them whenever you're editing HTML or Nunjucks.
+
+  - action: type
+    command: mkdir -p my-prototype/.cursor/rules
+    narration: >
+      Create the rules directory Cursor expects. The dot-cursor directory
+      sits at the root of your project alongside your app folder.
+    pause: 1
+
+  - action: run
+
+  - action: type
+    command: cp -r {{GDS_SKILLS_COMPONENTS_DIR}} my-prototype/.cursor/rules/
+    narration: Copy the component skills files — one directory per component, 34 in total.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: cp -r {{GDS_SKILLS_STYLES_DIR}} my-prototype/.cursor/rules/
+    narration: Copy the styles — colour, typography, spacing, layout.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: cp -r {{GDS_SKILLS_PATTERNS_DIR}} my-prototype/.cursor/rules/
+    narration: And the patterns — the higher-level flows that span multiple components.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: ls my-prototype/.cursor/rules/
+    narration: Check what we've copied across.
+    pause: 1
+
+  - action: run
+    narration: >
+      Three directories: components, styles, and patterns. Cursor will index
+      all of these and reference them when you ask for help.
+    pause: 3
+
+  - action: comment
+    narration: >
+      The last step is to add a govuk.mdc file to the rules directory. This
+      is a short Cursor rule that tells Cursor when to apply the GOV.UK
+      guidance — we set it to apply to all HTML and Nunjucks files. The
+      INSTALL guide in the repository has the exact YAML frontmatter and
+      wording to use.
+
+  - action: comment
+    narration: >-
+      That's the setup. Three copy commands, one rules file, and Cursor
+      knows the GOV.UK Design System. The next video covers the same setup
+      for GitHub Copilot.

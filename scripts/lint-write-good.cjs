@@ -26,7 +26,7 @@
  * // npm test
  *
  * // Run directly:
- * // node scripts/lint-write-good.js
+ * // node scripts/lint-write-good.cjs
  *
  * @see {@link https://github.com/btford/write-good} write-good
  */

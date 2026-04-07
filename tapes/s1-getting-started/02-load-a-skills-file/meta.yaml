@@ -1,0 +1,19 @@
+---
+description: >
+  Reference a SKILLS.md file directly in a Claude Code prompt using the @
+  syntax, so the AI has accurate GOV.UK Design System documentation as context.
+episode: 2
+locale: en-GB
+poster: 4
+series: getting-started
+tags:
+  - getting-started
+  - claude-code
+  - skills
+title: Loading a skills file in Claude Code
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

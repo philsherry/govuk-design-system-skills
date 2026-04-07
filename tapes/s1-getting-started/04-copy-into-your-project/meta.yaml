@@ -1,0 +1,20 @@
+---
+description: >
+  Copy the skills files and agents from the repository into your own
+  prototype project so Claude Code has them as context every time you
+  start a session.
+episode: 4
+locale: en-GB
+poster: 5
+series: getting-started
+tags:
+  - getting-started
+  - claude-code
+  - project-setup
+title: Copying skills into your own project
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

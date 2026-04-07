@@ -1,0 +1,60 @@
+---
+title: Using an agent in Claude Code
+output: s1-getting-started/03-use-an-agent
+steps:
+  - action: comment
+    narration: >
+      Not every team has a front-end developer, a content designer, and an
+      accessibility auditor sitting next to them. Sometimes you're the only
+      person building a prototype, and you need to cover disciplines you've
+      never trained in. That's what agents are for.
+
+  - action: type
+    command: cat {{GDS_SKILLS_AGENTS_DIR}}/README.md
+    narration: >
+      The agents directory contains eight files — one for each discipline
+      in a GOV.UK multidisciplinary team.
+    pause: 2
+
+  - action: run
+    narration: >
+      Front-end developer, content designer, interaction designer,
+      accessibility auditor, user researcher, service designer, performance
+      analyst, and QA tester. Load any of these and Claude works as that
+      person on your team.
+    pause: 5
+
+  - action: type
+    command: head -35 {{GDS_SKILLS_AGENTS_DIR}}/frontend-developer.md
+    narration: >
+      Let's look inside the front-end developer agent. Say you're a content
+      designer who needs to build a prototype but you've never written
+      Nunjucks before.
+    pause: 2
+
+  - action: run
+    narration: >
+      This agent knows GOV.UK Frontend inside out — components, Nunjucks
+      macros, class names, progressive enhancement, and the Prototype Kit.
+      Load it, describe what you need, and it writes correct markup for you.
+      You don't need to know the syntax yourself.
+    pause: 5
+
+  - action: comment
+    narration: >
+      To load an agent in Claude Code, pass it with the agent flag. For
+      example, claude dash dash agent, then the path to the agent file.
+      Claude takes on that role for the entire session.
+
+  - action: comment
+    narration: >
+      You can also run agents in sequence — the same way a real team would
+      review work across disciplines. Start with the interaction designer
+      to check the flow, then the content designer for the wording, the
+      front-end developer for the markup, and the accessibility auditor to
+      catch anything that doesn't meet WCAG 2.2. One person, four reviews.
+
+  - action: comment
+    narration: >-
+      In the next video, we'll copy the skills files and agents into a
+      prototype project so they're available wherever you're working.

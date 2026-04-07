@@ -1,0 +1,20 @@
+---
+description: >
+  Walk through the button SKILLS.md file — five variants, macro parameters,
+  double-click prevention, and the accessibility rules AI assistants need
+  to produce correct markup.
+episode: 1
+locale: en-GB
+poster: 4
+series: components
+tags:
+  - components
+  - button
+  - accessibility
+title: Button component deep dive
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

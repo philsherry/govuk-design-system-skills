@@ -1,0 +1,16 @@
+---
+description: >
+  The complete multiple tasks pattern — grouping tasks, tracking status,
+  and how the pattern connects to its component implementation.
+episode: 2
+locale: en-GB
+poster: 4
+series: patterns
+tags:
+  - patterns
+  - task-list
+  - components
+title: Task list pattern
+version: 1.0.0
+voices:
+  - southern_english_female

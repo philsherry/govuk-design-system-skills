@@ -1,0 +1,21 @@
+---
+description: >
+  Inside the content designer agent — reading level, sentence rules, error
+  message format, button labels, and worked examples rewriting content to
+  GOV.UK standards.
+episode: 2
+locale: en-GB
+poster: 4
+series: agents
+tags:
+  - agents
+  - content-design
+  - plain-english
+  - error-messages
+title: Content review with the content designer agent
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

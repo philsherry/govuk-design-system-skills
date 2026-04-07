@@ -1,0 +1,21 @@
+---
+description: >
+  The passive voice linter — what it checks, how it filters false positives
+  in code examples and prescribed wording, and the contributor workflow for
+  keeping skills files in active voice.
+episode: 1
+locale: en-GB
+poster: 3
+series: quality
+tags:
+  - quality
+  - linting
+  - contributing
+  - active-voice
+title: Run the linter
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

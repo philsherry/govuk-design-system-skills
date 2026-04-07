@@ -4,6 +4,26 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.4.0] — 2026-04-07
+
+### Added
+
+- `playback-cli` dev dependency and `playback.config.ts` for tape-based video walkthroughs
+- `tapes/` directory with 6 series of scripted demos
+- `playback.config.ts`, `tapes/**/*.md`, and `tapes/**/*.yaml` to the lint workflow path trigger
+- `scripts/release-notes-from-changelog.cjs` to the lint workflow path trigger
+
+### Changed
+
+- Set `"type": "module"` in `package.json` for ESM compatibility with `playback-cli`
+- Renamed `scripts/check-release-version.js` to `.cjs`
+- Renamed `scripts/lint-write-good.js` to `.cjs`
+- Renamed `scripts/release-notes-from-changelog.js` to `.cjs`
+
+### Fixed
+
+- `tag-release.yml` referenced `check-release-version.js` and `release-notes-from-changelog.js` instead of the renamed `.cjs` files
+
 ## [1.3.1] — 2026-04-04
 
 ### Added

@@ -1,0 +1,82 @@
+---
+title: Button component deep dive
+output: s3-components/01-button
+steps:
+  - action: comment
+    narration: >
+      The button is the most-used component in the GOV.UK Design System.
+      It comes in five variants, has built-in double-click prevention, and
+      carries more accessibility detail than most people expect. Let's walk
+      through the skills file.
+
+  - action: type
+    command: head -25 {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      Every skills file starts with YAML frontmatter — the component name,
+      category, and the version of GOV.UK Frontend it targets. Then the
+      overview: what the component is and when to reach for it.
+    pause: 2
+
+  - action: run
+    pause: 4
+
+  - action: type
+    command: sed -n '41,49p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      The How it works section covers variants and behaviour. There are five
+      button types — default, secondary, warning, inverse, and start.
+    pause: 2
+
+  - action: run
+    narration: >
+      Default is your primary action. Secondary is for less important actions
+      like Cancel. Warning is for destructive actions — deleting an account,
+      for example. The start button is larger, with an arrow icon, and it
+      begins a transaction.
+    pause: 5
+
+  - action: type
+    command: sed -n '84,102p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: Let's look at the warning button code example.
+    pause: 2
+
+  - action: run
+    narration: >
+      The Nunjucks macro takes a classes parameter — govuk-button
+      dash dash warning. The HTML and the macro call are both shown so you
+      can use whichever your project needs.
+    pause: 5
+
+  - action: type
+    command: sed -n '215,231p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: >
+      The macro options table lists every parameter — element, text, name,
+      value, disabled, href, classes, and attributes. This is the reference
+      AI assistants need to write correct macro calls.
+    pause: 2
+
+  - action: run
+    pause: 5
+
+  - action: type
+    command: sed -n '230,256p' {{GDS_SKILLS_COMPONENTS_DIR}}/button/SKILLS.md
+    narration: Now the accessibility section and the do's and don'ts.
+    pause: 2
+
+  - action: run
+    narration: >
+      Three things stand out. First, link-buttons need role button and
+      draggable false — and JavaScript to handle the Space key, because
+      links only respond to Enter by default. Second, disabled buttons fall
+      outside the tab order, which confuses users who can't see why an action
+      is unavailable. The guidance says don't disable buttons — use inline
+      validation errors instead. Third, only one primary button per page.
+    pause: 7
+
+  - action: comment
+    narration: >-
+      This one file gives an AI assistant everything it needs to produce
+      correct, accessible button markup — the right variant for the context,
+      the right macro parameters, and the constraints that prevent common
+      mistakes. The next video covers the date input component, where
+      prescribed error messages make the skills file essential.

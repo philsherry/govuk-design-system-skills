@@ -10,6 +10,7 @@
 	"description": "SKILLS.md reference files and agent personas for the GOV.UK, NHS UK, HMRC, and DWP Design Systems",
 	"devDependencies": {
 		"markdownlint-cli": "^0.48.0",
+		"playback-cli": "^1.0.0",
 		"write-good": "^1.0.8"
 	},
 	"homepage": "https://github.com/philsherry/govuk-design-system-skills#readme",
@@ -21,13 +22,14 @@
 		"url": "https://github.com/philsherry/govuk-design-system-skills.git"
 	},
 	"scripts": {
-		"lint": "node scripts/lint-write-good.js --all",
+		"lint": "node scripts/lint-write-good.cjs --all",
 		"lint:md": "markdownlint '**/*.md' --ignore node_modules",
-		"lint:passive": "node scripts/lint-write-good.js",
+		"lint:passive": "node scripts/lint-write-good.cjs",
 		"postinstall": "command -v vale >/dev/null 2>&1 && vale sync || echo 'Vale not found — install it from https://vale.sh to enable style linting'",
-		"release:check": "node scripts/check-release-version.js",
-		"release:notes": "node scripts/release-notes-from-changelog.js",
+		"release:check": "node scripts/check-release-version.cjs",
+		"release:notes": "node scripts/release-notes-from-changelog.cjs",
 		"test": "npm run lint:passive"
 	},
-	"version": "1.3.1"
+	"type": "module",
+	"version": "1.4.0"
 }

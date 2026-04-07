@@ -1,0 +1,47 @@
+---
+output: s1-getting-started/01-install-and-explore
+steps:
+  - action: type
+    command: git clone https://github.com/philsherry/govuk-design-system-skills
+    narration: First, clone the repository from GitHub.
+    pause: 3
+  - action: run
+    narration: Git downloads the repository. This only takes a few seconds.
+    narrationOffset: -1
+    pause: 2
+  - action: type
+    command: cd {{GDS_SKILLS_ROOT}}
+    pause: 1
+  - action: run
+  - action: type
+    command: ls
+    narration: Let's see what's inside.
+    narrationOffset: -0.5
+    pause: 2
+  - action: run
+    narration: >
+      There are four department directories — GOV.UK, NHS, HMRC, and DWP.
+      Each one contains agents, components, patterns, and styles for that
+      design system. Let's look at the GOV.UK agents.
+
+    narrationOffset: -0.75
+  - action: type
+    command: ls agents
+    narration: These are the eight agents available to you.
+    narrationOffset: -0.5
+    pause: 2
+  - action: run
+    narration: >
+      Each agent represents a different discipline — front-end developer,
+      content designer, accessibility auditor, performance analyst, and so
+      on. You load whichever one fits the task you're working on.
+
+    narrationOffset: -0.25
+  - action: comment
+    narration: >-
+      That's all the installation requires. No build step, no configuration.
+      In the next video, we'll load a skills file into Claude Code
+      and see what it can do.
+
+    narrationOffset: 0.25
+title: Installing govuk-design-system-skills

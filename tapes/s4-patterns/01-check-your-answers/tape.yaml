@@ -1,0 +1,76 @@
+---
+title: Check your answers page
+output: s4-patterns/01-check-your-answers
+steps:
+  - action: comment
+    narration: >
+      Patterns describe entire flows, not just individual components. The
+      check your answers page is one of the most important patterns in the
+      GOV.UK Design System — it's the last thing users see before they
+      submit, and getting it wrong can have legal or financial consequences.
+
+  - action: type
+    command: head -50 {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/check-answers/SKILLS.md
+    narration: >
+      The skills file opens with when to use this pattern — multi-step
+      forms with significant consequences, where users need to review
+      everything before submitting.
+    pause: 2
+
+  - action: run
+    narration: >
+      The page structure section describes five parts: a heading, grouped
+      answers in a summary list, change links on every row, a declaration
+      if the service needs one, and a submit button.
+    pause: 5
+
+  - action: type
+    command: sed -n '48,66p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/check-answers/SKILLS.md
+    narration: >
+      Let's look at grouping, change links, and the declaration.
+    pause: 2
+
+  - action: run
+    narration: >
+      Answers display as key-value pairs in a summary list — a definition
+      list, not a table. Each row has a Change link that takes users back
+      to the specific question page, pre-populates their previous answer,
+      and returns them here after they update it. The Change link includes
+      visually hidden text so screen readers announce "Change name" or
+      "Change date of birth" instead of just "Change" repeated down the page.
+    pause: 7
+
+  - action: type
+    command: sed -n '68,130p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/check-answers/SKILLS.md
+    narration: The code example shows this in practice.
+    pause: 2
+
+  - action: run
+    narration: >
+      The summary list component renders each answer with its label, value,
+      and action link. The visually hidden span sits inside the link — the
+      wording matches the original question label exactly. This is a detail
+      AI assistants often miss when generating check answers pages without
+      the skills file.
+    pause: 6
+
+  - action: type
+    command: sed -n '365,395p' {{GDS_SKILLS_PATTERNS_DIR}}/help-users-to/check-answers/SKILLS.md
+    narration: Accessibility and the do's and don'ts.
+    pause: 2
+
+  - action: run
+    narration: >
+      Use a definition list, not a table. Include visually hidden text on
+      every Change link. Prefix the page title with "Error" on validation
+      failure. And don't let users submit without reviewing — the pattern
+      exists because people miss things when forms are long.
+    pause: 5
+
+  - action: comment
+    narration: >-
+      This is the kind of guidance that goes beyond a single component into
+      interaction design — how the page fits into the journey, what users
+      need to do before they can submit, and how to make every row
+      accessible. The next video covers the task list pattern, which
+      structures entire multi-task journeys.

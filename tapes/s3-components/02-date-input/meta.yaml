@@ -1,0 +1,21 @@
+---
+description: >
+  The date input component — three separate fields, selective error
+  highlighting, and the prescribed GOV.UK error messages that AI assistants
+  regularly get wrong without a skills file.
+episode: 2
+locale: en-GB
+poster: 4
+series: components
+tags:
+  - components
+  - date-input
+  - validation
+  - error-messages
+title: Date input with validation
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

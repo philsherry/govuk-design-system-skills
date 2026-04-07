@@ -1,0 +1,21 @@
+---
+description: >
+  The anatomy of a SKILLS.md file — seven frontmatter fields, ten content
+  sections in order, the writing style guide, and everything a contributor
+  needs to write a new file from scratch.
+episode: 2
+locale: en-GB
+poster: 4
+series: quality
+tags:
+  - quality
+  - contributing
+  - format
+  - style-guide
+title: The SKILLS.md format
+version: 1.0.0
+voices:
+  - alan
+  - alba
+  - northern_english_male
+  - southern_english_female

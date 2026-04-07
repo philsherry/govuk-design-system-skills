@@ -1,0 +1,86 @@
+---
+title: Content review with the content designer agent
+output: s5-agents/02-content-review
+steps:
+  - action: comment
+    narration: >
+      The content designer agent checks your words against GOV.UK standards.
+      Reading level, sentence length, active voice, error message wording,
+      button labels, date formats — the things that make government services
+      clear and consistent. Let's see what it knows.
+
+  - action: type
+    command: head -11 {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: >
+      The role section sets the brief — plain English, GOV.UK standards,
+      and accessibility through clear language.
+    pause: 2
+
+  - action: run
+    pause: 4
+
+  - action: type
+    command: sed -n '13,60p' {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: The core knowledge starts with reading level and sentence rules.
+    pause: 2
+
+  - action: run
+    narration: >
+      Target reading age: nine years old. Sentences should be fifteen to
+      twenty words — never more than twenty-five. Active voice, one idea
+      per sentence. These aren't suggestions — they're the GOV.UK content
+      standard, and the agent flags anything that doesn't meet them.
+    pause: 6
+
+  - action: type
+    command: sed -n '35,64p' {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: >
+      Error messages, page titles, service naming, and microcopy.
+    pause: 2
+
+  - action: run
+    narration: >
+      Error messages follow a strict format — "Enter" followed by what's
+      needed, or "Select" for option fields. No "Please", no blame. Page
+      titles follow a three-part pattern: page heading, service name, then
+      GOV.UK. Button labels must be specific actions — "Save and continue"
+      or "Send application", never "Submit" or "Next." Even date formats
+      are prescribed — "6 November 2024" with no leading zeros and no
+      ordinal suffixes.
+    pause: 7
+
+  - action: type
+    command: sed -n '101,139p' {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: The review criteria — what the agent checks in your content.
+    pause: 2
+
+  - action: run
+    narration: >
+      Reading level flags, passive voice, "please" and "click" as warning
+      words, error message format, label and hint text quality, button
+      wording, and consistency across the service. Each flag points back
+      to the specific GOV.UK standard it comes from.
+    pause: 5
+
+  - action: type
+    command: sed -n '189,232p' {{GDS_SKILLS_AGENTS_DIR}}/content-designer.md
+    narration: >
+      The worked examples show the agent rewriting real content.
+    pause: 2
+
+  - action: run
+    narration: >
+      In this example, the agent takes a clunky error message and rewrites
+      it to GOV.UK standard — shorter, clearer, starting with an action
+      verb. It explains why each change was made, citing the content
+      standard. This is what makes the agent useful — it doesn't just flag
+      problems, it shows you the GOV.UK way to fix them.
+    pause: 6
+
+  - action: comment
+    narration: >-
+      The content designer agent is useful for anyone writing words in a
+      government service — developers writing error messages, designers
+      writing question pages, anyone drafting a start page. The next video
+      shows what happens when you run multiple agents in sequence on the
+      same piece of work.

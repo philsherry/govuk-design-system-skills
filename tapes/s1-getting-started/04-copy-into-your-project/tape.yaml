@@ -1,0 +1,65 @@
+---
+title: Copying skills into your own project
+output: s1-getting-started/04-copy-into-your-project
+steps:
+  - action: comment
+    narration: >
+      So far we've been working inside the skills repository itself. But
+      when you're building a prototype, you want the skills files and
+      agents right there in your project — so Claude always has them
+      as context without you having to point at another directory.
+
+  - action: type
+    command: mkdir -p my-prototype/.claude/agents
+    narration: >
+      Let's set up a prototype project. First, create the directory
+      Claude Code uses for agents.
+    pause: 1
+
+  - action: run
+
+  - action: type
+    command: cp {{GDS_SKILLS_AGENTS_DIR}}/*.md my-prototype/.claude/agents/
+    narration: >
+      Copy all eight agent files into it. Claude Code picks these up
+      automatically when you start a session from this directory.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: cp -r {{GDS_SKILLS_ROOT}} my-prototype/govuk-design-system-skills
+    narration: >
+      Next, copy the entire skills repository. It covers four government
+      design systems — GOV.UK, NHS, HMRC, and DWP — with reference files
+      for components, patterns, styles, and foundations.
+    pause: 2
+
+  - action: run
+
+  - action: type
+    command: ls -a my-prototype
+    narration: Let's check what we've got.
+    pause: 1
+
+  - action: run
+    narration: >
+      The govuk-design-system-skills directory holds the reference files
+      for all four design systems. The .claude directory holds the agents.
+    pause: 3
+
+  - action: comment
+    narration: >
+      The last step is to add a CLAUDE.md file to the project root. This
+      is a short set of instructions that tells Claude how to use the
+      skills files — use GOV.UK Frontend components, follow the design
+      system patterns, and don't invent custom class names. The INSTALL
+      guide in the repository has the exact wording to use.
+
+  - action: comment
+    narration: >-
+      That's the full setup. Three copy commands and a short markdown file.
+      From now on, every time you open Claude Code in this project, it
+      already knows the GOV.UK Design System — the components, the
+      patterns, the accessibility requirements, and the standards your
+      service needs to meet. This is the end of the getting started series.
