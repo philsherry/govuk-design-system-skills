@@ -64,6 +64,7 @@ const allowedFlaggedText = new Set([
   "Links",
   "Buttons",
   "accompany",
+  "immediately",
   "Implement",
   "fairly",
   "However",

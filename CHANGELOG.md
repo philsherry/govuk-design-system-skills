@@ -4,6 +4,18 @@ All notable changes to this project appear in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.4.1] — 2026-04-07
+
+### Added
+
+- `playback:validate` and `playback:build` scripts in `package.json`
+- `docs/PLAYBACK.md` with tape structure, validate/build commands, and links to the Playback repository docs
+- Playback videos section and `tapes/` directory tree in `README.md`
+
+### Fixed
+
+- `playback.config.ts` imported `defineConfig` from `./src/config` instead of `playback-cli/config`
+
 ## [1.4.0] — 2026-04-07
 
 ### Added

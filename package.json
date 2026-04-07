@@ -25,11 +25,13 @@
 		"lint": "node scripts/lint-write-good.cjs --all",
 		"lint:md": "markdownlint '**/*.md' --ignore node_modules",
 		"lint:passive": "node scripts/lint-write-good.cjs",
+		"playback:build": "playback tape",
+		"playback:validate": "playback validate",
 		"postinstall": "command -v vale >/dev/null 2>&1 && vale sync || echo 'Vale not found — install it from https://vale.sh to enable style linting'",
 		"release:check": "node scripts/check-release-version.cjs",
 		"release:notes": "node scripts/release-notes-from-changelog.cjs",
 		"test": "npm run lint:passive"
 	},
 	"type": "module",
-	"version": "1.4.0"
+	"version": "1.4.1"
 }

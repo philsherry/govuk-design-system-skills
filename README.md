@@ -48,6 +48,7 @@ Each design system also has its own pages with specific prompts, file recommenda
   ├── package.json
   ├── docs/
   │   ├── AUDIT_EXAMPLE.md
+  │   ├── PLAYBACK.md
   │   ├── govuk/
   │   │   ├── GUIDE.md
   │   │   └── INSTALL.md
@@ -129,6 +130,14 @@ Each design system also has its own pages with specific prompts, file recommenda
   │   ├── identity/ [3 SKILLS.md files]
   │   ├── headers/ [6 SKILLS.md files]
   │   └── pages/ [3 SKILLS.md files]
+  ├── playback.config.ts
+  ├── tapes/
+  │   ├── s1-getting-started/ [4 tapes]
+  │   ├── s2-setup-by-tool/ [3 tapes]
+  │   ├── s3-components/ [3 tapes]
+  │   ├── s4-patterns/ [3 tapes]
+  │   ├── s5-agents/ [3 tapes]
+  │   └── s6-quality/ [2 tapes]
   └── dwp-design-system/
       ├── agents/
       │   ├── README.md
@@ -245,6 +254,17 @@ Each design system directory contains its own Claude Code agent definitions for 
 - **NHS UK agents**: See [nhsuk-design-system/agents/README.md](nhsuk-design-system/agents/README.md) — grounded in the [NHS Digital Service Manual](https://service-manual.nhs.uk/)
 - **HMRC agents**: See [hmrc-design-patterns/agents/README.md](hmrc-design-patterns/agents/README.md) — grounded in both the GOV.UK Service Standard and [HMRC Design Patterns](https://design.tax.service.gov.uk/)
 - **DWP agents**: See [dwp-design-system/agents/README.md](dwp-design-system/agents/README.md) — grounded in the GOV.UK Service Standard, [DWP Design System](https://design-system.dwp.gov.uk/), and [DWP Accessibility Manual](https://accessibility-manual.dwp.gov.uk/)
+
+## Playback videos
+
+The `tapes/` directory contains 18 narrated terminal videos built with [Playback](https://github.com/philsherry/playback). Each tape is a YAML script that produces an `.mp4` with voiceover and captions.
+
+```sh
+npm run playback:validate -- tapes/s1-getting-started/01-install-and-explore
+npm run playback:build -- tapes/s1-getting-started/01-install-and-explore
+```
+
+See **[docs/PLAYBACK.md](docs/PLAYBACK.md)** for the full setup, tape structure, and links to the Playback documentation.
 
 ## Accessibility audit snippets
 
